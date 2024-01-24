@@ -1,21 +1,3 @@
-<!--
-<section id="hero" class="d-flex align-items-center" style="background-image: url('lab_cover.jpg');background-size: contain">
-    <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
-        <div class="row justify-content-center">
-            <div class="col-lg-10 text-center">
-                <h1 class="text-light">Streamline Your Lab Operations with Our Cutting-Edge LIMS Solution!</h1>
-                <h6 class="text-light">Experience the power of our innovative Laboratory Information Management System (LIMS). Automate sample tracking, optimize workflows, ensure data integrity, and enhance overall lab efficiency. Unlock the potential of your lab with our comprehensive LIMS designed for seamless integration and superior performance.</h6>
-            </div>
-        </div>
-        <div class="text-center">
-            <a href="#contact" class="btn-get-started scrollto">Contact us</a>
-        </div>
-    </div>
-</section>
-
-End Hero -->
-<!-- Design and content inspired from Giulio Cuscito :- https://dribbble.com/shots/7129691--Blue-Planet-Carousel-Concept -->
-
 <section class='c-slider pt-0' id="hero">
     <div class='c-slider-init'>
         <div class='c-slide' style="background-image:url(img/slider_1.jpg)">
@@ -28,29 +10,12 @@ End Hero -->
                 </div>
                 <div class='c-wrap c-wrap--small'>
                     <div class='c-slide__info'>
-                        <h3 class='c-slide__subtitle'>RUBIC SOL</h3>
+                        <h3 class='c-slide__subtitle'>RUBICSOL</h3>
                         <p class='c-slide__body'>Streamline Your Lab Operations with Our Cutting-Edge LIMS Solution!</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class='c-slide' style="background-image:url(img/slider_2.jpg)">
-            <div class='c-slide-content'>
-                <div class='c-wrap c-wrap--line'>
-                    <h2 class='c-slide__title'>
-                        Vision to
-                        <span class='c-slide__title--large'>Victory</span>
-                    </h2>
-                </div>
-                <div class='c-wrap c-wrap--small'>
-                    <div class='c-slide__info'>
-                        <h3 class='c-slide__subtitle'>RUBIC SOL</h3>
-                        <p class='c-slide__body'>Streamline Your Lab Operations with Our Cutting-Edge LIMS Solution!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </div>
 </section>
 <style>

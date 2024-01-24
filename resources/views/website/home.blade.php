@@ -3,46 +3,41 @@
     @include('components.slider')
 
     <main id="main">
-
-
-        <!-- ======= About Video Section ======= -->
-        <section id="about-video" class="about-video">
-            <div class="container" data-aos="fade-up">
+        <section id="about-video" class="about-video bg-c-primary">
+            <div class="container " data-aos="fade-up">
 
                 <div class="row">
 
-                    <div class="col-12 content video-para" data-aos="fade-left" data-aos-delay="100">
-                        <h5>Unlock the Potential of Your Lab with Our LIMS Solution!</h5>
-                        <ul>
-                            <li>
-                                🔬 Streamline Lab Operations: Simplify and automate complex processes, from quotation to report generation, to enhance efficiency and productivity.
-                            </li>
-                            <li>
-                                🔐 Ensure Compliance and Quality: Adhere to industry standards, implement robust quality control measures, and maintain data integrity for confident regulatory compliance.
-                            </li>
-                            <li>
-                                💡 Harness Advanced Technology: Experience the power of cutting-edge technology, intuitive user interface, and powerful calculators to drive scientific excellence and stay ahead of the competition.
-                            </li>
-                        </ul>
-                        Supercharge your lab with our comprehensive LIMS and elevate your capabilities to new heights. Discover the transformative impact of streamlined workflows, enhanced compliance, and accurate results. Get in touch with us today to embark on a journey of lab optimization and success!
+                    <div class="col-12 content video-para py-5 mb-5" data-aos="fade-left" data-aos-delay="100">
+                        <h1 class="text-center mb-5 text-c-secondary">About RUBICSOL</h1>
+                        <h5>Unlock the Potential of Your Lab with Our <b class="text-c-secondary">RUBIC LIMS!</b></h5>
+                        <p><b class="text-c-secondary">RUBICSOL</b> offers a comprehensive and customizable <b class="text-c-secondary">ISO:17025</b> solution, specifically tailored to meet the quality standards essential for calibration labs. Our product is highly recommended, encompassing 100% of the requirements for laboratory operations. Additionally, we are committed to delivering top-notch <b class="text-c-secondary">web and mobile applications</b> for both Android and iOS platforms, ensuring a seamless experience for our users.</p>
+                        <p>Supercharge your lab with our comprehensive <b class="text-c-secondary">RUBIC LIMS</b> and elevate your capabilities to new heights. Discover the transformative impact of streamlined workflows, enhanced compliance, and accurate results. Get in touch with us today to embark on a journey of lab optimization and success!</p>
                     </div>
 
                 </div>
 
             </div>
-        </section><!-- End About Video Section -->
+        </section>
 
 
-
-        <!-- ======= Team Section ======= -->
-        <section id="team" class="team section-bg">
+        <section id="team" class="team section-bg bg-c-secondary">
             <div class="container" data-aos="fade-up">
+                <div class="section-title ">
+                    <h2>RUBIC LIMS</h2>
+                    <p class="text-c-primary"><b >RUBIC LIMS</b> is a robust and comprehensive solution designed to streamline laboratory operations, from quotation to report generation. With features such as efficient workflow management, powerful calculation capabilities, and accurate reporting, our <b >RUBIC LIMS</b> enhances productivity, ensures data integrity, and supports compliance with industry standards.</p>
+                    <ul style="text-align: left" class="mt-4">
+                        <li>
+                            <b>Streamline Lab Operations:</b> Simplify and automate complex processes, from quotation to report generation, to enhance efficiency and productivity.
+                        </li>
+                        <li>
+                            <b>Ensure Compliance and Quality:</b> Adhere to industry standards, implement robust quality control measures, and maintain data integrity for confident regulatory compliance.
+                        </li>
+                        <li>
+                            <b>Harness Advanced Technology:</b> Experience the power of cutting-edge technology, intuitive user interface, and powerful calculators to drive scientific excellence and stay ahead of the competition.
+                        </li>
+                    </ul>
 
-                <div class="section-title">
-                    <h2>LIMS Features</h2>
-                    <p>
-                        Our LIMS is a robust and comprehensive solution designed to streamline laboratory operations, from quotation to report generation. With features such as efficient workflow management, powerful calculation capabilities, and accurate reporting, our LIMS enhances productivity, ensures data integrity, and supports compliance with industry standards.
-                    </p>
                 </div>
 
                 <div class="row">
@@ -102,31 +97,31 @@
             </div>
         </section><!-- End Team Section -->
 
-        <center>
-            <embed src="{{url('LIMS Brochure.pdf')}}" type="application/pdf" width="80%" height="920px">
-            <p>Unable to display PDF file. <a href="{{url('LIMS Brochure.pdf')}}">Download</a> instead.</p>
-            </embed>
-        </center>
+        <section class="bg-c-primary">
+            <div class="container">
+                <center>
+                    <embed src="{{url('RUBIC LIMS Brochure.pdf')}}" type="application/pdf" width="100%" height="890px">
+                    <p>Unable to display PDF file. <a href="{{url('RUBIC LIMS Brochure.pdf')}}" class="text-c-secondary">Download</a> instead.</p>
+                    </embed>
+                </center>
+            </div>
+        </section>
 
         <!-- ======= Contact Section ======= -->
-        <section id="contact" class="contact">
+        <section id="contact" class="contact bg-c-secondary">
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
-                    <h2>Contact</h2>
-                    <p>
-                    </p>
+                    <h2>Contact US</h2>
                 </div>
-
                 <div>
-                    <iframe style="border:0; width: 100%; height: 270px;"
-                            frameborder="0" allowfullscreen src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1702.3208857802576!2d74.24100956623843!3d31.423994492464132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391901ebe6650cb1%3A0xd941e8ab1176707!2sAIMS%20-%20Al%20Meezan%20Industrial%20Metrology%20Services!5e0!3m2!1sen!2sbg!4v1652694855722!5m2!1sen!2sbg" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe style="border:0; width: 100%; height: 370px;" frameborder="0" allowfullscreen src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1702.3208857802576!2d74.24100956623843!3d31.423994492464132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391901ebe6650cb1%3A0xd941e8ab1176707!2sAIMS%20-%20Al%20Meezan%20Industrial%20Metrology%20Services!5e0!3m2!1sen!2sbg!4v1652694855722!5m2!1sen!2sbg" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
                 <div class="row mt-5">
 
                     <div class="col-lg-4">
-                        <div class="info">
+                        <div class="info p-4">
                             <div class="address">
                                 <i class="bi bi-geo-alt"></i>
                                 <h4>Location:</h4>
@@ -138,23 +133,26 @@
                             <div class="email">
                                 <i class="bi bi-envelope"></i>
                                 <h4>Email:</h4>
-                                <p>info@aimscal.com, info@rubicsol.com</p>
+                                <p>info@rubicsol.com</p>
                             </div>
 
                             <div class="phone">
                                 <i class="bi bi-phone"></i>
                                 <h4>Call:</h4>
-                                <p>+9230001235321, +923040647306</p>
+                                <p>+923040647306</p>
                             </div>
 
                         </div>
 
                     </div>
 
-                    <div class="col-lg-8 mt-5 mt-lg-0">
+                    <div class="col-lg-8 mt-5 mt-lg-0 ">
                         <form id="php-email-form" method="post" role="form" class="php-email-form">
                             @csrf
                             <div class="row">
+                                <div class="col-12">
+                                    <p>We are here to answer any inquiries you have about RUBIC LIMS. Even if there is something you wanted to see in RUBIC LIMS, do let us know, we’ll reach out to you as soon as we can.</p>
+                                </div>
                                 <div class="col-md-6 form-group">
                                     <input type="text" name="name" class="form-control" id="name" placeholder="Your Name">
                                 </div>

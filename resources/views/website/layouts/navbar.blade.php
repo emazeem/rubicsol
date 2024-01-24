@@ -2,14 +2,15 @@
 <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
 
-        <h1 class="logo">
-            <a href="{{route('w.home')}}" ><img src="RUBICSOL.png" alt="" class="img-fluid"></a>
+        <h1 class="logo py-0 my-0">
+            <a href="{{route('w.home')}}"><img src="RUBICSOL.png" alt="" class="img-fluid"> </a>
         </h1>
 
         <nav id="navbar" class="navbar">
             <ul>
                 <li><a class="nav-link  active" href="{{route('w.home')}}">Home</a></li>
                 <li><a class="nav-link " href="{{route('w.documentation')}}">Documentation</a></li>
+                <li><a class="nav-link " href="{{route('w.contact.us')}}">Pricing</a></li>
                 <li><a class="nav-link " href="{{route('w.contact.us')}}">Contact</a></li>
                 <li><a class="nav-link " href="{{route('w.about.us')}}">About</a></li>
                 @if(Auth::user())
