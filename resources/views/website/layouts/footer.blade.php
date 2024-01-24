@@ -6,12 +6,12 @@
             <div class="row">
 
                 <div class="col-lg-6 col-md-6 footer-contact">
-                    <h3>AIMS</h3>
+                    <h3>RUBICSOL</h3>
                     <p>
                         58-B Block , OPF society, Riwind Rd, Lahore
                         <br>
                         <strong>Phone:</strong> +9230001235321, +923040647306<br>
-                        <strong>Email:</strong> info@aimscal.com, emazeem07@gmail.com<br>
+                        <strong>Email:</strong> info@aimscal.com, info@rubicsol.com<br>
                     </p>
                 </div>
 
@@ -40,7 +40,7 @@
 
         <div class="me-md-auto text-center text-md-start">
             <div class="copyright">
-                &copy; Copyright <strong><span> <a href="{{url('')}}">aimscal.com</a> </span></strong>. All Rights Reserved
+                &copy; Copyright <strong><span> <a href="{{url('')}}">rubicsol.com</a> </span></strong>. All Rights Reserved
             </div>
         </div>
         <div class="social-links text-center text-md-right pt-3 pt-md-0">

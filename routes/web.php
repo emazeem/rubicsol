@@ -15,3 +15,7 @@ Route::get('privacy-policy', [WebsiteController::class, 'privacy_policy'])->name
 Route::get('contact-us', [WebsiteController::class, 'contact_us'])->name('w.contact.us');
 Route::get('about-us', [WebsiteController::class, 'about_us'])->name('w.about.us');
 Route::post('contact-us-send-email', [WebsiteController::class, 'send_email'])->name('w.contact.us.send.email');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -1,19 +1,6 @@
 @extends('website.layouts.master')
 @section('content')
-    <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex align-items-center" style="background-image: url('img/lab_cover.jpg');background-size: contain">
-        <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
-            <div class="row justify-content-center">
-                <div class="col-lg-10 text-center">
-                    <h1 class="text-light">Streamline Your Lab Operations with Our Cutting-Edge LIMS Solution!</h1>
-                    <h6 class="text-light">Experience the power of our innovative Laboratory Information Management System (LIMS). Automate sample tracking, optimize workflows, ensure data integrity, and enhance overall lab efficiency. Unlock the potential of your lab with our comprehensive LIMS designed for seamless integration and superior performance.</h6>
-                </div>
-            </div>
-            <div class="text-center">
-                <a href="#contact" class="btn-get-started scrollto">Contact us</a>
-            </div>
-        </div>
-    </section><!-- End Hero -->
+    @include('components.slider')
 
     <main id="main">
 
@@ -151,7 +138,7 @@
                             <div class="email">
                                 <i class="bi bi-envelope"></i>
                                 <h4>Email:</h4>
-                                <p>info@aimscal.com, emazeem07@gmail.com</p>
+                                <p>info@aimscal.com, info@rubicsol.com</p>
                             </div>
 
                             <div class="phone">

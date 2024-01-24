@@ -116,10 +116,9 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #header {
   transition: all 0.5s;
-  background: #fff;
+  background: #2687cfd1;
   z-index: 997;
   padding: 15px 0;
-  border-bottom: 1px solid #e6f2fb;
 }
 #header.header-scrolled {
   border-color: #fff;
@@ -135,7 +134,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
 }
 #header .logo a {
-  color: #16507b;
+  color: #fff;
 }
 #header .logo img {
   max-height: 40px;
@@ -169,26 +168,30 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0 10px 30px;
+  padding: 10px 20px;
   font-size: 14px;
-  color: #16507b;
+  color: #fff;
+    font-weight: bold;
   white-space: nowrap;
-  transition: 0.3s;
+    transition: background 0.3s, color 0.3s, border-radius 0.3s;
 }
+
 .navbar a i, .navbar a:focus i {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #2487ce;
+    background: #4f9dd5;
+    color: white;
+    border-radius: 30px;
 }
 .navbar .getstarted, .navbar .getstarted:focus {
-  background: #2487ce;
+  background: #ffff;
   padding: 8px 20px;
   margin-left: 30px;
   border-radius: 4px;
-  color: #fff;
+  color: #3194db;
 }
 .navbar .getstarted:hover, .navbar .getstarted:focus:hover {
   color: #fff;
@@ -350,7 +353,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 #hero:before {
   content: "";
-  background: rgb(0, 0, 0,0.3);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -365,11 +367,9 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 56px;
   font-weight: 700;
   line-height: 72px;
-  color: #124265;
   font-family: "Poppins", sans-serif;
 }
 #hero h2 {
-  color: #5e5e5e;
   margin: 10px 0 0 0;
   font-size: 22px;
 }

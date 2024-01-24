@@ -3,25 +3,20 @@
     <div class="container d-flex align-items-center justify-content-between">
 
         <h1 class="logo">
-            <a href="{{route('w.home')}}">
-                <img src="{{url('img/AIMS.png')}}" alt="">
-            </a>
+            <a href="{{route('w.home')}}" ><img src="RUBICSOL.png" alt="" class="img-fluid"></a>
         </h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
         <nav id="navbar" class="navbar">
             <ul>
-                <li><a class="nav-link scrollto" href="{{route('w.home')}}">Home</a></li>
-                <li><a class="nav-link scrollto" href="{{route('w.documentation')}}">Documentation</a></li>
-                <li><a class="nav-link scrollto" href="{{route('w.contact.us')}}">Contact</a></li>
-                <li><a class="nav-link scrollto" href="{{route('w.about.us')}}">About</a></li>
+                <li><a class="nav-link  active" href="{{route('w.home')}}">Home</a></li>
+                <li><a class="nav-link " href="{{route('w.documentation')}}">Documentation</a></li>
+                <li><a class="nav-link " href="{{route('w.contact.us')}}">Contact</a></li>
+                <li><a class="nav-link " href="{{route('w.about.us')}}">About</a></li>
                 @if(Auth::user())
-                    <li><a class="nav-link" href="{{url('dashboard')}}">Dashboard</a></li>
+                    <li><a class="nav-link getstarted" href="{{url('dashboard')}}">Dashboard</a></li>
                     @else
-                    <li><a class="nav-link" href="{{url('login')}}">Login</a></li>
+                    <li><a class="nav-link getstarted" href="{{url('login')}}">Login</a></li>
                 @endif
-                <li><a class="getstarted scrollto Click-here verify-link" {{--href="{{route('w.generate.requests')}}"--}}>Generate Requests</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
