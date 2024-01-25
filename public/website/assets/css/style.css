@@ -69,7 +69,7 @@ p,li{
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: rgba(204, 204, 204, 0.8);
+  background: rgba(16, 16, 16, 0.6);
 }
 #preloader img{
     position: relative;
