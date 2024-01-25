@@ -11,7 +11,7 @@
                 <div class='c-wrap c-wrap--small'>
                     <div class='c-slide__info'>
                         <h3 class='c-slide__subtitle'>RUBICSOL</h3>
-                        <p class='c-slide__body'>Streamline Your Lab Operations with Our Cutting-Edge LIMS Solution!</p>
+                        <p class='c-slide__body'>Streamline Your Lab Operations with Our Cutting-Edge RUBIC LIMS Solution!</p>
                     </div>
                 </div>
             </div>

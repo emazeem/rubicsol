@@ -38,7 +38,9 @@
 @include('website.layouts.navbar')
 @yield('content')
 @include('website.layouts.footer')
-<div id="preloader"></div>
+<div id="preloader">
+    <img src="RUBICSOL.gif" alt="">
+</div>
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
     <i class="bi bi-arrow-up-short"></i>
 </a>

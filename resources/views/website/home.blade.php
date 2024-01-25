@@ -7,7 +7,6 @@
             <div class="container " data-aos="fade-up">
 
                 <div class="row">
-
                     <div class="col-12 content video-para py-5 mb-5" data-aos="fade-left" data-aos-delay="100">
                         <h1 class="text-center mb-5 text-c-secondary">About RUBICSOL</h1>
                         <h5>Unlock the Potential of Your Lab with Our <b class="text-c-secondary">RUBIC LIMS!</b></h5>
@@ -15,8 +14,9 @@
                         <p>Supercharge your lab with our comprehensive <b class="text-c-secondary">RUBIC LIMS</b> and elevate your capabilities to new heights. Discover the transformative impact of streamlined workflows, enhanced compliance, and accurate results. Get in touch with us today to embark on a journey of lab optimization and success!</p>
                     </div>
 
-                </div>
 
+                    @include('components.screenshots')
+                </div>
             </div>
         </section>
 
@@ -83,8 +83,8 @@
                                 <img src='{{url('img/'.$feature['url'])}}' class='img-fluid' >
                             </div>
                             <div class="member-info">
-                                <h4>{{$feature['heading']}}</h4>
-                                <span>{{$feature['p']}}</span>
+                                <h5>{{$feature['heading']}}</h5>
+                                <p>{{$feature['p']}}</p>
                             </div>
                         </div>
                     </div>
