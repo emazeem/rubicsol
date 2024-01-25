@@ -21,10 +21,14 @@ Route::post('contact-us-send-email', [WebsiteController::class, 'send_email'])->
 Auth::routes();
 Route::group(['middleware' => ['auth']], function () {
     Route::get('dashboard', [DashboardController::class, 'index'])->name('home');
-    Route::get('send-emails/{id}', [EmailController::class, 'sendEmails'])->name('send.emails');
-    Route::get('send-again/{id}', [EmailController::class, 'sendAgain'])->name('send.again');
-    Route::get('add-favourite/{id}', [EmailController::class, 'addFavourite'])->name('add.favourite');
-    Route::get('email-marketing', [DashboardController::class, 'emailMarketing'])->name('email.marketing');
-    Route::get('show-emails/{id}', [EmailController::class, 'show'])->name('email.show');
-    Route::post('store-emails', [EmailController::class, 'store'])->name('email.store');
+
+    Route::group(['prefix' => 'email'], function () {
+        Route::get('marketing', [EmailController::class, 'index'])->name('email.marketing');
+        Route::get('show/{id}', [EmailController::class, 'show'])->name('email.show');
+        Route::post('store', [EmailController::class, 'store'])->name('email.store');
+        Route::post('delete/{id}', [EmailController::class, 'delete'])->name('email.delete');
+        Route::get('send/{id}', [EmailController::class, 'sendEmails'])->name('send.emails');
+        Route::get('send-again/{id}', [EmailController::class, 'sendAgain'])->name('send.again');
+        Route::get('add-favourite/{id}', [EmailController::class, 'addFavourite'])->name('add.favourite');
+    });
 });

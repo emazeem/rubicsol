@@ -11,9 +11,14 @@ use Illuminate\Support\Facades\Mail;
 class EmailController extends Controller
 {
     //
+    public function index()
+    {
+        $countries=Countries::all();
+        return view('admin.emails.index',compact('countries'));
+    }
     public function show($id){
         $country=Countries::find($id);
-        return view('admin.show_emails',compact('country'));
+        return view('admin.emails.show',compact('country'));
     }
     public function delete($id){
         Email::find($id)->delete();
@@ -31,14 +36,11 @@ class EmailController extends Controller
         foreach (Email::where('country_id',$country)->where('status',0)->where('is_favourite',0)->get() as $dbRow){
             try {
                 $data = array('name'=>"Muhammad Azeem","message"=>"Message");
-                Mail::send('admin.email_template', $data, function($message) use($dbRow) {
-                    $message->to($dbRow->email, explode('@',$dbRow->email)[0])
-                        ->subject('Introducing a Revolutionary RUBIC LIMS Solution Tailored for ISO 17025 Accredited Labs');
-                    $message->from('emazeem07@gmail.com','Muhammad Azeem');
+                Mail::send('admin.emails.template', $data, function($message) use($dbRow) {
+                    $message->to($dbRow->email, explode('@',$dbRow->email)[0])->subject('RUBIC LIMS Solution for ISO 17025 Calibration Labs');
                 });
                 $dbRow->status=1;
                 $dbRow->save();
-                dd(1);
             } catch (\Exception $exception) {
                 return $exception->getMessage();
             }

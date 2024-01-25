@@ -155,6 +155,10 @@ File: style.css
     background: #233560!important;
     color: #ffffff!important;
 }
+.bg-c-primary.active{
+    background: #1a2746 !important;
+}
+
 .bg-c-secondary{
     background: #ff9305!important;
     color: #233560;

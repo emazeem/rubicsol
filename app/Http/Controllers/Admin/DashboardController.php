@@ -13,10 +13,6 @@ class DashboardController extends Controller
     {
         return view('admin.dashboard');
     }
-    public function emailMarketing()
-    {
-        $countries=Countries::all();
-        return view('admin.email_marketing',compact('countries'));
-    }
+
 
 }
