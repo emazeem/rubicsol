@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WebsiteController;
+use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\EmailController;
 
 Route::get('', [WebsiteController::class, 'home'])->name('w.home');
 Route::get('documentation', [WebsiteController::class, 'documentation'])->name('w.documentation');
@@ -17,5 +19,12 @@ Route::get('about-us', [WebsiteController::class, 'about_us'])->name('w.about.us
 Route::post('contact-us-send-email', [WebsiteController::class, 'send_email'])->name('w.contact.us.send.email');
 
 Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::group(['middleware' => ['auth']], function () {
+    Route::get('dashboard', [DashboardController::class, 'index'])->name('home');
+    Route::get('send-emails/{id}', [EmailController::class, 'sendEmails'])->name('send.emails');
+    Route::get('send-again/{id}', [EmailController::class, 'sendAgain'])->name('send.again');
+    Route::get('add-favourite/{id}', [EmailController::class, 'addFavourite'])->name('add.favourite');
+    Route::get('email-marketing', [DashboardController::class, 'emailMarketing'])->name('email.marketing');
+    Route::get('show-emails/{id}', [EmailController::class, 'show'])->name('email.show');
+    Route::post('store-emails', [EmailController::class, 'store'])->name('email.store');
+});
