@@ -24,6 +24,7 @@
                                 <th class="bg-c-primary text-center">Mark as Favorite</th>
                                 <th class="bg-c-primary text-center">Action</th>
                             </tr>
+                            @if(count($country->emails)>0)
                             @foreach($country->emails as $k=>$email)
                                 <tr>
                                     <td>
@@ -41,10 +42,18 @@
                                         <a href="{{url('email/add-favourite/'.$email->id)}}" class="{{$email->is_favourite==1?'text-warning':'text-dark'}}">★</a>
                                     </td>
                                     <td class="text-center">
-                                        <a href="{{url('email/delete/'.$email->id)}}" class="btn btn-danger btn-sm px-2">Delete</a>
+                                        <form action="{{url('email/delete/'.$email->id)}}" method="post">
+                                            @csrf
+                                            <button type="submit" class="btn btn-danger btn-sm px-2">Delete</button>
+                                        </form>
                                     </td>
                                 </tr>
                             @endforeach
+                            @else
+                                <tr>
+                                    <td colspan="100%" class=" text-center">No Email</td>
+                                </tr>
+                            @endif
                         </table>
                     </div>
 

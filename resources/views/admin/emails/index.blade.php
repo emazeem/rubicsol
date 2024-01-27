@@ -44,7 +44,7 @@
                                         </table>
                                     </div>
                                     <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                        <form action="{{url('store-emails')}}" method="post">
+                                        <form action="{{url('email/store')}}" method="post">
                                             @csrf
                                             <div class="row mt-4">
                                                 <div class="col-md-4">
