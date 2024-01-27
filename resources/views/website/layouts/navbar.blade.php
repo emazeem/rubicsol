@@ -10,7 +10,7 @@
             <ul>
                 <li><a class="nav-link  active" href="{{route('w.home')}}">Home</a></li>
                 <li><a class="nav-link " href="{{route('w.documentation')}}">Documentation</a></li>
-                <li><a class="nav-link " href="{{route('w.contact.us')}}">Pricing</a></li>
+                <li><a class="nav-link " href="{{route('w.pricing')}}">Pricing</a></li>
                 <li><a class="nav-link " href="{{route('w.contact.us')}}">Contact</a></li>
                 <li><a class="nav-link " href="{{route('w.about.us')}}">About</a></li>
                 @if(Auth::user())

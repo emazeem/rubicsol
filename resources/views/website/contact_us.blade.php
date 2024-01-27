@@ -44,20 +44,20 @@
                             <div class="address">
                                 <i class="bi bi-geo-alt"></i>
                                 <h4>Location:</h4>
-                                <p>{{webSettingSlug('contact-location')}}</p>
+                                <p></p>
                             </div>
 
                             <div class="email">
                                 <i class="bi bi-envelope"></i>
                                 <h4>Email:</h4>
-                                <p>{{webSettingSlug('contact-email')}}</p>
+                                <p></p>
 
                             </div>
 
                             <div class="phone">
                                 <i class="bi bi-phone"></i>
                                 <h4>Call:</h4>
-                                <p>{{webSettingSlug('contact-phone')}}</p>
+                                <p></p>
 
                             </div>
 

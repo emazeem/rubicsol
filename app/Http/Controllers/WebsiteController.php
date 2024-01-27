@@ -8,6 +8,10 @@ class WebsiteController extends Controller
     public function home(){
         return view('website.home');
     }
+    public function pricing(){
+        return view('website.pricing');
+    }
+
     public function documentation()
     {
         return view('website.documentation');

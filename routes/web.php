@@ -8,6 +8,7 @@ use App\Http\Controllers\Admin\EmailController;
 Route::get('', [WebsiteController::class, 'home'])->name('w.home');
 Route::get('documentation', [WebsiteController::class, 'documentation'])->name('w.documentation');
 Route::get('services', [WebsiteController::class, 'services'])->name('w.services');
+Route::get('pricing', [WebsiteController::class, 'pricing'])->name('w.pricing');
 Route::get('service/{id}', [WebsiteController::class, 'service'])->name('w.service');
 Route::get('team', [WebsiteController::class, 'teams'])->name('w.team');
 Route::get('team/view/{id}', [WebsiteController::class, 'team'])->name('w.team.show');
@@ -21,7 +22,6 @@ Route::post('contact-us-send-email', [WebsiteController::class, 'send_email'])->
 Auth::routes();
 Route::group(['middleware' => ['auth']], function () {
     Route::get('dashboard', [DashboardController::class, 'index'])->name('home');
-
     Route::group(['prefix' => 'email'], function () {
         Route::get('marketing', [EmailController::class, 'index'])->name('email.marketing');
         Route::get('show/{id}', [EmailController::class, 'show'])->name('email.show');

@@ -168,7 +168,8 @@ File: style.css
     color: #233560;
 }
 .text-c-secondary{
-    color: #ff9305;
+    color: #ff9305!important;
+
 }
 /*
  * Scrollbar thumb styles
@@ -6338,7 +6339,7 @@ a.close.disabled {
 }
 
 .modal-backdrop.show {
-    opacity: 0.5;
+    opacity: 0;
 }
 
 .modal-header {
