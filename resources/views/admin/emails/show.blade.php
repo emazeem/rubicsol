@@ -11,8 +11,8 @@
                     <div class="col-12 mb-2 d-flex justify-content-between">
                         <h4>Emails Listing of  {{$country->name}}</h4>
                         <div>
-                            <a class="btn btn-primary" href="{{url('send-again/'.$country->id)}}">Send Email Again</a>
-                            <a class="btn btn-primary " href="{{url('send-emails/'.$country->id)}}">Send Emails</a>
+                            <a class="btn btn-primary" href="{{url('email/send-again/'.$country->id)}}">Send Email Again</a>
+                            <a class="btn btn-primary " href="{{url('email/send/'.$country->id)}}">Send Emails</a>
                         </div>
                     </div>
                 </div>
@@ -38,7 +38,7 @@
                                         {{$email->email}}
                                     </td>
                                     <td class="text-center">
-                                        <a href="{{url('add-favourite/'.$email->id)}}" class="{{$email->is_favourite==1?'text-warning':'text-dark'}}">★</a>
+                                        <a href="{{url('email/add-favourite/'.$email->id)}}" class="{{$email->is_favourite==1?'text-warning':'text-dark'}}">★</a>
                                     </td>
                                     <td class="text-center">
                                         <a href="{{url('email/delete/'.$email->id)}}" class="btn btn-danger btn-sm px-2">Delete</a>
