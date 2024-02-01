@@ -1,11 +1,11 @@
 <section class='c-slider pt-0' id="hero">
     <div class='c-slider-init'>
-        <div class='c-slide' style="background-image:url(img/slider_1.jpg)">
+        <div class='c-slide' style="background-image:url(Rubicsol_slider_1.jpeg)">
             <div class='c-slide-content'>
                 <div class='c-wrap c-wrap--line'>
                     <h2 class='c-slide__title'>
-                        Vision to
-                        <span class='c-slide__title--large'>Victory</span>
+
+                        <span class='c-slide__title--large'></span>
                     </h2>
                 </div>
                 <div class='c-wrap c-wrap--small'>
@@ -16,13 +16,30 @@
                 </div>
             </div>
         </div>
+        <div class='c-slide' style="background-image:url(Rubicsol_slider_2.jpeg)">
+            <div class='c-slide-content'>
+                <div class='c-wrap c-wrap--line'>
+                    <h2 class='c-slide__title'>
+
+                        <span class='c-slide__title--large'> </span>
+                    </h2>
+                </div>
+                <div class='c-wrap c-wrap--small'>
+                    <div class='c-slide__info'>
+                        <h3 class='c-slide__subtitle'>RUBICSOL</h3>
+                        <p class='c-slide__body'>Streamline Your Lab Operations with Our Cutting-Edge RUBIC LIMS Solution!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </section>
 <style>
 
 
     .slick-slide{
-        height: 100vh!important;
+        height: 80vh!important;
     }
     .c-navigation__list-item--active > a {
         position: relative;
@@ -37,10 +54,7 @@
         left: 0;
     }
 
-    .c-cta {
-        display: flex;
-        align-items: center;
-    }
+
     .c-cta > a {
         font-size: 0.9em;
         opacity: 0.7;
@@ -49,56 +63,16 @@
         margin: 0 2rem;
     }
 
-    .c-cta__button {
-        border: 0;
-        background-color: transparent;
-        display: inline-block;
-    }
 
-    .c-cta__button__search {
-        width: 15px;
-        height: 15px;
-        margin-right: 3rem;
-    }
+
     .c-cta__button__search svg {
         width: inherit;
         height: inherit;
         fill: white;
     }
 
-    .c-cta__button__menu {
-        width: 20px;
-        height: 2px;
-        background-color: white;
-        position: relative;
-    }
-    .c-cta__button__menu:after, .c-cta__button__menu:before {
-        content: "";
-        width: inherit;
-        height: inherit;
-        background-color: inherit;
-        position: absolute;
-        left: 0;
-    }
-    .c-cta__button__menu:after {
-        bottom: -5px;
-    }
-    .c-cta__button__menu:before {
-        top: -5px;
-    }
 
-    .c-socials {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        background-color: white;
-        padding: 1.8rem 1.8rem 0.8rem 1.8rem;
-        z-index: 2;
-    }
 
-    .c-socials__list-item {
-        margin-bottom: 1rem;
-    }
     .c-socials__list-item a svg {
         width: 21px;
         height: 21px;
@@ -108,7 +82,7 @@
         display: inline-flex !important;
         align-items: center;
         width: 100%;
-        height: 100vh;
+        height: 80vh;
         background-position: center;
         background-size: cover;
         will-change: background-size;
@@ -132,6 +106,7 @@
         margin: 0 auto;
         width: 100%;
         z-index: 2;
+        margin-top: 300px;
         max-width: 1200px;
     }
 

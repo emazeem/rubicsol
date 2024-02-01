@@ -37,7 +37,9 @@ class EmailController extends Controller
             try {
                 $data = array('name'=>"Muhammad Azeem","message"=>"Message");
                 Mail::send('admin.emails.template', $data, function($message) use($dbRow) {
-                    $message->to($dbRow->email, explode('@',$dbRow->email)[0])->subject('RUBIC LIMS Solution for ISO 17025 Calibration Labs');
+                    $message->from('info@rubicsol.com', 'RUBICSOL')
+                        ->to($dbRow->email, explode('@', $dbRow->email)[0])
+                        ->subject('RUBIC LIMS Solution for ISO 17025 Calibration Labs');
                 });
                 $dbRow->status=1;
                 $dbRow->save();
