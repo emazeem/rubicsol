@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class WebsiteController extends Controller
 {
@@ -109,16 +111,13 @@ class WebsiteController extends Controller
             'message' => 'required|string',
         ]);
         $subject=$request->subject;
-        $to = 'info@aimscal.com';
+        $to = 'info@rubicsol.com';
         $from = $request->email;
         $message=$request->message;
         Mail::html($message, function ($message) use ($subject, $to, $from) {
-            $message->subject($subject)->to($to)->from($from);
+            $message->to($to)->subject($subject)->cc(['emazeem07@gmail.com','info@rubicsol.com'])->from($from);
         });
-        $to = 'emazeem07@gmail.com';
-        Mail::html($message, function ($message) use ($subject, $to, $from) {
-            $message->subject($subject)->to($to)->from($from);
-        });
+
 
         /*$mail = new PHPMailer(true);
         $mail->IsSMTP();

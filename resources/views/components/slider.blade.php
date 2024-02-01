@@ -11,7 +11,7 @@
                 <div class='c-wrap c-wrap--small'>
                     <div class='c-slide__info'>
                         <h3 class='c-slide__subtitle'>RUBICSOL</h3>
-                        <p class='c-slide__body'>Streamline Your Lab Operations with Our Cutting-Edge RUBIC LIMS Solution!</p>
+                        <p class='c-slide__body'>Streamline Your Lab Operations with Our Cutting-Edge <b class="text-c-secondary">RUBIC LIMS</b> Solution!</p>
                     </div>
                 </div>
             </div>
@@ -27,7 +27,7 @@
                 <div class='c-wrap c-wrap--small'>
                     <div class='c-slide__info'>
                         <h3 class='c-slide__subtitle'>RUBICSOL</h3>
-                        <p class='c-slide__body'>Streamline Your Lab Operations with Our Cutting-Edge RUBIC LIMS Solution!</p>
+                        <p class='c-slide__body'>Unlock the Potential of your Lab with our <b class="text-c-secondary">RUBIC LIMS!</b></p>
                     </div>
                 </div>
             </div>
@@ -39,7 +39,7 @@
 
 
     .slick-slide{
-        height: 80vh!important;
+        height: 100vh!important;
     }
     .c-navigation__list-item--active > a {
         position: relative;
@@ -62,15 +62,6 @@
         text-transform: uppercase;
         margin: 0 2rem;
     }
-
-
-
-    .c-cta__button__search svg {
-        width: inherit;
-        height: inherit;
-        fill: white;
-    }
-
 
 
     .c-socials__list-item a svg {

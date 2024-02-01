@@ -14,9 +14,9 @@
                 <li><a class="nav-link " href="{{route('w.contact.us')}}">Contact</a></li>
                 <li><a class="nav-link " href="{{route('w.about.us')}}">About</a></li>
                 @if(Auth::user())
-                    <li><a class="nav-link getstarted" href="{{url('dashboard')}}">Dashboard</a></li>
+                    <li><a class="nav-link getstarted bg-c-secondary" href="{{url('dashboard')}}">Dashboard</a></li>
                     @else
-                    <li><a class="nav-link getstarted" href="{{url('login')}}">Login</a></li>
+                    <li><a class="nav-link getstarted bg-c-secondary" href="{{url('login')}}">Login</a></li>
                 @endif
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
