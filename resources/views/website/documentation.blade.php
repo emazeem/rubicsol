@@ -4,12 +4,14 @@
 
     <main id="main">
 
-        <section id="team" class="team section-bg mt-5">
-            <div class="container-fluid" data-aos="fade-up">
+        <section id="team" class="team bg-c-primary ">
+            <div class="head-box bg-c-secondary">
+                <h1 class="text-light mt-4">LIMS Documentation</h1>
+            </div>
+            <div class="container-fluid border-bottom" data-aos="fade-up">
                 <div class="row">
                     <div class="col">
                         <nav id="cust-navbar">
-                            <header>Technical Modules</header>
                             <ul class="nav custom-nav flex-column">
                                 <li class="nav-item">
                                     <a class="nav-link custom-nav-link introduction" href="#Introduction">1. Introduction</a>
@@ -44,10 +46,6 @@
                     </div>
                     <div class="col-md-9">
                         <main id="main-doc">
-                            <div class="head-box">
-                                <h1 class="text-light mt-4">LIMS Documentation</h1>
-                            </div>
-
                             <section class="main-section" id="Introduction">
                                 <header><h2>Introduction</h2></header>
                                 <article>
@@ -92,7 +90,6 @@
 
                                 </article>
                             </section>
-
                             <section class="main-section" id="quote">
                                 <header><h2>Quotation Module</h2></header>
                                 <article>
@@ -132,7 +129,6 @@
                                     </ul>
                                 </article>
                             </section>
-
                             <section class="main-section" id="order">
                                 <header><h2>Order Management</h2></header>
                                 <article>
@@ -197,7 +193,6 @@
 
                                 </article>
                             </section>
-
                             <section class="main-section" id="calculator">
                                 <header><h2>Calculator for Calibration</h2></header>
                                 <p>This module provides a tool for performing calibration calculations accurately and efficiently. It may include predefined formulas, conversion factors, and reference data to aid technicians in the calibration process.</p>
@@ -239,7 +234,6 @@
 
                                 </article>
                             </section>
-
                             <section class="main-section" id="reference">
                                 <header><h2>Reference Data</h2></header>
                                 <p>This module stores and manages reference materials, standards, and other relevant information required for calibration activities. It ensures easy access to necessary data and helps maintain consistency in calibration procedures.</p>
@@ -323,8 +317,6 @@
                                 <p>By integrating SOPs and Forms and Formats under the QA/QC module, our LIMS enhances documentation control, ensures adherence to standardized procedures, and supports regulatory compliance. It empowers your lab with efficient access to SOPs, streamlined form management, and improved quality control practices, ultimately leading to enhanced accuracy, traceability, and overall laboratory performance.</p>
 
                             </section>
-
-
                         </main>
                     </div>
                 </div>
@@ -333,72 +325,53 @@
         </section>
 
     </main><!-- End #main -->
-    <style>
+<style>
         #cust-navbar {
             height: 96%;
             top: 10px;
             position: fixed;
             width: 22%;
         }
-
         .custom-nav header {
             display: block;
             text-align:center;
-            margin: 0 10px;
-            padding: 5px;
-            border-bottom: 1px solid #30336b;
+            border-bottom: 1px solid #233560;
             font-size: 120%;
-            font-weight: thin;
+            font-weight: lighter!important;
             color: #95a5a6;
         }
 
         .custom-nav-link{
-            color: #000;
+            color: whitesmoke;
         }
         .custom-nav-link.sub{
-            color: #000;
+            color:whitesmoke;
             font-size: 13px;
             margin-left: 20px;
         }
 
         .custom-nav-link:link {
-            color: #000000;
+            color: whitesmoke;
             margin-top: 10px;
             padding-left: 30px;
         }
         .custom-nav-link:hover,
         .custom-nav-link:active {
             color: #fff;
-            background-color: #2c3e50;
+            background-color: #192646;
             transition: 0.3s;
 
         }
 
         .head-box {
-            background-color: #2c3e50;
+            background-color: #233560;
             color: #fff;
-            padding: 20px;
+            padding: 5px;
             text-align: center;
             margin-top: 10px;
         }
 
-        h2 {
-            font-weight: bold;
-            color: #130f40;
-        }
 
-        h3 {
-            padding-left: 15px;
-            color: #30336b;
-        }
-
-        p {
-            font-size: 90%;
-            line-height: 1.5;
-            padding-left: 30px;
-            padding-right: 20px;
-            text-align: justify;
-        }
 
         section article {
             padding-right: 20px;
@@ -409,11 +382,11 @@
             margin-left: 20px;
         }
 
-        /*---CODE SECTION---*/
+        /*-&#45;&#45;CODE SECTION-&#45;&#45;*/
 
         pre {
             display: inline-block;
-            background-color: #34495e;
+            background-color: #233560;
             color: #fff;
             margin-left: 40px;
             padding: 0 0 20px 30px;
@@ -423,7 +396,7 @@
 
         }
 
-        /*-------FOOTER------*/
+        /*-&#45;&#45;&#45;&#45;&#45;&#45;FOOTER&#45;&#45;&#45;&#45;&#45;&#45;*/
 
         hr {
             border: 0.5px solid;
@@ -454,7 +427,7 @@
             font-size: 80%;
         }
 
-        /*---------RESPONSIVE--------*/
+        /*-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;RESPONSIVE&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;*/
 
         @media only screen and (max-width: 768px) {
             #cust-navbar {
@@ -474,9 +447,13 @@
                 padding: 0 10px 10px 20px;
             }
         }
+        #main-doc{
+            background: #FFFFFF;
+            color: #000;
+            padding-left: 50px;
+            height: 90vh;
+            overflow: scroll;
+        }
     </style>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.21/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.21/dist/js/uikit-icons.min.js"></script>
 @endsection
