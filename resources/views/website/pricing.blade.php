@@ -4,7 +4,7 @@
         <div class="container" data-aos="fade-up">
 
             <section class="pricing-section">
-                <div class="container">
+                <div class="container-fluid">
                     <div class="outer-box">
                         <div class="section-title  mt-5 pt-5">
                             <h2 class="text-c-secondary">Pricing Plan</h2>
@@ -13,7 +13,7 @@
                             <div class="pricing-block wow fadeInUp" data-wow-delay="400ms">
                                 <div class="inner-box">
                                     <div class="icon-box">
-                                        <div class="icon-outer"><i class="bx bx-dollar"></i></div>
+                                        <div class="icon-outer"><i class="bx bx-diamond"></i></div>
                                     </div>
                                     <div class="price-box">
                                         <div class="title">Standard Package</div>
@@ -166,9 +166,9 @@
     .pricing-block .features li:before {
         position: absolute;
         left: 0;
-        top: 50%;
+        top: 35%;
         font-size: 25px;
-        color: #2bd40f;
+        color: #ff9305;
         -moz-osx-font-smoothing: grayscale;
         -webkit-font-smoothing: antialiased;
         display: inline-block;
