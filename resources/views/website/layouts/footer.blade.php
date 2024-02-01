@@ -26,8 +26,15 @@
                 <div class="col-lg-4 col-md-6 footer-newsletter">
                     <h4>Join Our Newsletter</h4>
                     <p>Get connected with us by listening our latest updates.</p>
-                    <form action="" method="post">
-                        <input type="email" name="email"><input type="submit" value="Subscribe">
+                    @if(session('success'))
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            {{ session('success') }}
+                        </div>
+                    @endif
+                    <form action="{{ route('subscribe') }}" method="post">
+                        @csrf
+                        <input type="email" name="email" required>
+                        <input type="submit" value="Subscribe">
                     </form>
                 </div>
             </div>

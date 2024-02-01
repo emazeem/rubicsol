@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WebsiteController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\EmailController;
+use App\Http\Controllers\SubscriptionController;
 
 Route::get('', [WebsiteController::class, 'home'])->name('w.home');
 Route::get('documentation', [WebsiteController::class, 'documentation'])->name('w.documentation');
@@ -18,6 +19,7 @@ Route::get('privacy-policy', [WebsiteController::class, 'privacy_policy'])->name
 Route::get('contact-us', [WebsiteController::class, 'contact_us'])->name('w.contact.us');
 Route::get('about-us', [WebsiteController::class, 'about_us'])->name('w.about.us');
 Route::post('contact-us-send-email', [WebsiteController::class, 'send_email'])->name('w.contact.us.send.email');
+Route::post('subscribe', [SubscriptionController::class, 'subscribe'])->name('subscribe');
 
 Auth::routes();
 Route::group(['middleware' => ['auth']], function () {
@@ -31,4 +33,5 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('send-again/{id}', [EmailController::class, 'sendAgain'])->name('send.again');
         Route::get('add-favourite/{id}', [EmailController::class, 'addFavourite'])->name('add.favourite');
     });
+
 });

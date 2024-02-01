@@ -6,23 +6,23 @@
         <section id="team" class="team section-bg bg-c-primary">
             <div class="container" data-aos="fade-up">
                 <div class="section-title ">
-                    <h5 class="text-c-secondary">OUR PRODUCT</h5>
-                    <h2 class="text-c-secondary">RUBIC LIMS</h2>
+                    <h5 class="text-white">OUR PRODUCT</h5>
+                    <h2 class="text-white mb-5">RUBIC LIMS</h2>
 
 
-                    <p class="text-c-secondary"><b >RUBIC LIMS</b> is a robust and comprehensive solution designed to streamline laboratory operations, from quotation to report generation. With features such as efficient workflow management, powerful calculation capabilities, and accurate reporting, our <b >RUBIC LIMS</b> enhances productivity, ensures data integrity, and supports compliance with industry standards.</p>
+                    <p class="text-white"><b >RUBIC LIMS</b> is a robust and comprehensive solution designed to streamline laboratory operations, from quotation to report generation. With features such as efficient workflow management, powerful calculation capabilities, and accurate reporting, our <b >RUBIC LIMS</b> enhances productivity, ensures data integrity, and supports compliance with industry standards.</p>
 
 
 
-                    <ul style="text-align: left" class="mt-4 text-c-secondary">
+                    <ul style="text-align: left" class="mt-4 ">
                         <li>
-                            <b>Streamline Lab Operations:</b> Simplify and automate complex processes, from quotation to report generation, to enhance efficiency and productivity.
+                            <b class="text-c-secondary">Streamline Lab Operations:</b> Simplify and automate complex processes, from quotation to report generation, to enhance efficiency and productivity.
                         </li>
                         <li>
-                            <b>Ensure Compliance and Quality:</b> Adhere to industry standards, implement robust quality control measures, and maintain data integrity for confident regulatory compliance.
+                            <b class="text-c-secondary">Ensure Compliance and Quality:</b> Adhere to industry standards, implement robust quality control measures, and maintain data integrity for confident regulatory compliance.
                         </li>
                         <li>
-                            <b>Harness Advanced Technology:</b> Experience the power of cutting-edge technology, intuitive user interface, and powerful calculators to drive scientific excellence and stay ahead of the competition.
+                            <b class="text-c-secondary">Harness Advanced Technology:</b> Experience the power of cutting-edge technology, intuitive user interface, and powerful calculators to drive scientific excellence and stay ahead of the competition.
                         </li>
                     </ul>
 
