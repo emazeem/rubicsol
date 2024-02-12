@@ -1,5 +1,6 @@
 @extends('website.layouts.master')
 @section('content')
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div class="container py-5">
     <div class="row justify-content-center py-5 my-5">
         <div class="col-md-5 mt-5">
@@ -19,13 +20,22 @@
                             </span>
                             @enderror
                         </div>
+
+
+                        
                         
                         <div class="form-group mt-4">
                             <label for="password" class="text-md-end">{{ __('Password') }}</label>
 
                     
+                            <div class="input-group mb-3">
 
-                            <input id="password" type="password" class="form-control form-control-lg  @error('password') is-invalid @enderror" name="password" placeholder="*****" required autocomplete="current-password">
+                                <input id="password" type="password" class="form-control form-control-lg  @error('password') is-invalid @enderror" name="password" placeholder="*****" required autocomplete="current-password">
+                                    
+                                    <div class="input-group-append">
+                                        <button type="button" class="btn btn-success btn-lg toggle-button"><i class="fa fa-eye-slash toggle-icon"></i></button>
+                                    </div>
+                                </div>
                              
                             @error('password')
                             <span class="invalid-feedback" role="alert">
@@ -49,4 +59,20 @@
         </div>
     </div>
 </div>
+<script>
+$(document).ready(function(){
+  $(".toggle-button").click(function(){
+    var type=$('#password').attr('type');
+    
+    if(type=='password'){
+        $('#password').attr('type','text');
+    }else{
+        $('#password').attr('type','password');
+    }
+
+    $(".toggle-icon").toggleClass("fa-eye fa-eye-slash ");
+    
+  });
+});
+</script>
 @endsection
