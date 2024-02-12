@@ -19,12 +19,14 @@
                             </span>
                             @enderror
                         </div>
-
+                        
                         <div class="form-group mt-4">
                             <label for="password" class="text-md-end">{{ __('Password') }}</label>
 
-                            <input id="password" type="password" class="form-control form-control-lg  @error('password') is-invalid @enderror" name="password" placeholder="*****" required autocomplete="current-password">
+                    
 
+                            <input id="password" type="password" class="form-control form-control-lg  @error('password') is-invalid @enderror" name="password" placeholder="*****" required autocomplete="current-password">
+                             
                             @error('password')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
