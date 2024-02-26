@@ -30,6 +30,9 @@ class EmailController extends Controller
         $email->save();
         return redirect()->back();
     }
+    public function emailTemplate(){
+        return view('admin.emails.template');
+    }
 
 
     public function sendEmails($country){
@@ -39,7 +42,7 @@ class EmailController extends Controller
                 Mail::send('admin.emails.template', $data, function($message) use($dbRow) {
                     $message->from('info@rubicsol.com', 'RUBICSOL')
                         ->to($dbRow->email, explode('@', $dbRow->email)[0])
-                        ->subject('RUBIC LIMS Solution for ISO 17025 Calibration Labs');
+                        ->subject('Transform Your Lab Operations with Our Revolutionary RUBIC LIMS!');
                 });
                 $dbRow->status=1;
                 $dbRow->save();
@@ -47,6 +50,7 @@ class EmailController extends Controller
                 return $exception->getMessage();
             }
         }
+        return  redirect()->back();
     }
     public function sendAgain($country){
         $emails=Email::where('country_id',$country)->get();

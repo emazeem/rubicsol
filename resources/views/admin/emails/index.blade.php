@@ -5,7 +5,10 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header h4 border-bottom">{{ __('Email Marketing') }}</div>
+                <div class="card-header border-bottom">
+                    <h4 class="float-left">{{ __('Email Marketing') }}</h4>
+                    <a href="{{url('email/template')}}" class="float-right">Template</a>
+                </div>
                 <div class="card-body pt-3">
                     <div class="row">
                         <div class="col-12">

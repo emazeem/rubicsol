@@ -25,6 +25,7 @@ Auth::routes();
 Route::group(['middleware' => ['auth']], function () {
     Route::get('dashboard', [DashboardController::class, 'index'])->name('home');
     Route::group(['prefix' => 'email'], function () {
+        Route::get('template', [EmailController::class, 'emailTemplate'])->name('email.template');
         Route::get('marketing', [EmailController::class, 'index'])->name('email.marketing');
         Route::get('show/{id}', [EmailController::class, 'show'])->name('email.show');
         Route::post('store', [EmailController::class, 'store'])->name('email.store');
