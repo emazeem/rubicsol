@@ -9,7 +9,7 @@
     <meta content="calibration,aims,lims,rubic,iso,17025,labs,pressure,measurement,quality,inspection,meterology" name="keywords">
     <meta name="author" content="M. Azeem info@rubicsol.com">
     <meta name="url" content="https://www.rubicsol.com">
-    <meta property="og:image" content="https://www.rubicsol.com/Rubicsol_slider_2.jpeg" />
+    <meta property="og:image" content="https://www.rubicsol.com/RUBICSOL.png" />
 
     <link rel="icon" href="{{url('favicon.ico')}}" type="image/x-icon">
 
