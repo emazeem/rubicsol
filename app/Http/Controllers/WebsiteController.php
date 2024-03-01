@@ -14,9 +14,10 @@ class WebsiteController extends Controller
         return view('website.pricing');
     }
 
-    public function documentation()
+    public function documentation(Request $request)
     {
-        return view('website.documentation');
+        $section=$request->section;
+        return view('website.documentation',compact('section'));
     }
 
     public function contact_us()

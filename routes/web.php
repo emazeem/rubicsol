@@ -7,7 +7,7 @@ use App\Http\Controllers\Admin\EmailController;
 use App\Http\Controllers\SubscriptionController;
 
 Route::get('', [WebsiteController::class, 'home'])->name('w.home');
-Route::get('documentation', [WebsiteController::class, 'documentation'])->name('w.documentation');
+Route::get('documentation/{section?}', [WebsiteController::class, 'documentation'])->name('w.documentation');
 Route::get('services', [WebsiteController::class, 'services'])->name('w.services');
 Route::get('pricing', [WebsiteController::class, 'pricing'])->name('w.pricing');
 Route::get('service/{id}', [WebsiteController::class, 'service'])->name('w.service');

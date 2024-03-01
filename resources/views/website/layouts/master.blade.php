@@ -5,8 +5,11 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <title>RUBICSOL</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+    <meta content="RUBICSOL offers a comprehensive and customizable ISO:17025 solution, specifically tailored to meet the quality standards essential for calibration labs. Our product is highly recommended, encompassing 100% of the requirements for laboratory operations. Additionally, we are committed to delivering top-notch web and mobile applications for both Android and iOS platforms, ensuring a seamless experience for our users.Supercharge your lab with our comprehensive RUBIC LIMS and elevate your capabilities to new heights. Discover the transformative impact of streamlined workflows, enhanced compliance, and accurate results. Get in touch with us today to embark on a journey of lab optimization and success!" name="description">
+    <meta content="calibration,aims,lims,rubic,iso,17025,labs,pressure,measurement,quality,inspection,meterology" name="keywords">
+    <meta name="author" content="M. Azeem info@rubicsol.com">
+    <meta name="url" content="https://www.rubicsol.com">
+    <meta property="og:image" content="https://www.rubicsol.com/Rubicsol_slider_2.jpeg" />
 
     <link rel="icon" href="{{url('favicon.ico')}}" type="image/x-icon">
 
