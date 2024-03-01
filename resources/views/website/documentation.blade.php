@@ -4,44 +4,38 @@
         <section id="team" class="team bg-c-primary ">
             <div class="container-fluid border-bottom" data-aos="fade-up">
                 <div class="row">
-                    <div class="col">
-                        <nav id="cust-navbar">
-                            <ul class="nav custom-nav flex-column">
-                                <li class="nav-item">
-                                    <a class="nav-link custom-nav-link disabled" href="#Introduction">
-                                        <img src="{{url('rubic-lims-logo.png')}}" alt="" style="filter: opacity(0.6) drop-shadow(0 0 0 white);">
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link custom-nav-link {{!$section ? 'active':''}}" href="{{url('documentation')}}">1. Introduction</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link custom-nav-link {{$section=='quote' ? 'active':''}}" href="{{url('documentation/quote')}}">2. Quotation</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link custom-nav-link {{$section=='order' ? 'active':''}}" href="{{url('documentation/order')}}">3. Order Management</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link custom-nav-link sub " href="#lab">3.1. Lab Job Workflow</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link custom-nav-link sub" href="#site">3.2. Site Job Workflow</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link custom-nav-link" href="#calculator">4. Calculator for Calibration</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link custom-nav-link" href="#reference">5. Reference Data</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link custom-nav-link" href="#competence">6. Competence and Environment Management</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link custom-nav-link" href="#qa-qc">7. QA/QC</a>
-                                </li>
+                    <div class="col-md-3">
+                        <ul class="nav custom-nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link custom-nav-link disabled" href="#Introduction">
+                                    <img src="{{url('rubic-lims-logo.png')}}" alt="" style="filter: opacity(0.6) drop-shadow(0 0 0 white);">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link custom-nav-link {{!$section ? 'active':''}}" href="{{url('documentation')}}">1. Introduction</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link custom-nav-link {{$section=='quote' ? 'active':''}}" href="{{url('documentation/quote')}}">2. Quotation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link custom-nav-link {{$section=='order' ? 'active':''}}" href="{{url('documentation/order')}}">3. Order Management</a>
+                            </li>
 
-                            </ul>
-                        </nav>
+                            <li class="nav-item">
+                                <a class="nav-link custom-nav-link {{$section=='calculator' ? 'active':''}}" href="{{url('documentation/calculator')}}">4. Calculator for Calibration</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link custom-nav-link {{$section=='reference' ? 'active':''}}" href="{{url('documentation/reference')}}">5. Reference Data</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link custom-nav-link" href="#competence">6. Competence and Environment Management</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link custom-nav-link" href="#qa-qc">7. QA/QC</a>
+                            </li>
+
+                        </ul>
+
                     </div>
                     <div class="col-md-9">
                         <main id="main-doc">
@@ -71,9 +65,6 @@
                                             Contact us now to learn more and schedule a personalized demonstration of our LIMS. Take your lab to new heights of productivity, accuracy, and compliance with our game-changing solution. Let us be your partner in achieving excellence in laboratory management.
                                         </p>
 
-
-
-
                                     </article>
                                 </section>
                             @endif
@@ -94,9 +85,9 @@
                                                     of customer are mentioned. If you need to delete the customer you can just click delete icon, RUBICLIMS will ask for confirmation and click “Yes”,
                                                     that customer will be deleted from customer list.
                                                     <div class="row">
-                                                        <img src="{{url('docs/Customers-list.png')}}" class="col-md-4" alt="">
-                                                        <img src="{{url('docs/Customers-show.png')}}" class="col-md-4" alt="">
-                                                        <img src="{{url('docs/Customers-contact.png')}}" class="col-md-4" alt="">
+                                                        <img src="{{url('docs/Customers-list.png')}}" class="col-md-4 img-thumbnail" style="object-fit:cover; height:300px" alt="">
+                                                        <img src="{{url('docs/Customers-show.png')}}" class="col-md-4 img-thumbnail" style="object-fit:cover; height:300px" alt="">
+                                                        <img src="{{url('docs/Customers-contact.png')}}" class="col-md-4 img-thumbnail" style="object-fit:cover; height:300px" alt="">
                                                     </div>
 
                                                 </li>
@@ -104,7 +95,7 @@
                                                     <h3>RFQ (Request for Quotation)</h3>
                                                     The quotation module starts with the RFQ stage. Here, the user creates a request that includes a list of calibration items and the pricing of capabilities required by the customer. The RFQ serves as the initial document to gather information about the customer's requirements.
                                                     <div class="row">
-                                                        <img src="{{url('docs/RFQ.png')}}" class="col-md-4" alt="">
+                                                        <img src="{{url('docs/RFQ.png')}}" class="col-md-4 img-thumbnail" style="object-fit:cover; height:300px" alt="">
                                                     </div>
                                                 </li>
 
@@ -114,8 +105,8 @@
                                                     </h3>
                                                     Once the RFQ is received, the system converts it into a formal quotation. The user can access the RFQ details and generate a quotation document based on the requested calibration items and pricing information.
                                                     <div class="row">
-                                                        <img src="{{url('docs/RFQ-show.png')}}" class="col-md-4" alt="">
-                                                        <img src="{{url('docs/RFQ-show-1.png')}}" class="col-md-4" alt="">
+                                                        <img src="{{url('docs/RFQ-show.png')}}" class="col-md-4 img-thumbnail" style="object-fit:cover; height:300px" alt="">
+                                                        <img src="{{url('docs/RFQ-show-1.png')}}" class="col-md-4 img-thumbnail" style="object-fit:cover; height:300px" alt="">
                                                     </div>
                                                 </li>
                                                 <li>
@@ -131,15 +122,15 @@
                                                     </h3>
                                                     Upon receiving the quotation, the customer reviews the document and decides whether to approve it or request modifications. The customer's approval status is recorded in the system, indicating whether the quotation has been accepted or requires further action.
                                                     <div class="row">
-                                                        <img src="{{url('docs/Quote-approved.png')}}" class="col-md-4" alt="">
+                                                        <img src="{{url('docs/Quote-approved.png')}}" class="col-md-4 img-thumbnail" style="object-fit:cover; height:300px" alt="">
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <h3>Awaiting Jobs</h3>
                                                     Once the customer approves the quotation, the system moves the quotation to the "awaiting jobs" stage. This stage signifies that the quotation has been accepted and is ready to be processed further. It serves as a centralized view for pending jobs that need to be scheduled and assigned to technicians.
                                                     <div class="row">
-                                                        <img src="{{url('docs/Awaiting-jobs.png')}}" class="col-md-4" alt="">
-                                                        <img src="{{url('docs/Create-Job.png')}}" class="col-md-4" alt="">
+                                                        <img src="{{url('docs/Awaiting-jobs.png')}}" class="col-md-4 img-thumbnail" style="object-fit:cover; height:300px" alt="">
+                                                        <img src="{{url('docs/Create-Job.png')}}" class="col-md-4 img-thumbnail" style="object-fit:cover; height:300px" alt="">
                                                     </div>
                                                 </li>
                                             </ul>
@@ -158,19 +149,27 @@
 
                                                     The store in-charge receives the calibration items from the customer and records their arrival in the LIMS. This step ensures proper inventory management and tracking of received items.
                                                     <div class="row">
-                                                        <img src="{{url('docs/Recieve-items.png')}}" class="col-md-4" alt="">
+                                                        <img src="{{url('docs/Recieve-items.png')}}" class="col-md-4 img-thumbnail" style="object-fit:cover; height:300px" alt="">
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <h3>Assignment to Technicians</h3>
                                                     The technical manager assigns the received calibration items to technicians. This assignment is based on factors like technician availability, workload, and expertise required for the specific calibration tasks.
                                                     <div class="row">
-                                                        <img src="{{url('docs/Assign-lab-task.png')}}" class="col-md-4" alt="">
+                                                        <img src="{{url('docs/Assign-lab-task.png')}}" class="col-md-4 img-thumbnail" style="object-fit:cover; height:300px" alt="">
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <h3>Calibration by Technicians</h3>
                                                     The assigned technicians perform the calibration on the received items. They follow the established procedures and utilize the necessary reference data and tools available in the system.
+                                                    <div class="row">
+                                                        <img src="{{url('docs/Calibration-1.png')}}" class="col-md-4 img-thumbnail" style="object-fit:cover; height:300px" alt="">
+                                                        <img src="{{url('docs/Calibration-2.png')}}" class="col-md-4 img-thumbnail" style="object-fit:cover; height:300px" alt="">
+                                                        <img src="{{url('docs/Calibration-3.png')}}" class="col-md-4 img-thumbnail" style="object-fit:cover; height:300px" alt="">
+                                                        <img src="{{url('docs/Calibration-4.png')}}" class="col-md-4 img-thumbnail" style="object-fit:cover; height:300px" alt="">
+                                                        <img src="{{url('docs/Calibration-5.png')}}" class="col-md-4 img-thumbnail" style="object-fit:cover; height:300px" alt="">
+                                                        <img src="{{url('docs/Calibration-6.png')}}" class="col-md-4 img-thumbnail" style="object-fit:cover; height:300px" alt="">
+                                                    </div>
                                                 </li>
                                                 <li>
                                                     <h3>Item Status Update</h3>
@@ -192,6 +191,10 @@
                                                 <li>
                                                     <h3>Assignment of Site Job</h3>
                                                     In the case of a site job, the technical manager assigns a team of technicians to the specific job. This assignment is based on factors like skill set, availability, and expertise required for the site calibration task.
+                                                    <div class="row">
+                                                        <img src="{{url('docs/Recieve-items.png')}}" class="col-md-4 img-thumbnail" style="object-fit:cover; height:300px" alt="">
+                                                    </div>
+
                                                 </li>
                                                 <li>
                                                     <h3>Gate Pass Management</h3>
@@ -223,32 +226,44 @@
                                                 <li>
                                                     <h3>Item Assignment</h3>
                                                     The technical manager assigns a specific calibration item to a technician for calibration. The technician receives the item and begins the calibration process.
-
+                                                    <div class="row">
+                                                        <img src="{{url('docs/Recieve-items.png')}}" class="col-md-4 img-thumbnail" style="object-fit:cover; height:300px" alt="">
+                                                    </div>
                                                 </li>
                                                 <li>
                                                     <h3>Environment Details</h3>
                                                     The technician provides the necessary environment details of the lab where the calibration is taking place. This includes factors like temperature, humidity, pressure, and any other relevant conditions that may affect the calibration process.
-
+                                                    <div class="row">
+                                                        <img src="{{url('docs/Calibration-2.png')}}" class="col-md-4 img-thumbnail" style="object-fit:cover; height:300px" alt="">
+                                                    </div>
                                                 </li>
                                                 <li>
                                                     <h3>Item Details and Reference Standards</h3>
                                                     The technician enters the details of the item under calibration (UUC) into the system. This includes information such as the item's range, resolution, and accuracy requirements. The system may have a database of reference standards linked to each capability to ensure the appropriate standards are selected for calibration.
-
+                                                    <div class="row">
+                                                        <img src="{{url('docs/Calibration-1.png')}}" class="col-md-4 img-thumbnail" style="object-fit:cover; height:300px" alt="">
+                                                    </div>
                                                 </li>
                                                 <li>
                                                     <h3>Input Values and Calculation</h3>
                                                     The technician enters input values (x1, x2, x3, etc.) for the calibration process. These values may be collected through measurements using reference standards or other suitable methods. The technician selects the appropriate reference standard and unit for each input value.
-
+                                                    <div class="row">
+                                                        <img src="{{url('docs/Calibration-4.png')}}" class="col-md-4 img-thumbnail" style="object-fit:cover; height:300px" alt="">
+                                                    </div>
                                                 </li>
                                                 <li>
                                                     <h3>Calculator Components</h3>
                                                     The system includes calculators that perform calculations based on the provided input values and the procedure attached to the capability. Each capability's procedure consists of multiple components that need to be calculated. The calculator module facilitates the automated calculation of these components.
-
+                                                    <div class="row">
+                                                        <img src="{{url('docs/Calibration-5.png')}}" class="col-md-4 img-thumbnail" style="object-fit:cover; height:300px" alt="">
+                                                    </div>
                                                 </li>
                                                 <li>
                                                     <h3> Reports Generation</h3>
                                                     Once the calculations are completed, the system generates various reports such as calibration certificates, worksheets, uncertainty budgets, and any other required documentation. These reports provide comprehensive information about the calibration process, results, uncertainties, and compliance with standards.
-
+                                                    <div class="row">
+                                                        <img src="{{url('docs/Calibration-6.png')}}" class="col-md-4 img-thumbnail h-100" style="object-fit:cover; height:300px" alt="">
+                                                    </div>
                                                 </li>
                                             </ul>
                                             The Calculator for Calibration module you described facilitates efficient and accurate calculation of calibration components based on the inputs provided by technicians. It ensures that the calculations are performed according to the procedure attached to each capability. The module also enables the generation of essential reports for documentation and record-keeping purposes, ensuring compliance with ISO/IEC 17025 requirements.
@@ -265,26 +280,37 @@
                                             <ul>
                                                 <li>
                                                     The Reference Data or Master Data module plays a crucial role in the overall management of the laboratory equipment and calibration procedures. Based on the details you provided, here's an overview of the functionalities and information stored in this module.
+
                                                 </li>
                                                 <li>
                                                     <h3>Lab Equipment Information</h3>
                                                     The module stores relevant data related to the laboratory equipment, such as make, model, serial number, manufacturer details, and specifications. This information helps in identifying and managing each piece of equipment effectively.
+                                                    <div class="row">
+                                                        <img src="{{url('docs/Reference-1.png')}}" class="col-md-4 img-thumbnail" style="object-fit:cover; height:300px" alt="">
 
+                                                    </div>
                                                 </li>
                                                 <li>
                                                     <h3>Parameters and Units</h3>
                                                     It maintains a list of parameters (e.g., mass, force, pressure) and associates them with the equipment or Unit Under Calibration (UUC) that falls under a specific parameter. Additionally, the module contains a comprehensive unit list, including primary units and their conversions to secondary units for each parameter.
-
+                                                    <div class="row">
+                                                        <img src="{{url('docs/Reference-3.png')}}" class="col-md-4 img-thumbnail" style="object-fit:cover; height:300px" alt="">
+                                                        <img src="{{url('docs/Reference-4.png')}}" class="col-md-4 img-thumbnail" style="object-fit:cover; height:300px" alt="">
+                                                    </div>
                                                 </li>
                                                 <li>
                                                     <h3>Procedures</h3>
                                                     The module stores a library of procedures associated with calibration capabilities. Each procedure contains the necessary steps, instructions, and formulas required to perform calibration. It ensures consistency and standardized practices throughout the laboratory.
-
+                                                    <div class="row">
+                                                        <img src="{{url('docs/Reference-5.png')}}" class="col-md-4 img-thumbnail" style="object-fit:cover; height:300px" alt="">
+                                                    </div>
                                                 </li>
                                                 <li>
                                                     <h3>Components and Uncertainties</h3>
                                                     Within each procedure, components and uncertainties are defined. Components represent different factors or variables that contribute to the calibration process. Uncertainties reflect the level of measurement uncertainty associated with each component. These details aid in accurate calculation and assessment of calibration results.
-
+                                                    <div class="row">
+                                                        <img src="{{url('docs/Reference-6.png')}}" class="col-md-4 img-thumbnail" style="object-fit:cover; height:300px" alt="">
+                                                    </div>
                                                 </li>
                                                 <li>
                                                     <h3>Calculation Framework</h3>
@@ -294,17 +320,24 @@
                                                 <li>
                                                     <h3>Capability List</h3>
                                                     The module maintains a capability list that represents the laboratory's calibration capabilities. This list is used during the RFQ stage to compare the customer's item requirements with the lab's capabilities. It helps determine whether the lab can meet the customer's calibration needs.
-
+                                                    <div class="row">
+                                                        <img src="{{url('docs/Reference-7.png')}}" class="col-md-4 img-thumbnail" style="object-fit:cover; height:300px" alt="">
+                                                    </div>
                                                 </li>
                                                 <li>
                                                     <h3>Reference Data for Errors and Uncertainties</h3>
                                                     The module includes reference data for known errors and uncertainties associated with specific equipment, reference standards, or procedures. This data aids in assessing and quantifying the measurement uncertainties and overall quality of the calibration process.
-
+                                                    <div class="row">
+                                                        <img src="{{url('docs/Reference-2.png')}}" class="col-md-4 img-thumbnail" style="object-fit:cover; height:300px" alt="">
+                                                    </div>
                                                 </li>
                                                 <li>
                                                     <h3>Intermediate Checks and Preventive Maintenance</h3>
                                                     The module may also include features for recording intermediate checks performed on equipment to ensure their accuracy and reliability. Additionally, it facilitates tracking and scheduling preventive maintenance activities for equipment to ensure their optimal performance.
-
+                                                    <div class="row">
+                                                        <img src="{{url('docs/Reference-8.png')}}" class="col-md-4 img-thumbnail" style="object-fit:cover; height:300px" alt="">
+                                                        <img src="{{url('docs/Reference-9.png')}}" class="col-md-4 img-thumbnail" style="object-fit:cover; height:300px" alt="">
+                                                    </div>
                                                 </li>
                                                 <li>
                                                     The Reference Data or Master Data module centralizes and organizes critical information related to laboratory equipment, parameters, units, procedures, uncertainties, capabilities, and maintenance. It enables efficient management of calibration processes, ensures consistency, and supports accurate calculations and reporting.
