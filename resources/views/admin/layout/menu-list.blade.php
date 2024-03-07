@@ -26,6 +26,22 @@
                         <span class="pcoded-mtext">Email Marketing</span>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="{{route('users.index')}}" class="nav-link">
+                        <span class="pcoded-micon">
+                            <i class="fa fa-user"></i>
+                        </span>
+                        <span class="pcoded-mtext">Users</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{route('attendance.index')}}" class="nav-link">
+                        <span class="pcoded-micon">
+                            <i class="fa fa-clock"></i>
+                        </span>
+                        <span class="pcoded-mtext">Attendance</span>
+                    </a>
+                </li>
 
             </ul>
         </div>
