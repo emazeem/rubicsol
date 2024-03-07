@@ -7,7 +7,8 @@
             <div class="card">
                 <div class="card-header border-bottom">
                     <h4 class="float-left">{{ __('Email Marketing') }}</h4>
-                    <a href="{{url('email/template')}}" class="float-right">Template</a>
+                    <a href="{{url('email/template')}}" class="float-right btn btn-dark ml-1">Template</a>
+                    <a href="{{url('email/template1')}}" class="float-right btn btn-dark ml-1">Template1</a>
                 </div>
                 <div class="card-body pt-3">
                     <div class="row">

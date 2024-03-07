@@ -33,13 +33,17 @@ class EmailController extends Controller
     public function emailTemplate(){
         return view('admin.emails.template');
     }
+    public function emailTemplate1(){
+        return view('admin.emails.template1');
+    }
+
 
 
     public function sendEmails($country){
         foreach (Email::where('country_id',$country)->where('status',0)->where('is_favourite',0)->get() as $dbRow){
             try {
                 $data = array('name'=>"Muhammad Azeem","message"=>"Message");
-                Mail::send('admin.emails.template', $data, function($message) use($dbRow) {
+                Mail::send('admin.emails.template1', $data, function($message) use($dbRow) {
                     $message->from('info@rubicsol.com', 'RUBICSOL')
                         ->to($dbRow->email, explode('@', $dbRow->email)[0])
                         ->subject('Transform Your Lab Operations with Our Revolutionary RUBIC LIMS!');
