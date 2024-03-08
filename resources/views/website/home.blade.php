@@ -260,9 +260,9 @@
             <div class="row ">
                 <div class="col-lg-12 text-center">
                     <div class="section-heading">
-                        <p >OPTIMIZE YOUR LAB</p>
-                        <h2 class="text-lg">Explore how a LIMS helps you</h2>
-                        <p >Manage your data and work efficiently.</p>
+                        <p >GROW YOUR LAB</p>
+                        <h2 class="text-lg">Discover how RUBIC LIMS assist you</h2>
+                        <p >Manage your data and work productively.</p>
                     </div>
                 </div>
             </div>
@@ -271,13 +271,13 @@
                 <div class="col-lg-4 ">
                     <div class="chapter-inner">
                         <div class="chapter-item">
-                            <h4>Sample Management</h4>
+                            <h4>Customers Management</h4>
                         </div>
                         <div class="chapter-item">
-                            <h4>Workflow management</h4>
+                            <h4>Sample management</h4>
                         </div>
                         <div class="chapter-item">
-                            <h4>Quality Assurance</h4>
+                            <h4>Order Management</h4>
                         </div>
                         <div class="chapter-item">
                             <h4>Instrumentation</h4>
@@ -288,6 +288,16 @@
                         <div class="chapter-item">
                             <h4>Reporting & Certificates</h4>
                         </div>
+                        <div class="chapter-item">
+                            <h4>Document Control</h4>
+                        </div>
+                        <div class="chapter-item">
+                            <h4>Accounts & Finance</h4>
+                        </div>
+                        <div class="chapter-item">
+                            <h4>HR Management</h4>
+                        </div>
+
                     </div>
                 </div>
                 <div class="col-md-4 ">
@@ -307,13 +317,22 @@
                             <h4>Inventory Management</h4>
                         </div>
                         <div class="chapter-item">
-                            <h4>Tests</h4>
+                            <h4>Tests / Certificates</h4>
                         </div>
                         <div class="chapter-item">
-                            <h4>Electronic Lab Notebook</h4>
+                            <h4>Worksheets / Datasheet</h4>
                         </div>
                         <div class="chapter-item">
-                            <h4>Stability Studies</h4>
+                            <h4>Quality Assurance</h4>
+                        </div>
+                        <div class="chapter-item">
+                            <h4>Lab Environment Data</h4>
+                        </div>
+                        <div class="chapter-item">
+                            <h4>Technician Authorization</h4>
+                        </div>
+                        <div class="chapter-item">
+                            <h4>Purchase Management</h4>
                         </div>
                     </div>
                 </div>
@@ -322,56 +341,50 @@
     </section>
     <section class="section others-book">
         <div class="container ">
-            <div class="row ">
-                <div class="col-lg-4">
-                    <div class="section-heading text-center">
+            <div class="row pt-5">
+                <div class="col-lg-4 ">
+                    <div class="section-heading text-center ">
                         <h2 class="text-lg">What is a LIMS?</h2>
                     </div>
                 </div>
                 <div class="col-lg-8">
                     <div class="section-heading ">
                         <p>
-                            Laboratory Information Management Systems (LIMS) help with large volume lab data management and adherence to strict standards, while improving efficiency and turnaround times, enabling automation and more. One of the main features that sets Autoscribe's LIMS systems apart is a set of configuration tools designed to efficiently create optimized, highly adaptable workflows. Our core LIMS products are Matrix Gemini and Matrix Express.
+                            Laboratory Information Management System (LIMS) is a technology used to streamline and maximize the efficiency of daily operations of laboratories. It functions as a centralized digital platform that facilitates the administration of important activities like test scheduling, sample monitoring, and result analysis. By promoting teamwork and upholding high standards of quality, LIMS makes sure that laboratory workflows are well-organized.
                         </p>
                         <p>
-                            The flexibility of our Matrix software and its various LIMS modules enable it to be used in a wide variety of laboratories, both in size and application. Read on to discover more about LIMS, how it can help you and which solution is best suited to the needs of your lab.
+                            Additionally, it makes data sharing and analysis more effective, which can promote quicker and better decision-making in the laboratory setting. Labs can greatly increase their output and general performance by using LIMS, making it an essential tool in the modern scientific world. Read further to learn more about LIMS, how it can assist you, and which option best fits your lab's needs.
                         </p>
+
+
+                        <h2 >Core functions of a LIMS</h2>
+
+                        <p>
+                            The main objective of LIMS is to enhance lab productivity, accuracy, and quality control by decreasing manual labor. Our software can be tailored to almost any industry and situation, so how it accomplishes this depends on the use case.
+                        </p>
+                        <p>
+                            Our modern LIMS systems, the RUBIC LIMS, can carry out a number of fundamental tasks to support your ongoing projects and daily work, improving every aspect of laboratory work.
+                        </p>
+
+
                         <a href="checkout.html" class="btn btn-border-tp btn-small ml-3">Request Demo</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section others-book">
-        <div class="container ">
-            <div class="row ">
-                <div class="col-lg-6">
-                    <div class="section-heading text-center">
-                        <img src="screenshots/img_4.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="section-heading ">
-                        <h2 class="text-lg">Functions of a LIMS</h2>
-                        <p>
-                            The main purpose of a LIMS is to improve lab efficiency, quality control and accuracy by reducing manual operations. How it does this varies based on the use case, as our software can be configured to suit near-limitless situations and industries. Our advanced LIMS systems will perform a range of core functions that assist your daily work and long term projects, enhancing all areas of laboratory work.
-                        </p>
-                        <a href="checkout.html" class="btn btn-border-tp btn-small ml-3">Request Demo</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
     <section class="section others-book">
         <div class="container-fluid ">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section-heading ">
-                        <h2 class="text-lg">Benefits of LIMS</h2>
+                        <h2 class="text-lg">The Pros of using RUBIC LIMS</h2>
                         <p>
-                            Matrix Gemini LIMS and Matrix Express LIMS can be found in laboratories around the world, spanning sectors from Metals to Pathology and Pharmaceuticals to the Food & Beverage industry. Because our LIMS software has been used in so many different industries and labs, we often already have a LIMS starter configuration that can be quickly adapted for you, using the Matrix Configuration Tools.
-                            <br>
-                            You don't need to be technical to use Matrix Gemini, or Matrix Express. Our new LIMS systems stand apart from the competition thanks to superior flexibility. No custom coding is required, which means any user can configure Matrix Gemini's workflow, screens, or menus to create their ideal configuration.
+                            RUBIC LIMS is used in laboratories related to a variety of sectors including pharmaceuticals, food and beverage, biochemistry etc. Our LIMS initial configuration can be rapidly modified for you to adapt to your lab's specific needs and requirements.
+                        </p>
+                        <p>
+                            Utilizing RUBIC LIMS does not require technological expertise. Superior adaptability sets our new LIMS systems apart from the competitors. Any user can customize RUBIC LIMS's workflow, displays, or menus to build their perfect setup because no custom coding is needed.
                         </p>
                         <a href="checkout.html" class="btn btn-border-tp btn-small ml-3">Request Demo</a>
                     </div>
@@ -382,16 +395,20 @@
                         <h3>The Top 10 benefits of a LIMS system</h3>
 
                         <ul class="list-unstyled mt-4 mb-5">
-                            <li><i class="ti-check mr-3"></i> Automates repetitive laboratory administration tasks</li>
-                            <li><i class="ti-check mr-3"></i> Integrates your lab's instruments and systems intuitively</li>
-                            <li><i class="ti-check mr-3"></i> Improves the capacity and profitability of your laboratory</li>
-                            <li><i class="ti-check mr-3"></i> Increases reliability by reducing the risk of errors occurring</li>
-                            <li><i class="ti-check mr-3"></i> Enables faster, better, informed decisions from real-time reporting</li>
-                            <li><i class="ti-check mr-3"></i> Increases efficiency by streamlining process and data management</li>
-                            <li><i class="ti-check mr-3"></i> Provides information when and where you need it, locally or in the cloud</li>
-                            <li><i class="ti-check mr-3"></i> Allows access to the right information quickly at any stage of any process</li>
-                            <li><i class="ti-check mr-3"></i> Ensures all work meets regulatory requirements and current best practice</li>
-                            <li><i class="ti-check mr-3"></i> Enhances data integrity with automatic audit logging and revision control</li>
+
+                            <li><i class="ti-check mr-3 text-warning"></i>Streamlines repetitive laboratory administration tasks</li>
+                            <li><i class="ti-check mr-3 text-warning"></i>Effortlessly incorporates the systems and equipment in your lab</li>
+                            <li><i class="ti-check mr-3 text-warning"></i>Keeps systemic compliance with ISO 17025 to meet international accredited standards.</li>
+                            <li><i class="ti-check mr-3 text-warning"></i>Increases your laboratory's capacity and profitability</li>
+                            <li><i class="ti-check mr-3 text-warning"></i>reduces the possibility of errors happening, increasing dependability</li>
+                            <li><i class="ti-check mr-3 text-warning"></i>Enables real-time reporting to make quicker, smarter, and more informed decisions</li>
+                            <li><i class="ti-check mr-3 text-warning"></i>Boosts efficiency by optimizing data management and workflow.</li>
+                            <li><i class="ti-check mr-3 text-warning"></i>Gives information locally or on the cloud, when and when you need it.</li>
+                            <li><i class="ti-check mr-3 text-warning"></i>Enables rapid access to the appropriate information at any point during a procedure.</li>
+                            <li><i class="ti-check mr-3 text-warning"></i>Verifies that every work complies with legal standards and modern best practices.</li>
+                            <li><i class="ti-check mr-3 text-warning"></i>Improves data integrity through automatic revision control and audit recording</li>
+
+
                         </ul>
                     </div>
                 </div>
@@ -447,52 +464,19 @@
             </div>
         </div>
     </section>
-
-
-
     <section class="feature-home section">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6">
                     <a >FAQ</a>
-                    <h2 class="mb-4">What is a LIMS?</h2>
-
-                    <p>
-                        A Laboratory Information Management System (LIMS) allows you to effectively manage the flow of samples and associated data to improve lab efficiency. A LIMS helps standardize workflows, tests and procedures while providing accurate controls of the process. Instruments may be integrated into the LIMS to automate the collection of test data, ensuring they are properly calibrated and operated by trained staff only.
-                    </p>
-                    <p>
-                        The audit and revision control functions in a LIMS are key reasons why people use a LIMS and ‘go paperless’. Unlike a spreadsheet changes to results are logged, as well as any changes to the test procedure, instruments and reagents used and so on.
-                    </p>
-
-                </div>
-
-                <div class="col-lg-6 col-md-6">
-                    <div class="mt-5 mt-lg-0">
-                        <img src="screenshots/img_15.png" alt="" class="img-fluid w-100">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-<section class="feature-home section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 col-md-6">
-                    <a >FAQ</a>
                     <h2 class="mb-4">What is a typical LIMS workflow?</h2>
-
-
-
-
                     <p>
                         Autoscribe LIMS is a comprehensive solution that integrates all of these steps and more into an efficient, intuitive system.
                     </p>
                     <p>
                         At their heart, all labs have a similar process. Samples move through a typical laboratory as shown here:
                     </p>
-
                 </div>
-
                 <div class="col-lg-6 col-md-6">
                     <div class="mt-5 mt-lg-0">
                         <img src="screenshots/img_15.png" alt="" class="img-fluid w-100">
@@ -501,11 +485,6 @@
             </div>
         </div>
     </section>
-
-
-
-
-
     <section class="setcion" id="book">
         <div class="container">
             <div class="row">

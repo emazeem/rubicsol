@@ -139,20 +139,20 @@ Common Styles
 
 .section {
   position: relative;
-  padding: 8.125rem 0;
+  padding: 20px 0;
 }
 
 @media (min-width: 768px) {
   .section {
-    padding: 7.5rem 0;
+    padding: 20px 0;
   }
 }
 .section-top {
-  padding-top: 8.125rem;
+  padding-top: 20px;
 }
 
 .section-bottom {
-  padding-bottom: 8.125rem;
+  padding-bottom: 20px;
 }
 
 @media (min-width: 768px) {
