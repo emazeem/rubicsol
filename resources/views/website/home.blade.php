@@ -470,12 +470,9 @@
                 <div class="col-lg-6 col-md-6">
                     <a >FAQ</a>
                     <h2 class="mb-4">What is a typical LIMS workflow?</h2>
-                    <p>
-                        Autoscribe LIMS is a comprehensive solution that integrates all of these steps and more into an efficient, intuitive system.
-                    </p>
-                    <p>
-                        At their heart, all labs have a similar process. Samples move through a typical laboratory as shown here:
-                    </p>
+                    <p>All of the processes illustrated here and more are integrated into one easy-to-use, effective system by RUBIC LIMS, a comprehensive solution.</p>
+                    <p>In essence, every standard lab follows a similar procedure of sample flow. Our well-planned and modern RUBIC LIMS follows each and every step with great dedication and a vision to provide clients with quality work.</p>
+
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="mt-5 mt-lg-0">
@@ -666,20 +663,6 @@
     </section>
 
 
-    <section class="section cta-home">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="text-center">
-                        <blockquote class="blockquote">
-                            <h2 class="text-lg">"It's simply the best guide to making money online ever released which only a fool would ignore."</h2>
-                            <footer class="blockquote-footer h5 text-color mt-4">John Smith </footer>
-                        </blockquote>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <section class="section contact bg-grey" id="contact">
         <div class="container">
             <div class="row justify-content-center">
