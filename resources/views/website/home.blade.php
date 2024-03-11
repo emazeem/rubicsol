@@ -339,83 +339,7 @@
             </div>
         </div>
     </section>
-    <section class="section others-book">
-        <div class="container ">
-            <div class="row pt-5">
-                <div class="col-lg-4 ">
-                    <div class="section-heading text-center ">
-                        <h2 class="text-lg">What is a LIMS?</h2>
-                    </div>
-                </div>
-                <div class="col-lg-8">
-                    <div class="section-heading ">
-                        <p>
-                            Laboratory Information Management System (LIMS) is a technology used to streamline and maximize the efficiency of daily operations of laboratories. It functions as a centralized digital platform that facilitates the administration of important activities like test scheduling, sample monitoring, and result analysis. By promoting teamwork and upholding high standards of quality, LIMS makes sure that laboratory workflows are well-organized.
-                        </p>
-                        <p>
-                            Additionally, it makes data sharing and analysis more effective, which can promote quicker and better decision-making in the laboratory setting. Labs can greatly increase their output and general performance by using LIMS, making it an essential tool in the modern scientific world. Read further to learn more about LIMS, how it can assist you, and which option best fits your lab's needs.
-                        </p>
-
-
-                        <h2 >Core functions of a LIMS</h2>
-
-                        <p>
-                            The main objective of LIMS is to enhance lab productivity, accuracy, and quality control by decreasing manual labor. Our software can be tailored to almost any industry and situation, so how it accomplishes this depends on the use case.
-                        </p>
-                        <p>
-                            Our modern LIMS systems, the RUBIC LIMS, can carry out a number of fundamental tasks to support your ongoing projects and daily work, improving every aspect of laboratory work.
-                        </p>
-
-
-                        <a href="checkout.html" class="btn btn-border-tp btn-small ml-3">Request Demo</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section others-book">
-        <div class="container-fluid ">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="section-heading ">
-                        <h2 class="text-lg">The Pros of using RUBIC LIMS</h2>
-                        <p>
-                            RUBIC LIMS is used in laboratories related to a variety of sectors including pharmaceuticals, food and beverage, biochemistry etc. Our LIMS initial configuration can be rapidly modified for you to adapt to your lab's specific needs and requirements.
-                        </p>
-                        <p>
-                            Utilizing RUBIC LIMS does not require technological expertise. Superior adaptability sets our new LIMS systems apart from the competitors. Any user can customize RUBIC LIMS's workflow, displays, or menus to build their perfect setup because no custom coding is needed.
-                        </p>
-                        <a href="checkout.html" class="btn btn-border-tp btn-small ml-3">Request Demo</a>
-                    </div>
-                </div>
-                <div class="col-lg-5">
-                    <div class="section-heading ">
-
-                        <h3>The Top 10 benefits of a LIMS system</h3>
-
-                        <ul class="list-unstyled mt-4 mb-5">
-
-                            <li><i class="ti-check mr-3 text-warning"></i>Streamlines repetitive laboratory administration tasks</li>
-                            <li><i class="ti-check mr-3 text-warning"></i>Effortlessly incorporates the systems and equipment in your lab</li>
-                            <li><i class="ti-check mr-3 text-warning"></i>Keeps systemic compliance with ISO 17025 to meet international accredited standards.</li>
-                            <li><i class="ti-check mr-3 text-warning"></i>Increases your laboratory's capacity and profitability</li>
-                            <li><i class="ti-check mr-3 text-warning"></i>reduces the possibility of errors happening, increasing dependability</li>
-                            <li><i class="ti-check mr-3 text-warning"></i>Enables real-time reporting to make quicker, smarter, and more informed decisions</li>
-                            <li><i class="ti-check mr-3 text-warning"></i>Boosts efficiency by optimizing data management and workflow.</li>
-                            <li><i class="ti-check mr-3 text-warning"></i>Gives information locally or on the cloud, when and when you need it.</li>
-                            <li><i class="ti-check mr-3 text-warning"></i>Enables rapid access to the appropriate information at any point during a procedure.</li>
-                            <li><i class="ti-check mr-3 text-warning"></i>Verifies that every work complies with legal standards and modern best practices.</li>
-                            <li><i class="ti-check mr-3 text-warning"></i>Improves data integrity through automatic revision control and audit recording</li>
-
-
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
+    <!--modules are coming here-->
     <section class="section blog-home border-top" id="blog">
         <div class="container">
             <div class="row justify-content-center">
@@ -496,6 +420,83 @@
                                 <span>Any laboratory or research institution must have documentation control and record management in place to guarantee the precision, consistency, and traceability of data and procedures.</span>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="section others-book">
+        <div class="container ">
+            <div class="row pt-5">
+                <div class="col-lg-4 ">
+                    <div class="section-heading text-center ">
+                        <h2 class="text-lg">What is a LIMS?</h2>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="section-heading ">
+                        <p>
+                            Laboratory Information Management System (LIMS) is a technology used to streamline and maximize the efficiency of daily operations of laboratories. It functions as a centralized digital platform that facilitates the administration of important activities like test scheduling, sample monitoring, and result analysis. By promoting teamwork and upholding high standards of quality, LIMS makes sure that laboratory workflows are well-organized.
+                        </p>
+                        <p>
+                            Additionally, it makes data sharing and analysis more effective, which can promote quicker and better decision-making in the laboratory setting. Labs can greatly increase their output and general performance by using LIMS, making it an essential tool in the modern scientific world. Read further to learn more about LIMS, how it can assist you, and which option best fits your lab's needs.
+                        </p>
+
+
+                        <h2 >Core functions of a LIMS</h2>
+
+                        <p>
+                            The main objective of LIMS is to enhance lab productivity, accuracy, and quality control by decreasing manual labor. Our software can be tailored to almost any industry and situation, so how it accomplishes this depends on the use case.
+                        </p>
+                        <p>
+                            Our modern LIMS systems, the RUBIC LIMS, can carry out a number of fundamental tasks to support your ongoing projects and daily work, improving every aspect of laboratory work.
+                        </p>
+
+
+                        <a href="checkout.html" class="btn btn-border-tp btn-small ml-3">Request Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section others-book">
+        <div class="container-fluid ">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section-heading ">
+                        <h2 class="text-lg">The Pros of using RUBIC LIMS</h2>
+                        <p>
+                            RUBIC LIMS is used in laboratories related to a variety of sectors including pharmaceuticals, food and beverage, biochemistry etc. Our LIMS initial configuration can be rapidly modified for you to adapt to your lab's specific needs and requirements.
+                        </p>
+                        <p>
+                            Utilizing RUBIC LIMS does not require technological expertise. Superior adaptability sets our new LIMS systems apart from the competitors. Any user can customize RUBIC LIMS's workflow, displays, or menus to build their perfect setup because no custom coding is needed.
+                        </p>
+                        <a href="checkout.html" class="btn btn-border-tp btn-small ml-3">Request Demo</a>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="section-heading ">
+
+                        <h3>The Top 10 benefits of a LIMS system</h3>
+
+                        <ul class="list-unstyled mt-4 mb-5">
+
+                            <li><i class="ti-check mr-3 text-warning"></i>Streamlines repetitive laboratory administration tasks</li>
+                            <li><i class="ti-check mr-3 text-warning"></i>Effortlessly incorporates the systems and equipment in your lab</li>
+                            <li><i class="ti-check mr-3 text-warning"></i>Keeps systemic compliance with ISO 17025 to meet international accredited standards.</li>
+                            <li><i class="ti-check mr-3 text-warning"></i>Increases your laboratory's capacity and profitability</li>
+                            <li><i class="ti-check mr-3 text-warning"></i>reduces the possibility of errors happening, increasing dependability</li>
+                            <li><i class="ti-check mr-3 text-warning"></i>Enables real-time reporting to make quicker, smarter, and more informed decisions</li>
+                            <li><i class="ti-check mr-3 text-warning"></i>Boosts efficiency by optimizing data management and workflow.</li>
+                            <li><i class="ti-check mr-3 text-warning"></i>Gives information locally or on the cloud, when and when you need it.</li>
+                            <li><i class="ti-check mr-3 text-warning"></i>Enables rapid access to the appropriate information at any point during a procedure.</li>
+                            <li><i class="ti-check mr-3 text-warning"></i>Verifies that every work complies with legal standards and modern best practices.</li>
+                            <li><i class="ti-check mr-3 text-warning"></i>Improves data integrity through automatic revision control and audit recording</li>
+
+
+                        </ul>
                     </div>
                 </div>
 
@@ -717,21 +718,21 @@
                     <div class="contact-info-block text-center mb-4">
                         <i class="ti-headphone-alt"></i>
                         <p class="mb-0">Contact Quickly</p>
-                        <h5>+23-68017684</h5>
+                        <h5>+923040647306</h5>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <div class="contact-info-block text-center mb-4">
                         <i class="ti-email"></i>
                         <p class="mb-0">Email</p>
-                        <h5>startor@support.com</h5>
+                        <h5>Email: info@rubicsol.com</h5>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <div class="contact-info-block text-center mb-4">
                         <i class="ti-location-pin"></i>
                         <p class="mb-0">Location</p>
-                        <h5>397 Lake forest drive street USA</h5>
+                        <h5>Rubi Plaza, Awan Chowk, Near Akbar Chowk, Faisalabad</h5>
                     </div>
                 </div>
             </div>
