@@ -339,6 +339,93 @@
             </div>
         </div>
     </section>
+    <!--modules are coming here-->
+    <section class="section blog-home border-top" id="blog">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section-heading text-center">
+                        <h2 class="text-lg mb-3">RUBIC LIMS Modules</h2>
+                    </div>
+                </div>
+            </div>
+<!-- 1st partation -->
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="blog-item card mb-4 mb-lg-0 border-0">
+                        <img src="images/module1.jpg" alt="" class="img-fluid w-100 module-image">
+                        <div class="blog-item-content p-4">
+                            <h4 class="mt-2 mb-3"><a href="blog-single.html">Sample Management</a></h4>
+                            <div class="blog-meta mb-2">
+                                <span>Sample management is essential for maintaining the highest standards and guaranteeing accurate results in the field of research and quality control.By managing samples in RUBIC LIMS efficiently over the course of their lifespan.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="blog-item card mb-4 mb-lg-0 border-0">
+                        <img src="images/imgten.jpg" alt="" class="img-fluid w-100 module-image">
+                        <div class="blog-item-content p-4">
+                            <h4 class="mt-2 mb-3"><a href="blog-single.html">Quotation and Customer management</a></h4>
+                            <div class="blog-meta mb-2">
+                                <span>For RUBIC LIMS, a Lab Information and administration Systems (LIMS) provider, efficient quotation and customer administration are vital for optimising business processes, elevating client satisfaction, and promoting growth.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="blog-item card mb-4 mb-lg-0 border-0">
+                        <img src="images/module3.jpg" alt="" class="img-fluid w-100 module-image">
+                        <div class="blog-item-content p-4">
+                            <h4 class="mt-2 mb-3"><a href="blog-single.html">Order Management and Invoicing</a></h4>
+                            <div class="blog-meta mb-2">
+                                <span>The sophisticated, user-friendly RUBIC LIMS (Laboratory Information Management System) platform is made to maximise all aspects of laboratory operations, including order processing and billing.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+<!--other three picutes or module-->
+        <div class="row container flex justify-center item-center mx-auto my-10">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="blog-item card mb-4 mb-lg-0 border-0">
+                        <img src="images/module4.jpg" alt="" class="img-fluid w-100 module-image">
+                        <div class="blog-item-content p-4">
+                            <h4 class="mt-2 mb-3"><a href="blog-single.html">Scheduling and Data Entry: A unique Approach</a></h4>
+                            <div class="blog-meta mb-2">
+                                <span>To maintain optimal processes and deliver correct results in the fast-paced world of laboratories, efficient scheduling and data input are essential.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="blog-item card mb-4 mb-lg-0 border-0">
+                        <img src="images/modulefive.jpg" alt="" class="img-fluid w-100 module-image">
+                        <div class="blog-item-content p-4">
+                            <h4 class="mt-2 mb-3"><a href="blog-single.html">Master Data Management</a></h4>
+                            <div class="blog-meta mb-2">
+                                <span>Particularly in the framework of RUBIC LIMS, master data management (MDM) becomes apparent as an essential technique in the ever-changing field of data management for preserving data accuracy, consistency, and integrity throughout an organisation.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="blog-item card mb-4 mb-lg-0 border-0">
+                        <img src="images/modulesix.jpg" alt="" class="img-fluid w-100 module-image">
+                        <div class="blog-item-content p-4">
+                            <h4 class="mt-2 mb-3"><a href="blog-single.html">Documentation Control and Record</a></h4>
+                            <div class="blog-meta mb-2">
+                                <span>Any laboratory or research institution must have documentation control and record management in place to guarantee the precision, consistency, and traceability of data and procedures.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
     <section class="section others-book">
         <div class="container ">
             <div class="row pt-5">
@@ -410,54 +497,6 @@
 
 
                         </ul>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <section class="section blog-home border-top" id="blog">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="section-heading text-center">
-                        <h2 class="text-lg mb-3">Our core Matrix LIMS products</h2>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="blog-item card mb-4 mb-lg-0 border-0">
-                        <img src="screenshots/img_1.png" alt="" class="img-fluid w-100">
-                        <div class="blog-item-content p-4">
-                            <h4 class="mt-2 mb-3"><a href="blog-single.html">Matrix Gemini</a></h4>
-                            <div class="blog-meta mb-2">
-                                <span>Improve efficiency, automation and turn-around times in busy laboratories by tracking samples, managing data, whilst reducing errors with a fully featured LIMS.</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="blog-item card mb-4 mb-lg-0 border-0">
-                        <img src="screenshots/img_1.png" alt="" class="img-fluid w-100">
-                        <div class="blog-item-content p-4">
-                            <h4 class="mt-2 mb-3"><a href="blog-single.html">Matrix Gemini</a></h4>
-                            <div class="blog-meta mb-2">
-                                <span>Improve efficiency, automation and turn-around times in busy laboratories by tracking samples, managing data, whilst reducing errors with a fully featured LIMS.</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="blog-item card mb-4 mb-lg-0 border-0">
-                        <img src="screenshots/img_1.png" alt="" class="img-fluid w-100">
-                        <div class="blog-item-content p-4">
-                            <h4 class="mt-2 mb-3"><a href="blog-single.html">Matrix Gemini</a></h4>
-                            <div class="blog-meta mb-2">
-                                <span>Improve efficiency, automation and turn-around times in busy laboratories by tracking samples, managing data, whilst reducing errors with a fully featured LIMS.</span>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
@@ -679,24 +718,31 @@
                     <div class="contact-info-block text-center mb-4">
                         <i class="ti-headphone-alt"></i>
                         <p class="mb-0">Contact Quickly</p>
-                        <h5>+23-68017684</h5>
+                        <h5>+923040647306</h5>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <div class="contact-info-block text-center mb-4">
                         <i class="ti-email"></i>
                         <p class="mb-0">Email</p>
-                        <h5>startor@support.com</h5>
+                        <h5>Email: info@rubicsol.com</h5>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <div class="contact-info-block text-center mb-4">
                         <i class="ti-location-pin"></i>
                         <p class="mb-0">Location</p>
-                        <h5>397 Lake forest drive street USA</h5>
+                        <h5>Rubi Plaza, Awan Chowk, Near Akbar Chowk, Faisalabad</h5>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 @endsection
+
+<style>
+.module-image{
+    height: 300px!important;
+    object-fit:cover;
+}
+</style>
