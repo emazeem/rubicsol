@@ -96,7 +96,7 @@
                     success: function (data) {
                         button.attr('disabled', null).html(previous);
                         swal('success', data.success, 'success').then(() => {
-                            window.location.href = '{{url('users/view')}}/' + data.id;
+                            window.location.href = '{{url('users/show')}}/' + data.id;
                         });
 
                     },

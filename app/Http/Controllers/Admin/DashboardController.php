@@ -11,6 +11,7 @@ use App\Models\Attendance;
 class DashboardController extends Controller
 {
     //
+    
   
     public function index()
     {

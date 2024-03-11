@@ -39,13 +39,11 @@
                 Check In
               @endif
             </td>
-            <td>
-                <a href="{{route('attendance.edit',['id'=>$attendance->id])}}" target="_blank">Edit</a>
-                <a href="{{route('attendance.show',['id'=>$attendance->id])}}" target="_blank">Show</a>
-                <a href="" target="_blank">Delete</a>
+            <td>   
+            <a href="{{route('attendance.edit',['id'=>$attendance->id])}}" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></a></button>
+            <a href="{{route('attendance.show',['id'=>$attendance->id])}}" class="btn btn-warning btn-sm" ><i class="fas fa-eye"></i></a></button>
+            <a href="{{route('attendance.delete',['id'=>$attendance->id])}}" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a>
             </td>
-
-
         </tr>
         @endforeach
       </tbody>

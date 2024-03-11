@@ -10,6 +10,10 @@ use Hash;
 class UserController extends Controller
 {
     //
+    public function delete($id){
+        User::find($id)->delete();
+        return redirect()->back();
+    }
     public function index(){
         $users=User::all();
         return view('admin.users.index',compact('users'));

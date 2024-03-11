@@ -35,8 +35,8 @@ Route::group(['middleware' => ['auth']], function () {
         Route::post('store', [UserController::class, 'store'])->name('users.store');
         Route::post('update', [UserController::class, 'update'])->name('users.update');
         Route::get('show/{id}', [UserController::class, 'show'])->name('users.show');
-        
-     
+        Route::get('delete/{id}', [UserController::class, 'delete'])->name('users.delete');
+        Route::get('profile', [UserController::class, 'profile'])->name('users.profile');
 
     });
     Route::group(['prefix' => 'attendance'], function () {
@@ -49,6 +49,8 @@ Route::group(['middleware' => ['auth']], function () {
         Route::post('update', [AttendanceController::class, 'update'])->name('attendance.update');
         Route::get('edit/{id}', [AttendanceController::class, 'edit'])->name('attendance.edit');
         Route::get('show/{id}', [AttendanceController::class, 'show'])->name('attendance.show');
+        Route::get('delete/{id}', [AttendanceController::class, 'delete'])->name('attendance.delete');
+
     });
     
         Route::group(['prefix' => 'email'], function () {

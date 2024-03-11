@@ -10,6 +10,10 @@ use App\Models\User;
 class AttendanceController extends Controller
 {
     //
+     public function delete($id){
+        Attendance::find($id)->delete();
+        return redirect()->back();
+    }
     public function show($id){
         $show=Attendance::find($id);
         return view('admin.attendance.show',compact('show'));
