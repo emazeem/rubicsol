@@ -80,11 +80,11 @@
             <li>
                 <div class="dropdown drp-user ">
                     <a href="#!" class="dropdown-toggle" data-toggle="dropdown">
-                        <img src="{{url('profile.png')}}" class="img-radius wid-40  hei-40" style="object-fit: cover">
+                        <img src="{{auth()->user()->userProfile()}}" class="img-radius wid-40  hei-40" style="object-fit: cover">
                     </a>
                     <div class="dropdown-menu dropdown-menu-right profile-notification ">
                         <div class="pro-head">
-                            <img src="profile.png" class="img-radius wid-40 hei-40" style="object-fit: cover">
+                            <img src="{{auth()->user()->userProfile()}}" class="img-radius wid-40 hei-40" style="object-fit: cover">
                             <span>{{auth()->user()->name}}</span>
                             <a class="dud-logout" title="Logout"
                                onclick="event.preventDefault(); document.getElementById('frm-logout').submit();"
