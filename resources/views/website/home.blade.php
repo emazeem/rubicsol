@@ -425,15 +425,15 @@
                     </div>
                 </div>
             </div>
-<!--1st partation-->
+<!-- 1st partation -->
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="blog-item card mb-4 mb-lg-0 border-0">
                         <img src="images/module1.jpg" alt="" class="img-fluid w-100 module-image">
                         <div class="blog-item-content p-4">
-                            <h4 class="mt-2 mb-3"><a href="blog-single.html"></a></h4>
+                            <h4 class="mt-2 mb-3"><a href="blog-single.html">Sample Management</a></h4>
                             <div class="blog-meta mb-2">
-                                <span>Improve efficiency, automation and turn-around times in busy laboratories by tracking samples, managing data, whilst reducing errors with a fully featured LIMS.</span>
+                                <span>Sample management is essential for maintaining the highest standards and guaranteeing accurate results in the field of research and quality control.By managing samples in RUBIC LIMS efficiently over the course of their lifespan.</span>
                             </div>
                         </div>
                     </div>
@@ -442,9 +442,9 @@
                     <div class="blog-item card mb-4 mb-lg-0 border-0">
                         <img src="images/imgten.jpg" alt="" class="img-fluid w-100 module-image">
                         <div class="blog-item-content p-4">
-                            <h4 class="mt-2 mb-3"><a href="blog-single.html">Matrix Gemini</a></h4>
+                            <h4 class="mt-2 mb-3"><a href="blog-single.html">Quotation and Customer management</a></h4>
                             <div class="blog-meta mb-2">
-                                <span>Improve efficiency, automation and turn-around times in busy laboratories by tracking samples, managing data, whilst reducing errors with a fully featured LIMS.</span>
+                                <span>For RUBIC LIMS, a Lab Information and administration Systems (LIMS) provider, efficient quotation and customer administration are vital for optimising business processes, elevating client satisfaction, and promoting growth.</span>
                             </div>
                         </div>
                     </div>
@@ -453,9 +453,9 @@
                     <div class="blog-item card mb-4 mb-lg-0 border-0">
                         <img src="images/module3.jpg" alt="" class="img-fluid w-100 module-image">
                         <div class="blog-item-content p-4">
-                            <h4 class="mt-2 mb-3"><a href="blog-single.html">Matrix Gemini</a></h4>
+                            <h4 class="mt-2 mb-3"><a href="blog-single.html">Order Management and Invoicing</a></h4>
                             <div class="blog-meta mb-2">
-                                <span>Improve efficiency, automation and turn-around times in busy laboratories by tracking samples, managing data, whilst reducing errors with a fully featured LIMS.</span>
+                                <span>The sophisticated, user-friendly RUBIC LIMS (Laboratory Information Management System) platform is made to maximise all aspects of laboratory operations, including order processing and billing.</span>
                             </div>
                         </div>
                     </div>
@@ -463,7 +463,7 @@
 
             </div>
         </div>
-        <!--other three picutes or module-->
+<!--other three picutes or module-->
         <div class="row container flex justify-center item-center mx-auto my-10">
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="blog-item card mb-4 mb-lg-0 border-0">
@@ -738,3 +738,10 @@
         </div>
     </section>
 @endsection
+
+<style>
+.module-image{
+    height: 300px!important;
+    object-fit:cover;
+}
+</style>
