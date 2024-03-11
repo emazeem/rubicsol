@@ -27,6 +27,13 @@ Route::post('subscribe', [SubscriptionController::class, 'subscribe'])->name('su
 Auth::routes();
 Route::group(['middleware' => ['auth']], function () {
     Route::get('dashboard', [DashboardController::class, 'index'])->name('home');
+    Route::get('profile', [DashboardController::class, 'profile'])->name('profile');
+    Route::post('change-profile', [DashboardController::class, 'changeProfile'])->name('change.profile');
+    Route::get('change_password', [DashboardController::class, 'changePassword'])->name('change.password');
+
+
+
+
     Route::group(['prefix' => 'users'], function () {
         Route::get('', [UserController::class, 'index'])->name('users.index');
         Route::post('fetch', [UserController::class, 'fetch'])->name('users.fetch');
@@ -36,7 +43,7 @@ Route::group(['middleware' => ['auth']], function () {
         Route::post('update', [UserController::class, 'update'])->name('users.update');
         Route::get('show/{id}', [UserController::class, 'show'])->name('users.show');
         Route::get('delete/{id}', [UserController::class, 'delete'])->name('users.delete');
-        Route::get('profile', [UserController::class, 'profile'])->name('users.profile');
+        
 
     });
     Route::group(['prefix' => 'attendance'], function () {

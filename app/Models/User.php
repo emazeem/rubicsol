@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use Storage;
 
 class User extends Authenticatable
 {
@@ -42,4 +43,11 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+    public function userProfile(){
+
+        if(file_exists('storage/profile/'.$this->profile)){
+            return Storage::disk('local')->url('profile/'.$this->profile);
+        }
+        return url('profile.png');
+    }
 }
