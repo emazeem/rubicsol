@@ -22,6 +22,29 @@ class DashboardController extends Controller
     {
         return view('admin.profile');
     }
+
+
+    public function updatePassword(Request $request)
+    {
+         
+        $request->validate([
+            'currentPassword' => 'required',
+            'newPassword' => 'required|string|min:8|confirmed',
+        ]);
+
+        $user = Auth::user();
+
+        if (!Hash::check($request->current_password, $user->password)) {
+            return redirect()->back()->with('error', 'The current password is incorrect.');
+        }
+
+        $user->password = Hash::make($request->new_password);
+        $user->save();
+
+        return redirect()->back()->with('success', 'Password updated successfully.');
+    }
+
+
     public function changeProfile(Request $request)
     {
         $this->validate(request(), [
