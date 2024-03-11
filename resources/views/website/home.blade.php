@@ -339,8 +339,42 @@
             </div>
         </div>
     </section>
-    <!--modules are coming here-->
-    <section class="section blog-home border-top" id="blog">
+    <section class="section others-book">
+        <div class="container ">
+            <div class="row pt-5">
+                <div class="col-lg-4 ">
+                    <div class="section-heading text-center ">
+                        <h2 class="text-lg">What is a LIMS?</h2>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="section-heading ">
+                        <p>
+                            Laboratory Information Management System (LIMS) is a technology used to streamline and maximize the efficiency of daily operations of laboratories. It functions as a centralized digital platform that facilitates the administration of important activities like test scheduling, sample monitoring, and result analysis. By promoting teamwork and upholding high standards of quality, LIMS makes sure that laboratory workflows are well-organized.
+                        </p>
+                        <p>
+                            Additionally, it makes data sharing and analysis more effective, which can promote quicker and better decision-making in the laboratory setting. Labs can greatly increase their output and general performance by using LIMS, making it an essential tool in the modern scientific world. Read further to learn more about LIMS, how it can assist you, and which option best fits your lab's needs.
+                        </p>
+
+
+                        <h2 >Core functions of a LIMS</h2>
+
+                        <p>
+                            The main objective of LIMS is to enhance lab productivity, accuracy, and quality control by decreasing manual labor. Our software can be tailored to almost any industry and situation, so how it accomplishes this depends on the use case.
+                        </p>
+                        <p>
+                            Our modern LIMS systems, the RUBIC LIMS, can carry out a number of fundamental tasks to support your ongoing projects and daily work, improving every aspect of laboratory work.
+                        </p>
+
+
+                        <a href="checkout.html" class="btn btn-border-tp btn-small ml-3">Request Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--modules are coming here-->
+<section class="section blog-home border-top" id="blog">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
@@ -426,41 +460,6 @@
             </div>
         </div>
     </section>
-    <section class="section others-book">
-        <div class="container ">
-            <div class="row pt-5">
-                <div class="col-lg-4 ">
-                    <div class="section-heading text-center ">
-                        <h2 class="text-lg">What is a LIMS?</h2>
-                    </div>
-                </div>
-                <div class="col-lg-8">
-                    <div class="section-heading ">
-                        <p>
-                            Laboratory Information Management System (LIMS) is a technology used to streamline and maximize the efficiency of daily operations of laboratories. It functions as a centralized digital platform that facilitates the administration of important activities like test scheduling, sample monitoring, and result analysis. By promoting teamwork and upholding high standards of quality, LIMS makes sure that laboratory workflows are well-organized.
-                        </p>
-                        <p>
-                            Additionally, it makes data sharing and analysis more effective, which can promote quicker and better decision-making in the laboratory setting. Labs can greatly increase their output and general performance by using LIMS, making it an essential tool in the modern scientific world. Read further to learn more about LIMS, how it can assist you, and which option best fits your lab's needs.
-                        </p>
-
-
-                        <h2 >Core functions of a LIMS</h2>
-
-                        <p>
-                            The main objective of LIMS is to enhance lab productivity, accuracy, and quality control by decreasing manual labor. Our software can be tailored to almost any industry and situation, so how it accomplishes this depends on the use case.
-                        </p>
-                        <p>
-                            Our modern LIMS systems, the RUBIC LIMS, can carry out a number of fundamental tasks to support your ongoing projects and daily work, improving every aspect of laboratory work.
-                        </p>
-
-
-                        <a href="checkout.html" class="btn btn-border-tp btn-small ml-3">Request Demo</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section class="section others-book">
         <div class="container-fluid ">
             <div class="row justify-content-center">
