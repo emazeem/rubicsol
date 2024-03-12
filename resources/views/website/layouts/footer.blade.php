@@ -19,7 +19,7 @@
                     <a href="#" class="btn btn-main">Download Now<i class="ti-angle-right ml-3"></i></a> -->
                         <div class="flex flex-col">
                     <img src="images/facebook.png" alt="" class="img-fluid social-media py-2"> 
-                    <a class="mx-2" href="https://www.linkedin.com/company/rubicsol/?originalSubdomain=pk">Click here to Visit our Facbookpage page</a> <br>
+                    <a class="mx-2" href="https://www.facebook.com/rubicsol">Click here to Visit our Facbookpage page</a> <br>
                     <img src="images/linkedin.png" alt="" class="img-fluid social-media py-2">
                     <a class="mx-2" href="https://www.linkedin.com/company/rubicsol/?originalSubdomain=pk">Click here to Visit our Linkedin page</a>
                     <br>
