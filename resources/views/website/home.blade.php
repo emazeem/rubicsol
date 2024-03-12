@@ -261,7 +261,7 @@
                 <div class="col-lg-12 text-center">
                     <div class="section-heading">
                         <p >GROW YOUR LAB</p>
-                        <h2 class="text-lg">Discover how RUBIC LIMS assist you</h2>
+                        <h2 class="text-lg">Discover how RUBIC LIMS assists you</h2>
                         <p >Manage your data and work productively.</p>
                     </div>
                 </div>
@@ -429,7 +429,7 @@
                         <div class="blog-item-content p-4">
                             <h4 class="mt-2 mb-3"><a href="blog-single.html">Scheduling and Data Entry: A unique Approach</a></h4>
                             <div class="blog-meta mb-2">
-                                <span>To maintain optimal processes and deliver correct results in the fast-paced world of laboratories, efficient scheduling and data input are essential.</span>
+                                <span>To maintain optimal processes and deliver correct results in the fast-paced world of laboratories, efficient scheduling and data input are essential. Innovative and state-of-the-art platform.</span>
                             </div>
                         </div>
                     </div>
@@ -478,21 +478,21 @@
                 <div class="col-lg-5">
                     <div class="section-heading ">
 
-                        <h3>The Top 10 benefits of a LIMS system</h3>
+                        <h3>"What RUBIC LIMS offers?</h3>
 
                         <ul class="list-unstyled mt-4 mb-5">
 
                             <li><i class="ti-check mr-3 text-warning"></i>Streamlines repetitive laboratory administration tasks</li>
                             <li><i class="ti-check mr-3 text-warning"></i>Effortlessly incorporates the systems and equipment in your lab</li>
-                            <li><i class="ti-check mr-3 text-warning"></i>Keeps systemic compliance with ISO 17025 to meet international accredited standards.</li>
+                            <li><i class="ti-check mr-3 text-warning"></i>Keeps systemic compliance with ISO 17025.</li>
                             <li><i class="ti-check mr-3 text-warning"></i>Increases your laboratory's capacity and profitability</li>
-                            <li><i class="ti-check mr-3 text-warning"></i>reduces the possibility of errors happening, increasing dependability</li>
-                            <li><i class="ti-check mr-3 text-warning"></i>Enables real-time reporting to make quicker, smarter, and more informed decisions</li>
+                            <li><i class="ti-check mr-3 text-warning"></i>Reduces the possibility of errors happening.</li>
+                            <li><i class="ti-check mr-3 text-warning"></i>Enables real-time reporting to make quicker and smarter</li>
                             <li><i class="ti-check mr-3 text-warning"></i>Boosts efficiency by optimizing data management and workflow.</li>
-                            <li><i class="ti-check mr-3 text-warning"></i>Gives information locally or on the cloud, when and when you need it.</li>
-                            <li><i class="ti-check mr-3 text-warning"></i>Enables rapid access to the appropriate information at any point during a procedure.</li>
-                            <li><i class="ti-check mr-3 text-warning"></i>Verifies that every work complies with legal standards and modern best practices.</li>
-                            <li><i class="ti-check mr-3 text-warning"></i>Improves data integrity through automatic revision control and audit recording</li>
+                            <li><i class="ti-check mr-3 text-warning"></i>Gives information locally or on the cloud, when required.</li>
+                            <li><i class="ti-check mr-3 text-warning"></i>Enables rapid access to the appropriate information at any point.</li>
+                            <li><i class="ti-check mr-3 text-warning"></i>Verifies that every work complies with legal standards.</li>
+                            <li><i class="ti-check mr-3 text-warning"></i>Improves data integrity through automatic revision control.</li>
 
 
                         </ul>
@@ -502,6 +502,94 @@
             </div>
         </div>
     </section>
+    <!--Features-->
+    <section class="section blog-home border-top" id="blog">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section-heading text-center">
+                        <h2 class="text-lg mb-3">List of our features</h2>
+                    </div>
+                </div>
+            </div>
+<!-- 1st partation -->
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="blog-item card mb-4 mb-lg-0 border-0">
+                        <img src="images/feature1.jpg" alt="" class="img-fluid w-100">
+                        <div class="blog-item-content p-4">
+                            <h4 class="mt-2 mb-3"><a href="blog-single.html">Adaptable Software Platform</a></h4>
+                            <div class="blog-meta mb-2">
+                                <span>Rubic LIMS Laboratory Information Management System is distinguished by its flexible software platform. Because of its special ability to customise the system to meet individual laboratory requirements and processes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="blog-item card mb-4 mb-lg-0 border-0">
+                        <img src="images/feature2.jpg" alt="" class="img-fluid w-100">
+                        <div class="blog-item-content p-4">
+                            <h4 class="mt-2 mb-3"><a href="blog-single.html">Save Time and Money</a></h4>
+                            <div class="blog-meta mb-2">
+                                <span>With highly adaptable and efficient Laboratory Information Management System, Rubic LIMS, laboratories can save money and time. Users may optimise their operations and cut expenses using Rubic LIMS's effective management.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="blog-item card mb-4 mb-lg-0 border-0">
+                        <img src="images/feature3.jpg" alt="" class="img-fluid w-100">
+                        <div class="blog-item-content p-4">
+                            <h4 class="mt-2 mb-3"><a href="blog-single.html">Global OutReach</a></h4>
+                            <div class="blog-meta mb-2">
+                            <span>Rubic LIMS, a complete solution provides its users with worldwide support. No matter where they are located or what industry they work in, laboratories can depend on Rubic LIMS for their operations thanks to this comprehensive support network.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+<!--other three picutes or module-->
+        <div class="row container flex justify-center item-center mx-auto my-10">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="blog-item card mb-4 mb-lg-0 border-0">
+                        <img src="images/feature4.jpg" alt="" class="img-fluid w-100">
+                        <div class="blog-item-content p-4">
+                            <h4 class="mt-2 mb-3"><a href="blog-single.html">Dedicated Industry Expertise</a></h4>
+                            <div class="blog-meta mb-2">
+                                <span>The distinctive fusion of advanced technology and industry expertise distinguishes Rubic LIMS from its rivals.The team of professionals at Rubic LIMS is one of the main things that sets it apart from the competition.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="blog-item card mb-4 mb-lg-0 border-0">
+                        <img src="images/feature5.jpg" alt="" class="img-fluid w-100">
+                        <div class="blog-item-content p-4">
+                            <h4 class="mt-2 mb-3"><a href="blog-single.html">Collaborative Workforce</a></h4>
+                            <div class="blog-meta mb-2">
+                                <span>By providing a collaborative work environment that encourages easy communication, teamwork, and productivity among laboratory workers, Rubic LIMS distinguishes out in the industry it shines out in part because of its intuitive user interface. </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="blog-item card mb-4 mb-lg-0 border-0">
+                        <img src="images/feature6.jpg" alt="" class="img-fluid w-100">
+                        <div class="blog-item-content p-4">
+                            <h4 class="mt-2 mb-3"><a href="blog-single.html">Regulatory Compliance</a></h4>
+                            <div class="blog-meta mb-2">
+                                <span>Rubic LIMS distinguishes itself from other providers by offering regulatory compliance for laboratories in a variety of industries. Because of its innovative compliance strategy, which combines reliable features, frequent updates, and an intuitive user interface.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <section class="feature-home section">
         <div class="container">
             <div class="row align-items-center">
@@ -731,7 +819,7 @@
                     <div class="contact-info-block text-center mb-4">
                         <i class="ti-location-pin"></i>
                         <p class="mb-0">Location</p>
-                        <h5>Rubi Plaza, Awan Chowk, Near Akbar Chowk, Faisalabad</h5>
+                     <h5>Rubi Plaza, Awan Chowk, Near Akbar Chowk, Faisalabad</h5>
                     </div>
                 </div>
             </div>
@@ -744,4 +832,9 @@
     height: 300px!important;
     object-fit:cover;
 }
+.contact-info-block{
+    height: 250px!important;
+}
+
+
 </style>
