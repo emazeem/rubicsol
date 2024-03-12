@@ -30,6 +30,8 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('profile', [DashboardController::class, 'profile'])->name('profile');
     Route::post('change-profile', [DashboardController::class, 'changeProfile'])->name('change.profile');
     Route::get('change_password', [DashboardController::class, 'changePassword'])->name('change.password');
+    Route::post('update_password', [DashboardController::class, 'updatePassword'])->name('update.password');
+
 
 
 

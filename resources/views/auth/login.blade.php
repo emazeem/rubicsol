@@ -1,5 +1,7 @@
 @extends('website.layouts.master')
 @section('content')
+<script src="{{url('assets/js/1.10.1/jquery.min.js')}}"></script>
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div class="container py-5">
     <div class="row justify-content-center py-5 my-5">
