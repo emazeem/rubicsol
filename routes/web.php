@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\EmailController;
 use App\Http\Controllers\Admin\AttendanceController;
 use App\Http\Controllers\Admin\UserController;
+use App\Http\Controllers\Admin\TaskController;
 use App\Http\Controllers\SubscriptionController;
 
 Route::get('', [WebsiteController::class, 'home'])->name('w.home');
@@ -30,7 +31,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('profile', [DashboardController::class, 'profile'])->name('profile');
     Route::post('change-profile', [DashboardController::class, 'changeProfile'])->name('change.profile');
     Route::get('change_password', [DashboardController::class, 'changePassword'])->name('change.password');
-    Route::post('update_password', [DashboardController::class, 'updatePassword'])->name('update.password');
+    Route::get('update_password', [DashboardController::class, 'updatePassword'])->name('update.password');
     
 
     Route::group(['prefix' => 'users'], function () {
@@ -56,6 +57,13 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('edit/{id}', [AttendanceController::class, 'edit'])->name('attendance.edit');
         Route::get('show/{id}', [AttendanceController::class, 'show'])->name('attendance.show');
         Route::get('delete/{id}', [AttendanceController::class, 'delete'])->name('attendance.delete');
+
+    });
+    Route::group(['prefix' => 'task'], function () {
+        
+        Route::get('', [TaskController::class, 'index'])->name('task.index');
+        Route::get('create', [TaskController::class, 'create'])->name('tasks.create');
+
 
     });
     
