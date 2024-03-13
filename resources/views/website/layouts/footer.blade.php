@@ -144,10 +144,11 @@
         .footer-copy{
             margin: auto;
         }
-        .pic-media{
-            height: 35px;
-            
+        .pic-media {
+            height: 25px;
+        
         }
+
       h1,
         h2,
         h3,
