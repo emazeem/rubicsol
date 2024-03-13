@@ -516,7 +516,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="blog-item card mb-4 mb-lg-0 border-0">
-                        <img src="images/feature1.jpg" alt="" class="img-fluid w-100">
+                        <img src="images/feature1.jpg" alt="" class="img-fluid feature-image w-100">
                         <div class="blog-item-content p-4">
                             <h4 class="mt-2 mb-3"><a href="blog-single.html">Adaptable Software Platform</a></h4>
                             <div class="blog-meta mb-2">
@@ -527,7 +527,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="blog-item card mb-4 mb-lg-0 border-0">
-                        <img src="images/feature2.jpg" alt="" class="img-fluid w-100">
+                        <img src="images/feature2.jpg" alt="" class="img-fluid feature-image w-100">
                         <div class="blog-item-content p-4">
                             <h4 class="mt-2 mb-3"><a href="blog-single.html">Save Time and Money</a></h4>
                             <div class="blog-meta mb-2">
@@ -538,7 +538,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="blog-item card mb-4 mb-lg-0 border-0">
-                        <img src="images/feature3.jpg" alt="" class="img-fluid w-100">
+                        <img src="images/feature3.jpg" alt="" class="img-fluid feature-image w-100">
                         <div class="blog-item-content p-4">
                             <h4 class="mt-2 mb-3"><a href="blog-single.html">Global OutReach</a></h4>
                             <div class="blog-meta mb-2">
@@ -554,7 +554,7 @@
         <div class="row container flex justify-center item-center mx-auto my-10">
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="blog-item card mb-4 mb-lg-0 border-0">
-                        <img src="images/feature4.jpg" alt="" class="img-fluid w-100">
+                        <img src="images/feature4.jpg" alt="" class="img-fluid feature-image w-100">
                         <div class="blog-item-content p-4">
                             <h4 class="mt-2 mb-3"><a href="blog-single.html">Dedicated Industry Expertise</a></h4>
                             <div class="blog-meta mb-2">
@@ -565,7 +565,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="blog-item card mb-4 mb-lg-0 border-0">
-                        <img src="images/feature5.jpg" alt="" class="img-fluid w-100">
+                        <img src="images/feature5.jpg" alt="" class="img-fluid feature-image w-100">
                         <div class="blog-item-content p-4">
                             <h4 class="mt-2 mb-3"><a href="blog-single.html">Collaborative Workforce</a></h4>
                             <div class="blog-meta mb-2">
@@ -576,7 +576,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="blog-item card mb-4 mb-lg-0 border-0">
-                        <img src="images/feature6.jpg" alt="" class="img-fluid w-100">
+                        <img src="images/feature6.jpg" alt="" class="img-fluid feature-image w-100">
                         <div class="blog-item-content p-4">
                             <h4 class="mt-2 mb-3"><a href="blog-single.html">Regulatory Compliance</a></h4>
                             <div class="blog-meta mb-2">
@@ -811,14 +811,15 @@
                 <div class="col-lg-4 col-sm-6">
                     <div class="contact-info-block text-center mb-4">
                         <i class="ti-email"></i>
-                        <p class="mb-0">Email</p>
-                        <h5>Email: info@rubicsol.com</h5>
+                      <a href=""><p class="mb-0">Email</p></a>
+                       <a href=""><h5>Email: info@rubicsol.com</h5></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <div class="contact-info-block text-center mb-4">
+                        <!--Google-maps-->
                         <i class="ti-location-pin"></i>
-                        <p class="mb-0">Location</p>
+                        <a href="https://maps.app.goo.gl/SrynNW5eGBpPJuLq6"><p class="mb-0">Location</p><a>
                      <h5>Rubi Plaza, Awan Chowk, Near Akbar Chowk, Faisalabad</h5>
                     </div>
                 </div>
@@ -835,6 +836,10 @@
 .contact-info-block{
     height: 250px!important;
 }
+.feature-image{
+    height: 200px!important;
+    width: 200px!important;
 
+}
 
 </style>

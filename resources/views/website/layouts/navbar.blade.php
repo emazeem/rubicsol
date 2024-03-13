@@ -5,7 +5,7 @@
     <nav class="navbar navbar-expand-lg ">
         <div class="container align-items-center">
             <a class="navbar-brand" href="index.html">
-                <img src="{{url('RUBICSOL.png')}}" class="img-fluid " alt="" width="60">
+                <img src="/images/RUBICSOL.png" class="img-fluid " alt="" width="60">
             </a>
             <!-- Toggler -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarmain" aria-controls="navbarmain" aria-expanded="false" aria-label="Toggle navigation">
