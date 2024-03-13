@@ -841,5 +841,23 @@
     width: 70px!important;
      object-fit: cover;
 }
+.contact-info-block .ti-headphone-alt{
+       color: red;
+}
+.contact-info-block .ti-email{
+       color: red;
+}
+.contact-info-block .ti-headphone-alt{
+       color: red;
+}
+.contact-info-block .ti-headphone-alt{
+       color: red;
+}
+.contact-info-block .ti-email{
+       color: red;
+}
+.contact-info-block .ti-location-pin{
+       color: red;
+}
 
 </style>
