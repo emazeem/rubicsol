@@ -28,26 +28,22 @@
                                 <input type="text" class="form-control" id="name" name="name"
                                        placeholder="First Name"
                                        autocomplete="off" value=''>
-                            </div>
-
-                            <div class="form-group col-md-3 col-12">
-                                <label for="email" class="control-label">Email</label>
-                                <input type="text" class="form-control" id="email" name="email" placeholder="Email">
-                            </div>
-                            <div class="form-group col-md-3 col-12 ">
-                                <label for="password" class="control-label">Password</label>
-                                <input type="password" class="form-control" id="password" name="password"
-                                       placeholder="Password">
-        </div>
-                            
-                        </div>
-                        <div class="row">
-                           
-                            <div class="form-group col-md-3 ">
-                                <label for="phone" class="control-label">Phone</label>
-                                <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone"
-                                       value="">
-                            </div>
+                                    </div>
+                                    <div class="form-group col-md-3 col-12">
+                                        <label for="email" class="control-label">Email</label>
+                                        <input type="text" class="form-control" id="email" name="email" placeholder="Email">
+                                    </div>
+                                    <div class="form-group col-md-3 col-12 ">
+                                        <label for="password" class="control-label">Password</label>
+                                        <input type="password" class="form-control" id="password" name="password"
+                                        placeholder="Password">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-3 ">
+                                        <label for="phone" class="control-label">Phone</label>
+                                        <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone"value="">
+                                    </div>
                             <div class="col-md-3">
                              <label for="role" class="control-label">Role</label>
                                 
@@ -106,8 +102,6 @@
                     }
                 });
             }));
-            
-
         });
     </script>
     

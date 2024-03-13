@@ -10,6 +10,10 @@ use Hash;
 class UserController extends Controller
 {
     //
+    public function changePassword(Request $request)
+    {
+        return view('users.change-password');
+    }
     public function delete($id){
         User::find($id)->delete();
         return redirect()->back();
