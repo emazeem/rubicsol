@@ -113,7 +113,7 @@
                                     <!-- Social Links -->
                                     <ul class="social-links">
                                         <li class="LinkedIn"><a href="https://www.linkedin.com/company/rubicsol/" target="_blank" rel="noopner norefer"><img class="pic-media" src="/images/linkedin.png" alt=""></span></a></li>
-                                        <li class="facebook"><a href="https://www.facebook.com/rubicsol" target="_blank" rel="noopner norefer"><img class="pic-media" src="/images/facebook.png" alt=""></a></li>
+                                        <li class="facebook"><a href="https://www.facebook.com/rubicsol" target="_blank" rel="noopner norefer">         <img class="pic-media" src="/images/facebook.png" alt=""></a></li>
                                         <li class="Whatsapp"><a href="https://api.whatsapp.com/send/?phone=923040647306&text&type=phone_number&app_absent=0" target="_blank" rel="noopner norefer"><img class="pic-media" src="/images/whatsapp.png" alt=""></a></li>
                                     </ul>
                                 </div>
@@ -145,10 +145,9 @@
             margin: auto;
         }
         .pic-media {
-            height: 25px;
-        
-        }
-
+            height: 35px;
+             width: 35px;
+        },
       h1,
         h2,
         h3,
@@ -337,7 +336,7 @@
 
 .main-footer .info-widget .social-links li{
     position:relative;
-    margin-right:8px;
+    margin: right 0px;
     display:inline-block;
 }
 
@@ -348,8 +347,7 @@
 .main-footer .info-widget .social-links li a{
     position:relative;
     color: #ffffff;
-    width:50px;
-    height:50px;
+    
     line-height:50px;
     text-align:center;
     border-radius:50%;
@@ -369,18 +367,7 @@
     background-color:#4a6fbe;
 } */
 
-.main-footer .info-widget .social-links li.twitter a{
-    background-color:#55acee;
-}
-
-.main-footer .info-widget .social-links li.instagram a{
-    background-color:#ea4c89;
-}
-
-.main-footer .info-widget .social-links li.vimeo a{
-    background-color:#1ab7ea;
-}
-
+,
 .main-footer .footer-bottom{
     position:relative;
     padding: 10px; 0px;
