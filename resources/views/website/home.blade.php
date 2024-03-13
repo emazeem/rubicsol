@@ -804,15 +804,15 @@
                 <div class="col-lg-4 col-sm-6">
                     <div class="contact-info-block text-center mb-4">
                         <i class="ti-headphone-alt"></i>
-                        <p class="mb-0">Contact Quickly</p>
+                      <a href="tel:+923040647306"><p class="mb-0">Contact Quickly</p></a>
                         <h5>+923040647306</h5>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <div class="contact-info-block text-center mb-4">
                         <i class="ti-email"></i>
-                      <a href=""><p class="mb-0">Email</p></a>
-                       <a href=""><h5>Email: info@rubicsol.com</h5></a>
+                      <a href="mailto:info@rubicsol.com"><p class="mb-0">Email</p></a>
+                       <h5>Email: info@rubicsol.com</h5>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
@@ -837,9 +837,9 @@
     height: 250px!important;
 }
 .feature-image{
-    height: 200px!important;
-    width: 200px!important;
-
+    height: 70px!important;
+    width: 70px!important;
+     object-fit: cover;
 }
 
 </style>
