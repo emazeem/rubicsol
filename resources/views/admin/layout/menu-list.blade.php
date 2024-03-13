@@ -42,6 +42,14 @@
                         <span class="pcoded-mtext">Attendance</span>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="{{route('task.index')}}" class="nav-link">
+                        <span class="pcoded-micon">
+                            <i class="fa fa-tasks"></i>
+                        </span>
+                        <span class="pcoded-mtext">Tasks</span>
+                    </a>
+                </li>
 
             </ul>
         </div>
