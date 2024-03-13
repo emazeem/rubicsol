@@ -9,14 +9,17 @@ use App\Models\Attendance;
 use App\Models\User;
 use Storage;
 use File;
+use Auth;
+use Hash;
 
 class DashboardController extends Controller
 {
     //
     
+    
     public function ChangePassword()
     {
-        return view('admin.change-password');
+        return view('admin.change_password');
     }
     public function profile()
     {
@@ -24,25 +27,26 @@ class DashboardController extends Controller
     }
 
 
+
     public function updatePassword(Request $request)
-    {
-         
-        $request->validate([
-            'currentPassword' => 'required',
-            'newPassword' => 'required|string|min:8|confirmed',
-        ]);
+{
+    $request->validate([
+        'currentPassword' => 'required',
+        'newPassword' => 'required|string|min:8|confirmed',
+    ]);
 
-        $user = Auth::user();
+    $user = Auth::user();
 
-        if (!Hash::check($request->current_password, $user->password)) {
-            return redirect()->back()->with('error', 'The current password is incorrect.');
-        }
-
-        $user->password = Hash::make($request->new_password);
-        $user->save();
-
-        return redirect()->back()->with('success', 'Password updated successfully.');
+    if (!Hash::check($request->currentPassword, $user->password)) {
+        return redirect()->back()->with('error', 'The current password is incorrect.');
     }
+
+    $user->password = Hash::make($request->newPassword);
+    $user->save();
+
+    return redirect()->back()->with('success', 'Password updated successfully.');
+}
+
 
 
     public function changeProfile(Request $request)
@@ -55,15 +59,11 @@ class DashboardController extends Controller
             ]);
 
         $user=User::find(auth()->user()->id);
-
-        
         $attachment=time().'-'.$request->profile->getClientOriginalName();
         Storage::disk('local')->put('public/profile/'.$attachment, File::get($request->profile));
         $user->profile=$attachment;
         $user->save();
         return redirect()->back();
-
-
     }
     public function index()
     {

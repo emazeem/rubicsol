@@ -8,6 +8,9 @@
       <div class="col-lg-12">
         <div class="card">
           <div class="card-body table-responsive">
+          <div class="col-12">
+            <h5 class="font-weight-light"><i class="fas fa-user-shield"></i>Change Password</h5>
+          </div>
             <form action="{{route('update.password')}}" enctype="multipart/form-data" method="post">
               @csrf
               <div class="form-group col-md-6 col-12">
@@ -30,9 +33,9 @@
               </div>
               <div>
               <div class="form-group col-md-6 col-12">
-              <label for="currentPassword" class="control-label">Retype Password</label>        
+              <label for="newPassword_confirmation" class="control-label">Retype Password</label>        
                 <div class="input-group ">
-                  <input type="password" class="form-control" id="retypenewPassword" name="retypePassword" placeholder="Retype New Password">
+                  <input type="password" class="form-control" id="newPassword_confirmation" name="newPassword_confirmation" placeholder="Retype New Password">
                   <div class="input-group-append">
                     <button type="button" class="btn btn-success toggle-button"><i class="fa fa-eye-slash toggle-icon"></i></button>
                   </div>
@@ -41,9 +44,8 @@
               <div>
                 <div class="input-group mb-1">
                   <div class="form-group col-md-3 col-12 ">
-                    <button class="btn btn-success float-right">Change Password</button>
+                    <button class="btn btn-success float-left">Update Password</button>
                   </div>
-
                 </form>
               </div>
             </div>
@@ -68,8 +70,6 @@ $(document).ready(function(){
     }else{
       input.attr('type','password');
     }
-
-    
   });
 });
 </script>
