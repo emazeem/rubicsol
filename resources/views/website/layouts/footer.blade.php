@@ -78,9 +78,8 @@
                                         <a href="#"><img class="rubic-sol" src="{{url('RUBICSOL.png')}}" alt="" /></a>
                                     </div>
                                     <div class="text">
-                                        <!-- <p>Rubi Plaza, Awan Chowk, Near Akbar Chowk, Faisalabad.</p>
-                                        <p>Phone: +9230001235321, +923040647306</p>
-                                        <p>Email: info@rubicsol.com</p> -->
+                                        <p class="">RUBICSOL is a software company known for top-notch products. Our standout offering, RUBIC LIMS, is a specialized calibration solution designed for labs following ISO/IEC:17025 standards. It caters to over 100% of lab requirements, covering 40+ parameters, 100+ procedures/standards, and boasting 3000+ capabilities for uncertainty budget calculation and certificate reporting for customer UUC. From quoting to order management, calibration calculation to master data management, and supporting modules like finance, HR, and documentation – RUBIC LIMS has you covered! #Calibration #LabManagement #ISO17025</p>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -347,7 +346,7 @@
 .main-footer .info-widget .social-links li a{
     position:relative;
     color: #ffffff;
-    
+
     line-height:50px;
     text-align:center;
     border-radius:50%;
