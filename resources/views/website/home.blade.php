@@ -516,8 +516,10 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="blog-item card mb-4 mb-lg-0 border-0">
-                        <img src="images/feature1.jpg" alt="" class="img-fluid feature-image w-100">
-                        <div class="blog-item-content p-4">
+                    <div class="text-center pt-3">    
+                    <img src="images/adaptive.png" alt="" class="img-fluid feature-image">
+                       </div>   
+                    <div class="blog-item-content p-4">
                             <h4 class="mt-2 mb-3"><a href="blog-single.html">Adaptable Software Platform</a></h4>
                             <div class="blog-meta mb-2">
                                 <span>Rubic LIMS Laboratory Information Management System is distinguished by its flexible software platform. Because of its special ability to customise the system to meet individual laboratory requirements and processes</span>
@@ -527,7 +529,9 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="blog-item card mb-4 mb-lg-0 border-0">
-                        <img src="images/feature2.jpg" alt="" class="img-fluid feature-image w-100">
+                        <div class="text-center pt-3">
+                            <img src="images/saving.png" alt="" class="img-fluid feature-image">
+                        </div>
                         <div class="blog-item-content p-4">
                             <h4 class="mt-2 mb-3"><a href="blog-single.html">Save Time and Money</a></h4>
                             <div class="blog-meta mb-2">
@@ -538,8 +542,10 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="blog-item card mb-4 mb-lg-0 border-0">
-                        <img src="images/feature3.jpg" alt="" class="img-fluid feature-image w-100">
-                        <div class="blog-item-content p-4">
+                    <div class="text-center pt-3">    
+                    <img src="images/global-marketing.png" alt="" class="img-fluid feature-image">
+                     </div>    
+                    <div class="blog-item-content p-4">
                             <h4 class="mt-2 mb-3"><a href="blog-single.html">Global OutReach</a></h4>
                             <div class="blog-meta mb-2">
                             <span>Rubic LIMS, a complete solution provides its users with worldwide support. No matter where they are located or what industry they work in, laboratories can depend on Rubic LIMS for their operations thanks to this comprehensive support network.</span>
@@ -554,8 +560,10 @@
         <div class="row container flex justify-center item-center mx-auto my-10">
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="blog-item card mb-4 mb-lg-0 border-0">
-                        <img src="images/feature4.jpg" alt="" class="img-fluid feature-image w-100">
-                        <div class="blog-item-content p-4">
+                    <div class="text-center pt-3">   
+                    <img src="images/customer-satisfaction.png" alt="" class="img-fluid feature-image">
+                   </div>    
+                    <div class="blog-item-content p-4">
                             <h4 class="mt-2 mb-3"><a href="blog-single.html">Dedicated Industry Expertise</a></h4>
                             <div class="blog-meta mb-2">
                                 <span>The distinctive fusion of advanced technology and industry expertise distinguishes Rubic LIMS from its rivals.The team of professionals at Rubic LIMS is one of the main things that sets it apart from the competition.</span>
@@ -565,8 +573,10 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="blog-item card mb-4 mb-lg-0 border-0">
-                        <img src="images/feature5.jpg" alt="" class="img-fluid feature-image w-100">
-                        <div class="blog-item-content p-4">
+                    <div class="text-center pt-3">   
+                    <img src="images/teamwork (1).png" alt="" class="img-fluid feature-image">
+        </div>    
+                    <div class="blog-item-content p-4">
                             <h4 class="mt-2 mb-3"><a href="blog-single.html">Collaborative Workforce</a></h4>
                             <div class="blog-meta mb-2">
                                 <span>By providing a collaborative work environment that encourages easy communication, teamwork, and productivity among laboratory workers, Rubic LIMS distinguishes out in the industry it shines out in part because of its intuitive user interface. </span>
@@ -576,8 +586,10 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="blog-item card mb-4 mb-lg-0 border-0">
-                        <img src="images/feature6.jpg" alt="" class="img-fluid feature-image w-100">
-                        <div class="blog-item-content p-4">
+                    <div class="text-center pt-3">
+                          <img src="images/task.png" alt="" class="img-fluid feature-image">
+        </div>
+                          <div class="blog-item-content p-4">
                             <h4 class="mt-2 mb-3"><a href="blog-single.html">Regulatory Compliance</a></h4>
                             <div class="blog-meta mb-2">
                                 <span>Rubic LIMS distinguishes itself from other providers by offering regulatory compliance for laboratories in a variety of industries. Because of its innovative compliance strategy, which combines reliable features, frequent updates, and an intuitive user interface.</span>
@@ -723,7 +735,7 @@
                 <div class="col-md-12 col-sm-6">
                     <div class="service-block mb-4 mb-lg-0">
                         <div class="container">
-                            <h4 class="mb-3 mt-4">About us</h4>
+                            <h4 class="mb-3 mt-4">"Our Meticulous Adherence to ISO/IEC 17025 Standards"</h4>
                             <div class="row">
                                 <div class="col-md-8">
                                     <p class="text-left">
