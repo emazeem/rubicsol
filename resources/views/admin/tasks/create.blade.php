@@ -16,14 +16,18 @@
             <div class="card-footer bg-light border-top">
               <h5 class="font-weight-light"><i class="feather icon-clock"></i>Add Task</h5>
               <div class="row">
-                <div class="form-group col-md-3 col-12 ">
-                  <label for="end_time" class="control-label">Title</label>
-                  <input type="text">
-                </div>
-                <div class="form-group col-md-3 col-12 ">
-                  <label for="end_time" class="control-label">Discription</label>
-                  <input type="text">
-                </div>
+              <div class="form-group col-md-3 col-12">
+                <label for="name" class="control-label">Title</label>
+                <input type="text" class="form-control" id="name" name="name"
+                placeholder="Title"
+                autocomplete="off" value=''>
+              </div>
+              <div class="form-group col-md-3 col-12">
+                <label for="name" class="control-label">Discription</label>
+                <input type="text" class="form-control" id="name" name="name"
+                placeholder="Discription"
+                autocomplete="off" value=''>
+              </div>
                 <div class="col-md-3">
                   <label for="user_id" class="control-label">User</label>
                   <select class="form-select custom-select" name="user_id">
