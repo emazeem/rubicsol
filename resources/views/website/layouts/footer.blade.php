@@ -68,6 +68,9 @@
 <footer class="main-footer">
         <div class="container">
             <!--Widgets Section-->
+            <div class="column-12 text-center">
+            <img class="rubic-sol" src="{{url('RUBICSOL.png')}}" alt="" />
+            </div>
             <div class="widgets-section">
                 <div class="row clearfix">
                     
@@ -75,17 +78,17 @@
                 <div class="footer-column col-md-5 col-sm-12">
                                 <div class="footer-widget about-widget">
                                     <div class="logo w-100 text-center">
-                                        <a href="#"><img class="rubic-sol" src="{{url('RUBICSOL.png')}}" alt="" /></a>
+                                        <a href="#"></a>
                                     </div>
                                     <div class="text">
-                                        <p class="">RUBICSOL is a software company known for top-notch products. Our standout offering, RUBIC LIMS, is a specialized calibration solution designed for labs following ISO/IEC:17025 standards. It caters to over 100% of lab requirements, covering 40+ parameters, 100+ procedures/standards, and boasting 3000+ capabilities for uncertainty budget calculation and certificate reporting for customer UUC. From quoting to order management, calibration calculation to master data management, and supporting modules like finance, HR, and documentation – RUBIC LIMS has you covered! #Calibration #LabManagement #ISO17025</p>
+                                        <p class="text-">RUBICSOL is a software company known for top-notch products. Our standout offering, RUBIC LIMS, is a specialized calibration solution designed for labs following ISO/IEC:17025 standards. It caters to over 100% of lab requirements, covering 40+ parameters, 100+ procedures/standards, and boasting 3000+ capabilities for uncertainty budget calculation and certificate reporting for customer UUC. From quoting to order management, calibration calculation to master data management, and supporting modules like finance, HR, and documentation – RUBIC LIMS has you covered! </p>
                                         
                                     </div>
                                 </div>
                             </div>
                             
                             <!--Footer Column-->
-                            <div class="footer-column col-md-3 col-sm-12">
+                            <div class="footer-column col-md-2 col-sm-12">
                                 <div class="footer-widget links-widget">
                                     <h2>Quick Links</h2>
                                     <ul class="footer-list">
@@ -101,7 +104,7 @@
                     
                             
                             <!--Footer Column-->
-                            <div class="footer-column col-md-4 col-sm-12">
+                            <div class="footer-column col-md-3 col-sm-12">
                                 <div class="footer-widget info-widget">
                                     <h2>Contact Info</h2>
                                     <ul class="info-list">
@@ -273,7 +276,7 @@
 .main-footer .footer-list li a:hover{
     text-decoration:underline;
     color:#ff6666;
-}
+},
 
 
 
@@ -284,35 +287,7 @@
     max-width:350px; */
 /* } */
 
-.main-footer .gallery-widget .images-outer{
-    position:relative;
-    margin:0px -3px;
-}
-
-.main-footer .gallery-widget .image-box{
-    position:relative;
-    float:left;
-    width:33.333%;
-    padding:0px 5px;
-    margin-bottom:10px;
-}
-
-.main-footer .gallery-widget .image-box img{
-    position:relative;
-    display:block;
-    width:100%;
-    border-radius:4px;
-    -webkit-transition:all 300ms ease;
-    -ms-transition:all 300ms ease;
-    -o-transition:all 300ms ease;
-    -moz-transition:all 300ms ease;
-    transition:all 300ms ease;
-}
-
-.main-footer .gallery-widget .image-box img:hover{
-    opacity:0.70;   
-}
-
+,
 /* Info List */
 
 .main-footer .info-list{
