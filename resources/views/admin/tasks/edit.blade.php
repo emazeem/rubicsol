@@ -11,27 +11,29 @@
         <div class="row pb-3">
           <form  id="user-form" style="width:100%" method="post" enctype="multipart/form-data">
           @csrf
+          <input type="hidden" value="{{$edit->id}}" name="id">
+
           <div class="card ">
             <div class="card-footer bg-light border-top">
-              <h5 class="font-weight-light"><i class="feather icon-clock"></i>Add Task</h5>
+              <h5 class="font-weight-light"><i class="feather icon-clock"></i>Update Task</h5>
               
               <div class="form-group col-md-4 col-12">
                 <label for="title" class="control-label">Title</label>
                 <input type="text" class="form-control" id="title" name="title"
                 placeholder="Title"
-                autocomplete="off" value=''>
+                autocomplete="off" value='{{$edit->title}}'>
               </div>
               <div class="form-group col-md-4 col-12">
                 <label for="description" class="control-label">Description</label>
                 <textarea type="text" class="form-control" id="description" name="description"
-                placeholder="Description"></textarea>
+                placeholder="Description">{{$edit->description}}</textarea>
               </div>
                 <div class="col-md-4">
                   <label for="user_id" class="control-label">User</label>
-                  <select class="form-select custom-select" name="user_id">
+                  <select class="form-select custom-select" name="user_id" value='{{$edit->user}}'>
                     <option selected disabled>Select User</option>
                     @foreach($users as $user)
-                    <option value="{{ $user->id }}">{{ $user->name }}</option>
+                    <option value="{{ $user->id }}" {{ $edit->user_id == $user->id ? 'selected' : '' }}>{{ $user->name }}</option>
                      @endforeach
                   </select>
                 </div>
@@ -44,7 +46,7 @@
                   <a href="{{ URL::previous() }}" class="btn btn-sm bg-white border float-left">
                     <iclass="feather icon-chevron-left></i>back</a>
                     <button type="submit" class="btn btn-primary btn-sm user-btn float-right">
-                      <iclass="feather icon-save></i>Save
+                      <iclass="feather icon-save></i>Update
                     </button>
                   </div>
                 </div>
@@ -60,7 +62,7 @@
         button.attr('disabled', 'disabled').html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Processing');
         e.preventDefault();
         $.ajax({
-            url: "{{route('tasks.store')}}",
+            url: "{{route('task.update')}}",
             type: "POST",
             data: new FormData(this),
             contentType: false,
@@ -69,7 +71,7 @@
             success: function (data) {
                 button.attr('disabled', null).html(previous);
                 swal('success', data.success, 'success').then(() => {
-                    window.location.href = '{{url('users/show')}}/' + data.id;
+                    window.location.href = '{{url('task/show')}}/' + data.id;
                 });
             },
             error: function (xhr) {
