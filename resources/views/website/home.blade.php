@@ -770,7 +770,7 @@
                 <div class="col-md-12 col-lg-8">
                     <div class="section-heading text-center">
                         <h2 class="mb-2 text-lg">Contact Us</h2>
-                        <p>Whether you have questions or you would just like to say hello, contact us.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, atque!</p>
+                        <p>We value your feedback and concerns. Feel free to reach out to our dedicated support team! We will promptly address your inquiries with professionalism and care.</p>
                     </div>
                 </div>
             </div> <!-- / .row -->
