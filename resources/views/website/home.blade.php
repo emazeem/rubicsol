@@ -772,27 +772,24 @@
             </div>
 
             <div class="row align-items-center">
-                <div class="col-lg-12 col-sm-12 col-md-12 testimonial-wrap">
-                    <div class="test-item">
-                        <div class="testimonial-item-content">
-                            <div class="test-author-thumb mb-4">
-                                <img src="https://aimscal.com/public/images/CEO.jpeg" alt="Testimonial author" class="img-fluid" style="object-fit: cover">
+                <div class="card border-0 shadow">
+                    <div class="card-body ">
+                        <div class="author-thumb mb-4 text-center py-5">
+                            <img src="https://aimscal.com/public/images/CEO.jpeg" alt="Testimonial author" class="img-fluid" style="object-fit: cover">
 
-                                <div class="test-author-info mt-4">
-                                    <div class="rating">
-                                        <a href="#"><i class="ti-star"></i></a>
-                                        <a href="#"><i class="ti-star"></i></a>
-                                        <a href="#"><i class="ti-star"></i></a>
-                                        <a href="#"><i class="ti-star"></i></a>
-                                        <a href="#"><i class="ti-star"></i></a>
-                                    </div>
-
-                                    <h4 class="mb-0 mt-2">Imtiaz Ahmed</h4>
-                                    <p>CEO Al-Meezan Industrial Metrology Services</p>
+                            <div class="test-author-info mt-2">
+                                <div class="rating">
+                                    <a href="#">★</a>
+                                    <a href="#">★</a>
+                                    <a href="#">★</a>
+                                    <a href="#">★</a>
+                                    <a href="#">★</a>
                                 </div>
-                            </div>
 
-                            <p class="mb-0">Lab Information Management System by Rubicsol is a versatile tool for managing all sorts of lab operation, it makes sample management, lab inventory management, operation management and compliance to ISO 17025: 2017 an easy task.</p>
+                                <h4 class="mb-0">Imtiaz Ahmed</h4>
+                                <h6>CEO @ Al-Meezan Industrial Metrology Services</h6>
+                                <p class="mb-0 px-5">Lab Information Management System by Rubicsol is a versatile tool for managing all sorts of lab operation, it makes sample management, lab inventory management, operation management and compliance to ISO/IEC 17025:2017 an easy task.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
