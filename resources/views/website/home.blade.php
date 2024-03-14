@@ -709,15 +709,15 @@
     </section>
     <section class="feature-home section">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 col-md-6">
+            <div class="row align-items-center py-5">
+                <div class="col-12 col-md-8">
                     <a >FAQ</a>
                     <h2 class="mb-4">What is a typical LIMS workflow?</h2>
                     <p>All of the processes illustrated here and more are integrated into one easy-to-use, effective system by RUBIC LIMS, a comprehensive solution.</p>
                     <p>In essence, every standard lab follows a similar procedure of sample flow. Our well-planned and modern RUBIC LIMS follows each and every step with great dedication and a vision to provide clients with quality work.</p>
 
                 </div>
-                <div class="col-lg-6 col-md-6">
+                <div class="col-12 col-md-4">
                     <div class="mt-5 mt-lg-0">
                         <img src="screenshots/img_15.png" alt="" class="img-fluid w-100">
                     </div>
