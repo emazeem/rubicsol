@@ -20,11 +20,15 @@
                 <tbody>
                     @foreach ($tasks as $task)
                     <tr>
-                        <td>{{$tasks->id}}</td>
-                        <td>{{$tasks->user->name}}</td>
-                        <td>{{$tasks->id}}</td>
-                        <td>{{$tasks->id}}->Description</td>
-                        <td>{{$tasks->id}}->Action</td>
+                        <td>{{$task->id}}</td>
+                        <td>{{$task->user->name}}</td>
+                        <td>{{$task->title}}</td>
+                        <td>{{$task->description}}</td>
+                        <td>
+                        <a href="{{route('task.edit',['id'=>$task->id])}}" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
+                        <a href="{{route('task.show',['id'=>$task->id])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
+                        <a href="{{route('task.delete',['id'=>$task->id])}}" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a>
+                        </td>
                     </tr>
                     @endforeach
                 </tbody>

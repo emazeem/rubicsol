@@ -63,8 +63,14 @@ Route::group(['middleware' => ['auth']], function () {
         
         Route::get('', [TaskController::class, 'index'])->name('task.index');
         Route::get('create', [TaskController::class, 'create'])->name('tasks.create');
+        Route::post('store', [TaskController::class, 'store'])->name('tasks.store');
+        Route::get('edit/{id}', [TaskController::class, 'edit'])->name('task.edit');
+        Route::get('show/{id}', [TaskController::class, 'show'])->name('task.show');
+        Route::get('delete/{id}', [TaskController::class, 'delete'])->name('task.delete');
+        Route::post('update', [TaskController::class, 'update'])->name('task.update');
+        Route::get('delete/{id}', [TaskController::class, 'delete'])->name('task.delete');
 
-
+        
     });
     
         Route::group(['prefix' => 'email'], function () {
