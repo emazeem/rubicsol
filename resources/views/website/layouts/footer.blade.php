@@ -91,12 +91,12 @@
                             <div class="footer-column col-md-2 col-sm-12">
                                 <div class="footer-widget links-widget">
                                     <h2>Quick Links</h2>
-                                    <ul class="footer-list">
-                                        <li><a href="#">Home</a></li>
-                                        <li><a href="#">About</a></li>
-                                        <li><a href="#">Documentation</a></li>
-                                        <li><a href="#">Blog</a></li>
-                                        <li><a href="#">Login</a></li>
+                                    <ul class="footer-list ">
+                                      <li><a href="#"><i class="fa fa-home" style="font-size:36px; color:black"></i></a></li> 
+                                        <li><a href="#"><i class="fa fa-info-circle" style="font-size:36px; color:black"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-file-text" style="font-size:36px; color:black"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-newspaper-o" style="font-size:36px; color: black"></i></a></li> 
+                                        <li><a href="#"><i class="fa fa-user" style="font-size:36px; color:black"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
