@@ -516,9 +516,9 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="blog-item card mb-4 mb-lg-0 border-0">
-                    <div class="text-center pt-3">    
+                    <div class="text-center pt-3">
                     <img src="images/adaptive.png" alt="" class="img-fluid feature-image">
-                       </div>   
+                       </div>
                     <div class="blog-item-content p-4">
                             <h4 class="mt-2 mb-3"><a href="blog-single.html">Adaptable Software Platform</a></h4>
                             <div class="blog-meta mb-2">
@@ -542,9 +542,9 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="blog-item card mb-4 mb-lg-0 border-0">
-                    <div class="text-center pt-3">    
+                    <div class="text-center pt-3">
                     <img src="images/global-marketing.png" alt="" class="img-fluid feature-image">
-                     </div>    
+                     </div>
                     <div class="blog-item-content p-4">
                             <h4 class="mt-2 mb-3"><a href="blog-single.html">Global OutReach</a></h4>
                             <div class="blog-meta mb-2">
@@ -560,9 +560,9 @@
         <div class="row container flex justify-center item-center mx-auto my-10">
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="blog-item card mb-4 mb-lg-0 border-0">
-                    <div class="text-center pt-3">   
+                    <div class="text-center pt-3">
                     <img src="images/customer-satisfaction.png" alt="" class="img-fluid feature-image">
-                   </div>    
+                   </div>
                     <div class="blog-item-content p-4">
                             <h4 class="mt-2 mb-3"><a href="blog-single.html">Dedicated Industry Expertise</a></h4>
                             <div class="blog-meta mb-2">
@@ -573,9 +573,9 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="blog-item card mb-4 mb-lg-0 border-0">
-                    <div class="text-center pt-3">   
+                    <div class="text-center pt-3">
                     <img src="images/teamwork (1).png" alt="" class="img-fluid feature-image">
-        </div>    
+        </div>
                     <div class="blog-item-content p-4">
                             <h4 class="mt-2 mb-3"><a href="blog-single.html">Collaborative Workforce</a></h4>
                             <div class="blog-meta mb-2">
@@ -737,7 +737,7 @@
                         <div class="container">
                             <h4 class="mb-3 mt-4">"Our Meticulous Adherence to ISO/IEC 17025 Standards"</h4>
                             <div class="row">
-                                <div class="col-md-8">
+                                <div class="col-md-10">
                                     <p class="text-left">
                                         RUBIC LIMS stands out as an exceptional lab information management system that provides comprehensive ISO 17025 compliance for calibration services. This global standard for testing and calibration laboratories ensures that your laboratory maintains the highest levels of accuracy, reliability, and quality in its operations. By adopting Rubic Lims, you can rest assured that your laboratory's equipment and instruments are consistently performing at optimal levels, leading to more reliable data and improved research outcomes.
                                     </p>
@@ -748,8 +748,8 @@
                                         Making the strategic choice to go with RUBIC LIMS for your laboratory's information management needs not only streamlines daily operations but also guarantees optimal quality and dependability. While the extra lab management capabilities provided by Rubic Lims further improve your laboratory's performance and reputation within the industry, the system's ISO 17025 compliance offers a strong platform for your laboratory to flourish in its research pursuits.
                                     </p>
                                 </div>
-                                <div class="col-md-4 d-flex justify-content-center align-items-center">
-                                    <img src="website/iso17025.png" alt="" class="img-fluid">
+                                <div class="col-md-2 bg-info">
+                                    <img src="website/iso17025.png" alt="" class="img-fluid w-100">
                                 </div>
                             </div>
                         </div>
