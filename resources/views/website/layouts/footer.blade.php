@@ -108,7 +108,7 @@
                                 <div class="footer-widget info-widget">
                                     <h2>Contact Info</h2>
                                     <ul class="info-list">
-                                        <li>Rubi Plaza,Awan Chowk,Near Akbar Chowk, Faisalabad</li>
+                                        <li>Rubi Plaza, Awan Chowk, Near Akbar Chowk, Faisalabad</li>
                                         <li> +92 3040647306</li>
                                         <li>info@rubicsol.com</li>
                                     </ul>

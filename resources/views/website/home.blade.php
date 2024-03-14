@@ -792,7 +792,7 @@
                                 </div>
                             </div>
 
-                            <p class="mb-0">Quas ut distinctio tenetur animi nihil rem, amet dolorum totam. Ab repudiandae tempore qui fugiat amet ipsa id omnis ipsam.</p>
+                            <p class="mb-0">Lab Information Management System by Rubicsol is a versatile tool for managing all sorts of lab operation, it makes sample management, lab inventory management, operation management and compliance to ISO 17025: 2017 an easy task.</p>
                         </div>
                     </div>
                 </div>
@@ -815,14 +815,14 @@
             <div class="row">
                 <div class="col-lg-4 col-sm-6">
                     <div class="contact-info-block text-center mb-4">
-                        <i class="ti-headphone-alt"></i>
+                        <i class=""><img src="/images/call.png" alt=""></i>
                       <a href="tel:+923040647306"><p class="mb-0">Contact Quickly</p></a>
                         <h5>+923040647306</h5>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <div class="contact-info-block text-center mb-4">
-                        <i class="ti-email"></i>
+                        <i class=""><img src="/images/email.png" alt=""></i>
                       <a href="mailto:info@rubicsol.com"><p class="mb-0">Email</p></a>
                        <h5>Email: info@rubicsol.com</h5>
                     </div>
@@ -830,7 +830,7 @@
                 <div class="col-lg-4 col-sm-6">
                     <div class="contact-info-block text-center mb-4">
                         <!--Google-maps-->
-                        <i class="ti-location-pin"></i>
+                        <i class=""><img src="/images/placeholder.png" alt=""></i>
                         <a href="https://maps.app.goo.gl/SrynNW5eGBpPJuLq6"><p class="mb-0">Location</p><a>
                      <h5>Rubi Plaza, Awan Chowk, Near Akbar Chowk, Faisalabad</h5>
                     </div>
