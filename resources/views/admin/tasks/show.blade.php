@@ -22,10 +22,10 @@
       <th scope="col">Status</th>
       <td scope="col">
         @if($show->status==1)
-        Check Out
+        Pending
         @endif
         @if($show->status==0)
-        Check In
+        In-Process
         @endif
       </td>
     </tr>

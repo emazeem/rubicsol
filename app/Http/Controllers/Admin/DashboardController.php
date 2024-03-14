@@ -7,10 +7,12 @@ use App\Models\Countries;
 use Illuminate\Http\Request;
 use App\Models\Attendance;
 use App\Models\User;
+use App\Models\Task;
 use Storage;
 use File;
 use Auth;
 use Hash;
+
 
 class DashboardController extends Controller
 {
@@ -75,7 +77,8 @@ class DashboardController extends Controller
                                 ->whereDate('check_in_date', date("Y-m-d"))
                                 ->where('status', 1)
                                 ->first();
-        return view('admin.dashboard',compact("attendanceExist",'ifUserCheckout','attendances'));
+        $tasks = Task::all();
+        return view('admin.dashboard',compact("attendanceExist",'ifUserCheckout','attendances','tasks'));
     }
 
 
