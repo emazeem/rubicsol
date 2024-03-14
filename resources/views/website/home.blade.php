@@ -815,7 +815,7 @@
             <div class="row">
                 <div class="col-lg-4 col-sm-6">
                     <div class="contact-info-block text-center mb-4">
-                        <i class=""><img src="/images/call.png" alt=""></i>
+                        <i class=""><img src="/images/telephone.png" alt=""></i>
                       <p class="mb-0">Contact Quickly</p>
                       <a href="tel:+923040647306"><h5>+923040647306</h5></a>
                     </div>
