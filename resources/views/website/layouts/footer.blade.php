@@ -81,7 +81,7 @@
                                         <a href="#"></a>
                                     </div>
                                     <div class="text py-3">
-                                        <p>RUBICSOL is a software company known for top-notch products. Our standout offering, RUBIC LIMS, is a specialized calibration solution designed for labs following ISO/IEC:17025 standards. It caters to over 100% of lab requirements, covering 40+ parameters, 100+ procedures/standards, and boasting 3000+ capabilities for uncertainty budget calculation and certificate reporting for customer UUC. From quoting to order management, calibration calculation to master data management, and supporting modules like finance, HR, and documentation – RUBIC LIMS has you covered! </p>
+                                        <p class="text-justify">RUBICSOL is a software company known for top-notch products. Our standout offering, RUBIC LIMS, is a specialized calibration solution designed for labs following ISO/IEC:17025 standards. It caters to over 100% of lab requirements, covering 40+ parameters, 100+ procedures/standards, and boasting 3000+ capabilities for uncertainty budget calculation and certificate reporting for customer UUC. From quoting to order management, calibration calculation to master data management, and supporting modules like finance, HR, and documentation – RUBIC LIMS has you covered! </p>
                                         
                                     </div>
                                 </div>
