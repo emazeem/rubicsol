@@ -69,10 +69,10 @@
                 <td>{{$task->title}}</td>
                 <td>{{$task->description}}</td>
                 <td>
-                  @if($attendance->status==1)
+                  @if($task->status==1)
                   Pending
                   @endif
-                  @if($attendance->status==0)
+                  @if($task->status==0)
                   In-Process
                   @endif
                 </td>
