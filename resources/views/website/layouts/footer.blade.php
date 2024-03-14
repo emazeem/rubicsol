@@ -17,13 +17,13 @@
                     <!-- <h4 class="mb-4">Connect With Us</h4> -->
                     <!-- <input type="text" class="form-control mb-4"  placeholder="Put your email address">
                     <a href="#" class="btn btn-main">Download Now<i class="ti-angle-right ml-3"></i></a> -->
-                        <!-- <div class=""> 
+                        <!-- <div class="">
                     <a class="mx-2" href="https://www.facebook.com/rubicsol">
                     <img src="images/facebook.png" alt="" class="img-fluid social-media py-2">
                     </a>
                     <a class="mx-2" href="https://www.linkedin.com/company/rubicsol/">
                     <img src="images/linkedin.png" alt="" class="img-fluid social-media py-2">
-                    </a> 
+                    </a>
                     <a class="mx-2" href="https://api.whatsapp.com/send/?phone=923040647306&text&type=phone_number&app_absent=0">
                     <img src="images/whatsapp.png" alt="" class="img-fluid social-media py-2">
                     </a>
@@ -41,7 +41,7 @@
                 <!-- <p class="footer-copy">
                     &copy; Copyright <span class="current-year">Rubicsol</span> All rights reserved-2023.
                 </p>
-            </div> --> 
+            </div> -->
             <!-- <div class="col-lg-6">
                 <div class="footer-btm-menu text-lg-right">
                     <i class="fa fa-linkedin"></i>
@@ -66,14 +66,14 @@
 
 
 <footer class="main-footer">
-        <div class="container">
+        <div class="container pt-0">
             <!--Widgets Section-->
             <div class="column-12 text-center">
             <img class="rubic-sol" src="{{url('RUBICSOL.png')}}" alt="" />
             </div>
             <div class="widgets-section">
                 <div class="row clearfix">
-                    
+
                 <!--Footer Column-->
                 <div class="footer-column col-md-6 col-sm-12">
                                 <div class="footer-widget about-widget">
@@ -82,27 +82,26 @@
                                     </div>
                                     <div class="text py-3 pt-5">
                                         <p>RUBICSOL is a software company known for top-notch products. Our standout offering, RUBIC LIMS, is a specialized calibration solution designed for labs following ISO/IEC:17025 standards. It caters to over 100% of lab requirements, covering 40+ parameters, 100+ procedures/standards, and boasting 3000+ capabilities for uncertainty budget calculation and certificate reporting for customer UUC. From quoting to order management, calibration calculation to master data management, and supporting modules like finance, HR, and documentation – RUBIC LIMS has you covered! </p>
-                                        
+
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <!--Footer Column-->
                             <div class="footer-column col-md-3 col-sm-12">
                                 <div class="footer-widget links-widget">
                                     <h2>Quick Links</h2>
                                     <ul class="footer-list">
-                                        <li><a href="#"><i class="fa fa-home pr-2" style="color:black"></i>Home</a></li>
-                                        <li><a href="#"><i class="fa fa-info-circle pr-2" style="color:black"></i>About</a></li>
-                                        <li><a href="#"><i class="fa fa-file-text pr-2" style="color:black"></i>Documentation</a></li>
-                                        <li><a href="#"><i class="fa fa-newspaper-o pr-2" style="color: black"></i>Blog</a></li>
-                                        <li><a href="#"><i class="fa fa-user pr-2" style="color:black"></i>Login</a></li>
+                                        <li><a href="#"><i class="fa fa-home pr-2" ></i>Home</a></li>
+                                        <li><a href="#"><i class="fa fa-info-circle pr-2" ></i>About</a></li>
+                                        <li><a href="#"><i class="fa fa-file-text pr-2" ></i>Documentation</a></li>
+                                        <li><a href="#"><i class="fa fa-newspaper-o pr-2" ></i>Blog</a></li>
                                     </ul>
                                 </div>
                             </div>
-                            
-                    
-                            
+
+
+
                             <!--Footer Column-->
                             <div class="footer-column col-md-3 col-sm-12">
                                 <div class="footer-widget info-widget">
@@ -117,26 +116,28 @@
                                         <li class="LinkedIn"><a href="https://www.linkedin.com/company/rubicsol/" target="_blank" rel="noopner norefer"><img class="pic-media" src="/images/linkedin.png" alt=""></span></a></li>
                                         <li class="facebook"><a href="https://www.facebook.com/rubicsol" target="_blank" rel="noopner norefer">         <img class="pic-media" src="/images/facebook.png" alt=""></a></li>
                                         <li class="Whatsapp"><a href="https://api.whatsapp.com/send/?phone=923040647306&text&type=phone_number&app_absent=0" target="_blank" rel="noopner norefer"><img class="pic-media" src="/images/whatsapp.png" alt=""></a></li>
+                                        <li class="Whatsapp"><a href="{{url('login')}}" rel="noopner norefer"><img class="pic-media login" src="/images/login-btn.png" alt=""></a></li>
+
                                     </ul>
                                 </div>
                             </div>
-                     
+
                 </div>
             </div>
         </div>
-    
+
         <!-- Footer Bottom -->
         <div class="footer-bottom">
             <div class="container">
                 <div class="row clearfix">
-                    
+
                 <p class="footer-copy">
                     &copy; Copyright <span class="current-year">Rubicsol</span> All rights reserved-2023.
                 </p>
                 </div>
             </div>
         </div>
-    
+
     </footer>
     <style>
         .rubic-sol{
@@ -149,53 +150,11 @@
         .pic-media {
             height: 25px;
              width: 25px;
-        },
-      h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {}
-        a,
-        a:hover,
-        a:focus,
-        a:active {
-            text-decoration: none;
-            outline: none;
         }
-        
-        a,
-        a:active,
-        a:focus {
-            color: #333;
-            text-decoration: none;
-            transition-timing-function: ease-in-out;
-            -ms-transition-timing-function: ease-in-out;
-            -moz-transition-timing-function: ease-in-out;
-            -webkit-transition-timing-function: ease-in-out;
-            -o-transition-timing-function: ease-in-out;
-            transition-duration: .2s;
-            -ms-transition-duration: .2s;
-            -moz-transition-duration: .2s;
-            -webkit-transition-duration: .2s;
-            -o-transition-duration: .2s;
+        .pic-media.login{
+            height: 70px;
+            width: 100%;
         }
-        
-        ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-        img {
-    max-width: 100%;
-    height: auto;
-}
-        section {
-            padding: 60px 0;
-           /* min-height: 100vh;*/
-        }
-
-
 
 .main-footer{
     position:relative;
@@ -255,6 +214,8 @@
 
 .main-footer .footer-list{
     position:relative;
+    list-style: none;
+    list-style-type: none;
 }
 
 .main-footer .footer-list li{
@@ -273,22 +234,6 @@
     transition:all 300ms ease;
 }
 
-.main-footer .footer-list li a:hover{
-    text-decoration:underline;
-    color:#ff6666;
-},
-
-
-
-/*Gallery Widget*/
-
-/* .main-footer .gallery-widget{
-    position:relative;
-    max-width:350px; */
-/* } */
-
-,
-/* Info List */
 
 .main-footer .info-list{
     position:relative;
@@ -377,10 +322,5 @@
     -ms-transition:all 300ms ease;
     -o-transition:all 300ms ease;
     transition:all 300ms ease;
-}
-
-.main-footer .footer-bottom .footer-nav li a:hover{
-    color:#ff6666;
-    text-decoration:underline;
 }
     </style>
