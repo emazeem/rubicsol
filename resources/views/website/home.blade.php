@@ -748,7 +748,7 @@
                                         Making the strategic choice to go with RUBIC LIMS for your laboratory's information management needs not only streamlines daily operations but also guarantees optimal quality and dependability. While the extra lab management capabilities provided by Rubic Lims further improve your laboratory's performance and reputation within the industry, the system's ISO 17025 compliance offers a strong platform for your laboratory to flourish in its research pursuits.
                                     </p>
                                 </div>
-                                <div class="col-md-2 bg-info">
+                                <div class="col-md-2 ">
                                     <img src="website/iso17025.png" alt="" class="img-fluid w-100">
                                 </div>
                             </div>
@@ -816,23 +816,23 @@
                 <div class="col-lg-4 col-sm-6">
                     <div class="contact-info-block text-center mb-4">
                         <i class=""><img src="/images/call.png" alt=""></i>
-                      <a href="tel:+923040647306"><p class="mb-0">Contact Quickly</p></a>
-                        <h5>+923040647306</h5>
+                      <p class="mb-0">Contact Quickly</p>
+                      <a href="tel:+923040647306"><h5>+923040647306</h5></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <div class="contact-info-block text-center mb-4">
                         <i class=""><img src="/images/email.png" alt=""></i>
-                      <a href="mailto:info@rubicsol.com"><p class="mb-0">Email</p></a>
-                       <h5>Email: info@rubicsol.com</h5>
+                      <p class="mb-0">Email</p>
+                      <a href="mailto:info@rubicsol.com"> <h5>info@rubicsol.com</h5></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <div class="contact-info-block text-center mb-4">
                         <!--Google-maps-->
                         <i class=""><img src="/images/placeholder.png" alt=""></i>
-                        <a href="https://maps.app.goo.gl/SrynNW5eGBpPJuLq6"><p class="mb-0">Location</p><a>
-                     <h5>Rubi Plaza, Awan Chowk, Near Akbar Chowk, Faisalabad</h5>
+                        <p class="mb-0">Location</p>
+                        <a href="https://maps.app.goo.gl/SrynNW5eGBpPJuLq6"><h5>Rubi Plaza, Awan Chowk, Near Akbar Chowk, Faisalabad</h5><a>
                     </div>
                 </div>
             </div>
