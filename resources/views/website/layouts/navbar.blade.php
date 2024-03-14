@@ -17,27 +17,27 @@
                 <!-- Links -->
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item ">
-                        <a href="#banner" class="nav-link smoth-scroll">
+                        <a href="{{url('/')}}" class="nav-link smoth-scroll">
                             Home
                         </a>
                     </li>
                     <li class="nav-item ">
-                        <a href="#book" class="nav-link smoth-scroll">
+                        <a href="{{url('about-us')}}" class="nav-link smoth-scroll">
                             About
                         </a>
                     </li>
                     <li class="nav-item ">
-                        <a href="#blog" class="nav-link smoth-scroll">
+                        <a href="{{url('documentation')}}" class="nav-link smoth-scroll">
                             Documentation
                         </a>
                     </li>
                     <li class="nav-item ">
-                        <a href="#blog" class="nav-link smoth-scroll">
+                        <a href="{{url('')}}" class="nav-link smoth-scroll">
                             Blog
                         </a>
                     </li>
                     <li class="nav-item ">
-                        <a href="#contact" class="nav-link smoth-scroll">
+                        <a href="{{url('contact-us')}}" class="nav-link smoth-scroll">
                             Contact
                         </a>
                     </li>
