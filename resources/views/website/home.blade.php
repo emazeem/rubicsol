@@ -220,14 +220,14 @@
 
 @endsection
 @section('content')
-    <section class="banner-main py-7" id="banner">
+    <section class="banner-main py-7 pb-3" id="banner">
         <div class="container-fluid">
             <div class="row justify-content-between">
                 <div class="col-lg-6 p-0" style="background: url('white-cover.jpeg');background-position: center;background-size: cover">
                     <div class="d-flex justify-content-center align-items-end h-100">
                         <div class="text-center w-100" style="background-image: linear-gradient(transparent, rgba(224,224,224,0.81));">
-                            <h2 class="text-warning pb-0 mb-0">Our Masterpiece</h2>
-                            <img src="{{url('rubic-lims-logo.png')}}" class="pb-4" alt="" width="300">
+                            <h2 class="text-warning pb-0 mb-0 d-none">Our Masterpiece</h2>
+                            <img src="{{url('rubic-lims-logo.png')}}" class="pb-4 d-none" alt="" width="300" >
                         </div>
                     </div>
 
@@ -255,6 +255,136 @@
             </div>
         </div>
     </section>
+    <section class="section blog-home" id="blog">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="section-heading mb-4 text-center">
+                        <h2 class="text-lg mt-5 d-none">RUBIC LIMS</h2>
+                        <div class="row  mt-5 justify-content-center">
+                            <div class="col-md-3 d-none">
+                                <img src="{{url('rubic-lims-logo.png')}}" class="" alt="">
+                            </div>
+                            <div class="col-md-9">
+                                <img src="{{url('rubic-lims-logo.png')}}" class="pb-2" style="width: 300px" alt="">
+
+                                <h2 class="text-lg d-none">RUBIC LIMS</h2>
+
+                                <h6>Meet RUBIC LIMS, the state-of-the-art lab information management system that transforms laboratory operations and collaborations. Our intuitive platform makes it easy to manage the resources, workflows, and data in your lab from a single, central location.</h6>
+
+                            </div>
+                        </div>
+
+                        <h3 class="mt-5">RUBIC LIMS Modules</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="blog-item card mb-4 mb-lg-0 border-0">
+                        <img src="images/module1.jpg" alt="" class="img-fluid w-100 module-image">
+                        <div class="blog-item-content p-4">
+                            <h4 class="mt-2 mb-3"><a href="blog-single.html">Sample Management</a></h4>
+                            <div class="blog-meta mb-2">
+                                <span>Sample management is essential for maintaining the highest standards and guaranteeing accurate results in the field of research and quality control.By managing samples in RUBIC LIMS efficiently over the course of their lifespan.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="blog-item card mb-4 mb-lg-0 border-0">
+                        <img src="images/imgten.jpg" alt="" class="img-fluid w-100 module-image">
+                        <div class="blog-item-content p-4">
+                            <h4 class="mt-2 mb-3"><a href="blog-single.html">Quotation and Customer management</a></h4>
+                            <div class="blog-meta mb-2">
+                                <span>For RUBIC LIMS, a Lab Information and administration Systems (LIMS) provider, efficient quotation and customer administration are vital for optimising business processes, elevating client satisfaction, and promoting growth.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="blog-item card mb-4 mb-lg-0 border-0">
+                        <img src="images/module3.jpg" alt="" class="img-fluid w-100 module-image">
+                        <div class="blog-item-content p-4">
+                            <h4 class="mt-2 mb-3"><a href="blog-single.html">Order Management and Invoicing</a></h4>
+                            <div class="blog-meta mb-2">
+                                <span>The sophisticated, user-friendly RUBIC LIMS (Laboratory Information Management System) platform is made to maximise all aspects of laboratory operations, including order processing and billing.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="blog-item card mb-4 mb-lg-0 border-0">
+                        <img src="images/module4.jpg" alt="" class="img-fluid w-100 module-image">
+                        <div class="blog-item-content p-4">
+                            <h4 class="mt-2 mb-3"><a href="blog-single.html">Scheduling and Data Entry: A unique Approach</a></h4>
+                            <div class="blog-meta mb-2">
+                                <span>To maintain optimal processes and deliver correct results in the fast-paced world of laboratories, efficient scheduling and data input are essential. Innovative and state-of-the-art platform.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="blog-item card mb-4 mb-lg-0 border-0">
+                        <img src="images/modulefive.jpg" alt="" class="img-fluid w-100 module-image">
+                        <div class="blog-item-content p-4">
+                            <h4 class="mt-2 mb-3"><a href="blog-single.html">Master Data Management</a></h4>
+                            <div class="blog-meta mb-2">
+                                <span>Particularly in the framework of RUBIC LIMS, master data management (MDM) becomes apparent as an essential technique in the ever-changing field of data management for preserving data accuracy, consistency, and integrity throughout an organisation.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="blog-item card mb-4 mb-lg-0 border-0">
+                        <img src="images/modulesix.jpg" alt="" class="img-fluid w-100 module-image">
+                        <div class="blog-item-content p-4">
+                            <h4 class="mt-2 mb-3"><a href="blog-single.html">Documentation Control and Record</a></h4>
+                            <div class="blog-meta mb-2">
+                                <span>Any laboratory or research institution must have documentation control and record management in place to guarantee the precision, consistency, and traceability of data and procedures.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section others-book">
+        <div class="container-fluid">
+            <div class="row pt-5">
+                <div class="col-lg-3">
+                    <div class="section-heading text-center ">
+                        <h2 class="text-lg">What is a LIMS?</h2>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="section-heading ">
+                        <p>
+                            Laboratory Information Management System (LIMS) is a technology used to streamline and maximize the efficiency of daily operations of laboratories. It functions as a centralized digital platform that facilitates the administration of important activities like test scheduling, sample monitoring, and result analysis. By promoting teamwork and upholding high standards of quality, LIMS makes sure that laboratory workflows are well-organized.
+                        </p>
+                        <p>
+                            Additionally, it makes data sharing and analysis more effective, which can promote quicker and better decision-making in the laboratory setting. Labs can greatly increase their output and general performance by using LIMS, making it an essential tool in the modern scientific world. Read further to learn more about LIMS, how it can assist you, and which option best fits your lab's needs.
+                        </p>
+
+
+                        <h2 >Core functions of a LIMS</h2>
+
+                        <p>
+                            The main objective of LIMS is to enhance lab productivity, accuracy, and quality control by decreasing manual labor. Our software can be tailored to almost any industry and situation, so how it accomplishes this depends on the use case.
+                        </p>
+                        <p>
+                            Our modern LIMS systems, the RUBIC LIMS, can carry out a number of fundamental tasks to support your ongoing projects and daily work, improving every aspect of laboratory work.
+                        </p>
+
+
+                        <a href="checkout.html" class="btn btn-border-tp btn-small ml-3">Request Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <section class="section chapter pt-0 mt-0" id="chapter">
         <div class="container">
             <div class="row ">
@@ -339,130 +469,10 @@
             </div>
         </div>
     </section>
-    <section class="section others-book">
-        <div class="container ">
-            <div class="row pt-5">
-                <div class="col-lg-4 ">
-                    <div class="section-heading text-center ">
-                        <h2 class="text-lg">What is a LIMS?</h2>
-                    </div>
-                </div>
-                <div class="col-lg-8">
-                    <div class="section-heading ">
-                        <p>
-                            Laboratory Information Management System (LIMS) is a technology used to streamline and maximize the efficiency of daily operations of laboratories. It functions as a centralized digital platform that facilitates the administration of important activities like test scheduling, sample monitoring, and result analysis. By promoting teamwork and upholding high standards of quality, LIMS makes sure that laboratory workflows are well-organized.
-                        </p>
-                        <p>
-                            Additionally, it makes data sharing and analysis more effective, which can promote quicker and better decision-making in the laboratory setting. Labs can greatly increase their output and general performance by using LIMS, making it an essential tool in the modern scientific world. Read further to learn more about LIMS, how it can assist you, and which option best fits your lab's needs.
-                        </p>
 
-
-                        <h2 >Core functions of a LIMS</h2>
-
-                        <p>
-                            The main objective of LIMS is to enhance lab productivity, accuracy, and quality control by decreasing manual labor. Our software can be tailored to almost any industry and situation, so how it accomplishes this depends on the use case.
-                        </p>
-                        <p>
-                            Our modern LIMS systems, the RUBIC LIMS, can carry out a number of fundamental tasks to support your ongoing projects and daily work, improving every aspect of laboratory work.
-                        </p>
-
-
-                        <a href="checkout.html" class="btn btn-border-tp btn-small ml-3">Request Demo</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-<!--modules are coming here-->
-<section class="section blog-home border-top" id="blog">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="section-heading text-center">
-                        <h2 class="text-lg mb-3">RUBIC LIMS Modules</h2>
-                    </div>
-                </div>
-            </div>
-<!-- 1st partation -->
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="blog-item card mb-4 mb-lg-0 border-0">
-                        <img src="images/module1.jpg" alt="" class="img-fluid w-100 module-image">
-                        <div class="blog-item-content p-4">
-                            <h4 class="mt-2 mb-3"><a href="blog-single.html">Sample Management</a></h4>
-                            <div class="blog-meta mb-2">
-                                <span>Sample management is essential for maintaining the highest standards and guaranteeing accurate results in the field of research and quality control.By managing samples in RUBIC LIMS efficiently over the course of their lifespan.</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="blog-item card mb-4 mb-lg-0 border-0">
-                        <img src="images/imgten.jpg" alt="" class="img-fluid w-100 module-image">
-                        <div class="blog-item-content p-4">
-                            <h4 class="mt-2 mb-3"><a href="blog-single.html">Quotation and Customer management</a></h4>
-                            <div class="blog-meta mb-2">
-                                <span>For RUBIC LIMS, a Lab Information and administration Systems (LIMS) provider, efficient quotation and customer administration are vital for optimising business processes, elevating client satisfaction, and promoting growth.</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="blog-item card mb-4 mb-lg-0 border-0">
-                        <img src="images/module3.jpg" alt="" class="img-fluid w-100 module-image">
-                        <div class="blog-item-content p-4">
-                            <h4 class="mt-2 mb-3"><a href="blog-single.html">Order Management and Invoicing</a></h4>
-                            <div class="blog-meta mb-2">
-                                <span>The sophisticated, user-friendly RUBIC LIMS (Laboratory Information Management System) platform is made to maximise all aspects of laboratory operations, including order processing and billing.</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-<!--other three picutes or module-->
-        <div class="row container flex justify-center item-center mx-auto my-10">
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="blog-item card mb-4 mb-lg-0 border-0">
-                        <img src="images/module4.jpg" alt="" class="img-fluid w-100 module-image">
-                        <div class="blog-item-content p-4">
-                            <h4 class="mt-2 mb-3"><a href="blog-single.html">Scheduling and Data Entry: A unique Approach</a></h4>
-                            <div class="blog-meta mb-2">
-                                <span>To maintain optimal processes and deliver correct results in the fast-paced world of laboratories, efficient scheduling and data input are essential. Innovative and state-of-the-art platform.</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="blog-item card mb-4 mb-lg-0 border-0">
-                        <img src="images/modulefive.jpg" alt="" class="img-fluid w-100 module-image">
-                        <div class="blog-item-content p-4">
-                            <h4 class="mt-2 mb-3"><a href="blog-single.html">Master Data Management</a></h4>
-                            <div class="blog-meta mb-2">
-                                <span>Particularly in the framework of RUBIC LIMS, master data management (MDM) becomes apparent as an essential technique in the ever-changing field of data management for preserving data accuracy, consistency, and integrity throughout an organisation.</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="blog-item card mb-4 mb-lg-0 border-0">
-                        <img src="images/modulesix.jpg" alt="" class="img-fluid w-100 module-image">
-                        <div class="blog-item-content p-4">
-                            <h4 class="mt-2 mb-3"><a href="blog-single.html">Documentation Control and Record</a></h4>
-                            <div class="blog-meta mb-2">
-                                <span>Any laboratory or research institution must have documentation control and record management in place to guarantee the precision, consistency, and traceability of data and procedures.</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
     <section class="section others-book">
         <div class="container-fluid ">
-            <div class="row justify-content-center">
+            <div class="row justify-content-center mt-5 pt-4">
                 <div class="col-lg-6">
                     <div class="section-heading ">
                         <h2 class="text-lg">The Pros of using RUBIC LIMS</h2>
@@ -503,23 +513,22 @@
         </div>
     </section>
     <!--Features-->
-    <section class="section blog-home border-top" id="blog">
-        <div class="container">
+    <section class="section blog-home" id="blog">
+        <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section-heading text-center">
-                        <h2 class="text-lg mb-3">List of our features</h2>
+                        <h2 class="text-lg mb-3">Key Features</h2>
                     </div>
                 </div>
             </div>
-<!-- 1st partation -->
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="col-lg-3 mb-4 col-md-6 col-sm-6">
                     <div class="blog-item card mb-4 mb-lg-0 border-0">
                     <div class="text-center pt-3">
                     <img src="images/adaptive.png" alt="" class="img-fluid feature-image">
                        </div>
-                    <div class="blog-item-content p-4">
+                        <div class="blog-item-content p-4">
                             <h4 class="mt-2 mb-3"><a href="blog-single.html">Adaptable Software Platform</a></h4>
                             <div class="blog-meta mb-2">
                                 <span>Rubic LIMS Laboratory Information Management System is distinguished by its flexible software platform. Because of its special ability to customise the system to meet individual laboratory requirements and processes</span>
@@ -527,7 +536,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="col-lg-3 mb-4 col-md-6 col-sm-6">
                     <div class="blog-item card mb-4 mb-lg-0 border-0">
                         <div class="text-center pt-3">
                             <img src="images/saving.png" alt="" class="img-fluid feature-image">
@@ -540,7 +549,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="col-lg-3 mb-4 col-md-6 col-sm-6">
                     <div class="blog-item card mb-4 mb-lg-0 border-0">
                     <div class="text-center pt-3">
                     <img src="images/global-marketing.png" alt="" class="img-fluid feature-image">
@@ -553,17 +562,12 @@
                         </div>
                     </div>
                 </div>
-
-            </div>
-        </div>
-<!--other three picutes or module-->
-        <div class="row container flex justify-center item-center mx-auto my-10">
-                <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="col-lg-3 mb-4 col-md-6 col-sm-6">
                     <div class="blog-item card mb-4 mb-lg-0 border-0">
-                    <div class="text-center pt-3">
-                    <img src="images/customer-satisfaction.png" alt="" class="img-fluid feature-image">
-                   </div>
-                    <div class="blog-item-content p-4">
+                        <div class="text-center pt-3">
+                            <img src="images/customer-satisfaction.png" alt="" class="img-fluid feature-image">
+                        </div>
+                        <div class="blog-item-content p-4">
                             <h4 class="mt-2 mb-3"><a href="blog-single.html">Dedicated Industry Expertise</a></h4>
                             <div class="blog-meta mb-2">
                                 <span>The distinctive fusion of advanced technology and industry expertise distinguishes Rubic LIMS from its rivals.The team of professionals at Rubic LIMS is one of the main things that sets it apart from the competition.</span>
@@ -571,12 +575,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="col-lg-3 mb-4 col-md-6 col-sm-6">
                     <div class="blog-item card mb-4 mb-lg-0 border-0">
-                    <div class="text-center pt-3">
-                    <img src="images/teamwork (1).png" alt="" class="img-fluid feature-image">
-        </div>
-                    <div class="blog-item-content p-4">
+                        <div class="text-center pt-3">
+                            <img src="images/teamwork (1).png" alt="" class="img-fluid feature-image">
+                        </div>
+                        <div class="blog-item-content p-4">
                             <h4 class="mt-2 mb-3"><a href="blog-single.html">Collaborative Workforce</a></h4>
                             <div class="blog-meta mb-2">
                                 <span>By providing a collaborative work environment that encourages easy communication, teamwork, and productivity among laboratory workers, Rubic LIMS distinguishes out in the industry it shines out in part because of its intuitive user interface. </span>
@@ -584,12 +588,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="col-lg-3 mb-4 col-md-6 col-sm-6">
                     <div class="blog-item card mb-4 mb-lg-0 border-0">
-                    <div class="text-center pt-3">
-                          <img src="images/task.png" alt="" class="img-fluid feature-image">
-        </div>
-                          <div class="blog-item-content p-4">
+                        <div class="text-center pt-3">
+                            <img src="images/task.png" alt="" class="img-fluid feature-image">
+                        </div>
+                        <div class="blog-item-content p-4">
                             <h4 class="mt-2 mb-3"><a href="blog-single.html">Regulatory Compliance</a></h4>
                             <div class="blog-meta mb-2">
                                 <span>Rubic LIMS distinguishes itself from other providers by offering regulatory compliance for laboratories in a variety of industries. Because of its innovative compliance strategy, which combines reliable features, frequent updates, and an intuitive user interface.</span>
@@ -602,24 +606,6 @@
         </div>
     </section>
 
-    <section class="feature-home section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 col-md-6">
-                    <a >FAQ</a>
-                    <h2 class="mb-4">What is a typical LIMS workflow?</h2>
-                    <p>All of the processes illustrated here and more are integrated into one easy-to-use, effective system by RUBIC LIMS, a comprehensive solution.</p>
-                    <p>In essence, every standard lab follows a similar procedure of sample flow. Our well-planned and modern RUBIC LIMS follows each and every step with great dedication and a vision to provide clients with quality work.</p>
-
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="mt-5 mt-lg-0">
-                        <img src="screenshots/img_15.png" alt="" class="img-fluid w-100">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <section class="setcion" id="book">
         <div class="container">
             <div class="row">
@@ -659,42 +645,36 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="col-12">
-                    <div class="section-heading book-info mt-5 mt-lg-0">
-                        <h2 class="text-lg text-center">RUBIC LIMS</h2>
-                        <h5 class=" mb-4 text-center">Elevating Lab Information Management</h5>
-                        <p >
-                            Meet RUBIC LIMS, the state-of-the-art lab information management system that transforms laboratory operations and collaborations. Our intuitive platform makes it easy to manage the resources, workflows, and data in your lab from a single, central location.
-                        </p>
-                        <ul class="list-unstyled mt-4 mb-5">
-                            <li><i class="ti-check mr-3"></i>
-                                User-Friendly Interface<br>
-                                <p class="font-weight-normal">The user-friendly, contemporary interface of Rubic Lims makes information management in your lab easier. Our system is made to be simple to use, so you and your team can concentrate on what really matters—pursuing ground-breaking research and fostering creativity.</p>
-                            </li>
-                            <li><i class="ti-check mr-3"></i> Robust Features<br>
-                                <p class="font-weight-normal">
-                                    A feature-rich feature set designed to satisfy the varied requirements of laboratories in a range of sectors is provided by Rubic Lims. Modules for sample management, inventory monitoring, electronic lab notebooks, report production, and other functions are included in our system.
-
-                                </p>
-                            </li>
-                            <li><i class="ti-check mr-3"></i> Safe and Dedicated<br>
-                                <p class="font-weight-normal">
-                                    At Rubic Lims, we recognize the significance of regulatory compliance and data security in the laboratory. Strong security features on our platform include frequent backups, access limitations, and data encryption. Rubic Lims also follows industry-standard compliance guidelines, guaranteeing that the data in your lab is safe and compliant with legal requirements.
-
-                                </p>
-                            </li>
-                            <li><i class="ti-check mr-3"></i> Exceptional Support<br>
-                                <p class="font-weight-normal">
-                                    We take great satisfaction in offering our customers excellent customer service. If you have any questions or concerns, our committed team of specialists is here to help. We're here to help you get the most out of Rubic Lims, whether you need help with setup, training, or troubleshooting.
-
-                                </p>
-                            </li>
-                        </ul>
-
-                        <a href="#" class="btn btn-main-2">Contact us</a>
+            </div>
+        </div>
+    </section>
+    <section class="pt-4 section-bottom" id="service">
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-12 col-sm-6">
+                    <div class="service-block mb-4 mb-lg-0">
+                        <div class="container">
+                            <h4 class="mb-3 mt-4">"Our Meticulous Adherence to ISO/IEC 17025 Standards"</h4>
+                            <div class="row">
+                                <div class="col-md-10">
+                                    <p class="text-left">
+                                        RUBIC LIMS stands out as an exceptional lab information management system that provides comprehensive ISO 17025 compliance for calibration services. This global standard for testing and calibration laboratories ensures that your laboratory maintains the highest levels of accuracy, reliability, and quality in its operations. By adopting Rubic Lims, you can rest assured that your laboratory's equipment and instruments are consistently performing at optimal levels, leading to more reliable data and improved research outcomes.
+                                    </p>
+                                    <p class="text-left">
+                                        The integration of ISO 17025 services within Rubic Lims offers numerous advantages for your laboratory. Firstly, it enables you to manage and monitor calibration processes efficiently. With Rubic Lims, you can effortlessly track calibration schedules, store calibration records, and generate reports that demonstrate your compliance with the ISO 17025 requirements. This not only streamlines your operations but also ensures that your laboratory remains in full compliance with the standard, fostering a culture of continuous improvement and excellence.
+                                    </p>
+                                    <p class="text-left">
+                                        Making the strategic choice to go with RUBIC LIMS for your laboratory's information management needs not only streamlines daily operations but also guarantees optimal quality and dependability. While the extra lab management capabilities provided by Rubic Lims further improve your laboratory's performance and reputation within the industry, the system's ISO 17025 compliance offers a strong platform for your laboratory to flourish in its research pursuits.
+                                    </p>
+                                </div>
+                                <div class="col-md-2 ">
+                                    <img src="website/iso17025.png" alt="" class="img-fluid w-100">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -727,35 +707,21 @@
             </div>
         </div>
     </section>
+    <section class="feature-home section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6">
+                    <a >FAQ</a>
+                    <h2 class="mb-4">What is a typical LIMS workflow?</h2>
+                    <p>All of the processes illustrated here and more are integrated into one easy-to-use, effective system by RUBIC LIMS, a comprehensive solution.</p>
+                    <p>In essence, every standard lab follows a similar procedure of sample flow. Our well-planned and modern RUBIC LIMS follows each and every step with great dedication and a vision to provide clients with quality work.</p>
 
-
-    <section class="pt-4 section-bottom" id="service">
-        <div class="container-fluid">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-md-12 col-sm-6">
-                    <div class="service-block mb-4 mb-lg-0">
-                        <div class="container">
-                            <h4 class="mb-3 mt-4">"Our Meticulous Adherence to ISO/IEC 17025 Standards"</h4>
-                            <div class="row">
-                                <div class="col-md-10">
-                                    <p class="text-left">
-                                        RUBIC LIMS stands out as an exceptional lab information management system that provides comprehensive ISO 17025 compliance for calibration services. This global standard for testing and calibration laboratories ensures that your laboratory maintains the highest levels of accuracy, reliability, and quality in its operations. By adopting Rubic Lims, you can rest assured that your laboratory's equipment and instruments are consistently performing at optimal levels, leading to more reliable data and improved research outcomes.
-                                    </p>
-                                    <p class="text-left">
-                                        The integration of ISO 17025 services within Rubic Lims offers numerous advantages for your laboratory. Firstly, it enables you to manage and monitor calibration processes efficiently. With Rubic Lims, you can effortlessly track calibration schedules, store calibration records, and generate reports that demonstrate your compliance with the ISO 17025 requirements. This not only streamlines your operations but also ensures that your laboratory remains in full compliance with the standard, fostering a culture of continuous improvement and excellence.
-                                    </p>
-                                    <p class="text-left">
-                                        Making the strategic choice to go with RUBIC LIMS for your laboratory's information management needs not only streamlines daily operations but also guarantees optimal quality and dependability. While the extra lab management capabilities provided by Rubic Lims further improve your laboratory's performance and reputation within the industry, the system's ISO 17025 compliance offers a strong platform for your laboratory to flourish in its research pursuits.
-                                    </p>
-                                </div>
-                                <div class="col-md-2 ">
-                                    <img src="website/iso17025.png" alt="" class="img-fluid w-100">
-                                </div>
-                            </div>
-                        </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="mt-5 mt-lg-0">
+                        <img src="screenshots/img_15.png" alt="" class="img-fluid w-100">
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -772,27 +738,24 @@
             </div>
 
             <div class="row align-items-center">
-                <div class="col-lg-12 col-sm-12 col-md-12 testimonial-wrap">
-                    <div class="test-item">
-                        <div class="testimonial-item-content">
-                            <div class="test-author-thumb mb-4">
-                                <img src="https://aimscal.com/public/images/CEO.jpeg" alt="Testimonial author" class="img-fluid" style="object-fit: cover">
+                <div class="card border-0 shadow">
+                    <div class="card-body ">
+                        <div class="author-thumb mb-4 text-center py-5">
+                            <img src="https://aimscal.com/public/images/CEO.jpeg" alt="Testimonial author" class="img-fluid" style="object-fit: cover">
 
-                                <div class="test-author-info mt-4">
-                                    <div class="rating">
-                                        <a href="#"><i class="ti-star"></i></a>
-                                        <a href="#"><i class="ti-star"></i></a>
-                                        <a href="#"><i class="ti-star"></i></a>
-                                        <a href="#"><i class="ti-star"></i></a>
-                                        <a href="#"><i class="ti-star"></i></a>
-                                    </div>
-
-                                    <h4 class="mb-0 mt-2">Imtiaz Ahmed</h4>
-                                    <p>CEO Al-Meezan Industrial Metrology Services</p>
+                            <div class="test-author-info mt-2">
+                                <div class="rating">
+                                    <a href="#">★</a>
+                                    <a href="#">★</a>
+                                    <a href="#">★</a>
+                                    <a href="#">★</a>
+                                    <a href="#">★</a>
                                 </div>
-                            </div>
 
-                            <p class="mb-0">Lab Information Management System by Rubicsol is a versatile tool for managing all sorts of lab operation, it makes sample management, lab inventory management, operation management and compliance to ISO 17025: 2017 an easy task.</p>
+                                <h4 class="mb-0">Imtiaz Ahmed</h4>
+                                <h6>CEO @ Al-Meezan Industrial Metrology Services</h6>
+                                <p class="mb-0 px-5">Lab Information Management System by Rubicsol is a versatile tool for managing all sorts of lab operation, it makes sample management, lab inventory management, operation management and compliance to ISO/IEC 17025:2017 an easy task.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
