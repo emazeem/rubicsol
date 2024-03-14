@@ -27,10 +27,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="{{url('website/css/style.css')}}">
-
 </head>
-
-
 <body id="top-header">
 @include('website.layouts.navbar')
 @yield('content')
@@ -38,17 +35,13 @@
 <a class="scroll-to-top smoth-scroll" href="#top-header">
     <i class="ti-angle-up"></i>
 </a>
-
 <script src="{{url('website/plugins/jquery/jquery.min.js')}}"></script>
-<!-- Bootstrap 3.1 -->
 <script src="{{url('website/plugins/bootstrap/js/popper.min.js')}}"></script>
 <script src="{{url('website/plugins/bootstrap/js/bootstrap.min.js')}}"></script>
 <script src="{{url('website/plugins/owl-carousel/owl-carousel.js')}}"></script>
-<!-- Slick Slider -->
 <script src="{{url('website/plugins/slick-carousel/slick/slick.min.js')}}"></script>
 <script src="{{url('website/plugins/magnific-popup/jquery.magnific-popup.js')}}"></script>
 <script src="{{url('website/js/theme.js')}}"></script>
-
 </body>
 </html>
 

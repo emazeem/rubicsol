@@ -68,19 +68,21 @@
 <footer class="main-footer">
         <div class="container">
             <!--Widgets Section-->
+            <div class="column-12 text-center">
+            <img class="rubic-sol" src="{{url('RUBICSOL.png')}}" alt="" />
+            </div>
             <div class="widgets-section">
                 <div class="row clearfix">
                     
                 <!--Footer Column-->
-                <div class="footer-column col-md-5 col-sm-12">
+                <div class="footer-column col-md-6 col-sm-12">
                                 <div class="footer-widget about-widget">
                                     <div class="logo w-100 text-center">
-                                        <a href="#"><img class="rubic-sol" src="{{url('RUBICSOL.png')}}" alt="" /></a>
+                                        <a href="#"></a>
                                     </div>
-                                    <div class="text">
-                                        <!-- <p>Rubi Plaza, Awan Chowk, Near Akbar Chowk, Faisalabad.</p>
-                                        <p>Phone: +9230001235321, +923040647306</p>
-                                        <p>Email: info@rubicsol.com</p> -->
+                                    <div class="text py-3 pt-5">
+                                        <p>RUBICSOL is a software company known for top-notch products. Our standout offering, RUBIC LIMS, is a specialized calibration solution designed for labs following ISO/IEC:17025 standards. It caters to over 100% of lab requirements, covering 40+ parameters, 100+ procedures/standards, and boasting 3000+ capabilities for uncertainty budget calculation and certificate reporting for customer UUC. From quoting to order management, calibration calculation to master data management, and supporting modules like finance, HR, and documentation – RUBIC LIMS has you covered! </p>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -90,11 +92,11 @@
                                 <div class="footer-widget links-widget">
                                     <h2>Quick Links</h2>
                                     <ul class="footer-list">
-                                        <li><a href="#">Home</a></li>
-                                        <li><a href="#">About</a></li>
-                                        <li><a href="#">Documentation</a></li>
-                                        <li><a href="#">Blog</a></li>
-                                        <li><a href="#">Login</a></li>
+                                        <li><a href="#"><i class="fa fa-home pr-2" style="color:black"></i>Home</a></li>
+                                        <li><a href="#"><i class="fa fa-info-circle pr-2" style="color:black"></i>About</a></li>
+                                        <li><a href="#"><i class="fa fa-file-text pr-2" style="color:black"></i>Documentation</a></li>
+                                        <li><a href="#"><i class="fa fa-newspaper-o pr-2" style="color: black"></i>Blog</a></li>
+                                        <li><a href="#"><i class="fa fa-user pr-2" style="color:black"></i>Login</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -102,11 +104,11 @@
                     
                             
                             <!--Footer Column-->
-                            <div class="footer-column col-md-4 col-sm-12">
+                            <div class="footer-column col-md-3 col-sm-12">
                                 <div class="footer-widget info-widget">
                                     <h2>Contact Info</h2>
                                     <ul class="info-list">
-                                        <li>Rubi Plaza,Awan Chowk,Near Akbar Chowk, Faisalabad</li>
+                                        <li>Rubi Plaza, Awan Chowk, Near Akbar Chowk, Faisalabad</li>
                                         <li> +92 3040647306</li>
                                         <li>info@rubicsol.com</li>
                                     </ul>
@@ -145,8 +147,8 @@
             margin: auto;
         }
         .pic-media {
-            height: 35px;
-             width: 35px;
+            height: 25px;
+             width: 25px;
         },
       h1,
         h2,
@@ -274,7 +276,7 @@
 .main-footer .footer-list li a:hover{
     text-decoration:underline;
     color:#ff6666;
-}
+},
 
 
 
@@ -285,35 +287,7 @@
     max-width:350px; */
 /* } */
 
-.main-footer .gallery-widget .images-outer{
-    position:relative;
-    margin:0px -3px;
-}
-
-.main-footer .gallery-widget .image-box{
-    position:relative;
-    float:left;
-    width:33.333%;
-    padding:0px 5px;
-    margin-bottom:10px;
-}
-
-.main-footer .gallery-widget .image-box img{
-    position:relative;
-    display:block;
-    width:100%;
-    border-radius:4px;
-    -webkit-transition:all 300ms ease;
-    -ms-transition:all 300ms ease;
-    -o-transition:all 300ms ease;
-    -moz-transition:all 300ms ease;
-    transition:all 300ms ease;
-}
-
-.main-footer .gallery-widget .image-box img:hover{
-    opacity:0.70;   
-}
-
+,
 /* Info List */
 
 .main-footer .info-list{
@@ -347,7 +321,7 @@
 .main-footer .info-widget .social-links li a{
     position:relative;
     color: #ffffff;
-    
+
     line-height:50px;
     text-align:center;
     border-radius:50%;
