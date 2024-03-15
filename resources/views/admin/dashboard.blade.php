@@ -3,18 +3,18 @@
     <script src="{{url('assets/js/1.10.1/jquery.min.js')}}"></script>
 <div class="row">
   <div class="col-12 mb-2">
-     @if($attendanceExist)
-     @if(!$ifUserCheckout)
-     <a href="{{route('check.out')}}" class="btn btn-danger float-right" >Check Out</a>
-     @endif
-     @else
-     <a href="{{route('check.in')}}" class="btn btn-success float-right" >Check In</a>
-     @endif
-    </div>
+    @if($attendanceExist)
+    @if(!$ifUserCheckout)
+    <a href="{{route('check.out')}}" class="btn btn-danger float-right" >Check Out</a>
+    @endif
+    @else
+    <a href="{{route('check.in')}}" class="btn btn-success float-right" >Check In</a>
+    @endif
+  </div>
     <div class="col-lg-12">
       <div class="card">
         <div class="card-body table-responsive">
-          <h5 class="float-left pb-1 font-weight-light"><i class="feather icon-clock"></i> My Attendance</h5>
+          <h5 class="float-left pb-1 font-weight-light"><i class="feather icon-clock"></i>My Attendance</h5>
           <table id="example" class="table table-bordered table-hover  table-sm display nowrap" cellspacing="0" width="100%">
             <thead>
               <tr class="bg-c-blue">
@@ -55,9 +55,9 @@
             <thead>
               <tr class="bg-c-blue">
                 <th>ID</th>
-                <th>users</th>
+                <th>USERS</th>
                 <th>TITLE</th>
-                <th>DesCRIPTION</th>
+                <th>DESCRIPTION</th>
                 <th>STATUS</th>
               </tr>
             </thead>
@@ -69,12 +69,12 @@
                 <td>{{$task->title}}</td>
                 <td>{{$task->description}}</td>
                 <td>
-                  @if($task->status==1)
-                  Pending
-                  @endif
-                  @if($task->status==0)
-                  In-Process
-                  @endif
+                @if($task->status==1)
+                In-Progress
+                @endif
+                @if($task->status==0)
+                Pending
+                @endif
                 </td>
               </tr>
               @endforeach

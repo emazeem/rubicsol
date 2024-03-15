@@ -13,7 +13,7 @@
                         <th>ID</th>
                         <th>User</th>
                         <th>Title</th>
-                        <th>Description</th>
+                        <th>Status</th>
                         <th>Action</th>
                     </tr>
                 </thead>
@@ -23,7 +23,14 @@
                         <td>{{$task->id}}</td>
                         <td>{{$task->user->name}}</td>
                         <td>{{$task->title}}</td>
-                        <td>{{$task->description}}</td>
+                        <td>
+                        @if($task->status==1)
+                        In-Progress
+                        @endif
+                        @if($task->status==0)
+                        Pending
+                        @endif
+                        </td>
                         <td>
                         <a href="{{route('task.edit',['id'=>$task->id])}}" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
                         <a href="{{route('task.show',['id'=>$task->id])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>

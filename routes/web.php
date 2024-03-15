@@ -69,8 +69,12 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('delete/{id}', [TaskController::class, 'delete'])->name('task.delete');
         Route::post('update', [TaskController::class, 'update'])->name('task.update');
         Route::get('delete/{id}', [TaskController::class, 'delete'])->name('task.delete');
+        Route::get('start/{id}', [TaskController::class, 'start'])->name('task.start');
+        Route::get('complete/{id}', [TaskController::class, 'complete'])->name('task.complete');
 
+    
         
+ 
     });
     
         Route::group(['prefix' => 'email'], function () {

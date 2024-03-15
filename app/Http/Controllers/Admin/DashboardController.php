@@ -77,7 +77,7 @@ class DashboardController extends Controller
         ->whereDate('check_in_date', date("Y-m-d"))
         ->where('status', 1)
         ->first();
-        $tasks = Task::where('user_id', auth()->user()->id);
+        $tasks = Task::where('user_id', auth()->user()->id)->get();
         return view('admin.dashboard',compact("attendanceExist",'ifUserCheckout','attendances','tasks'));
     }
 }
