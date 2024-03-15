@@ -10,13 +10,12 @@
                         <div class="footer-widget info-widget">
                             <h2>Contact Info</h2>
                             <ul class="info-list">
-                                <li> <i class="fa fa-map-marker"></i> Rubi Plaza, Awan Chowk, Near Akbar Chowk, Faisalabad</li>
-                                <li><i class="fa fa-phone"></i> +92 3040647306</li>
-                                <li><i class="fa fa-envelope"></i>  info@rubicsol.com</li>
-                            </ul>
-                        </div>
-
-                    </div>
+        <a href="https://maps.app.goo.gl/SrynNW5eGBpPJuLq6" target=""><li> <i class="fa fa-map-marker"></i> Rubi Plaza, Awan Chowk, Near Akbar Chowk, Faisalabad</li></a>
+        <a href="tel:+923040647306"><li><i class="fa fa-phone"></i> +92 3040647306</li></a> 
+        <a href="mailto:info@rubicsol.com"><li><i class="fa fa-envelope"></i>  info@rubicsol.com</li></a>
+</ul>
+</div>
+</div>
                     <div class="col">
                         <div class="footer-widget links-widget">
                             <h2>Quick Links</h2>

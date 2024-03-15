@@ -235,19 +235,7 @@
                 <div class="col-lg-6 col-md-8 p-0">
                     <img src="{{url('website/tech.png')}}" style="height: 50vh;object-fit: cover;width: 100%" alt="">
                     <div class="main-banner">
-<!--                        <span class="text-color font-weight-bold">George Stewart</span>
-                        <h1 class="mb-3 mt-2">
-                            The Man in the <br>Glass House
-                        </h1>
-
-                        <div class="mb-4">
-                            <h4>Price :- <span class="text-color">$14.99</span></h4>
-                        </div>
-                        <p class="mb-4">We work with our partners to streamline project plans that don’t just deliver on product perfection, but also delivers on time.</p>
-
-                        <a href="#" target="_blank" class="btn btn-main mt-2">
-                            Purchase now <i class="ti-angle-right ml-3"></i>
-                        </a>-->
+<!---->
                     </div>
                 </div>
 
@@ -512,7 +500,7 @@
             </div>
         </div>
     </section>
-    <!--Features-->
+    <!--Key Features-->
     <section class="section blog-home" id="blog">
         <div class="container-fluid">
             <div class="row justify-content-center">
@@ -575,6 +563,7 @@
                         </div>
                     </div>
                 </div>
+                <!--2nd row-->
                 <div class="col-lg-3 mb-4 col-md-6 col-sm-6">
                     <div class="blog-item card mb-4 mb-lg-0 border-0">
                         <div class="text-center pt-3">
@@ -597,6 +586,87 @@
                             <h4 class="mt-2 mb-3"><a href="blog-single.html">Regulatory Compliance</a></h4>
                             <div class="blog-meta mb-2">
                                 <span>Rubic LIMS distinguishes itself from other providers by offering regulatory compliance for laboratories in a variety of industries. Because of its innovative compliance strategy, which combines reliable features, frequent updates, and an intuitive user interface.</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-3 mb-4 col-md-6 col-sm-6">
+                    <div class="blog-item card mb-4 mb-lg-0 border-0">
+                        <div class="text-center pt-3">
+                            <img src="images/support.png" alt="" class="img-fluid feature-image">
+                        </div>
+                        <div class="blog-item-content p-4">
+                            <h4 class="mt-2 mb-3"><a href="blog-single.html">Exceptional Support</a></h4>
+                            <div class="blog-meta mb-2">
+                                <span>We take great satisfaction in offering our customers excellent customer service. If you have any questions or concerns, our committed team of specialists is here to help. We're here to help you get the most out of Rubic Lims, whether you need help with setup, training, or troubleshooting.</span>
+                            </div>
+                        </div>
+                    </div>     
+                </div>
+                <div class="col-lg-3 mb-4 col-md-6 col-sm-6">
+                    <div class="blog-item card mb-4 mb-lg-0 border-0">
+                        <div class="text-center pt-3">
+                            <img src="images/datasecurity.png" alt="" class="img-fluid feature-image">
+                        </div>
+                        <div class="blog-item-content p-4">
+                            <h4 class="mt-2 mb-3"><a href="blog-single.html">Data Security</a></h4>
+                            <div class="blog-meta mb-2">
+                                <span>Strong data security is our top priority via regular backups, access limits, and encryption.We use the best cybersecurity techniques to protect your private lab data. RUBIC LIMS offers trustworthy data protection to make you stress free and secured.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           <!--3rd row-->
+                <div class="col-lg-3 mb-4 col-md-6 col-sm-6">
+                    <div class="blog-item card mb-4 mb-lg-0 border-0">
+                        <div class="text-center pt-3">
+                            <img src="images/robustreporting.png" alt="" class="img-fluid feature-image">
+                        </div>
+                        <div class="blog-item-content p-4">
+                            <h4 class="mt-2 mb-3"><a href="blog-single.html">Robust reporting</a></h4>
+                            <div class="blog-meta mb-2">
+                                <span>Strong reporting features in RUBIC LIMS enable customers to create personalised reports. The platform makes it simpler to analyse data, evaluate performance, and make sensible choices by providing a variety of report templates and the ability to develop bespoke ones.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-4 col-md-6 col-sm-6">
+                    <div class="blog-item card mb-4 mb-lg-0 border-0">
+                        <div class="text-center pt-3">
+                            <img src="images/Qrscan.png" alt="" class="img-fluid feature-image">
+                        </div>
+                        <div class="blog-item-content p-4">
+                            <h4 class="mt-2 mb-3"><a href="blog-single.html">Barcodes for instrument receiving and dispatch</a></h4>
+                            <div class="blog-meta mb-2">
+                                <span>Processes for receiving and dispatching instruments by RUBIC LIMS expedites the process of identification via barcode scanning, automated workflows, and a systematic log of the movement and state of instruments, all of which improve accountability in workflow.</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-3 mb-4 col-md-6 col-sm-6">
+                    <div class="blog-item card mb-4 mb-lg-0 border-0">
+                        <div class="text-center pt-3">
+                            <img src="images/mobilefriendly.png" alt="" class="img-fluid feature-image">
+                        </div>
+                        <div class="blog-item-content p-4">
+                            <h4 class="mt-2 mb-3"><a href="blog-single.html">Mobile friendly</a></h4>
+                            <div class="blog-meta mb-2">
+                                <span>We take great satisfaction in offering our customers excellent customer service. If you have any questions or concerns, our committed team of specialists is here to help. We're here to help you get the most out of Rubic Lims, whether you need help with setup, training, or troubleshooting.</span>
+                            </div>
+                        </div>
+                    </div>     
+                </div>
+                <div class="col-lg-3 mb-4 col-md-6 col-sm-6">
+                    <div class="blog-item card mb-4 mb-lg-0 border-0">
+                        <div class="text-center pt-3">
+                            <img src="images/dashboard.png" alt="" class="img-fluid feature-image">
+                        </div>
+                        <div class="blog-item-content p-4">
+                            <h4 class="mt-2 mb-3"><a href="blog-single.html">Dashboard and lab data visualisation</a></h4>
+                            <div class="blog-meta mb-2">
+                                <span>The lab data visualisation in RUBIC LIMS is greatly improved with a well-designed dashboard. It uses graphs, charts, and other graphical representations to provide important information in an eye-catching way promoting easy understanding of Lab data operations.</span>
                             </div>
                         </div>
                     </div>
@@ -644,10 +714,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
+</div>
+</div>
+</div>
+</section>
     <section class="pt-4 section-bottom" id="service">
         <div class="container-fluid">
             <div class="row align-items-center justify-content-center">
