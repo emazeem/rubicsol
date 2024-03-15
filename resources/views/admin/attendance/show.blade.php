@@ -36,13 +36,12 @@
     <tr>
       <th scope="col">Status</th>
       <td scope="col">
-        
-      @if($show->status==1)
-                Check Out
-              @endif
-              @if($show->status==0)
-                Check In
-              @endif
+        @if($show->status==1)
+        Check Out
+        @endif
+        @if($show->status==0)
+        Check In
+        @endif
       </td>
       
     </tr>

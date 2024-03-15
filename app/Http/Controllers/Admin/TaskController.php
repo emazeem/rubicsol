@@ -11,13 +11,39 @@ use App\Models\Task;
 class TaskController extends Controller
 {
     //
+    public function start($id)
+    {
+        $task = Task::findOrFail($id);
+
+        if ($task->status == 0) {
+            $task->status = 1; 
+        } else {
+            $task->status = 0; 
+        }
+        $task->save();
+        return redirect()->back()->with('success', 'Task status updated successfully.');
+    }
+    public function complete($id)
+    {
+        $task = Task::findOrFail($id);
+
+        if ($task->status == 0) {
+            $task->status = 1; 
+        } else {
+            $task->status = 0; 
+        }
+        $task->save();
+        return redirect()->back()->with('success', 'Task status updated successfully.');
+    }
+    
+
     public function delete($id){
         Task::find($id)->delete();
         return redirect()->back();
     }
     public function show($id){
         $show=Task::find($id);
-        return view('admin.tasks.show',compact('show'));
+        return view('admin.tasks.show',compact('show',));
     }
     public function edit($id){
         $users=User::all();
@@ -54,9 +80,7 @@ class TaskController extends Controller
         $task->description=$request->description;
         $task->save();
         return response()->json(['success'=>'Task added successfully','id'=>$task->id]);
-
-        
-    }
+}
     public function update(Request $request){
         //dd($request->all());
         $this->validate(request(), [
