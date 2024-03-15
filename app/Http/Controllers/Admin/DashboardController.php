@@ -65,7 +65,7 @@ class DashboardController extends Controller
         Storage::disk('local')->put('public/profile/'.$attachment, File::get($request->profile));
         $user->profile=$attachment;
         $user->save();
-        return redirect()->back()
+        return redirect()->back();
     }
     public function index()
     {
