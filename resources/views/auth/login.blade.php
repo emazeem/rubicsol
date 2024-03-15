@@ -7,14 +7,14 @@
     
     <div class="row justify-content-center py-5 my-5">
         <!--Image side-->
-        <div class="col-md-6 mt-5">
+        <div class="col-md-5 mt-5">
         <img class="img-side pr-4 pb-2" src="images/loginimg3.jpg" alt="">
         </div>
         <!--start of form-->
         <div class="col-md-5 mt-5">
             <div class="card bg-c-primary">
                 <div class="card-header border-bottom border-white">
-                    <h1 class="text-center">{{ __('Login') }}</h1>
+                    <h1 class="text-heading text-center">Sign into your account</h1>
                 </div>
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
@@ -38,7 +38,7 @@
                         <input id="password" type="password" class="form-control form-control-lg  @error('password') is-invalid @enderror" name="password" placeholder="*****" required autocomplete="current-password">
 
                          <div class="input-group-append">
-                         <button type="button" class="btn-login btn-success btn-lg toggle-button"><i class="fa fa-eye-slash toggle-icon"></i></button> 
+                         <button type="button" class="btn-login  btn-lg toggle-button"><i class="fa fa-eye-slash toggle-icon"></i></button> 
                         </div> 
                     </div>
                     @error('password')
@@ -55,9 +55,9 @@
             
             <!--Button-->
             <!-- btn btn-lg bg-c-secondary float-end -->
-            <div class="row mb-0 mt-3">
-            <div class="col-md-8 offset-md-4">
-           <button type="submit" class="btn btn-lg bg-c-secondary float-end">{{ __('Login') }}</button>      
+            <div class="row mb-0 ml-1 mr-0 mt-3">
+            <div class="justify-center item-center">
+           <button class="btn-signin  text-white">Login</button>     
               </div>
            </div>
         </form>
@@ -86,12 +86,22 @@ $(document).ready(function(){
 
 <style>
 .img-side{
-    height: 498px;
-    width:  600px;
+    height: 504px;
+    width:  500px;
     object-fit:cover;    
     border-radius: 12px;
 }    
- 
-
-
+.text-heading{
+    font-size: 25px;
+}
+.btn-signin{
+    border-radius: 5px;
+    background-color: #000;
+    width: 400px;
+    height: 60px;   
+  
+} 
+.btn-login{
+    border-color: #f8f9fa;
+}
 </style>
