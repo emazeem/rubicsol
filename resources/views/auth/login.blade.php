@@ -86,7 +86,7 @@ $(document).ready(function(){
 
 <style>
 .img-side{
-    height: 503px;
+    height: 504px;
     width:  500px;
     object-fit:cover;    
     border-radius: 12px;
