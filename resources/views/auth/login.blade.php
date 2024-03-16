@@ -33,13 +33,14 @@
                         <!--Password Field-->
                         <div class="form-group mt-4">
                         <label for="password" class="text-md-end pb-1">{{ __('Password') }}</label>
-                        
+                        <div class="password-section">
                         <div class="input-group mb-3">
                         <input id="password" type="password" class="form-control   @error('password') is-invalid @enderror" name="password" placeholder="*****" required autocomplete="current-password">
 
                          <div class="input-group-append">
                          <button type="button" class="btn-login  btn-lg toggle-button"><i class="fa fa-eye-slash toggle-icon"></i></button> 
                         </div> 
+                    </div>
                     </div>
                     @error('password')
                     
@@ -102,8 +103,11 @@ $(document).ready(function(){
   
 } 
 .btn-login{
-    border: none;
-    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    border-radius:0px 5px 5px 0px!important    ;
+    background-color: #fff!important;
+    padding: 0px;
+    margin: 0px;
 }
 #email{
     height: 45px;

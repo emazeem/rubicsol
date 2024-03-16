@@ -75,7 +75,7 @@
                         <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
                             <div class="member">
                                 <div class="member-img">
-                                    <img src='{{url('img/'.$feature['url'])}}' class='img-fluid' >
+                                    <img src='{{url('img'.$feature['url'])}}' class='img-fluid' >
                                 </div>
                                 <div class="member-info">
                                     <h5>{{$feature['heading']}}</h5>
@@ -235,7 +235,7 @@
                 <div class="col-lg-6 col-md-8 p-0">
                     <img src="{{url('website/tech.png')}}" style="height: 50vh;object-fit: cover;width: 100%" alt="">
                     <div class="main-banner">
-<!---->
+
                     </div>
                 </div>
 
@@ -318,7 +318,7 @@
                         <div class="blog-item-content p-4">
                             <h4 class="mt-2 mb-3"><a href="blog-single.html">Master Data Management</a></h4>
                             <div class="blog-meta mb-2">
-                                <span>Particularly in the framework of RUBIC LIMS, master data management (MDM) becomes apparent as an essential technique in the ever-changing field of data management for preserving data accuracy, consistency, and integrity throughout an organisation.</span>
+                                <span>Particularly in the framework of RUBIC LIMS, master data management (MDM) becomes apparent as an essential technique in the ever-changing field of data management for preserving data accuracy.</span>
                             </div>
                         </div>
                     </div>
@@ -519,7 +519,7 @@
                         <div class="blog-item-content p-4">
                             <h4 class="mt-2 mb-3"><a href="blog-single.html">Adaptable Software Platform</a></h4>
                             <div class="blog-meta mb-2">
-                                <span>Rubic LIMS Laboratory Information Management System is distinguished by its flexible software platform. Because of its special ability to customise the system to meet individual laboratory requirements and processes</span>
+                                <span>Rubic LIMS Laboratory Information Management System is distinguished by its flexible software platform. Because of its special ability to customise the system to meet individual laboratory requirements.</span>
                             </div>
                         </div>
                     </div>
@@ -809,7 +809,7 @@
 
             <div class="row align-items-center">
                 <div class="card border-0 shadow">
-                    <div class="card-body ">
+                    <div class="card-body">
                         <div class="author-thumb mb-4 text-center py-5">
                             <img src="https://aimscal.com/public/images/CEO.jpeg" alt="Testimonial author" class="img-fluid" style="object-fit: cover">
 
