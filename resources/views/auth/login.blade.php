@@ -21,8 +21,8 @@
                         @csrf
                         <!--Email Field-->
                         <div class="form-group mt-4">
-                        <label for="email" class="text-md-end pb-2">{{ __('Email Address') }}</label>
-                        <input id="email" type="email" class="form-control form-control-lg @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" placeholder="Email" required autocomplete="email" autofocus>
+                        <label for="email" class="text-md-end pb-1">{{ __('Email Address') }}</label>
+                        <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" placeholder="Email" required autocomplete="email" autofocus>
                         @error('email')
                         <span class="invalid-feedback" role="alert">
                         <strong>{{ $message }}</strong>
@@ -32,10 +32,10 @@
 
                         <!--Password Field-->
                         <div class="form-group mt-4">
-                        <label for="password" class="text-md-end pb-2">{{ __('Password') }}</label>
+                        <label for="password" class="text-md-end pb-1">{{ __('Password') }}</label>
                         
                         <div class="input-group mb-3">
-                        <input id="password" type="password" class="form-control form-control-lg  @error('password') is-invalid @enderror" name="password" placeholder="*****" required autocomplete="current-password">
+                        <input id="password" type="password" class="form-control   @error('password') is-invalid @enderror" name="password" placeholder="*****" required autocomplete="current-password">
 
                          <div class="input-group-append">
                          <button type="button" class="btn-login  btn-lg toggle-button"><i class="fa fa-eye-slash toggle-icon"></i></button> 
@@ -86,7 +86,7 @@ $(document).ready(function(){
 
 <style>
 .img-side{
-    height: 504px;
+    height: 467px;
     width:  500px;
     object-fit:cover;    
     border-radius: 12px;
@@ -102,6 +102,13 @@ $(document).ready(function(){
   
 } 
 .btn-login{
-    border-color: #f8f9fa;
+    border: none;
+    background-color: #fff;
+}
+#email{
+    height: 45px;
+}
+#password{
+    height: 45px;
 }
 </style>
