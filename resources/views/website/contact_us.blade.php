@@ -1,71 +1,22 @@
 @extends('website.layouts.master')
 @section('content')
-    <main id="main" class="mt-5">
-        <!-- ======= Contact Section ======= -->
-        <section id="contact" class="contact">
-            <div class="container" data-aos="fade-up">
-
-                <div class="section-title text-left">
-                    <h2>Contact us</h2>
-                    <h6>Ready to Take Your Lab to the Next Level? Contact Us Today!</h6>
-                    <p>
-                        We're here to answer any questions you have about our innovative LIMS solution. Whether you're looking to streamline operations, ensure compliance, or drive scientific excellence, our expert team is ready to assist you.
-                        Take the first step towards unleashing the full potential of your lab. Contact us today and discover how our LIMS can transform your operations, boost productivity, and deliver accurate results. Let us be your partner in achieving success in the world of laboratory management.
-
-                    </p>
-                    <ul style="list-style-type: none;text-align: left" class="mt-4">
-                        <li>
-                            📞 Call us now to speak with a LIMS specialist and discuss how our solution can meet your unique lab requirements.
-
-                        </li>
-                        <li>
-                            📧 Send us an email with your inquiries, and our dedicated team will provide you with detailed information and personalized guidance.
-
-                        </li>
-                        <li>
-                            💼 Schedule a demo to experience the power of our LIMS firsthand. See how it can revolutionize your lab processes, improve efficiency, and elevate your performance.
-                        </li>
-                    </ul>
-
-                    <p>
-
-                    </p>
-                </div>
-
-                <div>
-                    <iframe style="border:0; width: 100%; height: 270px;"
-                            frameborder="0" allowfullscreen src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1702.3208857802576!2d74.24100956623843!3d31.423994492464132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391901ebe6650cb1%3A0xd941e8ab1176707!2sAIMS%20-%20Al%20Meezan%20Industrial%20Metrology%20Services!5e0!3m2!1sen!2sbg!4v1652694855722!5m2!1sen!2sbg" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-
-                <div class="row mt-5">
-
-                    <div class="col-lg-4">
-                        <div class="info">
-                            <div class="address">
-                                <i class="bi bi-geo-alt"></i>
-                                <h4>Location:</h4>
-                                <p></p>
-                            </div>
-
-                            <div class="email">
-                                <i class="bi bi-envelope"></i>
-                                <h4>Email:</h4>
-                                <p></p>
-
-                            </div>
-
-                            <div class="phone">
-                                <i class="bi bi-phone"></i>
-                                <h4>Call:</h4>
-                                <p></p>
-
-                            </div>
-
-                        </div>
-
+<!--conatct us-->
+<section class="section contact bg-grey pt-5" id="main">
+        <div class="container mt-5 pt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-12 col-lg-8">
+                    <div class="section-heading text-center">
+                        <h2 class="mb-2 text-lg">Contact Us</h2>
+                        <p>We value your feedback and concerns. Feel free to reach out to our dedicated support team! We will promptly address your inquiries with professionalism and care.</p>
                     </div>
-
-                    <div class="col-lg-8 mt-5 mt-lg-0">
+                </div>
+            </div> <!-- / .row -->
+            <div class="row">
+                    <div class="col-md-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.9958915082625!2d73.10503747469294!3d31.441780051022377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x392269002087ccdb%3A0x4fb1359468d21eb9!2sRUBICSOL!5e0!3m2!1sen!2s!4v1710573989885!5m2!1sen!2s" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="col-md-6 mt-5 mt-lg-0">
+                        <h4 class="mb-3">Request for Demo Today!</h4>
                         <form id="php-email-form" method="post" role="form" class="php-email-form">
                             @csrf
                             <div class="row">
@@ -76,23 +27,54 @@
                                     <input type="email" class="form-control" name="email" id="email" placeholder="Your Email">
                                 </div>
                             </div>
-                            <div class="form-group mt-3">
+                            <div class="form-group mt-2">
                                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
                             </div>
                             <div class="form-group mt-3">
                                 <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
                             </div>
                             <div class="text-center">
-                                <button type="submit" id="send-message">Send Message</button>
+                                <button type="submit" class="btn-submit px-6" id="send-message">Send Message</button>
                             </div>
                         </form>
 
                     </div>
-
                 </div>
 
+
+
+
+
+
+
+                <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="contact-info-block text-center mb-4">
+                        <i class=""><img src="/images/telephone.png" alt=""></i>
+                      <p class="mb-0">Contact Quickly</p>
+                      <a href="tel:+923040647306"><h5>+923040647306</h5></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="contact-info-block text-center mb-4">
+                        <i class=""><img src="/images/email.png" alt=""></i>
+                      <p class="mb-0">Email</p>
+                      <a href="mailto:info@rubicsol.com"> <h5>info@rubicsol.com</h5></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="contact-info-block text-center mb-4">
+                        <!--Google-maps-->
+                        
+                        <i class=""><img src="/images/placeholder.png" alt=""></i>
+                        <p class="mb-0">Location</p>
+                        <a href="https://maps.app.goo.gl/SrynNW5eGBpPJuLq6"><h5>Rubi Plaza, Awan Chowk, Near Akbar Chowk, Faisalabad</h5><a>
+                    </div>
+                </div>
             </div>
-        </section><!-- End Contact Section -->
+
+        </div>
+    </section>
 
     </main><!-- End #main -->
     <script src="{{url('js/custom.js')}}"></script>
@@ -130,3 +112,33 @@
         })
     </script>
 @endsection
+
+<style>
+    .btn-submit{
+        border: 1px solid #385777;
+        background:white;
+        color:#385777;
+        padding: 12px 27px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 30px;
+    }
+    .btn-submit:hover{
+          background-color:#385777;
+          color:white;
+    }
+    .contact-info-block{
+        height: 250px;
+    }
+    #name{
+         height: 45px!important;
+    }
+    #email{
+        height: 45px!important;
+    }
+    #subject{
+        height: 45px!important;
+    }
+</style>

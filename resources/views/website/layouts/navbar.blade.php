@@ -62,7 +62,7 @@
                     </li>-->
                 </ul>
 
-                <a href="checkout.html" class="btn btn-border-tp btn-small ml-3">Request Demo</a>
+                <a href="{{url('contact-us')}}" class="btn btn-border-tp btn-small ml-3">Request Demo</a>
             </div>
         </div>
     </nav>
