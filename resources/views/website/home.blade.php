@@ -480,12 +480,12 @@
 
                         <ul class="list-unstyled mt-4 mb-5">
 
-                            <li><i class="ti-check mr-3 text-warning"></i>Streamlines repetitive laboratory administration tasks</li>
-                            <li><i class="ti-check mr-3 text-warning"></i>Effortlessly incorporates the systems and equipment in your lab</li>
+                            <li><i class="ti-check mr-3 text-warning"></i>Streamlines repetitive laboratory administration tasks.</li>
+                            <li><i class="ti-check mr-3 text-warning"></i>Effortlessly incorporates the systems and equipment in your lab.</li>
                             <li><i class="ti-check mr-3 text-warning"></i>Keeps systemic compliance with ISO 17025.</li>
-                            <li><i class="ti-check mr-3 text-warning"></i>Increases your laboratory's capacity and profitability</li>
+                            <li><i class="ti-check mr-3 text-warning"></i>Increases your laboratory's capacity and profitability.</li>
                             <li><i class="ti-check mr-3 text-warning"></i>Reduces the possibility of errors happening.</li>
-                            <li><i class="ti-check mr-3 text-warning"></i>Enables real-time reporting to make quicker and smarter</li>
+                            <li><i class="ti-check mr-3 text-warning"></i>Enables real-time reporting to make quicker and smarter.</li>
                             <li><i class="ti-check mr-3 text-warning"></i>Boosts efficiency by optimizing data management and workflow.</li>
                             <li><i class="ti-check mr-3 text-warning"></i>Gives information locally or on the cloud, when required.</li>
                             <li><i class="ti-check mr-3 text-warning"></i>Enables rapid access to the appropriate information at any point.</li>
