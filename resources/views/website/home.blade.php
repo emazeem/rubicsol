@@ -75,7 +75,7 @@
                         <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
                             <div class="member">
                                 <div class="member-img">
-                                    <img src='{{url('img/'.$feature['url'])}}' class='img-fluid' >
+                                    <img src='{{url('img'.$feature['url'])}}' class='img-fluid' >
                                 </div>
                                 <div class="member-info">
                                     <h5>{{$feature['heading']}}</h5>
@@ -809,7 +809,7 @@
 
             <div class="row align-items-center">
                 <div class="card border-0 shadow">
-                    <div class="card-body ">
+                    <div class="card-body">
                         <div class="author-thumb mb-4 text-center py-5">
                             <img src="https://aimscal.com/public/images/CEO.jpeg" alt="Testimonial author" class="img-fluid" style="object-fit: cover">
 

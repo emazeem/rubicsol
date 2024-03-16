@@ -26,6 +26,7 @@
                             About
                         </a>
                     </li>
+<!--                     
                     <li class="nav-item ">
                         <a href="{{url('documentation')}}" class="nav-link smoth-scroll">
                             Documentation
@@ -35,7 +36,7 @@
                         <a href="{{url('')}}" class="nav-link smoth-scroll">
                             Blog
                         </a>
-                    </li>
+                    </li> -->
                     <li class="nav-item ">
                         <a href="{{url('contact-us')}}" class="nav-link smoth-scroll">
                             Contact
