@@ -738,7 +738,7 @@
                                     </p>
                                 </div>
                                 <div class="col-md-2 ">
-                                    <img src="website/iso17025.png" alt="" class="img-fluid w-100">
+                                    <img src="images/iso17025(1).png" alt="" class="img-fluid w-100">
                                 </div>
                             </div>
                         </div>
