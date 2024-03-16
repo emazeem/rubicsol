@@ -3,10 +3,10 @@
 <div class="row pb-3">
 <div class="col-12 mb-2">
     <h3 class="float-left pb-1 font-weight-light"><i class="fa fa-tasks"></i>My Task</h3>
-    @if($show->status == 1)
+    @if($show->status == 0)
     <a href="{{route('task.start',['id'=>$show->id])}}" class="btn btn-primary shadow-sm float-right mt-2"><i class="fa fa-tasks"></i>Start</a>
     @endif
-    @if($show->status == 0)
+    @if($show->status == 1)
     <a href="{{route('task.complete',['id'=>$show->id])}}" class="btn btn-danger shadow-sm float-right mt-2"><i class="fa fa-tasks"></i>Complete</a>
     @endif
     
@@ -31,12 +31,12 @@
     <tr>
       <th scope="col">Status</th>
       <td scope="col">
-        @if($show->status == 1)
-        In-Progress
+        @if($show->status == 0)
+        Pending  
         @elseif($show->status == 2)
-        Pending
-        @elseif($show->status == 0)
         Complete
+        @elseif($show->status == 1)
+        In-Progress
         @endif
       </td>
     </tr>
