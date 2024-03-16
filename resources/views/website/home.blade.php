@@ -653,7 +653,7 @@
                         <div class="blog-item-content p-4">
                             <h4 class="mt-2 mb-3"><a href="blog-single.html">Mobile friendly</a></h4>
                             <div class="blog-meta mb-2">
-                                <span>We take great satisfaction in offering our customers excellent customer service. If you have any questions or concerns, our committed team of specialists is here to help. We're here to help you get the most out of Rubic Lims, whether you need help with setup, training, or troubleshooting.</span>
+                                <span>Mobile-friendliness is given a top priority in the design of our user-friendly RUBIC LIMS. Through the use of smartphones and tablets, this system guarantees that people can effectively access and manage critical information, providing a smooth user experience and increasing overall performance.</span>
                             </div>
                         </div>
                     </div>     
