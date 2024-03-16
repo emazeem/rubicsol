@@ -12,15 +12,12 @@
           <form  id="user-form" style="width:100%" method="post" enctype="multipart/form-data">
           @csrf
           <input type="hidden" value="{{$edit->id}}" name="id">
-
           <div class="card ">
             <div class="card-footer bg-light border-top">
               <h5 class="font-weight-light"><i class="feather icon-clock"></i>Update Task</h5>
-              
               <div class="form-group col-md-4 col-12">
                 <label for="title" class="control-label">Title</label>
-                <input type="text" class="form-control" id="title" name="title"
-                placeholder="Title"
+                <input type="text" class="form-control" id="title" name="title" placeholder="Title"
                 autocomplete="off" value='{{$edit->title}}'>
               </div>
               <div class="form-group col-md-4 col-12">
@@ -38,9 +35,7 @@
                   </select>
                 </div>
               </div>
-              
-            
-            <div class="card-footer bg-light border-top">
+              <div class="card-footer bg-light border-top">
               <div class="row">
                 <div class="col-12">
                   <a href="{{ URL::previous() }}" class="btn btn-sm bg-white border float-left">

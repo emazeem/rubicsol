@@ -3,8 +3,8 @@
     <script src="{{url('assets/js/1.10.1/jquery.min.js')}}"></script>
     <div class="row">
         <div class="col-12 mb-2">
-            <h3 class="float-left pb-1 font-weight-light"><i class="fa fa-tasks"></i>Tasks</h3>
-            <a href="{{route('tasks.create')}}" class="btn btn-primary shadow-sm float-right mt-2"><i class="fa fa-tasks"></i>Add Task</a>
+            <h3 class="float-left pb-1 font-weight-light"><i class="bx bx-task"></i>Tasks</h3>
+            <a href="{{route('tasks.create')}}" class="btn btn-primary shadow-sm float-right mt-2"><i class="bx bx-task"></i>Add Task</a>
         </div>
         <div class="col-lg-12 table-responsive">
             <table id="example" class="table table-bordered table-hover  table-sm display nowrap" cellspacing="0" width="100%">
@@ -25,10 +25,13 @@
                         <td>{{$task->title}}</td>
                         <td>
                         @if($task->status==1)
-                        In-Progress
+                        <span class="badge badge-info">In-Progress</span>
                         @endif
                         @if($task->status==0)
-                        Pending
+                        <span class="badge badge-warning">Pending</span>
+                        @endif
+                        @if($task->status==2)
+                        <span class="badge badge-success">Completed</span>
                         @endif
                         </td>
                         <td>

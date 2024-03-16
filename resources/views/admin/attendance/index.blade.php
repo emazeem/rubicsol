@@ -33,10 +33,10 @@
             <td>{{$attendance->check_out}}</td>
             <td>
               @if($attendance->status==1)
-                Check Out
+              <span class="badge badge-success">Check Out</span>
               @endif
               @if($attendance->status==0)
-                Check In
+              <span class="badge badge-primary">Check In</span>
               @endif
             </td>
             <td>   
