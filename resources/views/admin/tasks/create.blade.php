@@ -13,7 +13,7 @@
           @csrf
           <div class="card ">
             <div class="card-footer bg-light border-top">
-              <h5 class="font-weight-light"><i class="feather icon-clock"></i>Add Task</h5>
+              <h5 class="font-weight-light"><i class="bx bx-task"></i>Add Task</h5>
               
               <div class="form-group col-md-4 col-12">
                 <label for="title" class="control-label">Title</label>
@@ -36,9 +36,7 @@
                   </select>
                 </div>
               </div>
-              
-            
-            <div class="card-footer bg-light border-top">
+              <div class="card-footer bg-light border-top">
               <div class="row">
                 <div class="col-12">
                   <a href="{{ URL::previous() }}" class="btn btn-sm bg-white border float-left">

@@ -3,6 +3,7 @@
         color: black;
     }
 </style>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 <nav class="pcoded-navbar menupos-fixed menu-light">
     <div class="navbar-wrapper  ">
         <div class="navbar-content scroll-div " >
@@ -45,12 +46,11 @@
                 <li class="nav-item">
                     <a href="{{route('task.index')}}" class="nav-link">
                         <span class="pcoded-micon">
-                            <i class="fa fa-tasks"></i>
+                            <i class="bx bx-task"></i>
                         </span>
                         <span class="pcoded-mtext">Tasks</span>
                     </a>
                 </li>
-
             </ul>
         </div>
     </div>
