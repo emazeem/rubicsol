@@ -480,12 +480,12 @@
 
                         <ul class="list-unstyled mt-4 mb-5">
 
-                            <li><i class="ti-check mr-3 text-warning"></i>Streamlines repetitive laboratory administration tasks</li>
-                            <li><i class="ti-check mr-3 text-warning"></i>Effortlessly incorporates the systems and equipment in your lab</li>
+                            <li><i class="ti-check mr-3 text-warning"></i>Streamlines repetitive laboratory administration tasks.</li>
+                            <li><i class="ti-check mr-3 text-warning"></i>Effortlessly incorporates the systems and equipment in your lab.</li>
                             <li><i class="ti-check mr-3 text-warning"></i>Keeps systemic compliance with ISO 17025.</li>
-                            <li><i class="ti-check mr-3 text-warning"></i>Increases your laboratory's capacity and profitability</li>
+                            <li><i class="ti-check mr-3 text-warning"></i>Increases your laboratory's capacity and profitability.</li>
                             <li><i class="ti-check mr-3 text-warning"></i>Reduces the possibility of errors happening.</li>
-                            <li><i class="ti-check mr-3 text-warning"></i>Enables real-time reporting to make quicker and smarter</li>
+                            <li><i class="ti-check mr-3 text-warning"></i>Enables real-time reporting to make quicker and smarter.</li>
                             <li><i class="ti-check mr-3 text-warning"></i>Boosts efficiency by optimizing data management and workflow.</li>
                             <li><i class="ti-check mr-3 text-warning"></i>Gives information locally or on the cloud, when required.</li>
                             <li><i class="ti-check mr-3 text-warning"></i>Enables rapid access to the appropriate information at any point.</li>
@@ -653,7 +653,7 @@
                         <div class="blog-item-content p-4">
                             <h4 class="mt-2 mb-3"><a href="blog-single.html">Mobile friendly</a></h4>
                             <div class="blog-meta mb-2">
-                                <span>We take great satisfaction in offering our customers excellent customer service. If you have any questions or concerns, our committed team of specialists is here to help. We're here to help you get the most out of Rubic Lims, whether you need help with setup, training, or troubleshooting.</span>
+                                <span>Mobile-friendliness is given a top priority in the design of our user-friendly RUBIC LIMS. Through the use of smartphones and tablets, this system guarantees that people can effectively access and manage critical information, providing a smooth user experience and increasing overall performance.</span>
                             </div>
                         </div>
                     </div>     
