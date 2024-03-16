@@ -789,7 +789,7 @@
                 </div>
                 <div class="col-12 col-md-4">
                     <div class="mt-5 mt-lg-0">
-                        <img src="images/FAQimg.jpg" alt="" class="img-fluid h-200 w-150">
+                        <img src="images/FAQimg.jpg" alt="" class="img-fluid h-200  w-150">
                     </div>
                 </div>
             </div>
