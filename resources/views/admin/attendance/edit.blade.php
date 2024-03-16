@@ -68,9 +68,9 @@
                     <div class="card-footer bg-light border-top">
                         <div class="row">
                             <div class="col-12">
-                                <a href="{{ URL::previous() }}" class="btn btn-sm bg-white border float-left"><i
+                                <a href="{{ URL::previous() }}" class="btn  bg-white border float-left"><i
                                             class="feather icon-chevron-left"></i> back</a>
-                                <button type="submit" class="btn btn-primary btn-sm user-btn float-right"><i
+                                <button type="submit" class="btn btn-primary  user-btn float-right"><i
                                             class="feather icon-save"> </i> Save
                                 </button>
                             </div>

@@ -71,7 +71,8 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('delete/{id}', [TaskController::class, 'delete'])->name('task.delete');
         Route::get('start/{id}', [TaskController::class, 'start'])->name('task.start');
         Route::get('complete/{id}', [TaskController::class, 'complete'])->name('task.complete');
- 
+        Route::get('toggle-priority/{id}', [TaskController::class, 'toggle-priority'])->name('task.toggle-priority');
+
     });
     
         Route::group(['prefix' => 'email'], function () {

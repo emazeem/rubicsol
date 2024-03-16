@@ -2,7 +2,7 @@
 @section('content')
 <div class="row pb-3">
 <div class="col-12 mb-2">
-    <h3 class="float-left pb-1 font-weight-light"><i class="fa fa-tasks"></i>My Task</h3>
+    <h3 class="float-left pb-1 font-weight-light"><i class="bx bx-task"></i>My Task</h3>
     @if($show->status == 0)
     <a href="{{route('task.start',['id'=>$show->id])}}" class="btn btn-primary shadow-sm float-right mt-2"><i class="fa fa-tasks"></i>Start</a>
     @endif
@@ -40,8 +40,48 @@
         @endif
       </td>
     </tr>
+    <tr>
+    <th scope="col">Priority</th>
+    <td scope="col">
+        <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="prioritySwitch">
+            <label class="custom-control-label" for="prioritySwitch"></label>
+            @if($show->priority == 0)
+            Low
+            @elseif($show->priority == 1)
+            High
+            @endif
+        </div>
+    </td>
+</tr>
 </table>
-    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        $('#prioritySwitch').on('change', function() {
+            var priority = $(this).is(':checked') ? 1 : 0;
+            $.ajax({
+                url: "{{ route('task.toggle-priority', ['id' => $show->id]) }}",
+                method: 'POST',
+                data: {
+                    _token: '{{ csrf_token() }}',
+                    priority: priority
+                },
+                success: function(response) {
+                    console.log(response);
+                },
+                error: function(xhr, status, error) {
+                    console.error(xhr.responseText);
+                }
+            });
+        });
+    });
+</script>
 @endsection
+
+
+
+
+
 
 
