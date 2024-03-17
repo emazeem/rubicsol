@@ -1,7 +1,6 @@
 @extends('website.layouts.master')
 @section('content2')
     @include('components.slider')
-
     <main id="main">
         <section id="team" class="team section-bg bg-c-primary">
             <div class="container" data-aos="fade-up">
@@ -220,19 +219,18 @@
 
 @endsection
 @section('content')
-    <section class="banner-main py-7 pb-3" id="banner">
-        <div class="container-fluid">
+    <section class="banner-main pt-5 pb-3" id="banner">
+        <div class="container-fluid pt-5">
             <div class="row justify-content-between">
-                <div class="col-lg-6 p-0" style="background: url('white-cover.jpeg');background-position: center;background-size: cover">
+                <div class="col-lg-6 d-md-block d-none p-0" style="background: url('white-cover.jpeg');background-position: top;background-size: cover">
                     <div class="d-flex justify-content-center align-items-end h-100">
                         <div class="text-center w-100" style="background-image: linear-gradient(transparent, rgba(224,224,224,0.81));">
-                            <h2 class="text-warning pb-0 mb-0 d-none">Our Masterpiece</h2>
-                            <img src="{{url('rubic-lims-logo.png')}}" class="pb-4 d-none" alt="" width="300" >
+                            <h2 class="text-warning pb-0 mb-0">Our Masterpiece</h2>
+                            <h2 class=" pb-5 mb-2">RUBIC LIMS</h2>
                         </div>
                     </div>
-
                 </div>
-                <div class="col-lg-6 col-md-8 p-0">
+                <div class="col-lg-6 col-md-12 p-0">
                     <img src="{{url('website/tech.png')}}" style="height: 50vh;object-fit: cover;width: 100%" alt="">
                     <div class="main-banner">
 
@@ -589,7 +587,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
                 <div class="col-lg-3 mb-4 col-md-6 col-sm-6">
                     <div class="blog-item card mb-4 mb-lg-0 border-0">
@@ -602,7 +600,7 @@
                                 <span>We take great satisfaction in offering our customers excellent customer service. If you have any questions or concerns, our committed team of specialists is here to help. We're here to help you get the most out of Rubic Lims, whether you need help with setup, training, or troubleshooting.</span>
                             </div>
                         </div>
-                    </div>     
+                    </div>
                 </div>
                 <div class="col-lg-3 mb-4 col-md-6 col-sm-6">
                     <div class="blog-item card mb-4 mb-lg-0 border-0">
@@ -643,7 +641,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
                 <div class="col-lg-3 mb-4 col-md-6 col-sm-6">
                     <div class="blog-item card mb-4 mb-lg-0 border-0">
@@ -656,7 +654,7 @@
                                 <span>Mobile-friendliness is given a top priority in the design of our user-friendly RUBIC LIMS. Through the use of smartphones and tablets, this system guarantees that people can effectively access and manage critical information, providing a smooth user experience and increasing overall performance.</span>
                             </div>
                         </div>
-                    </div>     
+                    </div>
                 </div>
                 <div class="col-lg-3 mb-4 col-md-6 col-sm-6">
                     <div class="blog-item card mb-4 mb-lg-0 border-0">
@@ -780,16 +778,16 @@
     <section class="feature-home section">
         <div class="container">
             <div class="row align-items-center py-5">
-                <div class="col-12 col-md-8">
+                <div class="col-12 col-md-5">
                     <a >FAQ</a>
                     <h2 class="mb-4">What is a typical LIMS workflow?</h2>
                     <p>All of the processes illustrated here and more are integrated into one easy-to-use, effective system by RUBIC LIMS, a comprehensive solution.</p>
                     <p>In essence, every standard lab follows a similar procedure of sample flow. Our well-planned and modern RUBIC LIMS follows each and every step with great dedication and a vision to provide clients with quality work.</p>
 
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-7">
                     <div class="mt-5 mt-lg-0">
-                        <img src="images/FAQimg.jpg" alt="" class="img-fluid h-200  w-150">
+                        <img src="images/FAQimg.jpg" alt="" class="img-fluid ">
                     </div>
                 </div>
             </div>
