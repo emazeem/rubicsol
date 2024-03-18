@@ -14,15 +14,11 @@
   
     <tr>
       <th scope="col">First Name</th>
-      <td scope="col">{{$show->name}}</td>
+      <td scope="col">{{$show->fname}}</td>
     </tr>
     <tr>
       <th scope="col">Last Name</th>
-      <td scope="col">{{$show->name}}</td>
-    </tr>
-    <tr>
-      <th scope="col">Date of Joining</th>
-      <td scope="col">{{$show->name}}</td>
+      <td scope="col">{{$show->lname}}</td>
     </tr>
     <tr>
       <th scope="col">Email</th>
@@ -35,6 +31,10 @@
     <tr>
       <th scope="col">Role</th>
       <td scope="col">{{$show->role}}</td>
+    </tr>
+    <tr>
+      <th scope="col">Date of joining</th>
+      <td scope="col">{{$show->joining}}</td>
     </tr>
 </table>
     </div>
