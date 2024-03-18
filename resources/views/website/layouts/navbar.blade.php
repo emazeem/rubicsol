@@ -33,7 +33,7 @@
                         </a>
                     </li> -->
                     <li class="nav-item ">
-                        <a href="{{url('')}}" class="nav-link smoth-scroll">
+                        <a href="{{url('services')}}" class="nav-link smoth-scroll">
                             Services
                         </a>
                     </li> 

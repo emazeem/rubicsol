@@ -23,6 +23,8 @@ Route::get('contact-us', [WebsiteController::class, 'contact_us'])->name('w.cont
 Route::get('about-us', [WebsiteController::class, 'about_us'])->name('w.about.us');
 Route::post('contact-us-send-email', [WebsiteController::class, 'send_email'])->name('w.contact.us.send.email');
 Route::post('subscribe', [SubscriptionController::class, 'subscribe'])->name('subscribe');
+// services  
+Route::get('services', [WebsiteController::class, 'services'])->name('w.services');
 
 
 Auth::routes();
