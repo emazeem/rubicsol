@@ -27,7 +27,7 @@ $(document).ready(function () {
                         </div>
                         <div class="form-group col-md-3 col-12">
                             <label for="lname" class="control-label">Last Name</label>
-                            <input type="text" class="form-control" id="lname" name="lname"placeholder="First Name"autocomplete="off" value=''>
+                            <input type="text" class="form-control" id="lname" name="lname"placeholder="Last Name"autocomplete="off" value=''>
                         </div>
                         <div class="form-group col-md-3 col-12">
                             <label for="email" class="control-label">Email</label>
@@ -53,6 +53,22 @@ $(document).ready(function () {
                         <div class="col-md-3">
                             <label for="joining" class="control-label">Date of Joining</label>
                             <input type="date" id="joining" name="joining" class="form-control w-100">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="designation" class="control-label">Designation</label>
+                            <select type="dropdown" id="designation" name="designation" class="form-control w-100">
+                            <option value="super admin">Super Admin</option>
+                            <option value="admin">Admin</option>
+                            <option value="employee">Employee</option>
+                    </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="department" class="control-label">Department</label>
+                            <select type="dropdown" id="department" name="department" class="form-control w-100">
+                            <option value="programmer">Programmer</option>
+                            <option value="technican">Technican</option>
+                            <option value="lab expert">Lab expert</option>
+                    </select>
                         </div>
                     </div>
                 </div>

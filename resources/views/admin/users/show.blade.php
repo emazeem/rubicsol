@@ -36,6 +36,14 @@
       <th scope="col">Date of joining</th>
       <td scope="col">{{$show->joining}}</td>
     </tr>
+    <tr>
+      <th scope="col">Designation</th>
+      <td scope="col">{{$show->designation}}</td>
+    </tr>
+    <tr>
+      <th scope="col">Department</th>
+      <td scope="col">{{$show->department}}</td>
+    </tr>
 </table>
     </div>
     <script>

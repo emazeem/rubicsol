@@ -35,6 +35,7 @@ class UserController extends Controller
             'phone' => 'required',
             'role' => 'required',    
             'joining' => 'required',    
+            'designation' => 'required',    
         ],
             [
                 'name.required' => 'Name field is required *',
@@ -50,6 +51,8 @@ class UserController extends Controller
         $user->fname=$request->fname;
         $user->lname=$request->lname;
         $user->joining=$request->joining;
+        $user->designation=$request->designation;
+        $user->department=$request->department;
         $user->phone=$request->phone;
         $user->email=$request->email;
         $user->password=Hash::make($request->get('password'));
@@ -77,11 +80,13 @@ class UserController extends Controller
     }
     public function update(Request $request){
         $this->validate(request(), [
-            'name' => 'required',
+            'fname' => 'required',
+            'lname' => 'required',
             'email' => 'required',
             
             'phone' => 'required',
             'role' => 'required',    
+            'joining' => 'required',    
         ],
             [
                 'name.required' => 'Name field is required *',
@@ -94,7 +99,9 @@ class UserController extends Controller
 
         $user= User::find($request->id);
         $user->role=$request->role;
-        $user->name=$request->name;
+        $user->fname=$request->fname;
+        $user->lname=$request->lname;
+        $user->joining=$request->joining;
         $user->phone=$request->phone;
         $user->email=$request->email;
         $user->password=Hash::make($request->get('password'));

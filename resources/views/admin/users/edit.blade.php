@@ -23,9 +23,14 @@
                         </div>
                         <div class="row">
                             <div class="form-group col-md-3 col-12">
-                                <label for="name" class="control-label">Name</label>
-                                <input type="text" class="form-control" id="name" name="name" placeholder="First Name"
-                                autocomplete="off" value='{{$edit->name}}'>
+                                <label for="fname" class="control-label">First Name</label>
+                                <input type="text" class="form-control" id="fname" name="fname" placeholder="First Name"
+                                autocomplete="off" value='{{$edit->fname}}'>
+                            </div>
+                            <div class="form-group col-md-3 col-12">
+                                <label for="lname" class="control-label">Last Name</label>
+                                <input type="text" class="form-control" id="lname" name="lname" placeholder="Last Name"
+                                autocomplete="off" value='{{$edit->lname}}'>
                             </div>
                             <div class="form-group col-md-3 col-12">
                                 <label for="email" class="control-label">Email</label>
@@ -47,6 +52,28 @@
                                     <option value="user">User</option>
                                 </select>
                             </div>
+                            <div class="col-md-3">
+                            <label for="joining" class="control-label">Date of Joining</label>
+                            <input type="date" id="joining" name="joining" class="form-control w-100"
+                            autocomplete="off" value='{{$edit->joining}}'>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="designation" class="control-label">Designation</label>
+                            <select type="dropdown" id="designation" name="designation" class="form-control w-100">
+                            <option value="super admin">Super Admin</option>
+                            <option value="admin">Admin</option>
+                            <option value="employee">Employee</option>
+                              </select>
+                           </div>
+                           <!--Department-->
+                           <div class="col-md-3">
+                            <label for="department" class="control-label">Department</label>
+                            <select type="dropdown" id="department" name="department" class="form-control w-100">
+                            <option value="programmer">Programmer</option>
+                            <option value="technican">Technican</option>
+                            <option value="lab expert">Lab expert</option>
+                    </select>
+                        </div>
                         </div>
                     </div>
                     <div class="card-footer bg-light border-top">
