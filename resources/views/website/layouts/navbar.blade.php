@@ -1,10 +1,10 @@
 
 <!-- NAVBAR
 ================================================= -->
-<div class="main-navigation fixed-top site-header" id="mainmenu-area">
-    <nav class="navbar navbar-expand-lg ">
+<div class="main-navigation fixed-top site-header p-0" id="mainmenu-area">
+    <nav class="navbar navbar-expand-lg p-0">
         <div class="container align-items-center">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="{{url('/')}}">
                 <img src="/images/RUBICSOL.png" class="img-fluid " alt="" width="60">
             </a>
             <!-- Toggler -->
@@ -26,17 +26,17 @@
                             About
                         </a>
                     </li>
-<!--                     
+<!--
                     <li class="nav-item ">
                         <a href="{{url('documentation')}}" class="nav-link smoth-scroll">
                             Documentation
                         </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="{{url('')}}" class="nav-link smoth-scroll">
-                            Blog
-                        </a>
                     </li> -->
+                    <li class="nav-item ">
+                        <a href="{{url('services')}}" class="nav-link smoth-scroll">
+                            Services
+                        </a>
+                    </li> 
                     <li class="nav-item ">
                         <a href="{{url('contact-us')}}" class="nav-link smoth-scroll">
                             Contact

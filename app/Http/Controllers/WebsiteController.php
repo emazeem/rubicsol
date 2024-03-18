@@ -13,6 +13,10 @@ class WebsiteController extends Controller
     public function pricing(){
         return view('website.pricing');
     }
+    public function services(){
+        return view('website.services');
+    }
+    
 
     public function documentation(Request $request)
     {
@@ -77,11 +81,7 @@ class WebsiteController extends Controller
         return view('website.s_team', compact('team'));
     }
 
-    public function services()
-    {
-        $services = Services::all();
-        return view('website.services', compact('services'));
-    }
+   
 
     public function service($id)
     {

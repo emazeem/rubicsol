@@ -1,32 +1,168 @@
 @extends('website.layouts.master')
 @section('content')
     <main id="main" class="mt-5">
-        <!-- ======= Services Section ======= -->
-        <section id="services" class="services section-bg">
-            <div class="container" data-aos="fade-up">
+     <!--1st section-->
+     <section class="section contact bg-grey" id="contact">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <h2 class="mb-2 text-lg text-center pt-5">Our Services</h2>
+                        <div class="row pt-5">
+                            <div class="col-md-4 pt-5">
+                                <img src="{{url('images/our_mission.png')}}" alt="" class="img-fluid w-100">
+                            </div>
+                            <div class="col-md-8">
+                                <h3 class="text-center font-xl pt-3">Website Designing</h3>
+                                <p>
+                                    Our distinct mission at Rubicsol is to revolutionise the field of laboratory information management by providing a leading-edge RUBIC LIMS solution that meets the varied and changing needs of our clients in a range of lab sectors. Our dedication lies in promoting creativity and providing intuitive, adaptable, and safe software that boosts data handling, streamlines processes, and guarantees the best possible quality, security and precision of lab data.
+                                </p>
+                                <p>
+                                    Our objective is to create enduring relationships with our clients, comprehend their particular needs, and collaborate with them to transform their laboratory operations—rather than merely selling them a product. By consistently investing in research and development, we hope to remain at the forefront of technological breakthroughs and provide the most advanced LIMS solutions on the market.
+                                </p>
+                            </div>
 
-                <div class="section-title">
-                    <h2>Services</h2>
-                    <p>{{webSettingSlug('services-line-1')}}</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+<!--2nd section-->
+<section class="section contact py-5 mt-5" id="contact">
+        <div class="container">
+            <div class="row ">
+            <div class="row mt-5">
+                <div class="col-lg-8">
+                    <h3 class="text-center">Website Application Development</h3>
+                    <p>
+                        Rubicsol, a reputable software company, specialises in the comprehensive provision of RUBIC LIMS. Our persistent commitment to innovation and client-centric approach allows us to provide customised, secure, and user-friendly LIMS software.
+                    </p>
+                    <p>
+                        Through an emphasis on data quality, efficiency, and smooth integration, we enable our valued clients to optimise their laboratory processes, leading to automated Lab operations and overall increased output. We meticulously adhere to ISO/IEC 17025 standards keeping our clients stress-free for international recognition. Our dedication to quality, excellence and maintenance of long-time relationships with our clients has shaped our position as a leading player in the global LIMS marketplace.
+                    </p>
+                    <p>
+                        Discover the Rubicsol difference today and use our pioneering LIMS solution,the RUBIC LIMS to unlock the full potential of your lab. Become a part of our expanding clientele of happy customers and preserve your place in the cutthroat field of laboratory management.
+                    </p>
                 </div>
 
-                <div class="row">
-                    @foreach($services as $service)
-                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
-                            <div class="icon-box iconbox-yellow">
-                                <div class="icon">
-                                    <img src='{{Storage::url('/services/'.$service->icon)}}' class='img-fluid' width='100'>
-                                </div>
-                                <h4><a href="{{url('service/'.$service->id)}}">{{$service->name}}</a></h4>
-                                <p>{{$service->description}}</p>
-                            </div>
-                        </div>
-                    @endforeach
+                <div class="col-lg-4">
+                    <img src="{{url('images/about_us.png')}}" alt="" class="img-fluid w-100 mt-5 pt-4">
+                </div>
+            </div>
+        </div>
+    </section>
+<!--3rd section-->
+<section class="section bg-grey contact py-5 mt-5" id="contact">
+        <div class="container">
+            <div class="row ">
+                
+           
+            <div class="row mt-5">
 
+                <div class="col-lg-4">
+                    <img src="{{url('images/our_vision.png')}}" alt="" class="img-fluid w-100">
+                </div>
+                <div class="col-lg-8">
+                    <h3 class="text-center">Mobile Application Android & iOS Development</h3>
+                    <p>
+
+                        We envision a world where laboratories of all sizes and specialisations seamlessly integrate our all-in-one software,RUBIC LIMS simplifying their operations, and opening up new avenues for development, cooperation, and innovation leading to technically advanced and quality assured outcomes.
+
+                    </p>
+                    <p>
+                        In order to inspire and empower a new generation of scientists, researchers, and professionals to design a brighter, more connected, and technologically sophisticated output for various sectors, we constantly push the frontiers of what is possible in laboratory information management to cope with the evolving needs of the world.
+                    </p>
+                    <p>
+                        Together, we envision a world whereby our clients are free to concentrate on their areas of expertise while we diligently manage the complexities of laboratory information management, clearing the way to
+                        victory for all!
+                    </p>
                 </div>
 
             </div>
-        </section><!-- End Sevices Section -->
+        </div>
+    </section>
+<!--4th section-->
+<section class="section contact py-5 mt-5" id="contact">
+        <div class="container">
+            <div class="row ">
+            <div class="row mt-5">
+                <div class="col-lg-8">
+                    <h3 class="text-center">Graphics Designing</h3>
+                    <p>
+                        Rubicsol, a reputable software company, specialises in the comprehensive provision of RUBIC LIMS. Our persistent commitment to innovation and client-centric approach allows us to provide customised, secure, and user-friendly LIMS software.
+                    </p>
+                    <p>
+                        Through an emphasis on data quality, efficiency, and smooth integration, we enable our valued clients to optimise their laboratory processes, leading to automated Lab operations and overall increased output. We meticulously adhere to ISO/IEC 17025 standards keeping our clients stress-free for international recognition. Our dedication to quality, excellence and maintenance of long-time relationships with our clients has shaped our position as a leading player in the global LIMS marketplace.
+                    </p>
+                    <p>
+                        Discover the Rubicsol difference today and use our pioneering LIMS solution,the RUBIC LIMS to unlock the full potential of your lab. Become a part of our expanding clientele of happy customers and preserve your place in the cutthroat field of laboratory management.
+                    </p>
+                </div>
+
+                <div class="col-lg-4">
+                    <img src="{{url('images/about_us.png')}}" alt="" class="img-fluid w-100 mt-5 pt-4">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--5th section-->
+    <section class="section bg-grey contact py-5 mt-5" id="contact">
+        <div class="container">
+            <div class="row ">
+                
+           
+            <div class="row mt-5">
+
+                <div class="col-lg-4">
+                    <img src="{{url('images/our_vision.png')}}" alt="" class="img-fluid w-100">
+                </div>
+                <div class="col-lg-8">
+                    <h3 class="text-center">POS</h3>
+                    <p>
+
+                        We envision a world where laboratories of all sizes and specialisations seamlessly integrate our all-in-one software,RUBIC LIMS simplifying their operations, and opening up new avenues for development, cooperation, and innovation leading to technically advanced and quality assured outcomes.
+
+                    </p>
+                    <p>
+                        In order to inspire and empower a new generation of scientists, researchers, and professionals to design a brighter, more connected, and technologically sophisticated output for various sectors, we constantly push the frontiers of what is possible in laboratory information management to cope with the evolving needs of the world.
+                    </p>
+                    <p>
+                        Together, we envision a world whereby our clients are free to concentrate on their areas of expertise while we diligently manage the complexities of laboratory information management, clearing the way to
+                        victory for all!
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--section 6-->
+    <section class="section contact py-5 mt-5" id="contact">
+        <div class="container">
+            <div class="row ">
+            <div class="row mt-5">
+                <div class="col-lg-8">
+                    <h3 class="text-center">ERP System Development</h3>
+                    <p>
+                        Rubicsol, a reputable software company, specialises in the comprehensive provision of RUBIC LIMS. Our persistent commitment to innovation and client-centric approach allows us to provide customised, secure, and user-friendly LIMS software.
+                    </p>
+                    <p>
+                        Through an emphasis on data quality, efficiency, and smooth integration, we enable our valued clients to optimise their laboratory processes, leading to automated Lab operations and overall increased output. We meticulously adhere to ISO/IEC 17025 standards keeping our clients stress-free for international recognition. Our dedication to quality, excellence and maintenance of long-time relationships with our clients has shaped our position as a leading player in the global LIMS marketplace.
+                    </p>
+                    <p>
+                        Discover the Rubicsol difference today and use our pioneering LIMS solution,the RUBIC LIMS to unlock the full potential of your lab. Become a part of our expanding clientele of happy customers and preserve your place in the cutthroat field of laboratory management.
+                    </p>
+                </div>
+
+                <div class="col-lg-4">
+                    <img src="{{url('images/about_us.png')}}" alt="" class="img-fluid w-100 mt-5 pt-4">
+                </div>
+            </div>
+        </div>
+    </section>
+
     </main>
 
 @endsection
