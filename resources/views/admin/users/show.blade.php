@@ -13,7 +13,15 @@
     <table class="table table-bordered table-sm bg-white">
   
     <tr>
-      <th scope="col">Name</th>
+      <th scope="col">First Name</th>
+      <td scope="col">{{$show->name}}</td>
+    </tr>
+    <tr>
+      <th scope="col">Last Name</th>
+      <td scope="col">{{$show->name}}</td>
+    </tr>
+    <tr>
+      <th scope="col">Date of Joining</th>
       <td scope="col">{{$show->name}}</td>
     </tr>
     <tr>

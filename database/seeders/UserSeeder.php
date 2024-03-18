@@ -14,6 +14,6 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
-        User::create(['name' => 'Super Admin','phone'=>'03040647306', 'email' => 'info@rubicsol.com', 'password' => Hash::make('iso17025aims')]);
+        User::create(['fname' => 'Super','lname' => 'Admin','joining' => '2024-01-01','phone'=>'03040647306', 'email' => 'info@rubicsol.com', 'password' => Hash::make('iso17025aims')]);
     }
 }

@@ -22,8 +22,12 @@ $(document).ready(function () {
                     </div>
                     <div class="row">
                         <div class="form-group col-md-3 col-12">
-                            <label for="name" class="control-label">Name</label>
-                            <input type="text" class="form-control" id="name" name="name"placeholder="First Name"autocomplete="off" value=''>
+                            <label for="fname" class="control-label">First Name</label>
+                            <input type="text" class="form-control" id="fname" name="fname"placeholder="First Name"autocomplete="off" value=''>
+                        </div>
+                        <div class="form-group col-md-3 col-12">
+                            <label for="lname" class="control-label">Last Name</label>
+                            <input type="text" class="form-control" id="lname" name="lname"placeholder="First Name"autocomplete="off" value=''>
                         </div>
                         <div class="form-group col-md-3 col-12">
                             <label for="email" class="control-label">Email</label>
@@ -45,8 +49,15 @@ $(document).ready(function () {
                                 <option value="user">User</option>
                             </select>
                         </div>
+                        <!--Date Of Joining-->
+                        <div class="col-md-3">
+                            <label for="joining" class="control-label">Date of Joining</label>
+                            <input type="date" id="joining" name="joining" class="form-control w-100">
+                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
                 <div class="card-footer bg-light border-top">
                     <div class="row">
                         <div class="col-12">

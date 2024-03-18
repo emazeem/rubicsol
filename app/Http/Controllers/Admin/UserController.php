@@ -28,11 +28,13 @@ class UserController extends Controller
     }
     public function store(Request $request){
         $this->validate(request(), [
-            'name' => 'required',
+            'fname' => 'required',
+            'lname' => 'required',
             'email' => 'required',
             'password' => 'required|min:6',
             'phone' => 'required',
             'role' => 'required',    
+            'joining' => 'required',    
         ],
             [
                 'name.required' => 'Name field is required *',
@@ -45,7 +47,9 @@ class UserController extends Controller
 
         $user=new User();
         $user->role=$request->role;
-        $user->name=$request->name;
+        $user->fname=$request->fname;
+        $user->lname=$request->lname;
+        $user->joining=$request->joining;
         $user->phone=$request->phone;
         $user->email=$request->email;
         $user->password=Hash::make($request->get('password'));
