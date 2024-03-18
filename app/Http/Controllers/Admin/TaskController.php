@@ -11,6 +11,21 @@ use App\Models\Task;
 class TaskController extends Controller
 {
     //
+    public function switchPriority(Request $request, $id)
+{
+    $task = Task::findOrFail($id);
+    if($task->priority==1){
+        $task->priority = 0;
+
+    }else{
+    $task->priority = 1;
+
+    }    
+    $task->save();
+
+    return response()->json(['success' => 'Priority updated successfully']);
+}
+
     public function start($id)
     {
         $task = Task::findOrFail($id);
@@ -24,7 +39,6 @@ class TaskController extends Controller
         $task->status = 2; 
         $task->save();
         return redirect()->back()->with('success', 'Task status updated successfully.');
-
     }
     
     
@@ -69,6 +83,7 @@ class TaskController extends Controller
         $task->status=0;
         $task->title=$request->title;
         $task->description=$request->description;
+        $task->priority=0;
         $task->save();
         return response()->json(['success'=>'Task added successfully','id'=>$task->id]);
 }
@@ -97,4 +112,5 @@ class TaskController extends Controller
     }
 
 }
+
 

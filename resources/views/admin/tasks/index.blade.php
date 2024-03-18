@@ -14,6 +14,7 @@
                         <th>User</th>
                         <th>Title</th>
                         <th>Status</th>
+                        <th>Priority</th>
                         <th>Action</th>
                     </tr>
                 </thead>
@@ -33,6 +34,14 @@
                         @if($task->status==2)
                         <span class="badge badge-success">Completed</span>
                         @endif
+                        <td>
+                        @if($task->priority == 0)
+                        <span class="badge badge-success">Low</span>
+                        @endif
+                        @if($task->priority == 1)
+                        <span class="badge badge-danger">High</span>
+                        @endif
+                        </td>
                         </td>
                         <td>
                         <a href="{{route('task.edit',['id'=>$task->id])}}" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
