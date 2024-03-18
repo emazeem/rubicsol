@@ -99,6 +99,55 @@
       </div>
     </div>
   </div>
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="card-body table-responsive">
+        <h5 class="float-left pb-1 font-weight-light"><i class="feather icon-clock"></i>My Leave</h5>
+          <table id="example" class="table table-bordered table-hover  table-sm display nowrap" cellspacing="0" width="100%">
+            <thead>
+              <tr class="bg-c-blue">
+                <th>ID</th>
+                <th>USERS</th>
+                <th>START DATE</th>
+                <th>END DATE</th>
+                <th>DESCRIPTION</th>
+                <th>CASUAL</th>
+                <th>STATUS</th>
+              </tr>
+            </thead>
+            <tbody>
+            @foreach ($tasks as $task)
+              <tr>
+                <td>{{$task->id}}</td>
+                <td>{{$task->user->name}}</td>
+                <td>
+                  <input type="date" class="form-control" id="start_date" name="start_date" placeholder="start_date">
+                </td>
+                <td>
+                <input type="date" class="form-control" id="end_date" name="end_date" placeholder="end_date">
+                </td>
+                <td>{{$task->description}}</td>
+                <td></td>
+                <td>
+                  @if($task->status==1)
+                  <span class="badge badge-info">In-Progress</span>
+                  @endif
+                  @if($task->status==0)
+                 <span class="badge badge-warning">Pending</span>
+                  @endif
+                  @if($task->status==2)
+                 <span class="badge badge-success">Completed</span>
+                  @endif
+                </tr>
+                @endforeach
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 <style>
 table#example thead tr th{
   background: #233560!important
