@@ -40,12 +40,7 @@
 
                     </div>
                 </div>
-
-
-
-
-
-
+<!--Contact information-->
 
                 <div class="row">
                 <div class="col-lg-4 col-sm-6">
@@ -76,7 +71,8 @@
         </div>
     </section>
 
-    </main><!-- End #main -->
+    </main>
+    <!-- End #main -->
     <script src="{{url('js/custom.js')}}"></script>
     <script src="{{url('assets/js/1.10.1/jquery.min.js')}}"></script>
     <script type="text/javascript" src="{{url('js/sweetalert.min.js')}}"></script>

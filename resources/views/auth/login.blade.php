@@ -55,7 +55,6 @@
             </div>
             
             <!--Button-->
-            <!-- btn btn-lg bg-c-secondary float-end -->
             <div class="row mb-0 ml-1 mr-0 mt-3">
             <div class="justify-center item-center">
            <button class="btn-signin  text-white">Login</button>     

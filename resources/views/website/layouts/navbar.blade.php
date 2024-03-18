@@ -31,12 +31,12 @@
                         <a href="{{url('documentation')}}" class="nav-link smoth-scroll">
                             Documentation
                         </a>
-                    </li>
+                    </li> -->
                     <li class="nav-item ">
                         <a href="{{url('')}}" class="nav-link smoth-scroll">
-                            Blog
+                            Services
                         </a>
-                    </li> -->
+                    </li> 
                     <li class="nav-item ">
                         <a href="{{url('contact-us')}}" class="nav-link smoth-scroll">
                             Contact
