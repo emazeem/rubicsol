@@ -2,7 +2,7 @@
 @section('content')
     <main id="main" class="mt-5">
      <!--1st section-->
-     <section class="section contact bg-grey" id="contact">
+     <section class="section contact" id="contact">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-12">
@@ -31,7 +31,7 @@
         </div>
     </section>
 <!--2nd section-->
-<section class="section contact py-5 mt-5" id="contact">
+<section class="section contact bg-grey py-5 mt-5" id="contact">
         <div class="container">
             <div class="row ">
             <div class="row mt-5">
@@ -55,7 +55,7 @@
         </div>
     </section>
 <!--3rd section-->
-<section class="section bg-grey contact py-5 mt-5" id="contact">
+<section class="section contact py-5 mt-5" id="contact">
         <div class="container">
             <div class="row ">
                 
@@ -85,7 +85,7 @@
         </div>
     </section>
 <!--4th section-->
-<section class="section contact py-5 mt-5" id="contact">
+<section class="section contact bg-grey py-5 mt-5" id="contact">
         <div class="container">
             <div class="row ">
             <div class="row mt-5">
@@ -109,7 +109,7 @@
         </div>
     </section>
     <!--5th section-->
-    <section class="section bg-grey contact py-5 mt-5" id="contact">
+    <section class="section  contact py-5 mt-5" id="contact">
         <div class="container">
             <div class="row ">
                 
@@ -139,7 +139,7 @@
         </div>
     </section>
     <!--section 6-->
-    <section class="section contact py-5 mt-5" id="contact">
+    <section class="section contact bg-grey py-5 mt-5" id="contact">
         <div class="container">
             <div class="row ">
             <div class="row mt-5">

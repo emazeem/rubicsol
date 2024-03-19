@@ -67,6 +67,40 @@ class DashboardController extends Controller
         $user->save();
         return redirect()->back();
     }
+    public function updateCV(Request $request)
+    {
+
+        $this->validate(request(), [
+            'file' => 'required',
+        ],
+            [
+                'file.required' => 'Cv  is required *',
+            ]);
+
+        $user=User::find($request->id);
+        $attachment=time().'-'.$request->file->getClientOriginalName();
+        Storage::disk('local')->put('public/cv/'.$attachment, File::get($request->file));
+        $user->cv=$attachment;
+        $user->save();
+        return redirect()->back();
+    }
+    public function updateCnic(Request $request)
+    {
+
+        $this->validate(request(), [
+            'file' => 'required',
+        ],
+            [
+                'file.required' => 'Cnic  is required *',
+            ]);
+
+        $user=User::find($request->id);
+        $attachment=time().'-'.$request->file->getClientOriginalName();
+        Storage::disk('local')->put('public/cnic/'.$attachment, File::get($request->file));
+        $user->cnic=$attachment;
+        $user->save();
+        return redirect()->back();
+    }
     public function index()
     {
         $attendances=Attendance::where('user_id', auth()->user()->id)->get();

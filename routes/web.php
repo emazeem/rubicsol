@@ -32,6 +32,8 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('dashboard', [DashboardController::class, 'index'])->name('home');
     Route::get('profile', [DashboardController::class, 'profile'])->name('profile');
     Route::post('change-profile', [DashboardController::class, 'changeProfile'])->name('change.profile');
+    Route::post('update-cv', [DashboardController::class, 'updateCV'])->name('update.cv');
+    Route::post('update-cnic', [DashboardController::class, 'updateCnic'])->name('update.cnic');
     Route::get('change_password', [DashboardController::class, 'changePassword'])->name('change.password');
     Route::get('update_password', [DashboardController::class, 'updatePassword'])->name('update.password');
     

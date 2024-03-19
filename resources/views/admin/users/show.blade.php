@@ -44,9 +44,30 @@
       <th scope="col">Department</th>
       <td scope="col">{{$show->department}}</td>
     </tr>
+    <tr>
+      <th scope="col">CV</th>
+      <td scope="col">{{$show->cv}}</td>
+    </tr>
 </table>
     </div>
-    <script>
+    <div class="row">
+    <div>
+    <form action="{{route('update.cv')}}" method="post" enctype="multipart/form-data">
+      @csrf
+        <input type="hidden" value="{{$show->id}}" name="id" id="id">
+        <input type="file" name="file" id="file">
+        <button class="btn btn-sm" type="submit">Upload Cv</button>
+        </div>
+    </form>
+    <div>
+    <form action="{{route('update.cnic')}}" method="post" enctype="multipart/form-data">
+      @csrf
+        <input type="hidden" value="{{$show->id}}" name="id" id="id">
+        <input type="file" name="file" id="file">
+         <button class="btn btn-sm" type="submit">Upload Cnic</button>
+        </div>
+    </form>
+   <script>
         $(":input").inputmask();
 
     </script>
