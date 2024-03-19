@@ -219,7 +219,7 @@
 
 @endsection
 @section('content')
-    <section class="banner-main pt-5 pb-3" id="banner">
+    <section class="banner-main pt-5 pb-3 d-none" id="banner">
         <div class="container-fluid pt-5">
             <div class="row justify-content-between">
                 <div class="col-lg-6 d-md-block d-none p-0" style="background: url('white-cover.jpeg');background-position: top;background-size: cover">
@@ -242,7 +242,7 @@
         </div>
     </section>
     <section class="section blog-home" id="blog">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-lg-12">
                     <div class="section-heading mb-4 text-center">
@@ -372,7 +372,7 @@
 
 
     <section class="section chapter pt-0 mt-0" id="chapter">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row ">
                 <div class="col-lg-12 text-center">
                     <div class="section-heading">
@@ -675,7 +675,7 @@
     </section>
 
     <section class="setcion" id="book">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-5 d-none">
                     <div class="book-preview">
@@ -721,7 +721,7 @@
             <div class="row align-items-center justify-content-center">
                 <div class="col-md-12 col-sm-6">
                     <div class="service-block mb-4 mb-lg-0">
-                        <div class="container">
+                        <div class="container-fluid">
                             <h4 class="mb-3 mt-4">"Our Meticulous Adherence to ISO/IEC 17025 Standards"</h4>
                             <div class="row">
                                 <div class="col-md-10">
@@ -747,11 +747,11 @@
         </div>
     </section>
     <section class="about section" id="author">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row align-items-center">
                 <div class="col-lg-7">
                     <div class="about-img">
-                        <img src="website/mission.png" alt="" class="img-fluid w-100">
+                        <img src="website/mission.png" alt="" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-lg-5">
@@ -776,7 +776,7 @@
         </div>
     </section>
     <section class="feature-home section">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row align-items-center py-5">
                 <div class="col-12 col-md-5">
                     <a >FAQ</a>
@@ -795,7 +795,7 @@
     </section>
 
     <section class="section-bottom testimonial" id="review">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-12">
                     <div class="section-heading text-center">
@@ -833,7 +833,7 @@
 
 
     <section class="section contact bg-grey" id="contact">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-md-12 col-lg-8">
                     <div class="section-heading text-center">
