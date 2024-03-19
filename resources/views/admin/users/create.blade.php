@@ -59,8 +59,6 @@ $(document).ready(function () {
                             <select type="dropdown" id="designation" name="designation" class="form-control w-100">
                             <option value="super admin">Super Admin</option>
                             <option value="admin">Admin</option>
-                            <option value="genralmanager">Genral Manager</option>
-                            <option value="manager">Manager</option>
                             <option value="employee">Employee</option>
                     </select>
                         </div>
@@ -69,8 +67,6 @@ $(document).ready(function () {
                             <select type="dropdown" id="department" name="department" class="form-control w-100">
                             <option value="IT expert">IT Expert</option>
                             <option value="technican">Technican</option>
-                            <option value="chemicalEnginner">Chemical Engineer</option>
-                            <option value="Qualityexpert">Quality Expert</option>
                             <option value="lab expert">Lab expert</option>
                     </select>
                         </div>
