@@ -1,7 +1,7 @@
 
 <!-- NAVBAR
 ================================================= -->
-<div class="main-navigation fixed-top site-header p-0 d-none" id="mainmenu-area">
+<div class="main-navigation fixed-top site-header p-0" id="mainmenu-area">
     <nav class="navbar navbar-expand-lg p-0">
         <div class="container align-items-center">
             <a class="navbar-brand" href="{{url('/')}}">
