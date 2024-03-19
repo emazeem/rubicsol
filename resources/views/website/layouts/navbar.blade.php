@@ -36,7 +36,7 @@
                         <a href="{{url('services')}}" class="nav-link smoth-scroll">
                             Services
                         </a>
-                    </li> 
+                    </li>
                     <li class="nav-item ">
                         <a href="{{url('contact-us')}}" class="nav-link smoth-scroll">
                             Contact
