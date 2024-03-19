@@ -46,31 +46,46 @@
     </tr>
     <tr>
       <th scope="col">CV</th>
-      <td scope="col"><a href="{{$show->userCV()}}">{{$show->cv}}</a></td>
+      <td scope="col">
+        <a href="{{$show->userCV()}}">{{$show->cv}}</a>
+        <form action="{{route('update.cv')}}" method="post" enctype="multipart/form-data">
+          @csrf
+          <input type="hidden" value="{{$show->id}}" name="id" id="id">
+          <div class="input-group">
+            <div class="custom-file">
+              <input type="file" name="file" id="file">
+              <label class="custom-file-label" for="file">Choose file</label>
+          </div>
+          <div class="input-group-append">
+            <button class="btn btn-sm btn-primary px-3" type="submit"> <i class="fa fa-upload"></i> Upload CV</button>
+          </div>
+        </div> 
+      </form>
+      </td>
     </tr>
     <tr>
+      <!--Cnic uplaoding-->
       <th scope="col">Cnic</th>
-      <td scope="col"><a href="{{$show->userCNIC()}}">{{$show->cnic}}</a></td>
+      <td scope="col"><a href="{{$show->userCNIC()}}">{{$show->cnic}}</a>
+       <div class="row">
+       <div> 
+       <form action="{{route('update.cnic')}}" method="post" enctype="multipart/form-data">
+          @csrf
+          <input type="hidden" value="{{$show->id}}" name="id" id="id">
+          <div class="input-group">
+            <div class="custom-file">
+              <input type="file" name="file" id="file">
+              <label class="custom-file-label" for="file">Choose file</label>
+          </div>
+          <div class="input-group-append">
+            <button class="btn btn-sm btn-primary px-3" type="submit"> <i class="fa fa-upload"></i> Upload CNIC</button>
+          </div>
+        </div> 
+      </form>
+    </td>
     </tr>
 </table>
     </div>
-    <div class="row">
-    <div>
-    <form action="{{route('update.cv')}}" method="post" enctype="multipart/form-data">
-      @csrf
-        <input type="hidden" value="{{$show->id}}" name="id" id="id">
-        <input type="file" name="file" id="file">
-        <button class="btn btn-sm" type="submit">Upload Cv</button>
-        </div>
-    </form>
-    <div>
-    <form action="{{route('update.cnic')}}" method="post" enctype="multipart/form-data">
-      @csrf
-        <input type="hidden" value="{{$show->id}}" name="id" id="id">
-        <input type="file" name="file" id="file">
-         <button class="btn btn-sm" type="submit">Upload Cnic</button>
-        </div>
-    </form>
    <script>
         $(":input").inputmask();
 

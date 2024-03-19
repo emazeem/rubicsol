@@ -70,6 +70,7 @@ class DashboardController extends Controller
     public function updateCV(Request $request)
     {
 
+
         $this->validate(request(), [
             'file' => 'required',
         ],
