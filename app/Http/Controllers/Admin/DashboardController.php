@@ -84,7 +84,7 @@ class DashboardController extends Controller
         $user->save();
         return redirect()->back();
     }
-    public function updateCnic(Request $request)
+    public function updateCNIC(Request $request)
     {
 
         $this->validate(request(), [

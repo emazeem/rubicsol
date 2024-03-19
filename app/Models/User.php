@@ -50,4 +50,18 @@ class User extends Authenticatable
         }
         return url('profile.png');
     }
+    public function userCV(){
+
+        if(file_exists('storage/cv/'.$this->cv)){
+            return Storage::disk('local')->url('cv/'.$this->cv);
+        }
+        return url('cv.png');
+    }
+    public function userCNIC(){
+
+        if(file_exists('storage/cnic/'.$this->cnic)){
+            return Storage::disk('local')->url('cnic/'.$this->cnic);
+        }
+        return url('cnic.png');
+    }
 }

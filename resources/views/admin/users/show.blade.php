@@ -46,7 +46,11 @@
     </tr>
     <tr>
       <th scope="col">CV</th>
-      <td scope="col">{{$show->cv}}</td>
+      <td scope="col"><a href="{{$show->userCV()}}">{{$show->cv}}</a></td>
+    </tr>
+    <tr>
+      <th scope="col">Cnic</th>
+      <td scope="col"><a href="{{$show->userCNIC()}}">{{$show->cnic}}</a></td>
     </tr>
 </table>
     </div>
