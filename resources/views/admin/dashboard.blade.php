@@ -65,38 +65,38 @@
                         </tr>
                         </thead>
                         <tbody>
-                            @if(count($tasks)>0)
-                                @foreach ($tasks as $task)
-                                    <tr>
-                                        <td>{{$task->id}}</td>
-                                        <td>{{$task->user->name}}</td>
-                                        <td>{{$task->title}}</td>
-                                        <td>{{$task->description}}</td>
+                        @if(count($tasks)>0)
+                            @foreach ($tasks as $task)
+                                <tr>
+                                    <td>{{$task->id}}</td>
+                                    <td>{{$task->user->name}}</td>
+                                    <td>{{$task->title}}</td>
+                                    <td>{{$task->description}}</td>
                                     <td>
                                         @if($task->status == 0)
                                             <span class="badge badge-success">Low</span>
                                         @endif
                                         @if($task->status == 1)
                                             <span class="badge badge-danger">High</span>
-                                         @endif
+                                        @endif
                                     </td>
                                     <td>
                                         @if($task->status==1)
                                             <span class="badge badge-info">In-Progress</span>
-                                         @endif
+                                        @endif
                                         @if($task->status==0)
                                             <span class="badge badge-warning">Pending</span>
-                                         @endif
+                                        @endif
                                         @if($task->status==2)
                                             <span class="badge badge-success">Completed</span>
-                                        @endif
-                                    </tr>
-                                @endforeach
-                            @else
-                                <tr>
-                                    <td colspan="100%" class="text-center">No record found</td>
+                                    @endif
                                 </tr>
-                            @endif
+                            @endforeach
+                        @else
+                            <tr>
+                                <td colspan="100%" class="text-center">No record found</td>
+                            </tr>
+                        @endif
                         </tbody>
                     </table>
                 </div>
@@ -149,12 +149,9 @@
             </div>
         </div>
     </div>
-    
     <style>
         table#example thead tr th{
-          background: #233560!important
+            background: #233560!important
         }
     </style>
 @endsection
-
-
