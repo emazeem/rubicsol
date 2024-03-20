@@ -49,8 +49,7 @@
         </div>
       </div>
     </div>
-
-      <div class="col-lg-12">
+    <div class="col-lg-12">
         <div class="card">
           <div class="card-body table-responsive">
           <h5 class="float-left pb-1 font-weight-light"><i class="feather icon-clock mr-1"></i>My Tasks</h5>
@@ -104,12 +103,11 @@
         </div>
       </div>
     </div>
-  </div>
-     <div class="col-lg-12">
+    <div class="col-lg-12">
        <div class="card">
          <div class="card-body table-responsive">
           <h5 class="float-left pb-1 font-weight-light"><i class="feather icon-clock mr-1"></i>My Leave</h5>
-           <table id="example" class="table table-bordered table-hover  table-sm display nowrap" cellspacing="0" width="100%">
+          <table id="example" class="table table-bordered table-hover  table-sm display nowrap" cellspacing="0" width="100%">
             <thead>
               <tr class="bg-c-blue">
                 <th>ID</th>
@@ -152,6 +150,8 @@
             </div>
       </div>
     </div>
+    </div>
+
   </div>
 
 <style>
