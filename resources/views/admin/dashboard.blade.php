@@ -18,16 +18,16 @@
            <table id="example" class="table table-bordered table-hover  table-sm display nowrap" cellspacing="0" width="100%">
              <thead>
               <tr class="bg-c-blue">
-              <th>ID</th>
+                 <th>ID</th>
                 <th>Start Date</th>
                 <th>Start Time</th>
                 <th>End Date</th>
                 <th>End Time</th>
                 <th>Status</th>
               </tr>
-            </thead>
-            <tbody>
-              @foreach($attendances as $attendance)
+          </thead>
+          <tbody>
+            @foreach($attendances as $attendance)
               <tr>
               <td>{{$attendance->id}}</td>
                 <td>{{$attendance->check_in_date}}</td>
@@ -35,23 +35,24 @@
                 <td>{{$attendance->check_out_date}}</td>
                 <td>{{$attendance->check_out}}</td>
                 <td>
-                  @if($attendance->status==1)
+            @if($attendance->status==1)
                   <span class="badge badge-success">Check Out</span>
-                  @endif
-                  @if($attendance->status==0)
+             @endif
+               @if($attendance->status==0)
                   <span class="badge badge-primary">Check In</span>
-                  @endif
+               @endif
                 </td>
               </tr>
-              @endforeach
+            @endforeach
             </tbody>
           </table>
         </div>
       </div>
     </div>
-    <div class="col-lg-12">
-      <div class="card">
-        <div class="card-body table-responsive">
+
+      <div class="col-lg-12">
+        <div class="card">
+          <div class="card-body table-responsive">
           <h5 class="float-left pb-1 font-weight-light"><i class="feather icon-clock mr-1"></i>My Tasks</h5>
           <table id="example" class="table table-bordered table-hover  table-sm display nowrap" cellspacing="0" width="100%">
             <thead>
@@ -104,11 +105,11 @@
       </div>
     </div>
   </div>
-  <div class="col-lg-12">
-    <div class="card">
-      <div class="card-body table-responsive">
-        <h5 class="float-left pb-1 font-weight-light"><i class="feather icon-clock mr-1"></i>My Leave</h5>
-          <table id="example" class="table table-bordered table-hover  table-sm display nowrap" cellspacing="0" width="100%">
+     <div class="col-lg-12">
+       <div class="card">
+         <div class="card-body table-responsive">
+          <h5 class="float-left pb-1 font-weight-light"><i class="feather icon-clock mr-1"></i>My Leave</h5>
+           <table id="example" class="table table-bordered table-hover  table-sm display nowrap" cellspacing="0" width="100%">
             <thead>
               <tr class="bg-c-blue">
                 <th>ID</th>
