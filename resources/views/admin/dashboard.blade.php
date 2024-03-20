@@ -149,11 +149,11 @@
             </div>
         </div>
     </div>
-<style>
-table#example thead tr th{
-  background: #233560!important
-}
-</style>
+    <style>
+        table#example thead tr th{
+          background: #233560!important
+        }
+    </style>
 @endsection
 
 
