@@ -49,7 +49,7 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-12">
+    <div class="col-lg-12">     
         <div class="card">
           <div class="card-body table-responsive">
           <h5 class="float-left pb-1 font-weight-light"><i class="feather icon-clock mr-1"></i>My Tasks</h5>
