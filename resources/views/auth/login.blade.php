@@ -103,7 +103,7 @@ $(document).ready(function(){
 } 
 .btn-login{
     border: 1px solid rgba(0, 0, 0, 0.04);
-    border-radius:0px 5px 5px 0px!important    ;
+    border-radius:0px 5px 5px 0px!important;
     background-color: #fff!important;
     padding: 0px;
     margin: 0px;

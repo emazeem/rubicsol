@@ -14,7 +14,7 @@
     <div class="col-lg-12">
       <div class="card">
         <div class="card-body table-responsive">
-          <h5 class="float-left pb-1 font-weight-light"><i class="feather icon-clock"></i>My Attendance</h5>
+          <h5 class="float-left pb-1 font-weight-light"><i class="feather icon-clock mr-1"></i>My Attendance</h5>
           <table id="example" class="table table-bordered table-hover  table-sm display nowrap" cellspacing="0" width="100%">
             <thead>
               <tr class="bg-c-blue">
@@ -52,7 +52,7 @@
     <div class="col-lg-12">
       <div class="card">
         <div class="card-body table-responsive">
-          <h5 class="float-left pb-1 font-weight-light"><i class="feather icon-clock"></i>My Tasks</h5>
+          <h5 class="float-left pb-1 font-weight-light"><i class="feather icon-clock mr-1"></i>My Tasks</h5>
           <table id="example" class="table table-bordered table-hover  table-sm display nowrap" cellspacing="0" width="100%">
             <thead>
               <tr class="bg-c-blue">
@@ -66,7 +66,8 @@
             </thead>
             <tbody>
             @foreach ($tasks as $task)
-              <tr>
+              
+                <tr>
                 <td>{{$task->id}}</td>
                 <td>{{$task->user->name}}</td>
                 <td>{{$task->title}}</td>
@@ -102,7 +103,7 @@
   <div class="col-lg-12">
     <div class="card">
       <div class="card-body table-responsive">
-        <h5 class="float-left pb-1 font-weight-light"><i class="feather icon-clock"></i>My Leave</h5>
+        <h5 class="float-left pb-1 font-weight-light"><i class="feather icon-clock mr-1"></i>My Leave</h5>
           <table id="example" class="table table-bordered table-hover  table-sm display nowrap" cellspacing="0" width="100%">
             <thead>
               <tr class="bg-c-blue">
