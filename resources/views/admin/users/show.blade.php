@@ -66,9 +66,7 @@
     <tr>
       <!--Cnic uplaoding-->
       <th scope="col">Cnic</th>
-      <td scope="col"><a href="{{$show->userCNIC()}}">{{$show->cnic}}</a>
-       <div class="row">
-       <div> 
+      <td scope="col"><a href="{{$show->userCNIC()}}">{{$show->cnic}}</a> 
        <form action="{{route('update.cnic')}}" method="post" enctype="multipart/form-data">
           @csrf
           <input type="hidden" value="{{$show->id}}" name="id" id="id">

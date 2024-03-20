@@ -88,6 +88,7 @@ class DashboardController extends Controller
     public function updateCNIC(Request $request)
     {
 
+        dd($request->all());
         $this->validate(request(), [
             'file' => 'required',
         ],
