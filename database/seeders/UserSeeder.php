@@ -14,6 +14,15 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
-        User::create(['fname' => 'Super','designation' => 'CEO','department' => 'Fullstackdeveloper','lname' => 'Admin','joining' => '2024-01-01','phone'=>'03040647306', 'email' => 'info@rubicsol.com', 'password' => Hash::make('iso17025aims')]);
+        User::create([
+            'fname' => 'Super',
+            'lname' => 'Admin',
+            'email' => 'info@rubicsol.com',
+            'password' => Hash::make('iso17025aims'),
+            'phone'=>'03040647306',
+            'department' => 'Excecutive',
+            'designation' => 'CEO',
+            'joining' => '2024-01-01',
+        ]);
     }
 }
