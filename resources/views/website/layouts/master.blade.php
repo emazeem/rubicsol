@@ -37,6 +37,11 @@
 <a class="scroll-to-top smoth-scroll" href="#top-header">
     <i class="ti-angle-up"></i>
 </a>
+
+
+
+
+
 <script src="{{url('website/plugins/jquery/jquery.min.js')}}"></script>
 <script src="{{url('website/plugins/bootstrap/js/popper.min.js')}}"></script>
 <script src="{{url('website/plugins/bootstrap/js/bootstrap.min.js')}}"></script>

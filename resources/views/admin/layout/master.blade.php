@@ -86,6 +86,12 @@
 
 
     @endif
+
+
+
+
+
+    
     <script src="https://unpkg.com/@popperjs/core@2"></script>
 
     <script src="{{url('assets/js/vendor-all.min.js')}}"></script>
@@ -133,5 +139,8 @@
     });
     </script>
     <script src="{{url('/assets/js/plugins/notifier.js')}}" ></script>
-    </body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.js"></script>
+</body>
 </html>
