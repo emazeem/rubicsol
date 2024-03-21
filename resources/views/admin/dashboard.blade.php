@@ -152,14 +152,13 @@
 
 
     <div class="col-md-12">
-    <div id='calendar'></div>
-
+      <div id='calendar'></div>
     </div>
-
   </div>
+  
   <!--Calendar-->
-   <script>
-   $(document).ready(function () {
+  <script>
+  $(document).ready(function () {
     var SITEURL = "{{ url('/') }}";
     $.ajaxSetup({
       headers: {
