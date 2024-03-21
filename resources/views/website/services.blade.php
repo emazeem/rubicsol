@@ -108,34 +108,38 @@
                     <div class="row ">
                         <div class="row mt-5">
                             <div class="col-lg-4">
-                                <img src="{{url('images/our_vision.png')}}" alt="" class="img-fluid w-100 mt-5 pt-4">
+                                <img src="{{url('images/posimg.jpg')}}" alt="" class="img-fluid w-100 mt-5 pt-4">
                             </div>
                             <div class="col-lg-8">
                                 <h3 class="text-center">POS</h3>
-                                <p>We envision a world where laboratories of all sizes and specialisations seamlessly integrate our all-in-one software,RUBIC LIMS simplifying their operations, and opening up new avenues for development, cooperation, and innovation leading to technically advanced and quality assured outcomes.</p>
-                                <p>In order to inspire and empower a new generation of scientists, researchers, and professionals to design a brighter, more connected, and technologically sophisticated output for various sectors, we constantly push the frontiers of what is possible in laboratory information management to cope with the evolving needs of the world</p>
-                                <p>Together, we envision a world whereby our clients are free to concentrate on their areas of expertise while we diligently manage the complexities of laboratory information management, clearing the way to
-                        victory for all!</p>
+                                <h5 class="text-center">Designed to Help with Sales in-store and Online</h5>
+                                <p>From cash registers to contemporary centres that oversee sales, customer experience, promotional offers, and operational procedures, point-of-sale (POS) systems have come a long way.At Rubicsol, our point-of-sale system is more than simply a tool; it's a technology that transforms the way you run your company. Its amazing features and intuitive interface lead a smooth transition to a more profitable, customer-focused, and efficient business.</p>
+                                <h5>Our POS System Offers:</h5>
+                                <ul>
+                                    <li><u>Absolute Inventory Tracking:</u>  You can manage your goods like never before and witness a dramatic increase in sales with our smart inventory management system.</li>
+                                    <li><u>Reporting and Analytics:</u> Uncover trends and enhance your strategies with valuable insights into your business.</li>
+                                    <li><u>Secure Payment Processing:</u> Our POS system provides full-proof security that ensures quick and safe transactions for you and your clients.</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </section>
+                </section>
        <!--section 6-->
-        <section class="section contact bg-grey py-5 mt-5" id="contact">
-            <div class="container">
-                <div class="row ">
-                    <div class="row mt-5">
-                        <div class="col-lg-8">
-                            <h3 class="text-center">ERP System Development</h3>
-                            <p>Rubicsol, a reputable software company, specialises in the comprehensive provision of RUBIC LIMS. Our persistent commitment to innovation and client-centric approach allows us to provide customised, secure, and user-friendly LIMS software.</p>
-                            <p>Through an emphasis on data quality, efficiency, and smooth integration, we enable our valued clients to optimise their laboratory processes, leading to automated Lab operations and overall increased output. We meticulously adhere to ISO/IEC 17025 standards keeping our clients stress-free for international recognition. Our dedication to quality, excellence and maintenance of long-time relationships with our clients has shaped our position as a leading player in the global LIMS marketplace.</p>
-                            <p>Discover the Rubicsol difference today and use our pioneering LIMS solution,the RUBIC LIMS to unlock the full potential of your lab. Become a part of our expanding clientele of happy customers and preserve your place in the cutthroat field of laboratory management.</p>
+  <section class="section contact bg-grey py-5 mt-5" id="contact">
+    <div class="container">
+        <div class="row ">
+            <div class="row mt-5">
+                <div class="col-lg-8">
+                    <h3 class="text-center">ERP System Development</h3>
+                    <h5 class="text-center">A Complete ERP Suite, including a Plan, Budget, and Report on a Business’s Financial Results</h5>
+                            <p>ERP systems (Enterprise Resource Planning System) facilitate the data flow between numerous company operations and connect them together. At Rubicsol, we take absolute pleasure in providing an ERP system that works as a strategic instrument for your business's growth rather than just another piece of software.</p>
+                            <p>Rubicsol’s ERP system is developed to meet the evolving demands of diverse businesses, including retail, healthcare, manufacturing, service sectors, etc. Our ERP solution provides a user-friendly interface, quick data analytics, and strong security protocols to help you stay ahead of the competition. Additionally, our system is flexible and adjustable, enabling your company to expand without needing any replacements or upgrades.</p>
                         </div>
                         <div class="col-lg-4">
-                            <img src="{{url('images/about_us.png')}}" alt="" class="img-fluid w-100 mt-5 pt-4">
+                            <img src="{{url('images/erpimg.jpg')}}" alt="" class="img-fluid w-100 mt-5 pt-4">
                         </div>
                     </div>
                 </div>
             </section>
         </main>
-@endsection
+        @endsection
