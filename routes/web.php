@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\EmailController;
 use App\Http\Controllers\Admin\AttendanceController;
 use App\Http\Controllers\Admin\UserController;
+use App\Http\Controllers\Admin\LeaveApplicationController;
 use App\Http\Controllers\Admin\TaskController;
 use App\Http\Controllers\SubscriptionController;
 
@@ -23,7 +24,7 @@ Route::get('contact-us', [WebsiteController::class, 'contact_us'])->name('w.cont
 Route::get('about-us', [WebsiteController::class, 'about_us'])->name('w.about.us');
 Route::post('contact-us-send-email', [WebsiteController::class, 'send_email'])->name('w.contact.us.send.email');
 Route::post('subscribe', [SubscriptionController::class, 'subscribe'])->name('subscribe');
-// services  
+// services
 Route::get('services', [WebsiteController::class, 'services'])->name('w.services');
 
 
@@ -36,7 +37,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('update-cnic', [DashboardController::class, 'updateCnic'])->name('update.cnic');
     Route::get('change_password', [DashboardController::class, 'changePassword'])->name('change.password');
     Route::get('update_password', [DashboardController::class, 'updatePassword'])->name('update.password');
-    
+
 
     Route::group(['prefix' => 'users'], function () {
         Route::get('', [UserController::class, 'index'])->name('users.index');
@@ -47,11 +48,11 @@ Route::group(['middleware' => ['auth']], function () {
         Route::post('update', [UserController::class, 'update'])->name('users.update');
         Route::get('show/{id}', [UserController::class, 'show'])->name('users.show');
         Route::get('delete/{id}', [UserController::class, 'delete'])->name('users.delete');
-        
+
 
     });
     Route::group(['prefix' => 'attendance'], function () {
-        
+
         Route::get('', [AttendanceController::class, 'index'])->name('attendance.index');
         Route::get('check-in', [AttendanceController::class, 'checkIn'])->name('check.in');
         Route::get('check-out', [AttendanceController::class, 'checkOut'])->name('check.out');
@@ -63,8 +64,16 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('delete/{id}', [AttendanceController::class, 'delete'])->name('attendance.delete');
 
     });
+
+
+    Route::group(['prefix' => 'leave-application'], function () {
+        Route::get('', [LeaveApplicationController::class, 'index'])->name('leave.application.index');
+        Route::get('create', [LeaveApplicationController::class, 'create'])->name('leave.application.create');
+
+    });
+
     Route::group(['prefix' => 'task'], function () {
-        
+
         Route::get('', [TaskController::class, 'index'])->name('task.index');
         Route::get('create', [TaskController::class, 'create'])->name('tasks.create');
         Route::post('store', [TaskController::class, 'store'])->name('tasks.store');
@@ -81,7 +90,7 @@ Route::group(['middleware' => ['auth']], function () {
 
 
     });
-    
+
         Route::group(['prefix' => 'email'], function () {
         Route::get('template', [EmailController::class, 'emailTemplate'])->name('email.template');
         Route::get('template1', [EmailController::class, 'emailTemplate1'])->name('email.template1');

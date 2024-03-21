@@ -51,6 +51,15 @@
                         <span class="pcoded-mtext">Tasks</span>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="{{route('leave.application.index')}}" class="nav-link">
+                        <span class="pcoded-micon">
+                            <i class="fa fa-question"></i>
+                        </span>
+                        <span class="pcoded-mtext">Leave Application</span>
+                    </a>
+                </li>
+
             </ul>
         </div>
     </div>
