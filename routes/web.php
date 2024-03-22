@@ -69,6 +69,10 @@ Route::group(['middleware' => ['auth']], function () {
     Route::group(['prefix' => 'leave-application'], function () {
         Route::get('', [LeaveApplicationController::class, 'index'])->name('leave.application.index');
         Route::get('create', [LeaveApplicationController::class, 'create'])->name('leave.application.create');
+        Route::post('store', [LeaveApplicationController::class, 'store'])->name('leave.application.store');
+        Route::get('edit/{id}', [LeaveApplicationController::class, 'edit'])->name('leave.edit');
+        Route::get('show/{id}', [LeaveApplicationController::class, 'show'])->name('leave.show');
+        Route::get('delete', [LeaveApplicationController::class, 'delete'])->name('leave.delete');
 
     });
 

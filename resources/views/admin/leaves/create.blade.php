@@ -13,37 +13,31 @@
           @csrf
           <div class="card ">
             <div class="card-footer bg-light border-top">
-              <h5 class="font-weight-light"><i class="bx bx-task"></i>Add Task</h5>
+              <h5 class="font-weight-light"><i class="bx bx-task mr-1"></i>Add Application</h5>
               
               <div class="form-group col-md-4 col-12">
-                <label for="title" class="control-label">Title</label>
-                <input type="text" class="form-control" id="title" name="title"
-                placeholder="Title"
+                <label for="start" class="control-label">Start Date</label>
+                <input type="date" class="form-control" id="start" name="start"
+                placeholder="Enter the date"
                 autocomplete="off" value=''>
               </div>
               <div class="form-group col-md-4 col-12">
-                <label for="description" class="control-label">Description</label>
-                <textarea type="text" class="form-control" id="description" name="description"
-                placeholder="Description"></textarea>
+                <label for="end" class="control-label">End Date</label>
+                <input type="date" class="form-control" id="end" name="end"
+                placeholder="Ending date">
               </div>
-                <div class="col-md-4">
-                  <label for="user_id" class="control-label">User</label>
-                  <select class="form-select custom-select" name="user_id">
-                    <option selected disabled>Select User</option>
-                    @foreach($users as $user)
-                    <option value="{{ $user->id }}">{{ $user->name }}</option>
-                     @endforeach
-                  </select>
+                <div class="col-md-4 pb-4">
+                  <label for="remarks" class="control-label">Remarks</label>
+                  <textarea class="form-control" name="remarks" placeholder="Reason">
+                  </textarea>
                 </div>
-              </div>
-              <div class="card-footer bg-light border-top">
-              <div class="row">
-                <div class="col-12">
-                  <a href="{{ URL::previous() }}" class="btn btn-sm bg-white border float-left">
-                    <iclass="feather icon-chevron-left></i>back</a>
-                    <button type="submit" class="btn btn-primary btn-sm user-btn float-right">
-                      <iclass="feather icon-save></i>Save
-                    </button>
+                <div class="card-footer bg-light border-top">
+                  <div class="row">
+                    <div class="col-12">
+                      <a href="{{ URL::previous() }}" class="btn btn-sm bg-white border float-left">
+                        <i class="feather icon-chevron-left"></i>back</a>
+                        <button type="submit" class="btn btn-primary btn-sm user-btn float-right">
+                          <i class="feather icon-save"></i>Save</button>
                   </div>
                 </div>
               </div>
@@ -58,7 +52,7 @@
         button.attr('disabled', 'disabled').html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Processing');
         e.preventDefault();
         $.ajax({
-            url: "{{route('tasks.store')}}",
+            url: "{{route('leave.application.store')}}", //leave.application.store
             type: "POST",
             data: new FormData(this),
             contentType: false,
