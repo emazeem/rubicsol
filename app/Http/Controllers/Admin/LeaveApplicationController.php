@@ -21,20 +21,29 @@ class LeaveApplicationController extends Controller
     }
     public function edit($id)
     {
-        $leaves = LeaveApplication::find($id);
-        return view('admin.leaves.create');
+        $edit = LeaveApplication::find($id);
+        return view('admin.leaves.edit',compact('edit'));
+    }
+    public function show($id)
+    {
+        $show = LeaveApplication::find($id);
+        return view('admin.leaves.show',compact('show'));
+    }
+    public function delete($id)
+    {
+        LeaveApplication::find($id)->delete();
+        return redirect()->back();
     }
     public function store(Request $request){
         $this->validate(request(), [
             'start' => 'required',
-            'end' => 'required', 
-            'remarks' => 'required',  
-        ],
-            [
-                'start.required' => 'start field is required *',
-                'end.required' => 'end field is required *',
-                'remarks.required' => 'remarks is required *',
-            ]);
+            'end' => 'required',
+            'remarks' => 'required',
+        ], [
+            'start.required' => 'start field is required *',
+            'end.required' => 'end field is required *',
+            'remarks.required' => 'remarks is required *',
+        ]);
 
         $leave=new LeaveApplication();
         $leave->user_id=auth()->user()->id;
@@ -43,41 +52,24 @@ class LeaveApplicationController extends Controller
         $leave->end=$request->end;
         $leave->remarks=$request->remarks;
         $leave->save();
-        return response()->json(['success'=>'Task added successfully','id'=>$leave->id]);
-}
-//upadte leave form
-public function update(Request $request){
-    $this->validate(request(), [
-        'user' => 'required',
-        'start' => 'required',
-        'end' => 'required',
-        'status' => 'required',   
-        'remarks' => 'required',  
-           
-    ],
-        [
-            'user.required' => 'user field is required *',
+        return response()->json(['success'=>'Leave applied successfully','id'=>$leave->id]);
+    }
+    public function update(Request $request){
+        $this->validate(request(), [
+            'start' => 'required',
+            'end' => 'required',
+            'remarks' => 'required',
+        ], [
             'start.required' => 'start field is required *',
             'end.required' => 'end field is required *',
-            'status.required' => 'status is required *',
             'remarks.required' => 'remarks is required *',
         ]);
 
-    $leave= leave::find($request->id);
-    $leave->user_id=$request->user_id;
-    $leave->user=$request->user;
-    $leave->start=$request->start;
-    $leave->end=$request->end;
-    $leave->status=$request->status;
-    $leave->remarks=$request->remarks;
-    $leave->day=date('l');
-    $leave->worked_hours=0;
-    $leave->status=$request->status;
-   // $leave->leave_id=;
-    $leave->remarks='marked by user';
-    $leave->save();
-    return response()->json(['success'=>'leave updated successfully']);
-
-    
-}
+        $leave= LeaveApplication::find($request->id);
+        $leave->start=$request->start;
+        $leave->end=$request->end;
+        $leave->remarks=$request->remarks;
+        $leave->save();
+        return response()->json(['success'=>'Leave updated successfully','id'=>$leave->id]);
+    }
 }
