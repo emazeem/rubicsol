@@ -15,6 +15,9 @@
             <div class="card ">
                 <div class="card-header">
                     <h5 class="font-weight-light"><i class="bx bx-task mr-1"></i> Update Application</h5>
+                    <button class="btn btn-success float-right ml-1">Approved</button>
+                    <button class="btn btn-danger float-right">Declined</button>
+                </div>
                 </div>
                 <div class="card-body pt-4 bg-light border-top">
                     <div class="form-group col-md-4 col-12">
@@ -28,6 +31,21 @@
                     <div class="col-md-4 pb-4">
                         <label for="remarks" class="control-label">Remarks</label>
                         <textarea class="form-control" name="remarks" placeholder="Reason">{{$edit->remarks}}</textarea>
+                    </div>
+                    <div class="form-group col-md-4 col-12">
+                        <label for="reason" class="control-label">Reason</label>
+                        <input type="text" class="form-control" id="end" name="reason" placeholder="reason" value='{{$edit->reason}}'>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="submit-one">Leave type</label>
+                        <div class="form-check pb-1">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">Half leave</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">Full leave</label>
+                        </div>
                     </div>
                     <div class="card-footer bg-light border-top">
                         <div class="row">
