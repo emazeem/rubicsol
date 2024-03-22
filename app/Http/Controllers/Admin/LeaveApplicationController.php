@@ -19,6 +19,11 @@ class LeaveApplicationController extends Controller
     {
         return view('admin.leaves.create');
     }
+    public function edit($id)
+    {
+        $leaves = LeaveApplication::find($id);
+        return view('admin.leaves.create');
+    }
     public function store(Request $request){
         $this->validate(request(), [
             'start' => 'required',
@@ -39,6 +44,40 @@ class LeaveApplicationController extends Controller
         $leave->remarks=$request->remarks;
         $leave->save();
         return response()->json(['success'=>'Task added successfully','id'=>$leave->id]);
+}
+//upadte leave form
+public function update(Request $request){
+    $this->validate(request(), [
+        'user' => 'required',
+        'start' => 'required',
+        'end' => 'required',
+        'status' => 'required',   
+        'remarks' => 'required',  
+           
+    ],
+        [
+            'user.required' => 'user field is required *',
+            'start.required' => 'start field is required *',
+            'end.required' => 'end field is required *',
+            'status.required' => 'status is required *',
+            'remarks.required' => 'remarks is required *',
+        ]);
 
+    $leave= leave::find($request->id);
+    $leave->user_id=$request->user_id;
+    $leave->user=$request->user;
+    $leave->start=$request->start;
+    $leave->end=$request->end;
+    $leave->status=$request->status;
+    $leave->remarks=$request->remarks;
+    $leave->day=date('l');
+    $leave->worked_hours=0;
+    $leave->status=$request->status;
+   // $leave->leave_id=;
+    $leave->remarks='marked by user';
+    $leave->save();
+    return response()->json(['success'=>'leave updated successfully']);
+
+    
 }
 }
