@@ -5,7 +5,8 @@
 <div class="row pb-3">
 <div class="col-12 mb-2">
     <h3 class="float-left pr-1 font-weight-light"><i class="bx bx-task"></i>My leave</h3>
-
+      <button class="btn float-right btn-success ml-2">Approved</button>
+      <button class="btn float-right btn-danger">Reject</button> 
   </div>
     <table class="table table-bordered table-sm bg-white">
     <tr>
@@ -36,7 +37,7 @@
       <th scope="col">Status</th>
       <td scope="col">
         @if($show->status == 0)
-        Pending
+        Rejected
         @else
         Approved
         @endif
