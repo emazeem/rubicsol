@@ -32,26 +32,11 @@
                         <label for="remarks" class="control-label">Remarks</label>
                         <textarea class="form-control" name="remarks" placeholder="Reason">{{$edit->remarks}}</textarea>
                     </div>
-                    <div class="form-group col-md-4 col-12">
-                        <label for="reason" class="control-label">Reason</label>
-                        <input type="text" class="form-control" id="end" name="reason" placeholder="reason" value='{{$edit->reason}}'>
-                    </div>
-                    <div class="col-md-4">
-                        <label for="submit-one">Leave type</label>
-                        <div class="form-check pb-1">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                            <label class="form-check-label" for="flexRadioDefault1">Half leave</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                            <label class="form-check-label" for="flexRadioDefault2">Full leave</label>
-                        </div>
-                    </div>
                     <!--list of leaves-->
                     <div class="col-md-4 mt-2">
-                        <form action="/action_page.php">
-                            <label for="leave">Leave type:</label>
-                            <select name="leave"  id="leave">
+                        <form action="leavetype">
+                            <label for="nature">Leave type:</label>
+                            <select name="nature"  id="nature">
                                 <option value="medical">Medical Leave</option>
                                 <option value="casual">Casual Leave</option>
                                 <option value="urgent">Urgent Leave</option>

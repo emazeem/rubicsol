@@ -50,6 +50,8 @@ class LeaveApplicationController extends Controller
         $leave->status=0;
         $leave->start=$request->start;
         $leave->end=$request->end;
+        $leave->type=$request->type; //leave type
+        $leave->nature=$request->nature; //leave type
         $leave->remarks=$request->remarks;
         $leave->save();
         return response()->json(['success'=>'Leave applied successfully','id'=>$leave->id]);
@@ -69,6 +71,8 @@ class LeaveApplicationController extends Controller
         $leave->start=$request->start;
         $leave->end=$request->end;
         $leave->remarks=$request->remarks;
+        $leave->reason=$request->reason;
+        $leave->leavetype=$request->leavetype;
         $leave->save();
         return response()->json(['success'=>'Leave updated successfully','id'=>$leave->id]);
     }

@@ -28,6 +28,24 @@
                     <label for="remarks" class="control-label">Remarks</label>
                     <textarea class="form-control" name="remarks" placeholder="Reason"></textarea>
                 </div>
+                <div class="col-md-4 mt-2">
+                <label for="type">Leave type:</label>
+                    <select name="type"  id="type" class="form-control">
+                        <option value="medical">Medical Leave</option>
+                        <option value="casual">Casual Leave</option>
+                        <option value="urgent">Urgent Leave</option>
+                    </select>
+                            
+                    <label for="nature">Nature of Leave</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="nature" id="nature1" value="half">
+                            <label class="form-check-label" for="nature1">Half Leave</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="nature" id="nature2" value="full" checked>
+                            <label class="form-check-label" for="nature2">Full Leave</label>
+                        </div>
+
                 <div class="card-footer bg-light border-top">
                     <div class="row">
                         <div class="col-12">

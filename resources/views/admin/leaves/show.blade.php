@@ -4,7 +4,7 @@
 
 <div class="row pb-3">
 <div class="col-12 mb-2">
-    <h3 class="float-left pb-1 font-weight-light"><i class="bx bx-task"></i>My Task</h3>
+    <h3 class="float-left pr-1 font-weight-light"><i class="bx bx-task"></i>My leave</h3>
 
   </div>
     <table class="table table-bordered table-sm bg-white">
@@ -23,6 +23,10 @@
     <tr>
       <th scope="col">End</th>
       <td scope="col">{{$show->end}}</td>
+    </tr>
+    <tr>
+      <th scope="col">Leave type</th>
+      <td scope="col">{{$show->leave}}</td>
     </tr>
     <tr>
       <th scope="col">Status</th>

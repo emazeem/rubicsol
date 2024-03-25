@@ -16,6 +16,8 @@ return new class extends Migration
             $table->integer('user_id');
             $table->date('start');
             $table->date('end');
+            $table->string('nature')->comment('Nature of leave');
+            $table->string('type')->comment('Type of leave');
             $table->integer('status')->default(0);
             $table->string('remarks');
             $table->timestamps();
