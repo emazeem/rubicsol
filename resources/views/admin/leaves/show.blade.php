@@ -26,7 +26,11 @@
     </tr>
     <tr>
       <th scope="col">Leave type</th>
-      <td scope="col">{{$show->leave}}</td>
+      <td scope="col">{{$show->type}}</td>
+    </tr>
+    <tr>
+      <th scope="col">Leave nature</th>
+      <td scope="col">{{$show->nature}}</td>
     </tr>
     <tr>
       <th scope="col">Status</th>

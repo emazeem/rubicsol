@@ -18,37 +18,47 @@
                     <button class="btn btn-success float-right ml-1">Approved</button>
                     <button class="btn btn-danger float-right">Declined</button>
                 </div>
+            </div>
+            <div class="card-body pt-4 bg-light border-top">
+                <div class="form-group col-md-4 col-12">
+                    <label for="start" class="control-label">Start Date</label>
+                    <input type="date" class="form-control" id="start" name="start" placeholder="Enter the date" autocomplete="off" value='{{$edit->start}}'>
                 </div>
-                <div class="card-body pt-4 bg-light border-top">
-                    <div class="form-group col-md-4 col-12">
-                        <label for="start" class="control-label">Start Date</label>
-                        <input type="date" class="form-control" id="start" name="start" placeholder="Enter the date" autocomplete="off" value='{{$edit->start}}'>
-                    </div>
-                    <div class="form-group col-md-4 col-12">
-                        <label for="end" class="control-label">End Date</label>
-                        <input type="date" class="form-control" id="end" name="end" placeholder="Ending date" value='{{$edit->end}}'>
-                    </div>
-                    <div class="col-md-4 pb-4">
-                        <label for="remarks" class="control-label">Remarks</label>
-                        <textarea class="form-control" name="remarks" placeholder="Reason">{{$edit->remarks}}</textarea>
-                    </div>
+                <div class="form-group col-md-4 col-12">
+                    <label for="end" class="control-label">End Date</label>
+                    <input type="date" class="form-control" id="end" name="end" placeholder="Ending date" value='{{$edit->end}}'>
+                </div>
+                <div class="col-md-4 pb-4">
+                    <label for="remarks" class="control-label">Remarks</label>
+                    <textarea class="form-control" name="remarks" placeholder="Reason">{{$edit->remarks}}</textarea>
+                </div>
                     <!--list of leaves-->
                     <div class="col-md-4 mt-2">
                         <form action="leavetype">
-                            <label for="nature">Leave type:</label>
-                            <select name="nature"  id="nature">
+                            <label for="type">Leave type:</label>
+                            <select name="type"  id="type">
                                 <option value="medical">Medical Leave</option>
                                 <option value="casual">Casual Leave</option>
                                 <option value="urgent">Urgent Leave</option>
                             </select>
                             <br><br>
-                        </form>
-                    </div>
-                    <div class="card-footer bg-light border-top">
-                        <div class="row">
-                            <div class="col-12">
-                                <a href="{{ URL::previous() }}" class="btn bg-white border float-left"><i class="feather icon-chevron-left"></i>back</a>
-                                <button type="submit" class="btn btn-primary user-btn float-right"><i class="feather icon-save"></i> Update</button>
+                            <!--nature of leaves-->
+                            <label for="nature">Nature of Leave</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="nature" id="nature1" value="half">
+                                <label class="form-check-label" for="nature1">Half Leave</label>
+                            </div>
+                            <div class="form-check">
+                            <input class="form-check-input" type="radio" name="nature" id="nature2" value="full" checked>
+                            <label class="form-check-label" for="nature2">Full Leave</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer bg-light border-top">
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="{{ URL::previous() }}" class="btn bg-white border float-left"><i class="feather icon-chevron-left"></i>back</a>
+                            <button type="submit" class="btn btn-primary user-btn float-right"><i class="feather icon-save"></i> Update</button>
                             </div>
                         </div>
                     </div>
