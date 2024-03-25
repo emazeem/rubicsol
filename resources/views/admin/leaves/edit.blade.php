@@ -47,6 +47,18 @@
                             <label class="form-check-label" for="flexRadioDefault2">Full leave</label>
                         </div>
                     </div>
+                    <!--list of leaves-->
+                    <div class="col-md-4 mt-2">
+                        <form action="/action_page.php">
+                            <label for="leave">Leave type:</label>
+                            <select name="leave"  id="leave">
+                                <option value="medical">Medical Leave</option>
+                                <option value="casual">Casual Leave</option>
+                                <option value="urgent">Urgent Leave</option>
+                            </select>
+                            <br><br>
+                        </form>
+                    </div>
                     <div class="card-footer bg-light border-top">
                         <div class="row">
                             <div class="col-12">
