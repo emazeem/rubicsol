@@ -41,10 +41,14 @@
                 @else
                 Approved
                 @endif
-              </td>
-          </tr>
-      </table>
-  </div>
+            </td>
+        </tr>
+        <tr>
+            <th scope="col">Reason</th>
+            <td scope="col">{{$show->reason}}</td>
+        </tr>
+    </table>
+</div>
 
 <script>
     $(document).ready(function(){

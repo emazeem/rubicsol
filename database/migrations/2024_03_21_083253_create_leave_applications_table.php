@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('type')->comment('Type of leave');
             $table->integer('status')->default(0);
             $table->string('remarks');
+            $table->string('reason')->nullable();
             $table->timestamps();
         });
     }

@@ -15,6 +15,7 @@
             <div class="card ">
                 <div class="card-header">
                     <h5 class="font-weight-light"><i class="bx bx-task mr-1"></i> Update Application</h5>
+                    
                 </div>
             </div>
             <div class="card-body pt-4 bg-light border-top">
