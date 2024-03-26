@@ -11,8 +11,7 @@
                 <thead>
                     <tr class="bg-c-blue">
                         <th>ID</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
+                        <th>User</th>
                         <th>Title</th>
                         <th>Status</th>
                         <th>Priority</th>
@@ -23,8 +22,8 @@
                     @foreach ($tasks as $task)
                     <tr>
                         <td>{{$task->id}}</td>
-                        <td>{{$task->user->fname}}</td>
-                        <td>{{$task->user->lname}}</td>
+                        <td>{{$task->user->fname}} {{$task->user->lname}}</td>
+                        <!-- <td>{{$task->user->lname}}</td> -->
                         <td>{{$task->title}}</td>
                         <td>
                         @if($task->status==1)
