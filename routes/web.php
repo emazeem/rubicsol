@@ -76,6 +76,7 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('delete/{id}', [LeaveApplicationController::class, 'delete'])->name('leave.delete');
         Route::get('approve/{id}', [LeaveApplicationController::class, 'approve'])->name('leave.approve');
         Route::get('reject/{id}', [LeaveApplicationController::class, 'reject'])->name('leave.reject');
+        Route::post('reason', [LeaveApplicationController::class, 'reason'])->name('leave.reason');
         
     });
 

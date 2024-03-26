@@ -45,9 +45,18 @@
         </tr>
         <tr>
             <th scope="col">Reason</th>
-            <td scope="col">{{$show->reason}}</td>
-        </tr>
-    </table>
+            <td scope="col">{{$show->reason}} 
+              <form action="{{route('leave.reason')}}" method="post">
+                @csrf
+                <input type="hidden" value="{{$show->id}}" name="id">
+                <div class="input-group mb-3">
+                    <input type="text" id="reason" name="reason" class="form-control" placeholder="type reason here" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Submit</button>
+                </div>
+            </form>
+        </td>
+    </tr>
+  </table>
 </div>
 
 <script>
