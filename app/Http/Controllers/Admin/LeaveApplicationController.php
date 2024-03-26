@@ -76,4 +76,18 @@ class LeaveApplicationController extends Controller
         $leave->save();
         return response()->json(['success'=>'Leave updated successfully','id'=>$leave->id]);
     }
+    public function approve($id)
+    {
+        $leave = LeaveApplication::findOrFail($id);
+        $leave->status = 1;
+        $leave->save();
+        return redirect()->back()->with('success', 'leave status updated successfully.');
+    }
+    public function reject($id)
+    {
+        $leave = LeaveApplication::findOrFail($id);
+        $leave->status = 0; 
+        $leave->save();
+        return redirect()->back()->with('success', 'leave status updated successfully.');
+    }
 }

@@ -74,7 +74,9 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('edit/{id}', [LeaveApplicationController::class, 'edit'])->name('leave.edit');
         Route::get('show/{id}', [LeaveApplicationController::class, 'show'])->name('leave.show');
         Route::get('delete/{id}', [LeaveApplicationController::class, 'delete'])->name('leave.delete');
-
+        Route::get('approve/{id}', [LeaveApplicationController::class, 'approve'])->name('leave.approve');
+        Route::get('reject/{id}', [LeaveApplicationController::class, 'reject'])->name('leave.reject');
+        
     });
 
     Route::group(['prefix' => 'task'], function () {

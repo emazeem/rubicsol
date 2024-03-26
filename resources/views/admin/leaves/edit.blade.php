@@ -15,8 +15,6 @@
             <div class="card ">
                 <div class="card-header">
                     <h5 class="font-weight-light"><i class="bx bx-task mr-1"></i> Update Application</h5>
-                    <button class="btn btn-success float-right ml-1">Approved</button>
-                    <button class="btn btn-danger float-right">Declined</button>
                 </div>
             </div>
             <div class="card-body pt-4 bg-light border-top">
