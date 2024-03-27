@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->integer('user_id');
             $table->string('title');
+            $table->string('subtask')->nullable();
             $table->string('description');
             $table->integer('status');
             $table->integer('priority');

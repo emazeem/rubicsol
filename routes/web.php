@@ -93,7 +93,10 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('start/{id}', [TaskController::class, 'start'])->name('task.start');
         Route::get('complete/{id}', [TaskController::class, 'complete'])->name('task.complete');
         Route::post('/task/{id}/switch-priority', [TaskController::class, 'switchPriority'])->name('task.switchPriority');
-
+        //sub-task
+        Route::post('subtask', [TaskController::class, 'subtask'])->name('task.subtask');
+       
+        
 
 
 

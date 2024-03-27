@@ -56,7 +56,21 @@
         </div>
     </td>
 </tr>
+<tr>
+            <th scope="col">Sub Task</th>
+            <td scope="col">{{$show->subtask}} 
+              <form action="{{route('task.subtask')}}" method="post">
+                @csrf
+                <input type="hidden" value="{{$show->id}}" name="id">
+                <div class="input-group mb-3">
+                    <input type="text" id="subtask" name="subtask" class="form-control" placeholder="subtask" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Submit</button>
+                </div>
+            </form>
+        </td>
+    </tr>
 </table>
+
 </div>
 
 <script>

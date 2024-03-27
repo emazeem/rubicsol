@@ -110,6 +110,13 @@ class TaskController extends Controller
 
         
     }
+    public function subtask(Request $request)
+    {
+        $task = Task::findOrFail($request->id);
+        $task->subtask=$request->subtask;
+        $task->save();
+        return redirect()->back()->with('success', 'task subtask  updated successfully.');
+    }
 
 }
 
