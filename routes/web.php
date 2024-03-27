@@ -114,4 +114,12 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('add-favourite/{id}', [EmailController::class, 'addFavourite'])->name('add.favourite');
     });
 
+    Route::group(['prefix' => 'subtask'], function () {
+
+        Route::get('', [TaskController::class, 'index'])->name('subtask.index');
+        Route::get('show', [TaskController::class, 'show'])->name('subtasks.show');
+        
+    });
+
+    
 });
