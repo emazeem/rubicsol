@@ -20,7 +20,7 @@
     </tr>
     <tr>
       <th scope="col">Users</th>
-      <td scope="col">{{$show->user->name}}</td>
+      <td scope="col">{{$show->user->fname}}</td>
     </tr>
     <tr>
       <th scope="col">Title</th>
@@ -58,8 +58,8 @@
 </tr>
 <tr>
             <th scope="col">Sub Task</th>
-            <td scope="col">{{$show->subtask}} 
-              <form action="{{route('task.subtask')}}" method="post">
+            <td scope="col">{{$show->subtasks}} 
+              <form action="{{route('subtask.store')}}" method="post">
                 @csrf
                 <input type="hidden" value="{{$show->id}}" name="id">
                 <div class="input-group mb-3">
@@ -97,11 +97,5 @@
 </script>
 
 
+
 @endsection
-
-
-
-
-
-
-

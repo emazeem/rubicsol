@@ -9,6 +9,7 @@ use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\LeaveApplicationController;
 use App\Http\Controllers\Admin\TaskController;
 use App\Http\Controllers\SubscriptionController;
+use App\Http\Controllers\Admin\SubtaskController;
 
 Route::get('', [WebsiteController::class, 'home'])->name('w.home');
 Route::get('documentation/{section?}', [WebsiteController::class, 'documentation'])->name('w.documentation');
@@ -113,13 +114,7 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('send-again/{id}', [EmailController::class, 'sendAgain'])->name('send.again');
         Route::get('add-favourite/{id}', [EmailController::class, 'addFavourite'])->name('add.favourite');
     });
-
-    Route::group(['prefix' => 'subtask'], function () {
-
-        Route::get('', [TaskController::class, 'index'])->name('subtask.index');
-        Route::get('show', [TaskController::class, 'show'])->name('subtasks.show');
-        
+        Route::group(['prefix'=>'subtask'],function(){
+            Route::post('store',[SubtaskController::class,'store'])->name('subtask.store');
+        });
     });
-
-    
-});

@@ -9,13 +9,13 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function subtask(): void
+    public function up(): void
     {
         Schema::create('subtasks', function (Blueprint $table) {
             $table->id();
-            $table->task_id();
+            $table->integer('task_id');
             $table->string('description');
-            $table->integar('status')->default(0);
+            $table->integer('status')->default(0);
             $table->timestamps();
         });
     }
