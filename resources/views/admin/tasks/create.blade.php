@@ -31,7 +31,7 @@
                   <select class="form-select custom-select" name="user_id">
                     <option selected disabled>Select User</option>
                     @foreach($users as $user)
-                    <option value="{{ $user->id }}">{{ $user->fname }}{{$user->lname}}</option>
+                    <option value="{{ $user->id }}">{{ $user->fname }} {{$user->lname}}</option>
                      @endforeach
                   </select>
                 </div>
@@ -39,9 +39,9 @@
               <div class="card-footer bg-light border-top">
               <div class="row">
                 <div class="col-12">
-                  <a href="{{ URL::previous() }}" class="btn btn-sm bg-white border float-left">
+                  <a href="{{ URL::previous() }}" class="btn btn-md bg-white border float-left">
                     <iclass="feather icon-chevron-left></i>back</a>
-                    <button type="submit" class="btn btn-primary btn-sm user-btn float-right">
+                    <button type="submit" class="btn btn-primary btn-md user-btn  float-right">
                       <iclass="feather icon-save></i>Save
                     </button>
                   </div>
