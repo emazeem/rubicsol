@@ -9,7 +9,7 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up(): void
+    public function subtask(): void
     {
         Schema::create('subtasks', function (Blueprint $table) {
             $table->id();
