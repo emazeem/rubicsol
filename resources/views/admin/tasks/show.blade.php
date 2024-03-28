@@ -58,7 +58,7 @@
 </tr>
 <tr>
             <th scope="col">Sub Task</th>
-            <td scope="col">{{$show->subtasks}} 
+            <td scope="col"> 
               <form action="{{route('subtask.store')}}" method="post">
                 @csrf
                 <input type="hidden" value="{{$show->id}}" name="id">
@@ -68,9 +68,23 @@
                 </div>
             </form>
         </td>
+      
     </tr>
-</table>
-
+    <tr>
+      
+      <td colspan="2">
+        @foreach($show->subtasks as $subtask)
+        <a href="{{route('subtask.complete',['id'=>$subtask->id])}}">{{$subtask->description}}</a>
+        @if($subtask->status==0)
+        <span class="text-danger">Pending</span>
+        @else
+        <span class="text-success">Completed</span>
+        @endif
+        <br>
+        @endforeach
+      </td>
+    </tr>
+  </table>
 </div>
 
 <script>
@@ -95,7 +109,6 @@
         });
     });
 </script>
-
 
 
 @endsection

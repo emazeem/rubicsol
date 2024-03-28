@@ -116,5 +116,7 @@ Route::group(['middleware' => ['auth']], function () {
     });
         Route::group(['prefix'=>'subtask'],function(){
             Route::post('store',[SubtaskController::class,'store'])->name('subtask.store');
+            Route::get('complete/{id}', [SubtaskController::class, 'complete'])->name('subtask.complete');
+            
         });
     });

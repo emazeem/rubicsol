@@ -18,6 +18,13 @@ class SubtaskController extends Controller
         $subtask->task_id=$request->id;
         $subtask->description=$request->subtask;
         $subtask->save();
-        return response()->json(['success'=>'Subtask added successfully']);
+        return redirect()->back();
+    }
+    public function complete($id)
+    {
+        $subtask = Subtask::findOrFail($id);
+        $subtask->status = 1; 
+        $subtask->save();
+        return redirect()->back()->with('success', 'Subtask status updated successfully.');
     }
 }
