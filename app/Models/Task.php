@@ -15,6 +15,6 @@ class Task extends Model
         return $this->belongsTo(User::class,'user_id');
     }
     public function subtasks(){
-        return $this->hasMany(Subtask::class,'id','task_id');
+        return $this->hasMany(Subtask::class,'task_id');
     }
 }
