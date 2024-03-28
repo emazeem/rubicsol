@@ -474,7 +474,7 @@
                 <div class="col-lg-5">
                     <div class="section-heading ">
 
-                        <h3>"What RUBIC LIMS offers?</h3>
+                        <h3>What RUBIC LIMS offers?</h3>
 
                         <ul class="list-unstyled mt-4 mb-5">
 
