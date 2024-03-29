@@ -20,7 +20,7 @@
     </tr>
     <tr>
       <th scope="col">Users</th>
-      <td scope="col">{{$show->user->fname}}</td>
+      <td scope="col">{{$show->user->fname}} {{$show->user->lname}}</td>
     </tr>
     <tr>
       <th scope="col">Title</th>
@@ -71,17 +71,17 @@
       
     </tr>
     <tr>
-      
+
       <td colspan="2">
         @foreach($show->subtasks as $subtask)
-        <a href="{{route('subtask.complete',['id'=>$subtask->id])}}">{{$subtask->description}}</a>
-        @if($subtask->status==0)
-        <span class="text-danger">Pending</span>
-        @else
-        <span class="text-success">Completed</span>
-        @endif
-        <br>
-        @endforeach
+        <a href="{{route('subtask.complete',['id'=>$subtask->id])}}"
+        @if($subtask->status==1) style="text-decoration:line-through" @endif>
+        <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" readonly
+         @if($subtask->status==1) checked 
+         @endif>
+         {{$subtask->description}}</a>
+         <br>
+         @endforeach
       </td>
     </tr>
   </table>

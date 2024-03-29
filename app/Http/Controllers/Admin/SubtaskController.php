@@ -10,7 +10,8 @@ class SubtaskController extends Controller
     public function store(Request $request){
         $this->validate(request(), [
             'subtask' => 'required',
-        ], [
+        ], 
+        [
             'subtask.required' => 'description field is required *',
         ]);
 

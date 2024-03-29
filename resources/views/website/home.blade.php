@@ -712,10 +712,10 @@
                             </div>
                         </div>
                     </div>
-</div>
-</div>
-</div>
-</section>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="pt-4 section-bottom" id="service">
         <div class="container-fluid">
             <div class="row align-items-center justify-content-center">
