@@ -70,10 +70,23 @@ $(document).ready(function () {
                             <option value="lab expert">Lab expert</option>
                     </select>
                         </div>
+                        <div class="form-group col-md-3 col-12">
+                            <label for="Address" class="control-label">Address</label>
+                            <input type="text" class="form-control" id="Address" name="Address"placeholder="Address"autocomplete="off" value=''>
                     </div>
+                    <div class="form-group col-md-3 col-12">
+                    <label for="cnic" class="control-label">Cnic</label>
+                    <input type="text" class="form-control" id="cnic" name="cnic"placeholder="Cnic"autocomplete="off" value=''>
+                </div>
+                    <div class="form-group col-md-3 col-12">
+                            <label for="account" class="control-label">Account_No</label>
+                            <input type="text" class="form-control" id="account" name="account"placeholder="account"autocomplete="off" value=''>
+                </div>
+                <div class="form-group col-md-3 col-12">
+                    <label for="bank" class="control-label">Bank Name</label>
+                    <input type="text" class="form-control" id="bank" name="bank"placeholder="bank"autocomplete="off" value=''>
                 </div>
             </div>
-        </div>
                 <div class="card-footer bg-light border-top">
                     <div class="row">
                         <div class="col-12">

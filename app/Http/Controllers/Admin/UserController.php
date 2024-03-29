@@ -52,6 +52,10 @@ class UserController extends Controller
         $user->lname=$request->lname;
         $user->joining=$request->joining;
         $user->designation=$request->designation;
+        $user->address=$request->address;
+        $user->cnic=$request->cnic;
+        $user->bank=$request->bank;
+        $user->account=$request->account;
         $user->department=$request->department;
         $user->phone=$request->phone;
         $user->email=$request->email;
@@ -104,6 +108,10 @@ class UserController extends Controller
         $user->joining=$request->joining;
         $user->phone=$request->phone;
         $user->email=$request->email;
+        $user->address=$request->address;
+        $user->cnic=$request->cnic;
+        $user->bank=$request->bank;
+        $user->account=$request->account;
         $user->password=Hash::make($request->get('password'));
         $user->save();
         

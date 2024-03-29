@@ -21,6 +21,10 @@ return new class extends Migration
             $table->string('department');
             $table->string('phone');
             $table->string('joining');
+            $table->string('Address');
+            $table->String('Bank');
+            $table->integer('Account');
+            $table->integer('cnic');
             $table->string('profile')->nullable();
             $table->string('cv')->nullable();
             $table->string('cnic')->nullable();
