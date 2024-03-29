@@ -10,6 +10,7 @@ use App\Http\Controllers\Admin\LeaveApplicationController;
 use App\Http\Controllers\Admin\TaskController;
 use App\Http\Controllers\SubscriptionController;
 use App\Http\Controllers\Admin\SubtaskController;
+use App\Http\Controllers\Admin\PostController;
 
 Route::get('', [WebsiteController::class, 'home'])->name('w.home');
 Route::get('documentation/{section?}', [WebsiteController::class, 'documentation'])->name('w.documentation');
@@ -119,4 +120,9 @@ Route::group(['middleware' => ['auth']], function () {
             Route::get('complete/{id}', [SubtaskController::class, 'complete'])->name('subtask.complete');
             
         });
-    });
+        Route::group(['prefix'=>'post'],function(){
+            Route::get('',[PostController::class,'index'])->name('post.index');
+
+
+        });
+});

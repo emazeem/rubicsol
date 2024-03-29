@@ -59,7 +59,14 @@
                         <span class="pcoded-mtext">Leave Application</span>
                     </a>
                 </li>
-
+                <li class="nav-item">
+                    <a href="{{route('post.index')}}" class="nav-link">
+                        <span class="pcoded-micon">
+                            <i class="fas fa-clone"></i>
+                        </span>
+                        <span class="pcoded-mtext">Post</span>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
