@@ -16,10 +16,10 @@
         <th>Email</th>
         <th>Phone</th>
         <th>Role</th>
-        <th>Address</th>
+        <!-- <th>Address</th>
         <th>Cnic</th>
         <th>Bank_Name</th>
-        <th>Account_No</th>
+        <th>Account_No</th> -->
         <th>Action</th>
       </tr>
       </thead>
@@ -31,10 +31,10 @@
             <td>{{$user->email}}</td>
             <td>{{$user->phone}}</td>
             <td>{{$user->role}}</td>
-            <td>{{$user->address}}</td>
+            <!-- <td>{{$user->address}}</td>
             <td>{{$user->cnic_no}}</td>
             <td>{{$user->bank}}</td>
-            <td>{{$user->account}}</td>
+            <td>{{$user->account}}</td> -->
             <td>
                 <a href="{{route('users.edit',['id'=>$user->id])}}" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
                 <a href="{{route('users.show',['id'=>$user->id])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>

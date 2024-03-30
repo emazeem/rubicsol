@@ -13,18 +13,18 @@
           @csrf
           <div class="card ">
             <div class="card-footer bg-light border-top">
-              <h5 class="font-weight-light"><i class="bx bx-task"></i>Add Task</h5>
+              <h5 class="font-weight-light"><i class="bx bx-task"></i>Add Post</h5>
               
               <div class="form-group col-md-4 col-12">
-                <label for="title" class="control-label">Title</label>
-                <input type="text" class="form-control" id="title" name="title"
-                placeholder="Title"
+                <label for="user" class="control-label">User</label>
+                <input type="text" class="form-control" id="user" name="user"
+                placeholder="User"
                 autocomplete="off" value=''>
               </div>
               <div class="form-group col-md-4 col-12">
-                <label for="description" class="control-label">Description</label>
-                <textarea type="text" class="form-control" id="description" name="description"
-                placeholder="Description"></textarea>
+                <label for="contact" class="control-label">Contact</label>
+                <textarea type="text" class="form-control" id="contact" name="contact"
+                placeholder=""></textarea>
               </div>
                 <div class="col-md-4">
                   <label for="user_id" class="control-label">User</label>

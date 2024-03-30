@@ -45,6 +45,22 @@
       <td scope="col">{{$show->department}}</td>
     </tr>
     <tr>
+      <th scope="col">CNIC</th>
+      <td scope="col">{{$show->cnic_no}}</td>
+    </tr>
+    <tr>
+      <th scope="col">Address</th>
+      <td scope="col">{{$show->address}}</td>
+    </tr>
+    <tr>
+      <th scope="col">Bank_Name</th>
+      <td scope="col">{{$show->bank}}</td>
+    </tr>
+    <tr>
+      <th scope="col">Account_No</th>
+      <td scope="col">{{$show->account}}</td>
+    </tr>
+    <tr>
       <th scope="col">CV</th>
       <td scope="col">
         <a href="{{$show->userCV()}}">{{$show->cv}}</a>

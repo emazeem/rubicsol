@@ -72,10 +72,32 @@
                             <option value="programmer">Programmer</option>
                             <option value="technican">Technican</option>
                             <option value="lab expert">Lab expert</option>
-                    </select>
-                        </div>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-3 col-12">
+                                <label for="cnic_no" class="control-label">CNIC</label>
+                                <input type="text" class="form-control" id="cnic_no" name="cnic_no" placeholder="CNIC"
+                                autocomplete="off" value='{{$edit->cnic_no}}'>
+                            </div>
+                            <div class="form-group col-md-3 col-12">
+                                <label for="address" class="control-label">Address</label>
+                                <input type="text" class="form-control" id="address" name="address" placeholder="Address"
+                                autocomplete="off" value='{{$edit->address}}'>
+                            </div>
+                            <div class="row float-left ml-3">
+                            <div class="form-group">
+                                <label for="account" class="control-label">Account</label>
+                                <input type="text" class="form-control" id="account" name="account" placeholder="Account"
+                                autocomplete="off" value='{{$edit->account}}'>
+                            </div>
+                            <div class="form-group ml-5">
+                                <label for="bank" class="control-label">Bank</label>
+                                <input type="text" class="form-control" id="bank" name="bank" placeholder="bank"
+                                autocomplete="off" value='{{$edit->bank}}'>
+                            </div>
                         </div>
                     </div>
+                </div>
                     <div class="card-footer bg-light border-top">
                         <div class="row">
                             <div class="col-12">
