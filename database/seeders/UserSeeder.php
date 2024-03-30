@@ -18,7 +18,7 @@ class UserSeeder extends Seeder
             'fname' => 'Super',
             'lname' => 'Admin',
             'email' => 'info@rubicsol.com',
-            'password' => Hash::make('iso17025aims'),
+            'password' => Hash::make('123454321'),
             'phone'=>'03040647306',
             'department' => 'Excecutive',
             'designation' => 'CEO',
