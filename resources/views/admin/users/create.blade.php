@@ -60,7 +60,7 @@ $(document).ready(function () {
                             <option value="super admin">Laravel Internee</option>
                             <option value="admin">Sales Executive</option>
                             <option value="employee">Cheif Executive Officer</option>
-                            <option value="employee">Cheif Internee</option>
+                            <option value="employee">Sales Internee</option>
                     </select>
                         </div>
                         <div class="col-md-3">
