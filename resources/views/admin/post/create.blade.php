@@ -23,18 +23,22 @@
               </div>
               <div class="form-group col-md-4 col-12">
                 <label for="contact" class="control-label">Contact</label>
-                <textarea type="text" class="form-control" id="contact" name="contact"
-                placeholder=""></textarea>
-              </div>
-                <div class="col-md-4">
-                  <label for="user_id" class="control-label">User</label>
-                  <select class="form-select custom-select" name="user_id">
-                    <option selected disabled>Select User</option>
-                    @foreach($users as $user)
-                    <option value="{{ $user->id }}">{{ $user->fname }} {{$user->lname}}</option>
-                     @endforeach
-                  </select>
+                <input type="text" class="form-control" id="contact" name="contact"
+                placeholder="Contact">
+              </div> 
+              <!--image uploading-->
+              <form action="upload.php" method="post" enctype="multipart/form-data">
+                <div class="form-group ml-3">
+                  <label for="image">Choose Image</label>
+                  <input type="file" class="form-control-file" id="image" name="image">
                 </div>
+                <button type="submit" class="btn btn-primary ml-3">Upload</button>
+              <!--User-Status-->
+              <div class="container mt-4">
+                <label for="status">Status</label>
+                <span class="badge badge-success">Active</span>
+                <span class="badge badge-danger">Inactive</span>
+              </div>
               </div>
               <div class="card-footer bg-light border-top">
               <div class="row">
@@ -58,7 +62,7 @@
         button.attr('disabled', 'disabled').html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Processing');
         e.preventDefault();
         $.ajax({
-            url: "{{route('tasks.store')}}",
+            url: "{{route('post.create')}}",
             type: "POST",
             data: new FormData(this),
             contentType: false,

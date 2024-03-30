@@ -122,7 +122,7 @@ Route::group(['middleware' => ['auth']], function () {
         });
         Route::group(['prefix'=>'post'],function(){
             Route::get('',[PostController::class,'index'])->name('post.index');
-            Route::post('store',[PostController::class,'store'])->name('post.store');
+            Route::get('create',[PostController::class,'create'])->name('post.create');
 
         });
 });
