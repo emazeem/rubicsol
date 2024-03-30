@@ -12,8 +12,7 @@
       <tr class="bg-c-blue">
     
         <th>ID</th>
-        <th>FName</th>
-        <th>LName</th>
+        <th>Name</th>
         <th>Email</th>
         <th>Phone</th>
         <th>Role</th>
@@ -28,15 +27,14 @@
         @foreach($users as $user)
         <tr>
             <td>{{$user->id}}</td>
-            <td>{{$user->fname}}</td>
-            <td>{{$user->lname}}</td>
+            <td>{{$user->fname}} {{$user->lname}}</td>
             <td>{{$user->email}}</td>
             <td>{{$user->phone}}</td>
             <td>{{$user->role}}</td>
-            <td>{{$user->Address}}</td>
-            <td>{{$user->Cnic}}</td>
-            <td>{{$user->Bank_name}}</td>
-            <td>{{$user->Account_No}}</td>
+            <td>{{$user->address}}</td>
+            <td>{{$user->cnic_no}}</td>
+            <td>{{$user->bank}}</td>
+            <td>{{$user->account}}</td>
             <td>
                 <a href="{{route('users.edit',['id'=>$user->id])}}" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
                 <a href="{{route('users.show',['id'=>$user->id])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
@@ -48,11 +46,12 @@
       </table>
     </div>
   </div>
-  <style>
-  table#example thead tr th{
-  background: #233560!important
-  }
-  </style>
-  @endsection
+    
+    <style>
+    table#example thead tr th{
+    background: #233560!important
+    }
+    </style>
+    @endsection
 
 

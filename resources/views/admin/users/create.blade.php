@@ -71,35 +71,37 @@ $(document).ready(function () {
                     </select>
                         </div>
                         <div class="form-group col-md-3 col-12">
-                            <label for="Address" class="control-label">Address</label>
-                            <input type="text" class="form-control" id="Address" name="Address"placeholder="Address"autocomplete="off" value=''>
+                            <label for="cnic_no" class="control-label">CNIC</label>
+                            <input type="text" class="form-control" id="cnic_no" name="cnic_no" placeholder="CNIC"autocomplete="off" value=''>
+                        </div>
+                        <div class="form-group col-md-3 col-12">
+                            <label for="address" class="control-label">Address</label>
+                            <input type="text" class="form-control" id="address" name="address"placeholder="address"autocomplete="off" value=''>
+                        </div><br>
+                        <div class="row float-left ml-3">
+                            <div class="form-group">
+                                <label for="account" class="control-label">Account No</label>
+                                <input type="text" class="form-control" id="account" name="account"placeholder="Account"autocomplete="off" value=''>
+                            </div>
+                            <div class="form-group ml-5">
+                                <label for="bank" class="control-label">Bank Name</label>
+                                <input type="text" class="form-control" id="bank" name="bank"placeholder="Bank"autocomplete="off" value=''>
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-group col-md-3 col-12">
-                    <label for="cnic" class="control-label">Cnic</label>
-                    <input type="text" class="form-control" id="cnic" name="cnic"placeholder="Cnic"autocomplete="off" value=''>
-                </div>
-                    <div class="form-group col-md-3 col-12">
-                            <label for="account" class="control-label">Account_No</label>
-                            <input type="text" class="form-control" id="account" name="account"placeholder="account"autocomplete="off" value=''>
-                </div>
-                <div class="form-group col-md-3 col-12">
-                    <label for="bank" class="control-label">Bank Name</label>
-                    <input type="text" class="form-control" id="bank" name="bank"placeholder="bank"autocomplete="off" value=''>
-                </div>
-            </div>
-                <div class="card-footer bg-light border-top">
-                    <div class="row">
-                        <div class="col-12">
-                            <a href="{{ URL::previous() }}" class="btn bg-white border float-left"><i class="feather icon-chevron-left"></i> back</a>
-                            <button type="submit" class="btn btn-primary user-btn float-right"><i class="feather icon-save"> </i> Save</button>
+                    <div class="card-footer bg-light border-top">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="{{ URL::previous() }}" class="btn bg-white border float-left"><i class="feather icon-chevron-left"></i> back</a>
+                                <button type="submit" class="btn btn-primary user-btn float-right"><i class="feather icon-save"> </i> Save</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </form>
-</div>
-<script>
+        </form>
+    </div>
+    <script>
 $(":input").inputmask();
 </script>
 <script type="text/javascript">

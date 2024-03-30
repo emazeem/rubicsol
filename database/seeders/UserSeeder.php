@@ -23,6 +23,10 @@ class UserSeeder extends Seeder
             'department' => 'Excecutive',
             'designation' => 'CEO',
             'joining' => '2024-01-01',
+            'cnic_no' => '33102-6164602-7',
+            'address' => 'Nishatabad, FSD',
+            'bank' => 'Meezan Bank',
+            'account' => '02560105465181',
         ]);
     }
 }
