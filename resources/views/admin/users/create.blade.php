@@ -67,9 +67,9 @@ $(document).ready(function () {
                         <div class="col-md-3">
                             <label for="department" class="control-label">Department</label>
                             <select type="dropdown" id="department" name="department" class="form-control w-100">
-                            <option value="IT expert"></option>
-                            <option value="technican">Sales Department</option>
-                            <option value="lab expert">Software Department</option>
+                            <option value=""></option>
+                            <option value="salesdep">Sales Department</option>
+                            <option value="softdep">Software Department</option>
                     </select>
                         </div>
                         <div class="form-group col-md-3 col-12">
