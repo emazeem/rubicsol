@@ -57,17 +57,18 @@ $(document).ready(function () {
                         <div class="col-md-3">
                             <label for="designation" class="control-label">Designation</label>
                             <select type="dropdown" id="designation" name="designation" class="form-control w-100">
-                            <option value="super admin">Super Admin</option>
-                            <option value="admin">Admin</option>
-                            <option value="employee">Employee</option>
+                            <option value="super admin">Laravel Internee</option>
+                            <option value="admin">Sales Executive</option>
+                            <option value="employee">Cheif Executive Officer</option>
+                            <option value="employee">Cheif Internee</option>
                     </select>
                         </div>
                         <div class="col-md-3">
                             <label for="department" class="control-label">Department</label>
                             <select type="dropdown" id="department" name="department" class="form-control w-100">
-                            <option value="IT expert">IT Expert</option>
-                            <option value="technican">Technican</option>
-                            <option value="lab expert">Lab expert</option>
+                            <option value="IT expert"></option>
+                            <option value="technican">Sales Department</option>
+                            <option value="lab expert">Software Department</option>
                     </select>
                         </div>
                         <div class="form-group col-md-3 col-12">
