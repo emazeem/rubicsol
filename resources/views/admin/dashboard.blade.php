@@ -107,8 +107,7 @@
         <div class="card">
           <div class="card-body table-responsive">
             <h5 class="float-left pb-1 font-weight-light"><i class="feather icon-clock mr-1"></i>My Leave</h5>
-            <table id="example" class="table table-bordered table-hover  table-sm display nowrap" cellspacing="0" width="100%">
-              <thead>
+            <table id="example" class="table table-bordered table-hover  table-sm display nowrap" cellspacing="0" width="100%">              <thead>
                 <tr class="bg-c-blue">
                   <th>ID</th>
                   <th>USERS</th>
@@ -260,6 +259,5 @@
   <style>
 table#example thead tr th{
   background: #233560!important
-
 }
 </style>
