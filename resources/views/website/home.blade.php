@@ -768,7 +768,7 @@
                 </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-10">
-                    <p >
+                    <p>
                         In conclusion, the goal of Rubic Lims is to transform laboratory administration by offering a modern, user- friendly solution that enables labs to prosper in the cutthroat environment of contemporary research. With the help of our intuitive platform, you can concentrate on what you do best—improving lives and expanding scientific knowledge—while we handle the rest.
                     </p>
                 </div>
