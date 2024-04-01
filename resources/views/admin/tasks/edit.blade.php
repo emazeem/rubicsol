@@ -14,7 +14,7 @@
           <input type="hidden" value="{{$edit->id}}" name="id">
           <div class="card ">
             <div class="card-footer bg-light border-top">
-              <h5 class="font-weight-light"><i class="feather icon-clock"></i>Update Task</h5>
+              <h5 class="font-weight-light"><i class="feather icon-clock mx-1"></i>Update Task</h5>
               <div class="form-group col-md-4 col-12">
                 <label for="title" class="control-label">Title</label>
                 <input type="text" class="form-control" id="title" name="title" placeholder="Title"
