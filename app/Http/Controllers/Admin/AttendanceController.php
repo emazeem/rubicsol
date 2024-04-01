@@ -15,14 +15,14 @@ class AttendanceController extends Controller
         return redirect()->back();
     }
     public function show($id){
-        if (auth()->user()->role == 'user' and auth()->user()->id == $id){
-            $edit=User::find($id);
+        $show=Attendance::find($id);
+        if (auth()->user()->role == 'user' and auth()->user()->id == $show->user_id){
+            $show=Attendance::find($id);
         }elseif(auth()->user()->role=='super-admin'){
-            $edit=User::find($id);
+            $show=Attendance::find($id);
         }else{
             exit(404);
         }
-        $show=Attendance::find($id);
         return view('admin.attendance.show',compact('show'));
     }
     public function edit($id){
@@ -42,17 +42,15 @@ class AttendanceController extends Controller
         $users=User::all();
         return view('admin.attendance.create',compact('users'));
     }
-    
+
     public function index(){
-        if (auth()->user()->role == 'user' and auth()->user()->id == $id){
-            $edit=User::find($id);
+        if (auth()->user()->role == 'user'){
+            $attendances=Attendance::where('user_id',auth()->user()->id)->get();
         }elseif(auth()->user()->role=='super-admin'){
-            $edit=User::find($id);
+            $attendances=Attendance::all();
         }else{
             exit(404);
         }
-        
-        $attendances=Attendance::all();
         return view('admin.attendance.index',compact('attendances'));
     }
     public function checkIn(){
@@ -69,7 +67,7 @@ class AttendanceController extends Controller
         $attendance->remarks='marked by user';
         $attendance->save();
         return redirect()->back();
-        
+
     }
     public function checkOut(){
         $attendance = Attendance::where('user_id', auth()->user()->id)
@@ -80,16 +78,16 @@ class AttendanceController extends Controller
         $attendance->status=1;
         $attendance->save();
         return redirect()->back();
-        
+
     }
     public function store(Request $request){
         $this->validate(request(), [
             'start_time' => 'required',
             'end_time' => 'required',
             'start_date' => 'required',
-            'end_date' => 'required',   
-            'user_id' => 'required',  
-            'status' => 'required',   
+            'end_date' => 'required',
+            'user_id' => 'required',
+            'status' => 'required',
         ],
             [
                 'start_time.required' => 'start_time field is required *',
@@ -114,16 +112,16 @@ class AttendanceController extends Controller
         $attendance->save();
         return response()->json(['success'=>'attendance added successfully']);
 
-        
+
     }
     public function update(Request $request){
         $this->validate(request(), [
             'start_time' => 'required',
             'end_time' => 'required',
             'start_date' => 'required',
-            'end_date' => 'required',   
-            'user_id' => 'required',  
-            'status' => 'required',   
+            'end_date' => 'required',
+            'user_id' => 'required',
+            'status' => 'required',
         ],
             [
                 'start_time.required' => 'start_time field is required *',
@@ -148,6 +146,6 @@ class AttendanceController extends Controller
         $attendance->save();
         return response()->json(['success'=>'attendance updated successfully']);
 
-        
+
     }
 }
