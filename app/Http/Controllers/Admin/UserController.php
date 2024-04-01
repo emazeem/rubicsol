@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Hash;
+use Illuminate\Support\Facades\Storage;
 
 class UserController extends Controller
 {
@@ -19,11 +20,15 @@ class UserController extends Controller
         return redirect()->back();
     }
     public function index(){
-        $users=User::all();
+        if (auth()->user()->role == 'user'){
+            $users=User::where('id',auth()->user()->id)->get();
+        }else{
+            $users=User::all();
+        }
         return view('admin.users.index',compact('users'));
     }
     public function create(){
-        
+
         return view('admin.users.create');
     }
     public function store(Request $request){
@@ -33,9 +38,9 @@ class UserController extends Controller
             'email' => 'required',
             'password' => 'required|min:6',
             'phone' => 'required',
-            'role' => 'required',    
-            'joining' => 'required',    
-            'designation' => 'required',    
+            'role' => 'required',
+            'joining' => 'required',
+            'designation' => 'required',
         ],
             [
                 'name.required' => 'Name field is required *',
@@ -60,26 +65,38 @@ class UserController extends Controller
         $user->phone=$request->phone;
         $user->email=$request->email;
         $user->password=Hash::make($request->get('password'));
-        
+
 
         $user->save();
-        
+
         if (isset($request->profile)){
             Storage::delete('public/profile/'.$user->id.'/'.$user->profile);
             $attachment=time().'-'.$request->profile->getClientOriginalName();
             Storage::disk('local')->put('public/profile/'.$user->id.'/'.$attachment, File::get($request->profile));
             $user->profile=$attachment;
         }
-        
+
         $user->save();
         return response()->json(['success'=>'User added successfully','id'=>$user->id]);
     }
     public function edit($id){
-        $edit=User::find($id);
+        if (auth()->user()->role == 'user' and auth()->user()->id == $id){
+            $edit=User::find($id);
+        }elseif(auth()->user()->role=='super-admin'){
+            $edit=User::find($id);
+        }else{
+            exit(404);
+        }
         return view('admin.users.edit',compact('edit'));
     }
     public function show($id){
-        $show=User::find($id);
+        if (auth()->user()->role == 'user' and auth()->user()->id == $id){
+            $show=User::find($id);
+        }elseif(auth()->user()->role=='super-admin'){
+            $show=User::find($id);
+        }else{
+            exit(404);
+        }
         return view('admin.users.show',compact('show'));
     }
     public function update(Request $request){
@@ -87,16 +104,16 @@ class UserController extends Controller
             'fname' => 'required',
             'lname' => 'required',
             'email' => 'required',
-            
+
             'phone' => 'required',
-            'role' => 'required',    
-            'joining' => 'required',    
+            'role' => 'required',
+            'joining' => 'required',
         ],
             [
                 'name.required' => 'Name field is required *',
                 'fname.required' => 'First Name field is required *',
                 'email.required' => 'Email field is required *',
-                
+
                 'phone.required' => 'Phone field is required *',
                 'role.required' => 'Roles field is required *',
             ]);
@@ -114,14 +131,14 @@ class UserController extends Controller
         $user->account=$request->account;
         $user->password=Hash::make($request->get('password'));
         $user->save();
-        
+
         if (isset($request->profile)){
             Storage::delete('public/profile/'.$user->id.'/'.$user->profile);
             $attachment=time().'-'.$request->profile->getClientOriginalName();
             Storage::disk('local')->put('public/profile/'.$user->id.'/'.$attachment, File::get($request->profile));
             $user->profile=$attachment;
         }
-        
+
         $user->save();
         return response()->json(['success'=>'User edited successfully','id'=>$user->id]);
     }
