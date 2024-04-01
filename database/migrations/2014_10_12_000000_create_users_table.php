@@ -28,7 +28,7 @@ return new class extends Migration
             $table->string('profile')->nullable();
             $table->string('cv')->nullable();
             $table->string('cnic')->nullable();
-            $table->timestamp('email_verified_at')->nullable();
+            $table->timestamp('email_verified_at')->nullable()->unique();
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
