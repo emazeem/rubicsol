@@ -15,10 +15,24 @@ class AttendanceController extends Controller
         return redirect()->back();
     }
     public function show($id){
+        if (auth()->user()->role == 'user' and auth()->user()->id == $id){
+            $edit=User::find($id);
+        }elseif(auth()->user()->role=='super-admin'){
+            $edit=User::find($id);
+        }else{
+            exit(404);
+        }
         $show=Attendance::find($id);
         return view('admin.attendance.show',compact('show'));
     }
     public function edit($id){
+        if (auth()->user()->role == 'user' and auth()->user()->id == $id){
+            $edit=User::find($id);
+        }elseif(auth()->user()->role=='super-admin'){
+            $edit=User::find($id);
+        }else{
+            exit(404);
+        }
         $edit=Attendance::find($id);
         $users=User::all();
 
@@ -30,6 +44,14 @@ class AttendanceController extends Controller
     }
     
     public function index(){
+        if (auth()->user()->role == 'user' and auth()->user()->id == $id){
+            $edit=User::find($id);
+        }elseif(auth()->user()->role=='super-admin'){
+            $edit=User::find($id);
+        }else{
+            exit(404);
+        }
+        
         $attendances=Attendance::all();
         return view('admin.attendance.index',compact('attendances'));
     }
