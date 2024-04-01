@@ -31,7 +31,7 @@
     </tr>
     <tr>
       <th scope="col">users</th>
-      <td scope="col">{{$show->user->name}}</td>
+      <td scope="col">{{$show->fname}}</td>
     </tr>
     <tr>
       <th scope="col">Status</th>

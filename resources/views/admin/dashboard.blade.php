@@ -11,6 +11,7 @@
         <a href="{{route('check.in')}}" class="btn btn-success float-right" >Check In</a>
         @endif
       </div>
+      <!--My Attendence-->
       <div class="col-lg-12">
         <div class="card">
           <div class="card-body table-responsive">
@@ -49,6 +50,7 @@
           </div>
         </div>
       </div>
+      <!--My task-->
       <div class="col-lg-12">
         <div class="card">
           <div class="card-body table-responsive">
@@ -103,7 +105,8 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-12">
+      <!--My leave-->
+      <div class="col-lg-13">
         <div class="card">
           <div class="card-body table-responsive">
             <h5 class="float-left pb-1 font-weight-light"><i class="feather icon-clock mr-1"></i>My Leave</h5>
@@ -149,8 +152,8 @@
     </div>
   </div>
 
-
-    <div class="col-md-12">
+<!--calendar-->
+    <div class="col-md-12 mt-0 pt-0">
       <div id='calendar'></div>
     </div>
   </div>
@@ -257,7 +260,7 @@
   </script>
   @endsection
   <style>
-table#example thead tr th{
-  background: #233560!important
+.table#example thead tr th{
+  background: #233560!important;
 }
 </style>
