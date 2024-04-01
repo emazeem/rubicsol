@@ -22,9 +22,9 @@
                 autocomplete="off" value=''>
               </div>
               <div class="form-group col-md-4 col-12">
-                <label for="contact" class="control-label">Contact</label>
-                <input type="text" class="form-control" id="contact" name="contact"
-                placeholder="Contact">
+                <label for="content" class="control-label">Content</label>
+                <input type="text" class="form-control" id="content" name="content"
+                placeholder="Content">
               </div> 
               <!--image uploading-->
               <form action="upload.php" method="post" enctype="multipart/form-data">

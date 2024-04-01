@@ -12,7 +12,7 @@
                     <tr class="bg-c-blue">
                         <th>ID</th>
                         <th>User</th>
-                        <th>Contact</th>
+                        <th>Content</th>
                         <th>Image</th>
                         <th>Status</th>
                     </tr>
@@ -22,7 +22,7 @@
                     <tr>
                         <td>{{$post->id}}</td>
                         <td>{{$post->user->fname}} {{$post->user->lname}}</td>
-                        <td>{{$post->contact}}</td>
+                        <td>{{$post->content}}</td>
                         <td>{{$post->image}}</td>
                         <td>{{$post->status}}</td>
                         <td>
