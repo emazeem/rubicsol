@@ -11,7 +11,7 @@ class AttendanceController extends Controller
 {
     //
      public function delete($id){
-        Attendance::find($id)->delete();
+        Attendance::find($id)->delete(); 
         return redirect()->back();
     }
     public function show($id){

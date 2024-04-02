@@ -23,7 +23,7 @@
                     @foreach ($tasks as $task)
                     <tr>
                         <td>{{$task->id}}</td>
-                        <td>{{$task->user->fname}} {{$task->user->lname}}</td>
+                        <td>{{$task->fname}} </td>
                         <td>{{$task->title}}</td>
                         <td>{{$task->subtask}}</td>
                         <td>

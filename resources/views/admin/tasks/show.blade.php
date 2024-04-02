@@ -20,7 +20,7 @@
     </tr>
     <tr>
       <th scope="col">Users</th>
-      <td scope="col">{{$show->user->fname}} {{$show->user->lname}}</td>
+      <td scope="col">{{$show->fname}}</td>
     </tr>
     <tr>
       <th scope="col">Title</th>

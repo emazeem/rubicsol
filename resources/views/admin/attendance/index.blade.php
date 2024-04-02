@@ -27,7 +27,7 @@
         @foreach($attendances as $attendance)
         <tr>
             <td>{{$attendance->id}}</td>
-            <td>{{$attendance->fname }}</td>
+            <td>{{$attendance->user->fname}} {{$attendance->user->lname}}</td>
             <td>{{$attendance->check_in_date}}</td>
             <td>{{$attendance->check_in}}</td>
             <td>{{$attendance->check_out_date}}</td>
