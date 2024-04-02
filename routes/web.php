@@ -38,7 +38,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('update-cv', [DashboardController::class, 'updateCV'])->name('update.cv');
     Route::post('update-cnic', [DashboardController::class, 'updateCnic'])->name('update.cnic');
     Route::get('change_password', [DashboardController::class, 'changePassword'])->name('change.password');
-    Route::get('update_password', [DashboardController::class, 'updatePassword'])->name('update.password');
+    Route::post('update_password', [DashboardController::class, 'updatePassword'])->name('update.password');
 
 
     Route::group(['prefix' => 'users'], function () {
