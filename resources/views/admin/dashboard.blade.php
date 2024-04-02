@@ -275,7 +275,7 @@
   @endsection
   <style>
 
-table#exampletheadtrth{
+.table#example thead tr th{
   background: #233560!important;
 
 }
