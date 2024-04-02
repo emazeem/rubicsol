@@ -20,7 +20,7 @@
                 <table class="table table-bordered table-sm bg-white table-sm col-6">
                   <tr>
                     <th scope="col">Name</th>
-                    <td>{{ auth()->user()->name }}</td>
+                    <td>{{ auth()->user()->fname }} {{ auth()->user()->lname }}</td>
                   </tr>
                   <tr>
                     <th scope="col">Email</th>
