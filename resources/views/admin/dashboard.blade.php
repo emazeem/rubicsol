@@ -268,8 +268,8 @@
   </script>
   @endsection
   <style>
-table #example thead tr th{
-  background: #233560!important
+table #example thead tr th {
+  color: #233560 !important;
 
 }
 </style>
