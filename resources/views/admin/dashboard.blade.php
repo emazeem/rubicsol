@@ -152,8 +152,8 @@
     </div>
   </div>
 
-<!--calendar-->
-    <div class="col-md-12 mt-0 pt-0">
+<!--calendar--> 
+    <div class="col-md-12">
       <div id='calendar'></div>
     </div>
   </div>
