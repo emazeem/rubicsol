@@ -54,7 +54,7 @@
       <div class="col-lg-12">
         <div class="card">
           <div class="card-body table-responsive">
-            <h5 class="float-left pb-1 font-weight-light"><i class="feather icon-clock mr-1"></i>My Tasks</h5>
+            <h5 class="float-left pb-1 font-weight-light"><i class=" mr-1"></i>My Tasks</h5>
             <table id="example" class="table table-bordered table-hover  table-sm display nowrap" cellspacing="0" width="100%">
               <thead>
                 <tr class="bg-c-blue">
@@ -71,7 +71,7 @@
                 @foreach ($tasks as $task)
                 <tr>
                   <td>{{$task->id}}</td>
-                  <td>{{$task->user->name}}</td>
+                  <td>{{$task->user->fname}}{{$task->user->lname}}</td>
                   <td>{{$task->title}}</td>
                   <td>{{$task->description}}</td>
                   <td>
@@ -109,39 +109,45 @@
       <div class="col-lg-13">
         <div class="card">
           <div class="card-body table-responsive">
-            <h5 class="float-left pb-1 font-weight-light"><i class="feather icon-clock mr-1"></i>My Leave</h5>
-            <table id="example" class="table table-bordered table-hover  table-sm display nowrap" cellspacing="0" width="100%">              <thead>
+            <h5 class="float-left pb-1 font-weight-light"><i class="fa fa-question mr-1"></i>My Leave</h5>
+            <table id="example" class="table table-bordered table-hover  table-sm display nowrap" cellspacing="0" width="100%">              
+              <thead>
                 <tr class="bg-c-blue">
                   <th>ID</th>
                   <th>USERS</th>
                   <th>START DATE</th>
                   <th>END DATE</th>
-                  <th>DESCRIPTION</th>
-                  <th>CASUAL</th>
+                  <th>REMARKS</th>
                   <th>STATUS</th>
                 </tr>
               </thead>
               <tbody>
-                @foreach ($tasks as $task)
+                @foreach ($leaves as $leave)
                 <tr>
-                  <td>{{$task->id}}</td>
-                  <td>{{$task->user->name}}</td>
+                  <td>{{$leave->id}}</td>
+                  <td>{{$leave->user->fname}} {{$leave->user->lname}}</td>
                   <td>
-                    <input type="date" class="form-control" id="start_date" name="start_date" placeholder="start_date">
+                    <!-- <input type="date" class="form-control" id="start_date" name="start_date" placeholder="start_date"> -->
+                    {{$leave->start}}
                   </td>
                   <td>
-                    <input type="date" class="form-control" id="end_date" name="end_date" placeholder="end_date">
+                    <!-- <input type="date" class="form-control" id="end_date" name="end_date" placeholder="end_date"> -->
+                    {{$leave->end}}
                   </td>
-                  <td>{{$task->description}}</td>
-                  @if($task->status==1)
+                  <td>
+                    {{$leave->remarks}}
+                  </td>
+                  <td>
+                  @if($leave->status==1)
                   <span class="badge badge-info">In-Progress</span>
                   @endif
-                  @if($task->status==0)
+                  @if($leave->status==0)
                   <span class="badge badge-warning">Pending</span>
                   @endif
-                  @if($task->status==2)
+                  @if($leave->status==2)
                   <span class="badge badge-success">Completed</span>
                   @endif
+                  </td>                  
                 </tr>
                 @endforeach
               </tbody>
@@ -160,17 +166,10 @@
       </div>
     </div>
   </div>
-
-<<<<<<< HEAD
-<!--calendar-->
-
-    
-=======
 <!--calendar--> 
     <div class="col-md-12">
       <div id='calendar'></div>
     </div>
->>>>>>> 0ba95587588c204d243f54cde4bf26a651478b5d
   </div>
   
   <!--Calendar-->
@@ -275,8 +274,9 @@
   </script>
   @endsection
   <style>
-table #example thead tr th {
-  color: #233560 !important;
+
+.table#example thead tr th{
+  background: #233560!important;
 
 }
 </style>
