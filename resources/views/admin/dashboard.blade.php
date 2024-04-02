@@ -137,7 +137,8 @@
                   <td>
                     {{$leave->remarks}}
                   </td>
-                  <!-- @if($leave->status==1)
+                  <td>
+                  @if($leave->status==1)
                   <span class="badge badge-info">In-Progress</span>
                   @endif
                   @if($leave->status==0)
@@ -146,7 +147,8 @@
                   @if($leave->status==2)
                   <span class="badge badge-success">Completed</span>
                   @endif
-                </tr> -->
+                  </td>                  
+                </tr>
                 @endforeach
               </tbody>
             </table>
