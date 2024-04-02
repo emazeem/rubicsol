@@ -23,7 +23,7 @@
                     @foreach ($leaves as $leave)
                     <tr>
                         <td>{{$leave->id}}</td>
-                        <td>{{$leave->user->fname}}</td>
+                        <td>{{$leave->user->fname}} {{$leave->user->lname}}</td>
                         <td>{{$leave->start}}</td>
                         <td>{{$leave->end}}</td>
                         <td>

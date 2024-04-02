@@ -60,18 +60,19 @@
                         <div class="col-md-3">
                             <label for="designation" class="control-label">Designation</label>
                             <select type="dropdown" id="designation" name="designation" class="form-control w-100">
-                            <option value="super admin">Super Admin</option>
-                            <option value="admin">Admin</option>
-                            <option value="employee">Employee</option>
+                            <option value="Laravel Internee">Laravel Internee</option>
+                            <option value="Sales Internee">Sales Internee</option>
+                            <option value="Content Writer">Content Writer</option>
+                            <option value="Sales Executive">Sales Executive</option>
+                            <option value="CEO">Cheif Executive Officer</option>
                               </select>
                            </div>
                            <!--Department-->
                            <div class="col-md-3">
                             <label for="department" class="control-label">Department</label>
                             <select type="dropdown" id="department" name="department" class="form-control w-100">
-                            <option value="programmer">Programmer</option>
-                            <option value="technican">Technican</option>
-                            <option value="lab expert">Lab expert</option>
+                            <option value="Sales department">Sales Department</option>
+                            <option value="Software department">Software Department</option>
                         </select>
                     </div>
                     <div class="form-group col-md-3 col-12">
