@@ -50,7 +50,7 @@
                     <div class="row">
                         <div class="col-12">
                             <a href="{{ URL::previous() }}" class="btn bg-white border float-left"><i class="feather icon-chevron-left"></i>back</a>
-                            <button type="submit" class="btn btn-primary user-btn float-right"><i class="feather icon-save"></i>Save</button>
+                            <button type="submit" class="btn btn-primary user-btn float-right"><i class="feather icon-save mr-1"></i>Save</button>
                         </div>
                     </div>
                 </div>
