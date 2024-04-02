@@ -149,13 +149,21 @@
           </div>
         </div>
       </div>
+
+
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <div id='calendar'></div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
 <!--calendar-->
-    <div class="col-md-12 mt-0 pt-0">
-      <div id='calendar'></div>
-    </div>
+
+    
   </div>
   
   <!--Calendar-->
