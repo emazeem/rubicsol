@@ -161,16 +161,9 @@
     </div>
   </div>
 
-<<<<<<< HEAD
 <!--calendar-->
 
     
-=======
-<!--calendar--> 
-    <div class="col-md-12">
-      <div id='calendar'></div>
-    </div>
->>>>>>> 0ba95587588c204d243f54cde4bf26a651478b5d
   </div>
   
   <!--Calendar-->
