@@ -31,7 +31,7 @@
                   <select class="form-select custom-select" name="user_id">
                     <option selected disabled>Select User</option>
                     @foreach($users as $user)
-                    <option value="{{ $user->id }}">Super Admin</option>
+                    <option value="{{ $user->id }}">{{ $user->fname }} {{ $user->lname }}</option>
                      @endforeach
                   </select>
                 </div>

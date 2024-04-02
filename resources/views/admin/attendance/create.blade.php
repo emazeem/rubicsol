@@ -14,7 +14,7 @@
         @csrf
         <div class="card">
             <div class="card-footer bg-light border-top">
-                <h5 class="font-weight-light"><i class="feather icon-clock"></i>Add Attendance</h5>
+                <h5 class="font-weight-light"><i class="feather icon-clock mr-1"></i>Add Attendance</h5>
                 <div class="row">
                     <div class="form-group col-md-3 col-12 ">
                         <label for="start_time" class="control-label">Start Time</label>
@@ -29,7 +29,7 @@
                         <select class="form-select custom-select" name="user_id">
                             <option selected disabled>Select User</option>
                              @foreach($users as $user)
-                             <option value="{{ $user->id }}">{{ $user->name }}</option>
+                             <option value="{{ $user->id }}">{{ $user->fname }} {{ $user->lname }}</option>
                              @endforeach
                             </select>
                         </div>
@@ -55,9 +55,9 @@
                 <div class="card-footer bg-light border-top">
                     <div class="row">
                         <div class="col-12">
-                            <a href="{{ URL::previous() }}" class="btn btn-sm bg-white border float-left"><i
+                            <a href="{{ URL::previous() }}" class="btn bg-white border float-left"><i
                             class="feather icon-chevron-left"></i> back</a>
-                            <button type="submit" class="btn btn-primary btn-sm user-btn float-right"><i
+                            <button type="submit" class="btn btn-primary user-btn float-right"><i
                             class="feather icon-save"> </i> Save
                         </button>
                     </div>

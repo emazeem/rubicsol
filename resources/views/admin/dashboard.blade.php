@@ -3,6 +3,7 @@
     <script src="{{url('assets/js/1.10.1/jquery.min.js')}}"></script>
     <div class="row">
       <div class="col-12 mb-2">
+        <h4 class="float-left">Dashboard</h4>
         @if($attendanceExist)
         @if(!$ifUserCheckout)
         <a href="{{route('check.out')}}" class="btn btn-danger float-right" >Check Out</a>
@@ -104,9 +105,9 @@
             </div>
           </div>
         </div>
-      </div>
+      
       <!--My leave-->
-      <div class="col-lg-13">
+      <div class="col-lg-12">
         <div class="card">
           <div class="card-body table-responsive">
             <h5 class="float-left pb-1 font-weight-light"><i class="fa fa-question mr-1"></i>My Leave</h5>
@@ -166,13 +167,9 @@
       </div>
     </div>
   </div>
-<!--calendar--> 
-    <div class="col-md-12">
-      <div id='calendar'></div>
-    </div>
+   
   </div>
   
-  <!--Calendar-->
   <script>
   $(document).ready(function () {
     var SITEURL = "{{ url('/') }}";
