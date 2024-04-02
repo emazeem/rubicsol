@@ -16,11 +16,16 @@ class AttendanceController extends Controller
     }
     public function show($id){
         $show=Attendance::find($id);
-        if (auth()->user()->role == 'user' and auth()->user()->id == $show->user_id){
+        if 
+        (auth()->user()->role == 'user' and auth()->user()->id == $show->user_id)
+        {
             $show=Attendance::find($id);
-        }elseif(auth()->user()->role=='super-admin'){
+        }
+        elseif(auth()->user()->role=='super-admin'){
             $show=Attendance::find($id);
-        }else{
+        }
+        else
+        {
             exit(404);
         }
         return view('admin.attendance.show',compact('show'));
@@ -58,8 +63,8 @@ class AttendanceController extends Controller
         $attendance->user_id=auth()->user()->id;
         $attendance->check_in_date=date("Y-m-d");
         $attendance->check_out_date=date("Y-m-d");
-        $attendance->check_in=date("h:i:s");
-        $attendance->check_out=date("h:i:s");
+        $attendance->check_in=date("h:i:s A");
+        $attendance->check_out=date("h:i:s A");
         $attendance->day=date('l');
         $attendance->worked_hours=0;
         $attendance->status=0;
@@ -74,7 +79,7 @@ class AttendanceController extends Controller
         ->whereDate('check_in_date', date("Y-m-d"))
         ->first();
         $attendance->check_out_date=date("Y-m-d");
-        $attendance->check_out=date("h:i:s");
+        $attendance->check_out=date("h:i:s A");
         $attendance->status=1;
         $attendance->save();
         return redirect()->back();
