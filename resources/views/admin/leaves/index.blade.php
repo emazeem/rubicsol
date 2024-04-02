@@ -36,11 +36,11 @@
                         @if($leave->status==2)
                         <span class="badge badge-success">Declined</span>
                         @endif
-</td>
-<td>{{$leave->remarks}}</td>
-
-                        <td>
-                        <a href="{{route('leave.edit',['id'=>$leave->id])}}" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
+                    </td>
+                    <td>{{$leave->remarks}}</td>
+                    <td>
+                        <a href="{{route('leave.edit',['id'=>$leave->id])}}" class="btn btn-success btn-sm"
+                        ><i class="fas fa-edit"></i></a>
                         <a href="{{route('leave.show',['id'=>$leave->id])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
                         <a href="{{route('leave.delete',['id'=>$leave->id])}}" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a>
                         </td>

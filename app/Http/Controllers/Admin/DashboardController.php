@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Countries;
 use Illuminate\Http\Request;
 use App\Models\Attendance;
+use App\Models\LeaveApplication;
 use App\Models\User;
 use App\Models\Task;
 use Storage;
@@ -114,6 +115,9 @@ class DashboardController extends Controller
         ->where('status', 1)
         ->first();
         $tasks = Task::where('user_id', auth()->user()->id)->get();
-        return view('admin.dashboard',compact("attendanceExist",'ifUserCheckout','attendances','tasks'));
+        $leaves = LeaveApplication::where('user_id', auth()->user()->id)->get();
+
+
+        return view('admin.dashboard',compact("attendanceExist",'ifUserCheckout','attendances','tasks','leaves'));
     }
 }
