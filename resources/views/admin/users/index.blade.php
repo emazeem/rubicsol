@@ -6,8 +6,8 @@
     <h3 class="float-left pb-1 font-weight-light"><i class="feather icon-users"></i> Personnel</h3>
     <form action="" class="col-4 float-right mt-2">
       <div class="form-group">
-      <span class="glyphicon glyphicon-search"></span>
-      <input type="search" name="search" id="" class="form-control" placeholder="Search by name and Email" value="{{$search}}" />
+        <input type="search" name="search" id="" class="form-control" placeholder="Search by name and Email" value="{{$search}}" />
+        <button class="btn btn-primary">Search</button>
       </div>
     </form>
     <a href="{{route('users.create')}}" class="btn btn-primary shadow-sm float-right mt-2"><i class="fa fa-plus-circle mr-1"></i>Users</a>

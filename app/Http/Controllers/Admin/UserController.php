@@ -32,7 +32,7 @@ class UserController extends Controller
           ->where('id','LIKE',"%$search%")
           ->orwhere('fname','LIKE',"%$search%")
           ->orwhere('lname','LIKE',"%$search%")
-          ->orwhere('email','LIKE',"%$search%");
+          ->orwhere('phone','LIKE',"%$search%");
         }
         $users=$users->paginate(5);    
         return view('admin.users.index',compact('users','search'));
