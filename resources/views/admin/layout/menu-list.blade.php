@@ -72,11 +72,3 @@
     </div>
 </nav>
 
-<<<<<<< Updated upstream
-=======
-<style>
-li.acive .pcoded-mtext:active{
-    color: white !important;
-}
-</style>
->>>>>>> Stashed changes
