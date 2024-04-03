@@ -6,7 +6,7 @@
           <h3 class="float-left pb-1 font-weight-light"><i class="feather icon-users"></i> Personnel</h3>
           <a href="{{route('users.create')}}" class="btn btn-primary shadow-sm float-right mt-2"><i class="fa fa-plus-circle mr-1"></i>Users</a>
         </div>
-        <div class="col-12 mb-1">
+        <div class="col-12 mb-2">
           <form action="" class="col-4 float-right">
             <div class="input-group-append">
               <input type="search" name="search" id="" class="form-control" placeholder="Search..." value="{{$search}}" />
