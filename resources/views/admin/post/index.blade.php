@@ -17,11 +17,13 @@
                     </tr>
                 </thead>
                 <tbody>
+                @if(count($posts)>0)
                     @foreach ($posts as $post)
                     <tr>
                         <td>{{$post->id}}</td>
                         <td>{{$post->content}}</td>
                         <td><img src="{{ asset('storage/posts/' . $post->image) }}" alt="" class="img-fluid img-thumbnail border-dark" width="160" height="90"></td>
+                        
                         <td>
                         <a href="{{route('post.edit',['id'=>$post->id])}}" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
                         <a href="{{route('post.show',['id'=>$post->id])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
@@ -29,6 +31,11 @@
                         </td>
                     </tr>
                     @endforeach
+                    @else
+                  <tr>
+                    <td colspan="100%" class="text-center">No record found</td>
+                  </tr>
+                  @endif
                 </tbody>
             </table>
         </div>

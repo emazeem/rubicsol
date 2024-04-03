@@ -20,6 +20,7 @@
                     </tr>
                 </thead>
                 <tbody>
+                @if(count($leaves)>0)
                     @foreach ($leaves as $leave)
                     <tr>
                         <td>{{$leave->id}}</td>
@@ -46,6 +47,11 @@
                         </td>
                     </tr>
                     @endforeach
+                    @else
+                  <tr>
+                    <td colspan="100%" class="text-center">No record found</td>
+                  </tr>
+                  @endif
                 </tbody>
             </table>
         </div>

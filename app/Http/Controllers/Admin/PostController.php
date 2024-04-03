@@ -66,7 +66,6 @@ class PostController extends Controller
         ],
             [
                 'content.required' => 'Content field is required *',
-                // 'image.required' => 'Image upload is required *',
             ]);
 
         $post= Post::find($request->id);
@@ -76,8 +75,14 @@ class PostController extends Controller
 
         if ($request->image != "") {
             $image = $request->image;
+            $image_old = $image;
             $filename = time() . '.' . $request->image->extension();
             $request->image->move(public_path('storage/posts'), $filename);
+
+            if(file_exists($image_old)){
+                @unlink($image_old);
+            }
+            
             $post->image = $filename;
         }
         

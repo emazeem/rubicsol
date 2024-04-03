@@ -14,7 +14,7 @@
           <div class="card-body table-responsive">
             <div class="row">
               <div class="col-md-3">
-                <img src="{{auth()->user()->userProfile()}}" class="img-fluid">
+                <img src="{{auth()->user()->userProfile()}}" class="img-fluid border-dark">
               </div>
               <div class="col-md-9">
                 <table class="table table-bordered table-sm bg-white table-sm col-6">

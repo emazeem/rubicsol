@@ -17,7 +17,7 @@
     </tr>
     <tr>
       <th scope="col">Image</th>
-      <td scope="col"><img src="{{ asset('storage/posts/' . $show->image) }}" alt="" class="img-fluid img-thumbnail w-50"></td>
+      <td scope="col"><img src="{{ asset('storage/posts/' . $show->image) }}" alt="" class="img-fluid img-thumbnail" width="220" height="130"></td>
     </tr>
     
   </table>
