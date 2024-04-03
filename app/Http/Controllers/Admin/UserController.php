@@ -19,13 +19,23 @@ class UserController extends Controller
         User::find($id)->delete();
         return redirect()->back();
     }
-    public function index(){
+    public function index(Request $request){
+
         if (auth()->user()->role == 'user'){
-            $users=User::where('id',auth()->user()->id)->get();
+            $users=User::where('id',auth()->user()->id);
         }else{
-            $users=User::all();
+            $users=User::query();
         }
-        return view('admin.users.index',compact('users'));
+        $search = $request['search'] ?? "";
+        if ($search != ""){
+          $users = $users
+          ->where('id','LIKE',"%$search%")
+          ->orwhere('fname','LIKE',"%$search%")
+          ->orwhere('lname','LIKE',"%$search%")
+          ->orwhere('email','LIKE',"%$search%");
+        }
+        $users=$users->paginate(5);    
+        return view('admin.users.index',compact('users','search'));
     }
     public function create(){
 
