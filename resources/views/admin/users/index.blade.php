@@ -7,7 +7,7 @@
     <form action="" class="col-4 float-right mt-2">
       <div class="form-group">
         <input type="search" name="search" id="" class="form-control" placeholder="Search by name and Email" value="{{$search}}" />
-        <button class="btn btn-primary">Search</button>
+         <button class="btn btn-primary"><i class="fa fa-search"></i>Search</button>
       </div>
     </form>
     <a href="{{route('users.create')}}" class="btn btn-primary shadow-sm float-right mt-2"><i class="fa fa-plus-circle mr-1"></i>Users</a>
