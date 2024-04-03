@@ -27,7 +27,7 @@
       </thead>
       <tbody>
         @foreach($users as $user)
-        <tr>
+        <tr class="bg-c-white">
             <td>{{$user->id}}</td>
             <td>{{$user->fname}} {{$user->lname}}</td>
             <td>{{$user->email}}</td>
@@ -42,7 +42,7 @@
           @endforeach
         </tbody>
       </table>
-      <div class="row">
+      <div class="row float-right mr-3">
          {{$users->links('pagination::bootstrap-4')}}
         </div>
     </div>
