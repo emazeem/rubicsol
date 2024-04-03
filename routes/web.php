@@ -95,7 +95,6 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('start/{id}', [TaskController::class, 'start'])->name('task.start');
         Route::get('complete/{id}', [TaskController::class, 'complete'])->name('task.complete');
         Route::post('/task/{id}/switch-priority', [TaskController::class, 'switchPriority'])->name('task.switchPriority');
-        //sub-task
         Route::post('subtask', [TaskController::class, 'subtask'])->name('task.subtask');
        
         
@@ -123,6 +122,12 @@ Route::group(['middleware' => ['auth']], function () {
         Route::group(['prefix'=>'post'],function(){
             Route::get('',[PostController::class,'index'])->name('post.index');
             Route::get('create',[PostController::class,'create'])->name('post.create');
+            Route::post('store', [PostController::class, 'store'])->name('post.store');
+            Route::get('edit/{id}', [PostController::class, 'edit'])->name('post.edit');
+            Route::post('update', [PostController::class, 'update'])->name('post.update');
+            Route::get('delete/{id}', [PostController::class, 'delete'])->name('post.delete');
+            Route::get('show/{id}', [PostController::class, 'show'])->name('post.show');
+            Route::post('update', [PostController::class, 'update'])->name('post.update');
 
         });
 });

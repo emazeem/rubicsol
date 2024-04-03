@@ -30,7 +30,7 @@
                   <select class="form-select custom-select" name="user_id" value='{{$edit->user}}'>
                     <option selected disabled>Select User</option>
                     @foreach($users as $user)
-                    <option value="{{ $user->id }}" {{ $edit->user_id == $user->id ? 'selected' : '' }}>{{ $user->name }}</option>
+                    <option value="{{ $user->id }}" {{ $edit->user_id == $user->id ? 'selected' : '' }}>{{ $user->fname }} {{ $user->lname }}</option>
                      @endforeach
                   </select>
                 </div>

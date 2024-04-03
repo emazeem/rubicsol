@@ -9,39 +9,42 @@
         </script>
         @endif
         <div class="row pb-3">
-          <form action="{{route('post.store')}}"  id="user-form" style="width:100%" method="post" enctype="multipart/form-data">
+            <div class="col-12">
+            <form  id="user-form" enctype="multipart/form-data">
           @csrf
+          <input type="hidden" value="{{$edit->id}}" name="id">
           <div class="card ">
             <div class="card-footer bg-light border-top">
-              <h5 class="font-weight-light"><i class="bx bx-task mr-1"></i>Add Post</h5>
+              <h5 class="font-weight-light"><i class="bx bx-task mr-1"></i>Update Post</h5>
                 
                 
               </div>
               <div class="form-group col-md-4 col-12">
                 <label for="content" class="control-label">Content</label>
                 <input type="text" class="form-control" id="content" name="content"
-                placeholder="Content">
+                placeholder="Content" value="{{$edit->content}}">
               </div> 
               <!--image uploading-->
                 <div class="form-group ml-3">
                   <label for="image">Choose Image</label>
-                  <input type="file" class="form-control-file" id="image" name="image">
+                  <input type="file" class="form-control-file" id="image" name="image" value="{{$edit->image}}">
                 </div>
                
               </div>
-              <div class="card-footer bg-light border-top">
-              <div class="row">
-                <div class="col-12">
-                  <a href="{{ URL::previous() }}" class="btn btn-md bg-white border float-left">
-                    <iclass="feather icon-chevron-left></i>back</a>
-                    <button type="submit" class="btn btn-primary btn-md user-btn float-right">
-                      <iclass="feather icon-save></i>Save
-                    </button>
-                  </div>
+                <div class="card-footer bg-light border-top">
+                    <div class="row">
+                        <div class="col-12">
+                        <a href="{{ URL::previous() }}" class="btn btn-md bg-white border float-left">
+                            <iclass="feather icon-chevron-left></i>back</a>
+                            <button type="submit" class="btn btn-primary btn-md user-btn float-right">
+                            <iclass="feather icon-save></i>Save
+                            </button>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
           </form>
+            </div>
         </div>
         <script type="text/javascript">
  $(document).ready(function () {
@@ -51,7 +54,7 @@
         button.attr('disabled', 'disabled').html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Processing');
         e.preventDefault();
         $.ajax({
-            url: "{{route('post.store')}}",
+            url: "{{route('post.update')}}",
             type: "POST",
             data: new FormData(this),
             contentType: false,
