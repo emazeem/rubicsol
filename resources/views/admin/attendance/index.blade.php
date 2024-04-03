@@ -24,6 +24,7 @@
       </tr>
       </thead>
       <tbody>
+      @if(count($attendances)>0)
         @foreach($attendances as $attendance)
         <tr>
             <td>{{$attendance->id}}</td>
@@ -47,6 +48,11 @@
             </td>
         </tr>
         @endforeach
+        @else
+                  <tr>
+                    <td colspan="100%" class="text-center">No record found</td>
+                  </tr>
+                  @endif
       </tbody>
     </table>
 
