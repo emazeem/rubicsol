@@ -13,7 +13,6 @@
                         <th>ID</th>
                         <th>User</th>
                         <th>Title</th>
-                        <th>Subtask</th>
                         <th>Status</th>
                         <th>Priority</th>
                         <th>Action</th>
@@ -25,7 +24,6 @@
                         <td>{{$task->id}}</td>
                         <td>{{$task->user->fname}} {{$task->user->lname}}</td>
                         <td>{{$task->title}}</td>
-                        <td>{{$task->subtask}}</td>
                         <td>
                         @if($task->status==1)
                         <span class="badge badge-info">In-Progress</span>
