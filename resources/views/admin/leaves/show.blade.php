@@ -5,8 +5,10 @@
 <div class="row pb-3">
     <div class="col-12 mb-2">
         <h3 class="float-left pr-1 font-weight-light"><i class="bx bx-task"></i>My leave</h3>
+        @if(auth()->user()->role=="super-admin")
         <a href="{{route('leave.approve',['id'=>$show->id])}}" class="btn float-right btn-success ml-2">Approve</button></a> 
         <a href="{{route('leave.reject',['id'=>$show->id])}}" class="btn float-right btn-danger">Reject </a>
+        @endif
     </div>
     <table class="table table-bordered table-sm bg-white">
         <tr>

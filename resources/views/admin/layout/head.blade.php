@@ -84,10 +84,6 @@
                     
                         <img src="{{auth()->user()->userProfile()}}" class="img-radius wid-40  hei-40 border-orange" style="object-fit: cover">
                     
-                    @elseif (auth()->user()->role=="admin")
-
-                        <img src="{{auth()->user()->userProfile()}}" class="img-radius wid-40  hei-40 border-orange" style="object-fit: cover">
-
                     @elseif (auth()->user()->role=="user")
                     
                         <img src="{{auth()->user()->userProfile()}}" class="img-radius wid-40  hei-40 border-white" style="object-fit: cover">
@@ -130,7 +126,7 @@
 .border-orange{
 border:3px solid orange;
 }
-.border-black{
-    border:2px solid black;
+.border-white{
+    border:3px solid white;
 }
 </style>
