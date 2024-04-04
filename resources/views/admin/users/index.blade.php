@@ -57,7 +57,7 @@
     
     <style>
     table#example thead tr th{
-    background: #233560!important
+    background: #233560!important;
   
     }
     .table-row{
