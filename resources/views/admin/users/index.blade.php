@@ -12,7 +12,7 @@
         @endif
       </div>
       <!--Search bar-->
-    <div class="row"></div>
+      <div class="row"></div>
       <div class="col-12 mb-2 mt-2">
         <form action="" class="col-4 float-right">
           <div class="input-group-append">

@@ -59,11 +59,12 @@ class AttendanceController extends Controller
         $search = $request['search'] ?? "";
         if ($search != ""){
           $attendances = $attendances
-          ->where('id','LIKE',"%$search%")
+          ->where('user_id','LIKE',"%$search%")
           ->orwhere('user','LIKE',"%$search%")
           ->orwhere('check_in','LIKE',"%$search%")
-          ->orwhere('check_out','LIKE',"%$search%")
-          ->orwhere('status','LIKE',"%$search%");
+          ->orwhere('check_in_date','LIKE',"%$search%")
+          ->orwhere('check_out_date','LIKE',"%$search%")
+          ->orwhere('check_out','LIKE',"%$search%");
         }
         $attendances=$attendances->paginate(); 
         return view('admin.attendance.index',compact('attendances','search'));
