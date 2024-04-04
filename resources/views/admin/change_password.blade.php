@@ -43,7 +43,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <button class="btn btn-success float-right"><i class="fa fa-edit mr-1"></i>Update Password</button>
+                            <button class="btn btn-success float-right mb-3"><i class="fa fa-edit mr-1"></i>Update Password</button>
                         </div>
                     </form>
                 </div>
