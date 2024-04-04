@@ -14,8 +14,8 @@
       <div class="col-12 mb-2 mt-2">
         <form action="" class="col-4 float-right">
           <div class="input-group-append">
-            <input type="search" name="search" id="" class="form-control rounded-lg" placeholder="Search..." value="{{$search}}  />
-            <button class="btn btn-primary rounded-lg toggle-button px-3"><i class="fa fa-search"></i></button>
+            <input type="search" name="search" id="" class="form-control rounded-lg" placeholder="Search..." value="{{$search}} " />
+           <button class="btn btn-primary rounded-lg toggle-button px-3"><i class="fa fa-search"></i></button>
           </div>
         </form>
       </div>
