@@ -34,7 +34,7 @@
                         @endif
                         </td>
                         <td>
-                         <a href="{{route('post.show',['id'=>$post->id])}}" class="btn btn-warning btn-sm px-3 ml-2"><i class="fas fa-eye"></i></a>
+                         <a href="{{route('post.show',['id'=>$post->id])}}" class="btn btn-warning btn-sm ml-3"><i class="fas fa-eye"></i></a>
                         </td>
                     </tr>
                     @endif
