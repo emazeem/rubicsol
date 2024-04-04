@@ -2,11 +2,14 @@
 @section('content')
     
     <script src="{{url('assets/js/1.10.1/jquery.min.js')}}"></script>
+    <!--heading and add user button-->
     <div class="row">
       <div class="col-12 mb-2">
         <h3 class="float-left pb-1 font-weight-light"><i class="feather icon-users"></i> Personnel</h3>
-        <a href="{{route('users.create')}}" class="btn btn-primary shadow-sm float-right mt-2"><i class="fa fa-plus-circle mr-1"></i>Users</a>
+        <a href="{{route('users.create')}}" class="btn btn-primary shadow-sm float-right mt-2 mr-3"><i class="fa fa-plus-circle mr-1"></i>Users</a>
       </div>
+      <!--Search bar-->
+    <div class="row"></div>
       <div class="col-12 mb-2 ">
         <form action="" class="col-4 float-right">
           <div class="input-group-append">
@@ -15,6 +18,8 @@
           </div>
         </form>
       </div>
+    </div>
+      <!--users table-->
       <div class="col-lg-12 table-responsive">
         <table id="example" class="table table-bordered table-hover  table-sm display nowrap" cellspacing="0" width="100%">
           <thead >
