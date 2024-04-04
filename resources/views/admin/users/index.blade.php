@@ -29,7 +29,7 @@
           </thead>
           <tbody>
             @foreach($users as $user)
-            <tr>
+            <tr class="table-row">
               <td>{{$user->id}}</td>
               <td>{{$user->fname}} {{$user->lname}}</td>
               <td>{{$user->email}}</td>
@@ -53,6 +53,10 @@
     <style>
     table#example thead tr th{
     background: #233560!important
+  
+    }
+    .table-row{
+      background: #fff!important;
     }
     </style>
     @endsection
