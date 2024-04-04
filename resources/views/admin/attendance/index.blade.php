@@ -9,7 +9,19 @@
         Attendance</h3>
         <a href="{{route('attendance.create')}}" class="btn btn-primary shadow-sm float-right mt-2"><i class="fa fa-plus-circle mx-1"></i>Attendance</a>
     </div>
-  <div class="col-lg-12 table-responsive">
+    <!--Search bar-->
+    <div class="row"></div>
+      <div class="col-12 mb-2 mt-2">
+        <form action="" class="col-4 float-right">
+          <div class="input-group-append">
+            <input type="search" name="search" id="" class="form-control rounded-lg" placeholder="Search..." value="{{$search}} " />
+           <button class="btn btn-primary rounded-lg toggle-button px-3"><i class="fa fa-search"></i></button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!--user table-->
+    <div class="col-lg-12 table-responsive">
       <table id="example" class="table table-bordered table-hover  table-sm display nowrap" cellspacing="0" width="100%">
       <thead >
       <tr class="bg-c-blue">
@@ -32,9 +44,9 @@
             <td>{{$attendance->id}}</td>
             <td>{{$attendance->user->fname}} {{$attendance->user->lname}}</td>
             <td>{{$attendance->check_in_date}}</td>
-            <td>{{$attendance->check_in}}</td>
+            <td>{{date('h:i A',strtotime($attendance->check_in))}}</td>
             <td>{{$attendance->check_out_date}}</td>
-            <td>{{$attendance->check_out}}</td>
+            <td>{{date('h:i A',strtotime($attendance->check_out))}}</td>
             <td>
               @if($attendance->status==1)
               <span class="badge badge-success">Check Out</span>
