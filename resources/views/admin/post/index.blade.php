@@ -13,23 +13,55 @@
                         <th>ID</th>
                         <th>Content</th>
                         <th>Image</th>
+                        <th>Status</th>
                         <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
                 @if(count($posts)>0)
                     @foreach ($posts as $post)
+                    @if($post->status==1 && auth()->user()->role=="user")
                     <tr class="table-row">
                         <td>{{$post->id}}</td>
                         <td>{{$post->content}}</td>
                         <td><img src="{{ asset('storage/posts/' . $post->image) }}" alt="" class="img-fluid img-thumbnail border-dark" width="160" height="90"></td>
-                        
+                        <td>
+                        @if($post->status==0)
+                        <span class="badge badge-warning">Pending</span>
+                        @endif
+                        @if($post->status==1)
+                        <span class="badge badge-success">Uploaded</span>
+                        @endif
+                        </td>
+                        <td>
+                         <a href="{{route('post.show',['id'=>$post->id])}}" class="btn btn-warning btn-sm px-3 ml-2"><i class="fas fa-eye"></i></a>
+                        </td>
+                    </tr>
+                    @endif
+                    @if (auth()->user()->role=="super-admin")
+                    <tr class="table-row">
+                        <td>{{$post->id}}</td>
+                        <td>{{$post->content}}</td>
+                        <td><img src="{{ asset('storage/posts/' . $post->image) }}" alt="" class="img-fluid img-thumbnail border-dark" width="160" height="90"></td>
+                        <td>
+                        @if($post->status==0)
+                        <span class="badge badge-warning">Pending</span>
+                        @endif
+                        @if($post->status==1)
+                        <span class="badge badge-success">Uploaded</span>
+                        @endif
+                        </td>
+                        @if(auth()->user()->role=="super-admin")
                         <td>
                         <a href="{{route('post.edit',['id'=>$post->id])}}" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
                         <a href="{{route('post.show',['id'=>$post->id])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
                         <a href="{{route('post.delete',['id'=>$post->id])}}" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a> 
-                        </td>
-                    </tr>
+                        
+                        @else 
+                        <a href="{{route('post.show',['id'=>$post->id])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
+</td>
+                        @endif
+                    @endif
                     @endforeach
                     @else
                   <tr>

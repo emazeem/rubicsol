@@ -46,6 +46,7 @@ class PostController extends Controller
         }
         
         $post->image = $filename;
+        $post->status=0;
         $post->save();
         return response()->json(['success'=>'Post created successfully','id'=>$post->id]);
         
@@ -96,6 +97,12 @@ class PostController extends Controller
         Post::find($id)->delete();
         return redirect()->back();
     }
-    
+    public function approve($id)
+    {
+        $post = Post::findOrFail($id);
+        $post->status = 1; 
+        $post->save();
+        return redirect()->back()->with('Success', 'Post uploaded successfully.');
+    }
 
 }
