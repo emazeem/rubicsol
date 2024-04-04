@@ -80,7 +80,19 @@
             <li>
                 <div class="dropdown drp-user ">
                     <a href="#!" class="dropdown-toggle" data-toggle="dropdown">
-                        <img src="{{auth()->user()->userProfile()}}" class="img-radius wid-40  hei-40" style="object-fit: cover">
+                    @if (auth()->user()->role=="super-admin")
+                    
+                        <img src="{{auth()->user()->userProfile()}}" class="img-radius wid-40  hei-40 border-orange" style="object-fit: cover">
+                    
+                    @elseif (auth()->user()->role=="admin")
+
+                        <img src="{{auth()->user()->userProfile()}}" class="img-radius wid-40  hei-40 border-orange" style="object-fit: cover">
+
+                    @elseif (auth()->user()->role=="user")
+                    
+                        <img src="{{auth()->user()->userProfile()}}" class="img-radius wid-40  hei-40 border-white" style="object-fit: cover">
+                    
+                    @endif
                     </a>
                     <div class="dropdown-menu dropdown-menu-right profile-notification ">
                         <div class="pro-head">
@@ -114,3 +126,11 @@
         </ul>
     </div>
 </header>
+<style>
+.border-orange{
+border:3px solid orange;
+}
+.border-black{
+    border:2px solid black;
+}
+</style>
