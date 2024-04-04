@@ -100,7 +100,7 @@
               @endif
             </td>
             <td>   
-            <a href="{{route('attendance.show',['id'=>$attendance->id])}}" class="btn btn-warning btn-sm px-3" ><i class="fas fa-eye"></i></a></button>
+            <a href="{{route('attendance.show',['id'=>$attendance->id])}}" class="btn btn-warning btn-sm ml-3" ><i class="fas fa-eye"></i></a></button>
             </td>
         </tr>
         @endforeach
@@ -123,6 +123,7 @@
         background: #fff!important;
       }
     </style>
+
 @endsection
 
 
