@@ -61,7 +61,7 @@
       <div class="col-lg-12">
         <div class="card">
           <div class="card-body table-responsive">
-            <h5 class="float-left pb-1 font-weight-light"><i class=" mr-1"></i>My Tasks</h5>
+            <h5 class="float-left pb-1 font-weight-light"><i class="bx bx-task mr-1"></i>My Tasks</h5>
             <table id="example" class="table table-bordered table-hover  table-sm display nowrap" cellspacing="0" width="100%">
               <thead>
                 <tr class="bg-c-blue">
