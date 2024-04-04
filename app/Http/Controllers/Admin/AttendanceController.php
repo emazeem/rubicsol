@@ -50,13 +50,23 @@ class AttendanceController extends Controller
 
     public function index(){
         if (auth()->user()->role == 'user'){
-            $attendances=Attendance::where('user_id',auth()->user()->id)->get();
+            $attendances=Attendance::where('user_id',auth()->user()->id);
         }elseif(auth()->user()->role=='super-admin'){
-            $attendances=Attendance::all();
+            $attendances=Attendance::query();
         }else{
             exit(404);
         }
-        return view('admin.attendance.index',compact('attendances'));
+        $search = $request['search'] ?? "";
+        if ($search != ""){
+          $attendances = $attendances
+          ->where('id','LIKE',"%$search%")
+          ->orwhere('user','LIKE',"%$search%")
+          ->orwhere('check_in','LIKE',"%$search%")
+          ->orwhere('check_out','LIKE',"%$search%")
+          ->orwhere('status','LIKE',"%$search%");
+        }
+        $attendances=$attendances->paginate(); 
+        return view('admin.attendance.index',compact('attendances','search'));
     }
     public function checkIn(){
         $attendance=new Attendance();
