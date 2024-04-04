@@ -19,6 +19,7 @@
                     </tr>
                 </thead>
                 <tbody>
+                @if(count($tasks)>0)
                     @foreach ($tasks as $task)
                     <tr>
                         <td>{{$task->id}}</td>
@@ -50,6 +51,11 @@
                         </td>
                     </tr>
                     @endforeach
+                    @else
+                  <tr>
+                    <td colspan="100%" class="text-center">No record found</td>
+                  </tr>
+                  @endif
                 </tbody>
             </table>
         </div>
