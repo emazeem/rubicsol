@@ -8,8 +8,8 @@
         });
         </script>
     @endif
-<div class="row pb-3">
-    <form  id="user-form" style="width:100%" method="post" enctype="multipart/form-data">
+     <div class="row pb-3">
+        <form  id="user-form" style="width:100%" method="post" enctype="multipart/form-data">
         @csrf
         <div class="card ">
             <div class="card-header">
@@ -29,23 +29,25 @@
                     <textarea class="form-control" name="remarks" placeholder="Reason"></textarea>
                 </div>
                 <div class="col-md-4 mt-2">
-                <label for="type">Leave type:</label>
+                    <label for="type">Leave type:</label>
                     <select name="type"  id="type" class="form-control">
                         <option value="medical">Medical Leave</option>
                         <option value="casual">Casual Leave</option>
                         <option value="urgent">Urgent Leave</option>
                     </select>
-                            
+                </div>
+                <div class="col-md-4 mt-2 pb-4">
                     <label for="nature">Nature of Leave</label>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="nature" id="nature1" value="half">
-                            <label class="form-check-label" for="nature1">Half Leave</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="nature" id="nature2" value="full" checked>
-                            <label class="form-check-label" for="nature2">Full Leave</label>
-                        </div>
-
+                    <div class="form-check pb-1">
+                        <input class="form-check-input" type="radio" name="nature" id="nature1" value="half">
+                        <label class="form-check-label font-weight-bold" for="nature1">Half Leave</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="nature" id="nature2" value="full" checked>
+                        <label class="form-check-label font-weight-bold" for="nature2">Full Leave</label>
+                    </div>
+                </div>
+                <!--Button -->
                 <div class="card-footer bg-light border-top">
                     <div class="row">
                         <div class="col-12">
