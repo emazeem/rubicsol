@@ -23,7 +23,6 @@
                   <th>ID</th>
                   <th>Start Date</th>
                   <th>Start Time</th>
-                  <th>End Date</th>
                   <th>End Time</th>
                   <th>Status</th>
                 </tr>
@@ -33,10 +32,9 @@
                 @foreach($attendances as $attendance)
                 <tr>
                   <td>{{$attendance->id}}</td>
-                  <td>{{$attendance->check_in_date}}</td>
-                  <td>{{$attendance->check_in}}</td>
-                  <td>{{$attendance->check_out_date}}</td>
-                  <td>{{$attendance->check_out}}</td>
+                  <td>{{date('d F, y',strtotime($attendance->check_in_date))}}</td>
+                  <td>{{date('h:i A',strtotime($attendance->check_in))}}</td>
+                  <td>{{date('h:i A',strtotime($attendance->check_out))}}</td>
                   <td>
                     @if($attendance->status==1)
                     <span class="badge badge-success">Check Out</span>
