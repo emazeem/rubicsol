@@ -21,7 +21,7 @@
                 <tbody>
                 @if(count($tasks)>0)
                     @foreach ($tasks as $task)
-                    <tr>
+                    <tr class="table-row">
                         <td>{{$task->id}}</td>
                         <td>{{$task->user->fname}} {{$task->user->lname}}</td>
                         <td>{{$task->title}}</td>
@@ -63,6 +63,9 @@
     <style>
     table#example thead tr th{
      background: #233560!important
+     }
+     .table-row{
+        background: #fff!important;
      }
      </style>
 @endsection

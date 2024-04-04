@@ -19,7 +19,7 @@
                 <tbody>
                 @if(count($posts)>0)
                     @foreach ($posts as $post)
-                    <tr>
+                    <tr class="table-row">
                         <td>{{$post->id}}</td>
                         <td>{{$post->content}}</td>
                         <td><img src="{{ asset('storage/posts/' . $post->image) }}" alt="" class="img-fluid img-thumbnail border-dark" width="160" height="90"></td>
@@ -43,6 +43,9 @@
     <style>
     table#example thead tr th{
      background: #233560!important
+     }
+     .table-row{
+        background: #fff!important;
      }
      </style>
 @endsection

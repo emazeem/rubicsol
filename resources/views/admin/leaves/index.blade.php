@@ -22,7 +22,7 @@
                 <tbody>
                 @if(count($leaves)>0)
                     @foreach ($leaves as $leave)
-                    <tr>
+                    <tr class="table-row">
                         <td>{{$leave->id}}</td>
                         <td>{{$leave->user->fname}} {{$leave->user->lname}}</td>
                         <td>{{$leave->start}}</td>
@@ -63,6 +63,9 @@
     <style>
     table#example thead tr th{
      background: #233560!important
+     }
+     .table-row{
+        background: #fff!important;
      }
      </style>
      @endsection

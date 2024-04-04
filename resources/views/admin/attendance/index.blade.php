@@ -28,7 +28,7 @@
       <tbody>
       @if(count($attendances)>0)
         @foreach($attendances as $attendance)
-        <tr>
+        <tr class="table-row">
             <td>{{$attendance->id}}</td>
             <td>{{$attendance->user->fname}} {{$attendance->user->lname}}</td>
             <td>{{$attendance->check_in_date}}</td>
@@ -118,6 +118,9 @@
     <style>
       table#example thead tr th{
         background: #233560!important
+      }
+      .table-row{
+        background: #fff!important;
       }
     </style>
 @endsection
