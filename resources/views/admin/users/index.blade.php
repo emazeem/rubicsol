@@ -10,7 +10,7 @@
       </div>
       <!--Search bar-->
     <div class="row"></div>
-      <div class="col-12 mb-2 ">
+      <div class="col-12 mb-2 mt-2">
         <form action="" class="col-4 float-right">
           <div class="input-group-append">
             <input type="search" name="search" id="" class="form-control" placeholder="Search..." value="{{$search}}" />
@@ -20,7 +20,7 @@
       </div>
     </div>
       <!--users table-->
-      <div class="col-lg-12 table-responsive">
+      <div class="col-lg-12 table-responsive mt-2">
         <table id="example" class="table table-bordered table-hover  table-sm display nowrap" cellspacing="0" width="100%">
           <thead >
             <tr class="bg-c-blue">
@@ -49,7 +49,7 @@
             @endforeach
           </tbody>
         </table>
-        <div class="row float-right mr-0">
+        <div class="row float-right mt-2 mr-0">
           {{$users->links('pagination::bootstrap-4')}}
         </div>
       </div>
