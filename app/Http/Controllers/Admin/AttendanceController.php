@@ -60,6 +60,7 @@ class AttendanceController extends Controller
         if ($search != ""){
           $attendances = $attendances
           ->where('user_id','LIKE',"%$search%")
+          ->orwhere('fname','LIKE',"%$search%")
           ->orwhere('user','LIKE',"%$search%")
           ->orwhere('check_in','LIKE',"%$search%")
           ->orwhere('check_in_date','LIKE',"%$search%")
