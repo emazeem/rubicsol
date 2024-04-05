@@ -37,7 +37,7 @@ class UserController extends Controller
           ->orwhere('phone','LIKE',"%$search%")
           ->orwhere('role','LIKE',"%$search%");
         }
-        $users=$users->paginate(5);    
+        $users=$users->paginate(10);    
         return view('admin.users.index',compact('users','search'));
     }
     public function create(){
