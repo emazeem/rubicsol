@@ -58,12 +58,12 @@
         @if(auth()->user()->role=="super-admin")
         <td>
           <a href="{{route('attendance.edit',['id'=>$attendance->id])}}" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></a></button>
-          <a href="{{route('attendance.show',['id'=>$attendance->id])}}" class="btn btn-warning btn-sm ml-2" ><i class="fas fa-eye"></i></a></button>
+          <a href="{{route('attendance.show',['id'=>$attendance->id])}}" class="btn btn-warning btn-sm" ><i class="fas fa-eye"></i></a></button>
           <a href="{{route('attendance.delete',['id'=>$attendance->id])}}" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a>
         </td>
         @else
-        <td>
-            <a href="{{route('attendance.show',['id'=>$attendance->id])}}" class="btn btn-warning btn-sm ml-2" ><i class="fas fa-eye"></i></a></button>
+        <td class="text-center">
+            <a href="{{route('attendance.show',['id'=>$attendance->id])}}" class="btn btn-warning btn-sm" ><i class="fas fa-eye"></i></a></button>
           </td>
       </tr>
       @endif

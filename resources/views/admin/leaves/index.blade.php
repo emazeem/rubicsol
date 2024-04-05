@@ -20,7 +20,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                @if(count($leaves)>0)
+                @if(count($leaves) > 0)
                     @foreach ($leaves as $leave)
                     <tr class="table-row">
                         <td>{{$leave->id}}</td>
@@ -28,24 +28,24 @@
                         <td>{{$leave->start}}</td>
                         <td>{{$leave->end}}</td>
                         <td>
-                        @if($leave->status==1)
+                        @if($leave->status == 1)
                         <span class="badge badge-info">Approved</span>
                         @endif
-                        @if($leave->status==0)
+                        @if($leave->status == 0)
                         <span class="badge badge-warning">Pending</span>
                         @endif
-                        @if($leave->status==2)
+                        @if($leave->status == 2)
                         <span class="badge badge-success">Declined</span>
                         @endif
                     </td>
                     <td>{{$leave->remarks}}</td>
                     <td class="text-center">
-                        @if(auth()->user()->role=="super-admin")
-                        <a href="{{route('leave.edit',['id'=>$leave->id])}}" class="btn btn-success btn-sm"
+                        @if(auth()->user()->role == "super-admin")
+                        <a href="{{route('leave.edit', ['id' => $leave->id])}}" class="btn btn-success btn-sm"
                         ><i class="fas fa-edit"></i></a>
-                        <a href="{{route('leave.show',['id'=>$leave->id])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
-                        <a href="{{route('leave.delete',['id'=>$leave->id])}}" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a>
-                        @elseif(auth()->user()->role=="user")
+                        <a href="{{route('leave.show', ['id' => $leave->id])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
+                        <a href="{{route('leave.delete', ['id' => $leave->id])}}" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a>
+                        @elseif(auth()->user()->role == "user")
                         <a href="{{route('leave.show',['id'=>$leave->id])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
                         @endif
                     </td>
