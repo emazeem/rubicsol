@@ -55,10 +55,20 @@ class TaskController extends Controller
         $edit=Task::find($id);
         return view('admin.tasks.edit',compact('edit','users'));
     }
-    public function index()
+    public function index(Request $request)
     {
+        // $search = $request['search'] ?? "";
+        // if ($search != ""){
+        //     //where
+        //   $tasks = $tasks
+        //   ->where('id','LIKE',"%$search%")
+        //   ->orwhere('user','LIKE',"%$search%")
+        //   ->orwhere('title','LIKE',"%$search%")
+        //   ->orwhere('status','LIKE',"%$search%");
+        // }
+         
         $tasks = Task::all();
-        return view('admin.tasks.index', compact('tasks')); 
+        return view('admin.tasks.index', compact('tasks',)); 
     }
     public function create(){
 
