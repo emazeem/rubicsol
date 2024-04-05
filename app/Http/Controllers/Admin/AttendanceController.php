@@ -66,7 +66,7 @@ class AttendanceController extends Controller
           ->orwhere('check_out_date','LIKE',"%$search%")
           ->orwhere('check_out','LIKE',"%$search%");
         }
-        $attendances=$attendances->paginate(); 
+        $attendances=$attendances->paginate(5); 
         return view('admin.attendance.index',compact('attendances','search'));
     }
     public function checkIn(){

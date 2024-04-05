@@ -65,17 +65,17 @@
         <td class="text-center">
             <a href="{{route('attendance.show',['id'=>$attendance->id])}}" class="btn btn-warning btn-sm" ><i class="fas fa-eye"></i></a></button>
           </td>
-      </tr>
-      @endif
-      @endforeach
-      @else
-      <tr>
-        <td colspan="100%" class="text-center">No record found</td>
-      </tr>
-      @endif
-    </tbody>
-  </table>
-</div>
+        </tr>
+        @endif
+        @endforeach
+        @else
+        <tr>
+          <td colspan="100%" class="text-center">No record found</td>
+        </tr>
+        @endif
+      </tbody>
+    </table>
+  </div>
 
   <style>
       table#example thead tr th{
