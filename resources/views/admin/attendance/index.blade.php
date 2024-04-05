@@ -2,7 +2,7 @@
 @section('content')
     <script src="{{url('assets/js/1.10.1/jquery.min.js')}}"></script>
 
-
+<!--top header-->
 <div class="row">
   <div class="col-12 mb-2">
     <h3 class="float-left pb-1 font-weight-light"><i class="feather icon-users"></i> Attendance</h3>
@@ -11,17 +11,21 @@
     @endif
   </div>
   <!--Search bar-->
-  <div class="row"></div>
   <div class="col-12 mb-2 mt-2">
-    <form action="" class="col-4 float-right">
+  <form action="" class="col-4 float-right">
       <div class="input-group-append">
         <input type="search" name="search" id="" class="form-control rounded-lg" placeholder="Search..." value="{{$search}}" />
         <button class="btn btn-primary rounded-lg toggle-button px-3"><i class="fa fa-search"></i></button>
       </div>
     </form>
+    <select class="form-select custom-select col-3 float-right" name="user_id">
+      <option selected disabled>All User</option>
+      @foreach($users as $user)
+      <option value="{{ $user->id }}">{{ $user->fname }} {{ $user->lname }}</option>
+      @endforeach
+    </select>
   </div>
 </div>
-    
 <!--user table-->
 <div class="col-lg-12 table-responsive">
   <table id="example" class="table table-bordered table-hover  table-sm display nowrap" cellspacing="0" width="100%">

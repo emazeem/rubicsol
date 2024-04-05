@@ -48,7 +48,7 @@ class AttendanceController extends Controller
         return view('admin.attendance.create',compact('users'));
     }
 
-    public function index(){
+    public function index(Request $request){
         if (auth()->user()->role == 'user'){
             $attendances=Attendance::where('user_id',auth()->user()->id);
         }elseif(auth()->user()->role=='super-admin'){
@@ -58,16 +58,17 @@ class AttendanceController extends Controller
         }
         $search = $request['search'] ?? "";
         if ($search != ""){
+            //where
           $attendances = $attendances
-          ->where('user_id','LIKE',"%$search%")
-          ->orwhere('user','LIKE',"%$search%")
-          ->orwhere('check_in','LIKE',"%$search%")
+          ->where('check_in','LIKE',"%$search%")
           ->orwhere('check_in_date','LIKE',"%$search%")
           ->orwhere('check_out_date','LIKE',"%$search%")
           ->orwhere('check_out','LIKE',"%$search%");
         }
-        $attendances=$attendances->paginate(5); 
-        return view('admin.attendance.index',compact('attendances','search'));
+
+        $attendances=$attendances->paginate(10);
+        $users=User::all();
+        return view('admin.attendance.index',compact('attendances','search','users'));
     }
     public function checkIn(){
         $attendance=new Attendance();

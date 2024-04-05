@@ -23,7 +23,8 @@ class UserController extends Controller
 
         if (auth()->user()->role == 'user'){
             $users=User::where('id',auth()->user()->id);
-        }else{
+        }
+        else{
             $users=User::query();
         }
         $search = $request['search'] ?? "";
@@ -36,7 +37,7 @@ class UserController extends Controller
           ->orwhere('phone','LIKE',"%$search%")
           ->orwhere('role','LIKE',"%$search%");
         }
-        $users=$users->paginate(5);    
+        $users=$users->paginate(10);    
         return view('admin.users.index',compact('users','search'));
     }
     public function create(){
