@@ -77,7 +77,7 @@
     </table>
     <div class="row float-right mt-2 mr-0">
           {{$attendances->links('pagination::bootstrap-4')}}
-        </div>
+    </div>
   </div>
 
   <style>
