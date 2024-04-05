@@ -67,7 +67,7 @@ class AttendanceController extends Controller
         }
 
         $attendances=$attendances->paginate(10);
-        $users=User::all(); 
+        $users=User::all();
         return view('admin.attendance.index',compact('attendances','search','users'));
     }
     public function checkIn(){

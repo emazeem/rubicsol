@@ -19,7 +19,7 @@
       </div>
     </form>
     <select class="form-select custom-select col-3 float-right" name="user_id">
-      <option selected disabled>Select User</option>
+      <option selected disabled>All User</option>
       @foreach($users as $user)
       <option value="{{ $user->id }}">{{ $user->fname }} {{ $user->lname }}</option>
       @endforeach
