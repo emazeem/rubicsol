@@ -95,8 +95,8 @@
           <input type="hidden" value="{{$show->id}}" name="id" id="id">
           <div class="input-group">
             <div class="custom-file">
-              <input type="file" name="file" id="file">
-              <label class="custom-file-label" for="file">Choose file</label>
+              <input type="file" name="cnic" id="cnic">
+              <label class="custom-file-label" for="cnic">Choose file</label>
           </div>
           <div class="input-group-append">
             <button class="btn btn-sm btn-primary px-3" type="submit"> <i class="fa fa-upload"></i> Upload CNIC</button>

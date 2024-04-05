@@ -89,17 +89,16 @@ class DashboardController extends Controller
     public function updateCNIC(Request $request)
     {
 
-        dd($request->all());
         $this->validate(request(), [
-            'file' => 'required',
+            'cnic' => 'required',
         ],
             [
-                'file.required' => 'Cnic  is required *',
+                'cnic.required' => 'Cnic  is required *',
             ]);
 
         $user=User::find($request->id);
-        $attachment=time().'-'.$request->file->getClientOriginalName();
-        Storage::disk('local')->put('public/cnic/'.$attachment, File::get($request->file));
+        $attachment=time().'-'.$request->cnic->getClientOriginalName();
+        Storage::disk('local')->put('public/cnic/'.$attachment, File::get($request->cnic));
         $user->cnic=$attachment;
         $user->save();
         return redirect()->back();
