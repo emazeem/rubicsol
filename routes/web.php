@@ -49,7 +49,7 @@ Route::group(['middleware' => ['auth']], function () {
         Route::post('store', [UserController::class, 'store'])->name('users.store');
         Route::post('update', [UserController::class, 'update'])->name('users.update');
         Route::get('show/{id}', [UserController::class, 'show'])->name('users.show');
-        Route::get('delete/{id}', [UserController::class, 'delete'])->name('users.delete');
+        Route::post('delete/{id}', [UserController::class, 'delete'])->name('users.delete');
 
 
     });

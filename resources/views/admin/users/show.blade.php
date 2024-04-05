@@ -10,6 +10,12 @@
         </script>
     @endif
     <div class="row pb-3">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{{route('users.index')}}">User List</a></li>
+        <li class="breadcrumb-item active" aria-current="page">User Details</li>
+      </ol>
+    </nav>
     <table class="table table-bordered table-sm bg-white">
   
     <tr>
@@ -82,7 +88,8 @@
     <tr>
       <!--Cnic uplaoding-->
       <th scope="col">Cnic</th>
-      <td scope="col"><a href="{{$show->userCNIC()}}">{{$show->cnic}}</a> 
+      <td scope="col">
+        <a href="{{$show->userCNIC()}}">{{$show->cnic}}</a> 
        <form action="{{route('update.cnic')}}" method="post" enctype="multipart/form-data">
           @csrf
           <input type="hidden" value="{{$show->id}}" name="id" id="id">
