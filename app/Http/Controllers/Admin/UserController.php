@@ -17,7 +17,7 @@ class UserController extends Controller
     }
     public function delete($id){
         User::find($id)->delete();
-        return redirect()->back();
+        return response()->json(['success'=>'User deleted successfully']);
     }
     public function index(Request $request){
 

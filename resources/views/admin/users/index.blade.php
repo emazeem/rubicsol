@@ -47,7 +47,7 @@
               <td>
                 <a href="{{route('users.edit', ['id' => $user->id])}}" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
                 <a href="{{route('users.show', ['id' => $user->id])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
-                <a href="{{route('users.delete', ['id' => $user->id])}}" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a>
+                <a href="{{route('users.delete', ['id' => $user->id])}}" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
               </td>
               @else
                 <td class="text-center"><a href="{{route('users.show', ['id' => $user->id])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a></td>
@@ -71,6 +71,42 @@
       background: #fff!important;
     }
     </style>
-    @endsection
+<script type="text/javascript">
+$(document).on('click', '.delete', function (e) {
+  e.preventDefault();
+                swal({
+                    title: "Are you sure to delete this customer?",
+                    icon: "warning",
+                    buttons: true,
+                    dangerMode: true,
+                })
+                    .then((willDelete) => {
+                        if (willDelete) {
+                            var id = $(this).attr('data-id');
+                            var token = '{{csrf_token()}}';
+                            e.preventDefault();
+                            $.ajax({
+                                url: "{{route('users.delete' , $user->id)}}",
+                                type: 'POST',
+                                dataType: "JSON",
+                                data: {id:id,_token:token},
+                                success: function (data) {
+                                    swal('success', data.success, 'success').then(function (){
+                                        location.reload();
+                                    });
+                                },
+                                error: function (xhr) {
+                                    erroralert(xhr);
+                                },
+                            });
+
+                        }
+                    });
+            });
+
+
+
+</script>
+@endsection
 
 
