@@ -23,7 +23,8 @@ class UserController extends Controller
 
         if (auth()->user()->role == 'user'){
             $users=User::where('id',auth()->user()->id);
-        }else{
+        }
+        else{
             $users=User::query();
         }
         $search = $request['search'] ?? "";
