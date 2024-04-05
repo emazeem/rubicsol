@@ -48,7 +48,7 @@
                         <span class="badge badge-warning">Pending</span>
                         @endif
                         @if($post->status==1)
-                        <span class="badge badge-success">Uploaded</span>
+                        <span class="badge badge-success">Marked as uploaded</span>
                         @endif
                         </td>
                         @if(auth()->user()->role=="super-admin")

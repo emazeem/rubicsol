@@ -3,10 +3,16 @@
     <script src="{{url('assets/js/1.10.1/jquery.min.js')}}"></script>
 
 <div class="row pb-3">
+<nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{{route('post.index')}}">Posts List</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Post Details</li>
+      </ol>
+    </nav>
 <div class="col-12 mb-2">
     <h3 class="float-left pb-1 font-weight-light"><i class="bx bx-task mr-1"></i>Posts</h3>
     @if(auth()->user()->role=="super-admin")
-        <a href="{{route('post.approve',['id'=>$show->id])}}" class="btn float-right btn-success ml-2">Approve</button></a> 
+        <a href="{{route('post.approve',['id'=>$show->id])}}" class="btn float-right btn-success ml-2">Mark as Uploaded</button></a> 
     @endif
   </div>
     <table class="table table-bordered table-sm bg-white">
@@ -24,7 +30,7 @@
                         <td><span class="badge badge-warning">Pending</span></td>
                         @endif
                         @if($show->status==1)
-                        <td><span class="badge badge-success">Approved</span></td>
+                        <td><span class="badge badge-success">Marked as Uploaded</span></td>
                         @endif
     </tr>
     <tr>
@@ -33,14 +39,6 @@
     </tr>
     
   </table>
-</div>
-<div class="card-footer bg-light border-top">
-    <div class="row">
-        <div class="col-12">
-            <a href="{{URL::previous()}}" class="btn btn-md bg-white border-dark float-left">
-            <i class="feather icon-chevron-left"></i>back</a>
-        </div>
-    </div>
 </div>
 
 <script>
