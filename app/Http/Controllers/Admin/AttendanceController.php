@@ -62,7 +62,6 @@ class AttendanceController extends Controller
           $attendances = $attendances
           ->where('user_id','LIKE',"%$search%")
           ->orwhere('user','LIKE',"%$search%") 
-          ->orwhere('user','LIKE',"%$search%")
           ->orwhere('check_in','LIKE',"%$search%")
           ->orwhere('check_in_date','LIKE',"%$search%")
           ->orwhere('check_out_date','LIKE',"%$search%")
