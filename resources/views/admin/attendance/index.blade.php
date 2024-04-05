@@ -47,9 +47,9 @@
       <tr class="table-row">
         <td>{{$attendance->id}}</td>
         <td>{{$attendance->user->fname}} {{$attendance->user->lname}}</td>
-        <td>{{$attendance->check_in_date}}</td>
+        <td>{{date('d F, y',strtotime($attendance->check_in_date))}}</td>
         <td>{{date('h:i A', strtotime($attendance->check_in))}}</td>
-        <td>{{$attendance->check_out_date}}</td>
+        <td>{{date('d F, y',strtotime($attendance->check_out_date))}}</td>
         <td>{{date('h:i A', strtotime($attendance->check_out))}}</td>
         <td>
           @if($attendance->status == 1)
