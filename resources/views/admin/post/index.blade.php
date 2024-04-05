@@ -48,7 +48,7 @@
                         <span class="badge badge-warning">Pending</span>
                         @endif
                         @if($post->status==1)
-                        <span class="badge badge-success">Marked as uploaded</span>
+                        <span class="badge badge-success">Uploaded</span>
                         @endif
                         </td>
                         @if(auth()->user()->role=="super-admin")
@@ -66,7 +66,7 @@
                     @endforeach
                 @else
                   <tr>
-                    <td colspan="100%" class="text-center">No record found</td>
+                      <td colspan="100%" class="text-center">No record found</td>
                   </tr>
                 @endif
                 </tbody>
