@@ -23,51 +23,6 @@
 </div>
     
 <!--user table-->
-<<<<<<< HEAD
-    <div class="col-lg-12 table-responsive">
-      <table id="example" class="table table-bordered table-hover  table-sm display nowrap" cellspacing="0" width="100%">
-        <thead>
-          <tr class="bg-c-blue">
-            <th>ID</th>
-            <th>users</th>
-            <th>Start Date</th>
-            <th>Start Time</th>
-            <th>End Date</th>
-            <th>End Time</th>
-            <th>Status</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        
-        <tbody>
-          @if(count($attendances)>0)
-          @foreach($attendances as $attendance)
-          <tr class="table-row">
-            <td>{{$attendance->id}}</td>
-            <td>{{$attendance->user->fname}} {{$attendance->user->lname}}</td>
-            <td>{{$attendance->check_in_date}}</td>
-            <td>{{date('h:i A',strtotime($attendance->check_in))}}</td>
-            <td>{{$attendance->check_out_date}}</td>
-            <td>{{date('h:i A',strtotime($attendance->check_out))}}</td>
-            <td>
-              @if($attendance->status==1)
-              <span class="badge badge-success">Check Out</span>
-              @endif
-              @if($attendance->status==0)
-              <span class="badge badge-primary">Check In</span>
-              @endif
-            </td>
-            @if(auth()->user()->role=="super-admin")
-            <td>
-              <a href="{{route('attendance.edit',['id'=>$attendance->id])}}" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></a></button>
-              <a href="{{route('attendance.show',['id'=>$attendance->id])}}" class="btn btn-warning btn-sm" ><i class="fas fa-eye"></i></a></button>
-              <a href="{{route('attendance.delete',['id'=>$attendance->id])}}" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a>
-            </td>
-            @else
-            <td>
-              <a href="{{route('attendance.show',['id'=>$attendance->id])}}" class="btn btn-warning btn-sm px-3" ><i class="fas fa-eye"></i></a>
-            </button>
-=======
 <div class="col-lg-12 table-responsive">
   <table id="example" class="table table-bordered table-hover  table-sm display nowrap" cellspacing="0" width="100%">
     <thead >
@@ -109,7 +64,6 @@
         @else
         <td>
             <a href="{{route('attendance.show',['id'=>$attendance->id])}}" class="btn btn-warning btn-sm ml-2" ><i class="fas fa-eye"></i></a></button>
->>>>>>> 21dcc0e438920f4fd7f51e072df932f11a3dc546
           </td>
         </tr>
         @endif
