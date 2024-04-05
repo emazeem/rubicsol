@@ -32,9 +32,7 @@
               <th>Email</th>
               <th>Phone</th>
               <th>Role</th>
-              @if(auth()->user()->role=="super-admin")
               <th>Action</th>
-              @endif
             </tr>
           </thead>
           <tbody>
@@ -51,6 +49,8 @@
                 <a href="{{route('users.show',['id'=>$user->id])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
                 <a href="{{route('users.delete',['id'=>$user->id])}}" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a>
               </td>
+              @else
+                <td class="text-center"><a href="{{route('users.show',['id'=>$user->id])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a></td>
               @endif
             </tr>
             @endforeach

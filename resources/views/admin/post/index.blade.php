@@ -56,18 +56,19 @@
                         <a href="{{route('post.edit',['id'=>$post->id])}}" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
                         <a href="{{route('post.show',['id'=>$post->id])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
                         <a href="{{route('post.delete',['id'=>$post->id])}}" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a> 
-                        
+                        </td>
                         @else 
+                        <td class="text-center">
                         <a href="{{route('post.show',['id'=>$post->id])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
-</td>
+                        </td>                   
                         @endif
                     @endif
                     @endforeach
-                    @else
+                @else
                   <tr>
                     <td colspan="100%" class="text-center">No record found</td>
                   </tr>
-                  @endif
+                @endif
                 </tbody>
             </table>
         </div>

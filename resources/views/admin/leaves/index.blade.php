@@ -39,14 +39,14 @@
                         @endif
                     </td>
                     <td>{{$leave->remarks}}</td>
-                    <td>
+                    <td class="text-center">
                         @if(auth()->user()->role=="super-admin")
                         <a href="{{route('leave.edit',['id'=>$leave->id])}}" class="btn btn-success btn-sm"
                         ><i class="fas fa-edit"></i></a>
                         <a href="{{route('leave.show',['id'=>$leave->id])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
                         <a href="{{route('leave.delete',['id'=>$leave->id])}}" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a>
                         @elseif(auth()->user()->role=="user")
-                        <a href="{{route('leave.show',['id'=>$leave->id])}}" class="btn btn-warning btn-sm ml-3 px-3"><i class="fas fa-eye"></i></a>
+                        <a href="{{route('leave.show',['id'=>$leave->id])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
                         @endif
                     </td>
                     </tr>
