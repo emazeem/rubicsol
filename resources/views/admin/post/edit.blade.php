@@ -9,6 +9,12 @@
         </script>
         @endif
         <div class="row pb-3">
+        <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{{route('post.index')}}">Posts List</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Esit Post</li>
+      </ol>
+    </nav>
             <div class="col-12">
             <form  id="user-form" enctype="multipart/form-data">
           @csrf
@@ -19,10 +25,15 @@
                 
                 
               </div>
+              
               <div class="form-group col-md-4 col-12">
                 <label for="content" class="control-label">Content</label>
-                <input type="text" class="form-control" id="content" name="content"
+                <textarea type="text"  rows="4" cols="50" class="form-control" id="content" name="content"
                 placeholder="Content" value="{{$edit->content}}">
+
+                </textarea>
+                <!-- <input type="text"  rows="6" cols="50" class="form-control" id="content" name="content"
+                placeholder="Content" value="{{$edit->content}}"> -->
               </div> 
               <!--image uploading-->
                 <div class="form-group ml-3">
@@ -34,8 +45,6 @@
                 <div class="card-footer bg-light border-top">
                     <div class="row">
                         <div class="col-12">
-                        <a href="{{ URL::previous() }}" class="btn btn-md bg-white border float-left">
-                            <iclass="feather icon-chevron-left></i>back</a>
                             <button type="submit" class="btn btn-primary btn-md user-btn float-right">
                             <iclass="feather icon-save></i>Save
                             </button>
