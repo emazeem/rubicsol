@@ -55,9 +55,9 @@
                         <a href="{{route('leave.edit',['id'=>$leave->id])}}" class="btn btn-success btn-sm"
                         ><i class="fas fa-edit"></i></a>
                         <a href="{{route('leave.show',['id'=>$leave->id])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
-                        <a href="{{route('leave.delete',['id'=>$leave->id])}}" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
+                        <a href="{{route('leave.delete',['id'=>$leave->id])}}" class="btn btn-danger btn-sm delete" data-id="{{$leaves->id}}"><i class="fas fa-trash-alt"></i></a>
                         @elseif(auth()->user()->role=="user")
-                        <a href="{{route('leave.show',['id'=>$leave->id])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
+                        <a href="{{route('leave.show',['id'=>$leave->id])}}" class="btn btn-warning btn-sm" ><i class="fas fa-eye"></i></a>
                         @endif
                     </td>
                     </tr>
@@ -97,7 +97,7 @@ $(document).on('click', '.delete', function (e) {
                             var token = '{{csrf_token()}}';
                             e.preventDefault();
                             $.ajax({
-                                url: "{{route('leave.delete' , $leaves->id)}}",
+                                url: $(this).attr('href'),
                                 type: 'POST',
                                 dataType: "JSON",
                                 data: {id:id,_token:token},
