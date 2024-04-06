@@ -127,7 +127,7 @@ Route::group(['middleware' => ['auth']], function () {
             Route::post('delete/{id}', [PostController::class, 'delete'])->name('post.delete');
             Route::get('show/{id}', [PostController::class, 'show'])->name('post.show');
             Route::post('update', [PostController::class, 'update'])->name('post.update');
-            Route::get('approve/{id}', [PostController::class, 'approve'])->name('post.approve');
+            Route::post('approve/{id}', [PostController::class, 'approve'])->name('post.approve');
 
         });
 });
