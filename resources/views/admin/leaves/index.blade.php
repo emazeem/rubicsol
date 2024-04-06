@@ -86,7 +86,7 @@
 $(document).on('click', '.delete', function (e) {
   e.preventDefault();
                 swal({
-                    title: "Are you sure to delete this post?",
+                    title: "Are you sure to delete this leave?",
                     icon: "warning",
                     buttons: true,
                     dangerMode: true,
@@ -97,7 +97,7 @@ $(document).on('click', '.delete', function (e) {
                             var token = '{{csrf_token()}}';
                             e.preventDefault();
                             $.ajax({
-                                url: "{{route('leave.delete' , $leaves->id)}}",
+                                url: $(this).attr('href'),
                                 type: 'POST',
                                 dataType: "JSON",
                                 data: {id:id,_token:token},

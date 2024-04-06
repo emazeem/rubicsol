@@ -89,7 +89,7 @@ Route::group(['middleware' => ['auth']], function () {
         Route::post('store', [TaskController::class, 'store'])->name('tasks.store');
         Route::get('edit/{id}', [TaskController::class, 'edit'])->name('task.edit');
         Route::get('show/{id}', [TaskController::class, 'show'])->name('task.show');
-        Route::get('delete/{id}', [TaskController::class, 'delete'])->name('task.delete');
+        Route::post('delete/{id}', [TaskController::class, 'delete'])->name('task.delete');
         Route::post('update', [TaskController::class, 'update'])->name('task.update');
         Route::get('delete/{id}', [TaskController::class, 'delete'])->name('task.delete');
         Route::get('start/{id}', [TaskController::class, 'start'])->name('task.start');
