@@ -11,8 +11,17 @@
     @endif
     
     <div class="row pb-3">
-    <table class="table table-bordered table-sm bg-white">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{{route('attendance.index')}}">Attendance List</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Attendance Details</li>
+      </ol>
+    </nav>
+    <div class="col-12 mb-2">
     <h5 class="font-weight-light"><i class="feather icon-clock"></i>Attendance</h5>
+</div>
+    <table class="table table-bordered table-sm bg-white">
+    
     <tr>
       <th scope="col">Start Time</th>
       <td scope="col">{{$show->check_in}}</td>

@@ -3,6 +3,12 @@
     <script src="{{url('assets/js/1.10.1/jquery.min.js')}}"></script>
 
 <div class="row pb-3">
+<nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{{route('task.index')}}">Task List</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Task Details</li>
+      </ol>
+    </nav>
 <div class="col-12 mb-2">
     <h3 class="float-left pb-1 font-weight-light"><i class="bx bx-task"></i>My Task</h3>
     @if($show->status == 0)
