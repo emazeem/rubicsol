@@ -3,6 +3,12 @@
     <script src="{{url('assets/js/1.10.1/jquery.min.js')}}"></script>
 
 <div class="row pb-3">
+<nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{{route('leave.application.index')}}">Leave Application List</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Leave Details</li>
+      </ol>
+    </nav>
     <div class="col-12 mb-2">
         <h3 class="float-left pr-1 font-weight-light"><i class="bx bx-task"></i>My leave</h3>
         @if(auth()->user()->role=="super-admin")

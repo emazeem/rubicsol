@@ -9,10 +9,26 @@ use Illuminate\Http\Request;
 
 class LeaveApplicationController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $leaves = LeaveApplication::all();
-        return view('admin.leaves.index', compact('leaves'));
+        if (auth()->user()->role == 'user'){
+            $leaves=LeaveApplication::where('id',auth()->user()->id);
+        }
+        else{
+            $leaves=LeaveApplication::query();
+        }
+        $search = $request['search'] ?? "";
+        if ($search != ""){
+          $leaves = $leaves
+          ->where('id','LIKE',"%$search%")
+          ->orwhere('user_id','LIKE',"%$search%")
+          ->orwhere('start','LIKE',"%$search%")
+          ->orwhere('end','LIKE',"%$search%")
+          ->orwhere('status','LIKE',"%$search%")
+          ->orwhere('reason','LIKE',"%$search%");
+        }
+        $leaves=$leaves->paginate(10);
+        return view('admin.leaves.index',compact('leaves','search'));
     }
 
     public function create()

@@ -6,6 +6,17 @@
             <h3 class="float-left pb-1 font-weight-light"><i class="bx bx-task mr-1"></i>Leaves</h3>
             <a href="{{route('leave.application.create')}}" class="btn btn-primary shadow-sm float-right mt-2"><i class="fa fa-plus-circle mr-1"></i> Add Leave</a>
         </div>
+        <!--Search bar-->
+      <div class="row"></div>
+      <div class="col-12 mb-2 mt-2">
+        <form action="" class="col-4 float-right">
+          <div class="input-group-append">
+            <input type="search" name="search" id="" class="form-control rounded-lg" placeholder="Search..." value="{{$search}}" />
+            <button class="btn btn-primary rounded-lg toggle-button px-3"><i class="fa fa-search"></i></button>
+          </div>
+        </form>
+      </div>
+    </div>
         <div class="col-lg-12 table-responsive">
             <table id="example" class="table table-bordered table-hover  table-sm display nowrap" cellspacing="0" width="100%">
                 <thead>
@@ -58,6 +69,9 @@
                   @endif
                 </tbody>
             </table>
+            <div class="row float-right mt-2 mr-0">
+          {{$leaves->links('pagination::bootstrap-4')}}
+        </div>
         </div>
     </div>
     <style>
@@ -68,36 +82,6 @@
         background: #fff!important;
      }
      </style>
-<script type="text/javascript">
-$(document).on('click', '.delete', function (e) {
-  e.preventDefault();
-                swal({
-                    title: "Are you sure to delete this leave application?",
-                    icon: "warning",
-                    buttons: true,
-                    dangerMode: true,
-                })
-                    .then((willDelete) => {
-                        if (willDelete) {
-                            var id = $(this).attr('data-id');
-                            var token = '{{csrf_token()}}';
-                            e.preventDefault();
-                            $.ajax({
-                                url: "{{route('leave.delete' , $leave->id)}}",
-                                type: 'POST',
-                                dataType: "JSON",
-                                data: {id:id,_token:token},
-                                success: function (data) {
-                                    swal('success', data.success, 'success').then(function (){
-                                        location.reload();
-                                    });
-                                },
-                                error: function (xhr) {
-                                    erroralert(xhr);
-                                },
-                            });
 
-                        }
-                    });
-            });
+
      @endsection
