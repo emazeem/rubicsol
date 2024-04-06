@@ -83,7 +83,7 @@ $(document).on('click', '.delete', function (e) {
                             var token = '{{csrf_token()}}';
                             e.preventDefault();
                             $.ajax({
-                                url: "{{route('leave.delete' , $leaves->id)}}",
+                                url: "{{route('leave.delete' , $leave->id)}}",
                                 type: 'POST',
                                 dataType: "JSON",
                                 data: {id:id,_token:token},
