@@ -57,7 +57,7 @@
                         <a href="{{route('leave.show',['id'=>$leave->id])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
                         <a href="{{route('leave.delete',['id'=>$leave->id])}}" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
                         @elseif(auth()->user()->role=="user")
-                        <a href="{{route('leave.show',['id'=>$leave->id])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
+                        <a href="{{route('leave.show',['id'=>$leave->id])}}" class="btn btn-warning btn-sm" ><i class="fas fa-eye"></i></a>
                         @endif
                     </td>
                     </tr>
