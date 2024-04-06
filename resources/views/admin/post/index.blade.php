@@ -79,6 +79,7 @@
         background: #fff!important;
      }
      </style>
+     
 <script type="text/javascript">
 $(document).on('click', '.delete', function (e) {
   e.preventDefault();
