@@ -91,7 +91,6 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('show/{id}', [TaskController::class, 'show'])->name('task.show');
         Route::post('delete/{id}', [TaskController::class, 'delete'])->name('task.delete');
         Route::post('update', [TaskController::class, 'update'])->name('task.update');
-        Route::get('delete/{id}', [TaskController::class, 'delete'])->name('task.delete');
         Route::get('start/{id}', [TaskController::class, 'start'])->name('task.start');
         Route::get('complete/{id}', [TaskController::class, 'complete'])->name('task.complete');
         Route::post('/task/{id}/switch-priority', [TaskController::class, 'switchPriority'])->name('task.switchPriority');

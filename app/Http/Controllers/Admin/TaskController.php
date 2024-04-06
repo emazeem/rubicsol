@@ -44,7 +44,7 @@ class TaskController extends Controller
     
     public function delete($id){
         Task::find($id)->delete();
-        return redirect()->back();
+        return response()->json(['success'=> 'Task deleted successfully!']);
     }
     public function show($id){
         $show=Task::find($id);
@@ -73,7 +73,7 @@ class TaskController extends Controller
             $tasks=$tasks->paginate(10);
             $users=User::all();
             return view('admin.tasks.index', compact('tasks','search','users')); 
-            }
+        }
     public function create(){
 
         $users=User::all();
