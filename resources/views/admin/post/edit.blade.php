@@ -12,7 +12,7 @@
         <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="{{route('post.index')}}">Posts List</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Esit Post</li>
+        <li class="breadcrumb-item active" aria-current="page">Edit Post</li>
       </ol>
     </nav>
             <div class="col-12">

@@ -9,6 +9,12 @@
         </script>
         @endif
         <div class="row pb-3">
+        <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{{route('task.index')}}">Task List</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Edit Details</li>
+      </ol>
+    </nav>
           <form  id="user-form" style="width:100%" method="post" enctype="multipart/form-data">
           @csrf
           <input type="hidden" value="{{$edit->id}}" name="id">
@@ -38,8 +44,6 @@
               <div class="card-footer bg-light border-top">
               <div class="row">
                 <div class="col-12">
-                  <a href="{{ URL::previous() }}" class="btn bg-white border float-left">
-                    <iclass="feather icon-chevron-left></i>back</a>
                     <button type="submit" class="btn btn-primary user-btn float-right">
                       <iclass="feather icon-save></i>Update
                     </button>
