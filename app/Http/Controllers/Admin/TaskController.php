@@ -57,19 +57,23 @@ class TaskController extends Controller
     }
     public function index(Request $request)
     {
-        // $search = $request['search'] ?? "";
-        // if ($search != ""){
-        //     //where
-        //   $tasks = $tasks
-        //   ->where('id','LIKE',"%$search%")
-        //   ->orwhere('user','LIKE',"%$search%")
-        //   ->orwhere('title','LIKE',"%$search%")
-        //   ->orwhere('status','LIKE',"%$search%");
-        // }
-         
-        $tasks = Task::all();
-        return view('admin.tasks.index', compact('tasks',)); 
-    }
+            if (auth()->user()->role == 'user'){
+            $tasks=Task::where('id',auth()->user()->id);
+           }
+            else{
+                $tasks=Task::query();
+            }
+            $search = $request['search'] ?? "";
+            if ($search != ""){
+            $tasks = $tasks
+            ->where('id','LIKE',"%$search%")
+            ->orwhere('user_id','LIKE',"%$search%")
+            ->orwhere('title','LIKE',"%$search%");
+            }
+            $tasks=$tasks->paginate(10);
+            $users=User::all();
+            return view('admin.tasks.index', compact('tasks','search','users')); 
+            }
     public function create(){
 
         $users=User::all();
