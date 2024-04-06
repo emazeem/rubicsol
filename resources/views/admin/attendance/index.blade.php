@@ -17,13 +17,16 @@
         <input type="search" name="search" id="" class="form-control rounded-lg" placeholder="Search..." value="{{$search}}" />
         <button class="btn btn-primary rounded-lg toggle-button px-3"><i class="fa fa-search"></i></button>
       </div>
-    </form>
-    <select class="form-select custom-select col-3 float-right" name="user_id">
-      <option selected disabled>All User</option>
+      @if(auth()->user()->role == "super-admin")
+      <select class="form-select custom-select float-right" name="user_id">
+      <option selected value="">-- All User</option>
       @foreach($users as $user)
-      <option value="{{ $user->id }}">{{ $user->fname }} {{ $user->lname }}</option>
+      <option value="{{ $user->id }}" {{$searchUser == $user->id ?'selected':''}}>{{ $user->fname }} {{ $user->lname }}</option>
       @endforeach
     </select>
+    @endif
+    </form>
+    
   </div>
 </div>
 <!--user table-->
@@ -100,3 +103,4 @@
 @endsection
 
 
+<!-- <span class="glyphicon glyphicon-filter"> -->

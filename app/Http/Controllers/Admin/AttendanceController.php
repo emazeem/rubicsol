@@ -65,10 +65,14 @@ class AttendanceController extends Controller
           ->orwhere('check_out_date','LIKE',"%$search%")
           ->orwhere('check_out','LIKE',"%$search%");
         }
+        $searchUser = $request['user_id'] ?? "";
+        if($searchUser){
+            $attendances=$attendances->where('user_id',$searchUser);
+        }
 
         $attendances=$attendances->paginate(10);
         $users=User::all();
-        return view('admin.attendance.index',compact('attendances','search','users'));
+        return view('admin.attendance.index',compact('attendances','search','users','searchUser'));
     }
     public function checkIn(){
         $attendance=new Attendance();

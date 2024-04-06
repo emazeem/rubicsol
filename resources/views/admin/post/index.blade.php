@@ -55,7 +55,7 @@
                         <td>
                         <a href="{{route('post.edit',['id'=>$post->id])}}" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
                         <a href="{{route('post.show',['id'=>$post->id])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
-                        <a href="{{route('post.delete',['id'=>$post->id])}}" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a> 
+                        <a href="{{route('post.delete',['id'=>$post->id])}}" class="btn btn-danger btn-sm delete" data-id="{{$post->id}}"><i class="fas fa-trash-alt"></i></a> 
                         </td>
                         @else 
                         <td class="text-center">
@@ -95,7 +95,7 @@ $(document).on('click', '.delete', function (e) {
                             var token = '{{csrf_token()}}';
                             e.preventDefault();
                             $.ajax({
-                                url: "{{route('post.delete' , $post->id)}}",
+                                url: $(this).attr('href'),
                                 type: 'POST',
                                 dataType: "JSON",
                                 data: {id:id,_token:token},
