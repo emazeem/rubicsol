@@ -75,7 +75,7 @@ Route::group(['middleware' => ['auth']], function () {
         Route::post('update', [LeaveApplicationController::class, 'update'])->name('leave.application.update');
         Route::get('edit/{id}', [LeaveApplicationController::class, 'edit'])->name('leave.edit');
         Route::get('show/{id}', [LeaveApplicationController::class, 'show'])->name('leave.show');
-        Route::get('delete/{id}', [LeaveApplicationController::class, 'delete'])->name('leave.delete');
+        Route::post('delete/{id}', [LeaveApplicationController::class, 'delete'])->name('leave.delete');
         Route::get('approve/{id}', [LeaveApplicationController::class, 'approve'])->name('leave.approve');
         Route::get('reject/{id}', [LeaveApplicationController::class, 'reject'])->name('leave.reject');
         Route::post('reason', [LeaveApplicationController::class, 'reason'])->name('leave.reason');
@@ -124,7 +124,7 @@ Route::group(['middleware' => ['auth']], function () {
             Route::post('store', [PostController::class, 'store'])->name('post.store');
             Route::get('edit/{id}', [PostController::class, 'edit'])->name('post.edit');
             Route::post('update', [PostController::class, 'update'])->name('post.update');
-            Route::get('delete/{id}', [PostController::class, 'delete'])->name('post.delete');
+            Route::post('delete/{id}', [PostController::class, 'delete'])->name('post.delete');
             Route::get('show/{id}', [PostController::class, 'show'])->name('post.show');
             Route::post('update', [PostController::class, 'update'])->name('post.update');
             Route::get('approve/{id}', [PostController::class, 'approve'])->name('post.approve');

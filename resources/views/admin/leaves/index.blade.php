@@ -24,7 +24,7 @@
                     @foreach ($leaves as $leave)
                     <tr class="table-row">
                         <td>{{$leave->id}}</td>
-                        <td>{{$leave->user->fname}} {{$leave->user->lname}}</td>
+                        <td>{{$leave->fname}} {{$leave->lname}}</td>
                         <td>{{$leave->start}}</td>
                         <td>{{$leave->end}}</td>
                         <td>
@@ -44,7 +44,7 @@
                         <a href="{{route('leave.edit',['id'=>$leave->id])}}" class="btn btn-success btn-sm"
                         ><i class="fas fa-edit"></i></a>
                         <a href="{{route('leave.show',['id'=>$leave->id])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
-                        <a href="{{route('leave.delete',['id'=>$leave->id])}}" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a>
+                        <a href="{{route('leave.delete',['id'=>$leave->id])}}" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
                         @elseif(auth()->user()->role=="user")
                         <a href="{{route('leave.show',['id'=>$leave->id])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
                         @endif
@@ -68,4 +68,36 @@
         background: #fff!important;
      }
      </style>
+<script type="text/javascript">
+$(document).on('click', '.delete', function (e) {
+  e.preventDefault();
+                swal({
+                    title: "Are you sure to delete this leave application?",
+                    icon: "warning",
+                    buttons: true,
+                    dangerMode: true,
+                })
+                    .then((willDelete) => {
+                        if (willDelete) {
+                            var id = $(this).attr('data-id');
+                            var token = '{{csrf_token()}}';
+                            e.preventDefault();
+                            $.ajax({
+                                url: "{{route('leave.delete' , $leaves->id)}}",
+                                type: 'POST',
+                                dataType: "JSON",
+                                data: {id:id,_token:token},
+                                success: function (data) {
+                                    swal('success', data.success, 'success').then(function (){
+                                        location.reload();
+                                    });
+                                },
+                                error: function (xhr) {
+                                    erroralert(xhr);
+                                },
+                            });
+
+                        }
+                    });
+            });
      @endsection

@@ -32,7 +32,7 @@ class LeaveApplicationController extends Controller
     public function delete($id)
     {
         LeaveApplication::find($id)->delete();
-        return redirect()->back();
+        return response()->json(['success' => 'Leave application deleted successfully!']);
     }
     public function store(Request $request){
         $this->validate(request(), [

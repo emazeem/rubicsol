@@ -55,7 +55,7 @@
                         <td>
                         <a href="{{route('post.edit',['id'=>$post->id])}}" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
                         <a href="{{route('post.show',['id'=>$post->id])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
-                        <a href="{{route('post.delete',['id'=>$post->id])}}" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a> 
+                        <a href="{{route('post.delete',['id'=>$post->id])}}" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a> 
                         </td>
                         @else 
                         <td class="text-center">
@@ -81,4 +81,40 @@
         background: #fff!important;
      }
      </style>
+<script type="text/javascript">
+$(document).on('click', '.delete', function (e) {
+  e.preventDefault();
+                swal({
+                    title: "Are you sure to delete this post?",
+                    icon: "warning",
+                    buttons: true,
+                    dangerMode: true,
+                })
+                    .then((willDelete) => {
+                        if (willDelete) {
+                            var id = $(this).attr('data-id');
+                            var token = '{{csrf_token()}}';
+                            e.preventDefault();
+                            $.ajax({
+                                url: "{{route('post.delete' , $post->id)}}",
+                                type: 'POST',
+                                dataType: "JSON",
+                                data: {id:id,_token:token},
+                                success: function (data) {
+                                    swal('success', data.success, 'success').then(function (){
+                                        location.reload();
+                                    });
+                                },
+                                error: function (xhr) {
+                                    erroralert(xhr);
+                                },
+                            });
+
+                        }
+                    });
+            });
+
+
+
+</script>
 @endsection
