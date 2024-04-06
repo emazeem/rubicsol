@@ -63,7 +63,7 @@ Route::group(['middleware' => ['auth']], function () {
         Route::post('update', [AttendanceController::class, 'update'])->name('attendance.update');
         Route::get('edit/{id}', [AttendanceController::class, 'edit'])->name('attendance.edit');
         Route::get('show/{id}', [AttendanceController::class, 'show'])->name('attendance.show');
-        Route::post('delete/{id}', [AttendanceController::class, 'delete'])->name('attendance.delete');
+        Route::get('delete/{id}', [AttendanceController::class, 'delete'])->name('attendance.delete');
 
     });
 
@@ -89,8 +89,9 @@ Route::group(['middleware' => ['auth']], function () {
         Route::post('store', [TaskController::class, 'store'])->name('tasks.store');
         Route::get('edit/{id}', [TaskController::class, 'edit'])->name('task.edit');
         Route::get('show/{id}', [TaskController::class, 'show'])->name('task.show');
+        Route::get('delete/{id}', [TaskController::class, 'delete'])->name('task.delete');
         Route::post('update', [TaskController::class, 'update'])->name('task.update');
-        Route::post('delete/{id}', [TaskController::class, 'delete'])->name('task.delete');
+        Route::get('delete/{id}', [TaskController::class, 'delete'])->name('task.delete');
         Route::get('start/{id}', [TaskController::class, 'start'])->name('task.start');
         Route::get('complete/{id}', [TaskController::class, 'complete'])->name('task.complete');
         Route::post('/task/{id}/switch-priority', [TaskController::class, 'switchPriority'])->name('task.switchPriority');

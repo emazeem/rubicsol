@@ -12,7 +12,7 @@ class AttendanceController extends Controller
     //
      public function delete($id){
         Attendance::find($id)->delete(); 
-        return response()->json(['success'=>'Attendance deleted successfully']);
+        return redirect()->back();
     }
     public function show($id){
         $show=Attendance::find($id);

@@ -59,7 +59,7 @@
                         <td>
                         <a href="{{route('task.edit',['id'=>$task->id])}}" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
                         <a href="{{route('task.show',['id'=>$task->id])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
-                        <a href="{{route('task.delete',['id'=>$task->id])}}" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
+                        <a href="{{route('task.delete',['id'=>$task->id])}}" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a>
                         </td>
                     </tr>
                     @endforeach
@@ -83,5 +83,4 @@
         background: #fff!important;
      }
      </style>
-
 @endsection

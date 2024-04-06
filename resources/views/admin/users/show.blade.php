@@ -10,12 +10,6 @@
         </script>
     @endif
     <div class="row pb-3">
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="{{route('users.index')}}">User List</a></li>
-        <li class="breadcrumb-item active" aria-current="page">User Details</li>
-      </ol>
-    </nav>
     <table class="table table-bordered table-sm bg-white">
   
     <tr>
