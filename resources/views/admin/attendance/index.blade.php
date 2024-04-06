@@ -18,7 +18,7 @@
         <button class="btn btn-primary rounded-lg toggle-button px-3"><i class="fa fa-search"></i></button>
       </div>
       @if(auth()->user()->role == "super-admin")
-      <select class="form-select custom-select float-right" name="user_id">
+      <select class="form-select custom-select float-right mt-1" name="user_id">
       <option selected value="">-- All User</option>
       @foreach($users as $user)
       <option value="{{ $user->id }}" {{$searchUser == $user->id ?'selected':''}}>{{ $user->fname }} {{ $user->lname }}</option>
