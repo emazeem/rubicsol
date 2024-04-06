@@ -19,8 +19,12 @@
               </div>
               <div class="form-group col-md-4 col-12">
                 <label for="content" class="control-label">Content</label>
-                <input type="text" class="form-control" id="content" name="content"
+                <textarea type="text"  rows="4" cols="50" class="form-control" id="content" name="content"
                 placeholder="Content">
+
+                </textarea>
+                <!-- <input type="text" class="form-control" id="content" name="content"
+                placeholder="Content"> -->
               </div> 
               <!--image uploading-->
                 <div class="form-group ml-3">
