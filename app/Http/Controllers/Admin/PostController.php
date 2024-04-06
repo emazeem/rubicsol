@@ -95,7 +95,7 @@ class PostController extends Controller
     }
     public function delete($id){
         Post::find($id)->delete();
-        return redirect()->back();
+        return response()->json(['success'=> 'Task deleted successfully!']);
     }
     public function approve($id)
     {

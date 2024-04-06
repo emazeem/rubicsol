@@ -63,7 +63,7 @@
         <td>
           <a href="{{route('attendance.edit', ['id' => $attendance->id])}}" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></a></button>
           <a href="{{route('attendance.show', ['id' => $attendance->id])}}" class="btn btn-warning btn-sm" ><i class="fas fa-eye"></i></a></button>
-          <a href="{{route('attendance.delete', ['id' => $attendance->id])}}" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a>
+          <a href="{{route('attendance.delete', ['id' => $attendance->id])}}" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
         </td>
         @else
         <td class="text-center">
@@ -93,9 +93,42 @@
       }
     </style>
     
-    <script>
-        swal("Deleted!", "Your file has been deleted.", "success");
-    </script>
+    <script type="text/javascript">
+$(document).on('click', '.delete', function (e) {
+  e.preventDefault();
+                swal({
+                    title: "Are you sure to delete this attedance?",
+                    icon: "warning",
+                    buttons: true,
+                    dangerMode: true,
+                })
+                    .then((willDelete) => {
+                        if (willDelete) {
+                            var id = $(this).attr('data-id');
+                            var token = '{{csrf_token()}}';
+                            e.preventDefault();
+                            $.ajax({
+                                url: "{{route('attendance.delete' , $attendance->id)}}",
+                                type: 'POST',
+                                dataType: "JSON",
+                                data: {id:id,_token:token},
+                                success: function (data) {
+                                    swal('success', data.success, 'success').then(function (){
+                                        location.reload();
+                                    });
+                                },
+                                error: function (xhr) {
+                                    erroralert(xhr);
+                                },
+                            });
+
+                        }
+                    });
+            });
+
+
+
+</script>
 
 @endsection
 

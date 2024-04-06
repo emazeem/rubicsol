@@ -44,7 +44,7 @@ class TaskController extends Controller
     
     public function delete($id){
         Task::find($id)->delete();
-        return redirect()->back();
+        return response()->json(['success'=>'Task deleted successfully']);
     }
     public function show($id){
         $show=Task::find($id);
@@ -116,7 +116,7 @@ class TaskController extends Controller
         $task->title=$request->title;
         $task->description=$request->description;
         $task->save();
-        return response()->json(['success'=>'Task updaated successfully','id'=>$task->id]);
+        return response()->json(['success'=>'Task updated successfully','id'=>$task->id]);
 
         
     }
@@ -125,7 +125,7 @@ class TaskController extends Controller
         $task = Task::findOrFail($request->id);
         $task->subtask=$request->subtask;
         $task->save();
-        return redirect()->back()->with('success', 'task subtask  updated successfully.');
+        return redirect()->back()->with('success', 'Task subtask  updated successfully.');
     }
 
 }
