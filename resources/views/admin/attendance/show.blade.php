@@ -18,7 +18,7 @@
       </ol>
     </nav>
     <div class="col-12 mb-2">
-    <h5 class="font-weight-light"><i class="feather icon-clock"></i>Attendance</h5>
+    <h5 class="font-weight-light"><i class="feather icon-clock mr-1"></i>Attendance</h5>
 </div>
     <table class="table table-bordered table-sm bg-white">
     

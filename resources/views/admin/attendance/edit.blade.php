@@ -10,13 +10,19 @@
         </script>
     @endif
     <div class="row pb-3">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{{route('attendance.index')}}">Attendance List</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Edit Attendance</li>
+      </ol>
+    </nav>
         <form  id="user-form" style="width:100%" method="post" enctype="multipart/form-data">
             @csrf
             <input type="hidden" value="{{$edit->id}}" name="id">
             <div class="card ">
                     
                     <div class="card-footer bg-light border-top">
-                        <h5 class="font-weight-light"><i class="feather icon-clock"></i>Edit Attendance</h5>
+                        <h5 class="font-weight-light"><i class="feather icon-clock mr-1"></i>Edit Attendance</h5>
 
                         <div class="row">
                             
@@ -35,7 +41,7 @@
                                 <select class="form-select custom-select" name="user_id">
                                     <option selected disabled>Select User</option>
                                     @foreach($users as $user)
-                                    <option value="{{ $user->id }}" {{$edit->user_id==$user->id?'selected':''}}>{{ $user->name }}</option>
+                                    <option value="{{ $user->id }}" {{$edit->user_id==$user->id?'selected':''}}>{{ $user->fname }} {{ $user->lname }}</option>
                                           @endforeach
                                         </select>
                             </div>
@@ -68,8 +74,6 @@
                     <div class="card-footer bg-light border-top">
                         <div class="row">
                             <div class="col-12">
-                                <a href="{{ URL::previous() }}" class="btn  bg-white border float-left"><i
-                                            class="feather icon-chevron-left"></i> back</a>
                                 <button type="submit" class="btn btn-primary  user-btn float-right"><i
                                             class="feather icon-save"> </i> Save
                                 </button>
