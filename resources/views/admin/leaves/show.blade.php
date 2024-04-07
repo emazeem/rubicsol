@@ -12,8 +12,16 @@
     <div class="col-12 mb-2">
         <h3 class="float-left pr-1 font-weight-light"><i class="bx bx-task"></i>My leave</h3>
         @if(auth()->user()->role=="super-admin")
-        <a href="{{route('leave.approve',['id'=>$show->id])}}" class="btn float-right btn-success ml-2">Approve</button></a> 
-        <a href="{{route('leave.reject',['id'=>$show->id])}}" class="btn float-right btn-danger">Reject </a>
+            @if($show->status==2)
+                <a href="{{route('leave.approve',['id'=>$show->id])}}" class="btn float-right btn-success ml-2 approve">Approve</button></a> 
+                <a href="{{route('leave.reject',['id'=>$show->id])}}" class=" disabled btn float-right btn-danger reject">Reject </a>
+            @elseif($show->status==1)
+                <a href="{{route('leave.approve',['id'=>$show->id])}}" class="disabled btn float-right btn-success ml-2 approve">Approve</button></a> 
+                <a href="{{route('leave.reject',['id'=>$show->id])}}" class="btn float-right btn-danger reject">Reject </a>
+            @else
+            <a href="{{route('leave.approve',['id'=>$show->id])}}" class="btn float-right btn-success ml-2 approve">Approve</button></a> 
+            <a href="{{route('leave.reject',['id'=>$show->id])}}" class="btn float-right btn-danger reject">Reject </a>
+            @endif
         @endif
     </div>
     <table class="table table-bordered table-sm bg-white">
@@ -45,9 +53,11 @@
             <th scope="col">Status</th>
             <td scope="col">
                 @if($show->status == 0)
-                Rejected
+                <span class="badge badge-warning">Pending</span>
+                @elseif($show->status == 2)
+                <span class="badge badge-success">Declined</span>
                 @else
-                Approved
+                <span class="badge badge-info">Approved</span>
                 @endif
             </td>
         </tr>
@@ -83,11 +93,44 @@
                 },
                 error: function(xhr, status, error) {
                     console.error(xhr.responseText);
-                    // Optionally, you can display an error message to the user
                 }
             });
         });
     });
+
+    $(document).on('click', '.reject, .approve', function (e) {
+    e.preventDefault();
+
+    var actionType = $(this).hasClass('reject') ? 'reject' : 'approve';
+    var confirmationMessage = actionType === 'reject' ? "Are you sure to reject the application?" : "Are you sure to approve the application?";
+
+    swal({
+        title: confirmationMessage,
+        icon: "warning",
+        buttons: true,
+        dangerMode: true,
+    }).then((willMarkUpload) => {
+        if (willMarkUpload) {
+            var id = $(this).attr('data-id');
+            var token = '{{ csrf_token() }}';
+
+            $.ajax({
+                url: $(this).attr('href'),
+                type: 'POST',
+                dataType: "JSON",
+                data: { id: id, _token: token },
+                success: function (data) {
+                    swal('Success', data.success, 'success').then(function () {
+                        location.reload();
+                    });
+                },
+                error: function (xhr) {
+                    erroralert(xhr);
+                },
+            });
+        }
+    });
+});
 </script>
 @endsection
 

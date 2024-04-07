@@ -75,8 +75,8 @@ Route::group(['middleware' => ['auth']], function () {
         Route::post('update', [LeaveApplicationController::class, 'update'])->name('leave.application.update');
         Route::get('edit/{id}', [LeaveApplicationController::class, 'edit'])->name('leave.edit');
         Route::get('show/{id}', [LeaveApplicationController::class, 'show'])->name('leave.show');
-        Route::get('approve/{id}', [LeaveApplicationController::class, 'approve'])->name('leave.approve');
-        Route::get('reject/{id}', [LeaveApplicationController::class, 'reject'])->name('leave.reject');
+        Route::post('approve/{id}', [LeaveApplicationController::class, 'approve'])->name('leave.approve');
+        Route::post('reject/{id}', [LeaveApplicationController::class, 'reject'])->name('leave.reject');
         Route::post('reason', [LeaveApplicationController::class, 'reason'])->name('leave.reason');
         Route::post('delete/{id}', [LeaveApplicationController::class, 'delete'])->name('leave.delete');
         

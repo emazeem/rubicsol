@@ -86,7 +86,7 @@
 $(document).on('click', '.delete', function (e) {
   e.preventDefault();
                 swal({
-                    title: "Are you sure to delete this leave?",
+                    title: "Are you sure to delete this leave application?",
                     icon: "warning",
                     buttons: true,
                     dangerMode: true,
@@ -114,9 +114,6 @@ $(document).on('click', '.delete', function (e) {
                         }
                     });
             });
-
-
-
 </script>
 
      @endsection
