@@ -63,7 +63,7 @@ Route::group(['middleware' => ['auth']], function () {
         Route::post('update', [AttendanceController::class, 'update'])->name('attendance.update');
         Route::get('edit/{id}', [AttendanceController::class, 'edit'])->name('attendance.edit');
         Route::get('show/{id}', [AttendanceController::class, 'show'])->name('attendance.show');
-        Route::get('delete/{id}', [AttendanceController::class, 'delete'])->name('attendance.delete');
+        Route::post('delete/{id}', [AttendanceController::class, 'delete'])->name('attendance.delete');
 
     });
 

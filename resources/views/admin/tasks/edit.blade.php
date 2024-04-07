@@ -9,10 +9,10 @@
         </script>
         @endif
         <div class="row pb-3">
-        <nav aria-label="breadcrumb">
+    <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="{{route('task.index')}}">Task List</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Edit Details</li>
+        <li class="breadcrumb-item active" aria-current="page">Edit Task</li>
       </ol>
     </nav>
           <form  id="user-form" style="width:100%" method="post" enctype="multipart/form-data">

@@ -72,10 +72,10 @@
     }
     </style>
 <script type="text/javascript">
-$(document).on('click', '.delete', function (e) {
+  $(document).on('click', '.delete', function (e) {
   e.preventDefault();
                 swal({
-                    title: "Are you sure to delete this customer?",
+                    title: "Are you sure to delete this user?",
                     icon: "warning",
                     buttons: true,
                     dangerMode: true,
@@ -86,7 +86,7 @@ $(document).on('click', '.delete', function (e) {
                             var token = '{{csrf_token()}}';
                             e.preventDefault();
                             $.ajax({
-                                url: "{{route('users.delete' , $user->id)}}",
+                              url: $(this).attr('href'),
                                 type: 'POST',
                                 dataType: "JSON",
                                 data: {id:id,_token:token},
@@ -101,11 +101,8 @@ $(document).on('click', '.delete', function (e) {
                             });
 
                         }
-                    });
-            });
-
-
-
+    });
+  });
 </script>
 @endsection
 
