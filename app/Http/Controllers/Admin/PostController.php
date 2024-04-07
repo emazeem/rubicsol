@@ -104,7 +104,7 @@ class PostController extends Controller
         $post = Post::findOrFail($id);
         $post->status = 1; 
         $post->save();
-        return response()->json(['Success' => 'Post uploaded successfully.']);
+        return response()->json(['success' => 'Post uploaded successfully.']);
     }
 
 }

@@ -12,7 +12,11 @@
 <div class="col-12 mb-2">
     <h3 class="float-left pb-1 font-weight-light"><i class="bx bx-task mr-1"></i>Posts</h3>
     @if(auth()->user()->role=="super-admin")
+        @if($show->status==1)
+        <a href="{{route('post.approve',['id'=>$show->id])}}" class="disabled btn float-right btn-success ml-2 markupload">Mark as Uploaded</button></a> 
+        @else
         <a href="{{route('post.approve',['id'=>$show->id])}}" class="btn float-right btn-success ml-2 markupload">Mark as Uploaded</button></a> 
+        @endif
     @endif
   </div>
     <table class="table table-bordered table-sm bg-white">
@@ -66,7 +70,7 @@
     e.preventDefault();
 
     swal({
-        title: "Are you sure to mark as uploaded?",
+        title: "Are you sure to mark it as uploaded?",
         icon: "warning",
         buttons: true,
         dangerMode: true,
@@ -77,7 +81,7 @@
 
             $.ajax({
                 url: $(this).attr('href'),
-                type: 'POST', // Use POST method here
+                type: 'POST',
                 dataType: "JSON",
                 data: { id: id, _token: token },
                 success: function (data) {
