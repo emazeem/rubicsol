@@ -9,6 +9,12 @@
         </script>
         @endif
         <div class="row pb-3">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{{route('post.index')}}">Post List</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Create Post</li>
+      </ol>
+    </nav>
           <form action="{{route('post.store')}}"  id="user-form" style="width:100%" method="post" enctype="multipart/form-data">
           @csrf
           <div class="card ">
@@ -36,8 +42,6 @@
               <div class="card-footer bg-light border-top">
               <div class="row">
                 <div class="col-12">
-                  <a href="{{ URL::previous() }}" class="btn btn-md bg-white border float-left">
-                    <iclass="feather icon-chevron-left></i>back</a>
                     <button type="submit" class="btn btn-primary btn-md user-btn float-right">
                       <iclass="feather icon-save></i>Save
                     </button>
