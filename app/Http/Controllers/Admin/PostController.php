@@ -49,7 +49,7 @@ class PostController extends Controller
         $post->image = $filename;
         $post->status=0;
         $post->save();
-        return response()->json(['success'=>'Post created successfully','id'=>$post->id]);
+        return response()->json(['success'=>'Post created successfully!','id'=>$post->id]);
         
     }
     
@@ -90,7 +90,7 @@ class PostController extends Controller
         
         
         $post->save();
-        return response()->json(['success'=>'Post updated successfully','id'=>$post->id]);
+        return response()->json(['success'=>'Post updated successfully!','id'=>$post->id]);
 
         
     }
@@ -104,7 +104,7 @@ class PostController extends Controller
         $post = Post::findOrFail($id);
         $post->status = 1; 
         $post->save();
-        return response()->json(['success' => 'Post uploaded successfully.']);
+        return response()->json(['success' => 'Post uploaded successfully!']);
     }
 
 }

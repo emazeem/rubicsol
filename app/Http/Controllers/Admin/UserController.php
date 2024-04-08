@@ -91,7 +91,7 @@ class UserController extends Controller
         }
 
         $user->save();
-        return response()->json(['success'=>'User added successfully','id'=>$user->id]);
+        return response()->json(['success'=>'User added successfully!','id'=>$user->id]);
     }
     public function edit($id){
         if (auth()->user()->role == 'user' and auth()->user()->id == $id){
@@ -154,6 +154,6 @@ class UserController extends Controller
         }
 
         $user->save();
-        return response()->json(['success'=>'User edited successfully','id'=>$user->id]);
+        return response()->json(['success'=>'User updated successfully!','id'=>$user->id]);
     }
 }

@@ -23,7 +23,7 @@ class TaskController extends Controller
     }    
     $task->save();
 
-    return response()->json(['success' => 'Priority updated successfully']);
+    return response()->json(['success' => 'Priority updated successfully!']);
 }
 
     public function start($id)
@@ -31,14 +31,14 @@ class TaskController extends Controller
         $task = Task::findOrFail($id);
         $task->status = 1;
         $task->save();
-        return redirect()->back()->with('success', 'Task status updated successfully.');
+        return redirect()->back()->with('success', 'Task status updated successfully!');
     }
     public function complete($id)
     {
         $task = Task::findOrFail($id);
         $task->status = 2; 
         $task->save();
-        return redirect()->back()->with('success', 'Task status updated successfully.');
+        return redirect()->back()->with('success', 'Task status updated successfully!');
     }
     
     
@@ -99,7 +99,7 @@ class TaskController extends Controller
         $task->description=$request->description;
         $task->priority=0;
         $task->save();
-        return response()->json(['success'=>'Task added successfully','id'=>$task->id]);
+        return response()->json(['success'=>'Task added successfully!','id'=>$task->id]);
 }
     public function update(Request $request){
         //dd($request->all());
@@ -120,7 +120,7 @@ class TaskController extends Controller
         $task->title=$request->title;
         $task->description=$request->description;
         $task->save();
-        return response()->json(['success'=>'Task updaated successfully','id'=>$task->id]);
+        return response()->json(['success'=>'Task updaated successfully!','id'=>$task->id]);
 
         
     }
@@ -129,7 +129,7 @@ class TaskController extends Controller
         $task = Task::findOrFail($request->id);
         $task->subtask=$request->subtask;
         $task->save();
-        return redirect()->back()->with('success', 'task subtask  updated successfully.');
+        return redirect()->back()->with('success', 'Subtask  updated successfully!');
     }
 
 }
