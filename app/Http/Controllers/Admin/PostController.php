@@ -28,8 +28,8 @@ class PostController extends Controller
               
         ],
             [
-                'content.required' => 'Content field is required *',
-                'image.required' => 'Image upload is required *',
+                'content.required' => 'Content is required *',
+                'image.required' => ' Image is required *',
                 
                 
             ]);
@@ -67,7 +67,7 @@ class PostController extends Controller
             'content' => 'required',  
         ],
             [
-                'content.required' => 'Content field is required *',
+                'content.required' => 'Content is required *',
             ]);
 
         $post= Post::find($request->id);

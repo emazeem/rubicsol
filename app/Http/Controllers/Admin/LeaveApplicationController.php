@@ -56,9 +56,9 @@ class LeaveApplicationController extends Controller
             'end' => 'required',
             'remarks' => 'required',
         ], [
-            'start.required' => 'start field is required *',
-            'end.required' => 'end field is required *',
-            'remarks.required' => 'remarks is required *',
+            'start.required' => 'Start date is required *',
+            'end.required' => ' End date is required *',
+            'remarks.required' => ' Remarks is required *',
         ]);
 
         $leave=new LeaveApplication();
@@ -78,9 +78,9 @@ class LeaveApplicationController extends Controller
             'end' => 'required',
             'remarks' => 'required',
         ], [
-            'start.required' => 'start field is required *',
-            'end.required' => 'end field is required *',
-            'remarks.required' => 'remarks is required *',
+            'start.required' => 'Start date is required *',
+            'end.required' => ' End date is required *',
+            'remarks.required' => ' Remarks is required *',
         ]);
 
         $leave= LeaveApplication::find($request->id);

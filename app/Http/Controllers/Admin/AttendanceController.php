@@ -111,12 +111,12 @@ class AttendanceController extends Controller
             'status' => 'required',
         ],
             [
-                'start_time.required' => 'start_time field is required *',
-                'end_time.required' => 'end_time field is required *',
-                'start_date.required' => 'start_date field is required *',
-                'end_date.required' => 'end_date is required *',
-                'user_id.required' => 'user_id field is required *',
-                'status.required' => 'status field is required *',
+                'start_time.required' => 'Start time is required *',
+                'end_time.required' => ' End time is required *',
+                'start_date.required' => ' Start date is required *',
+                'end_date.required' => ' End date is required *',
+                'user_id.required' => ' User is required *',
+                'status.required' => ' Status is required *',
             ]);
 
         $attendance=new Attendance();
@@ -145,12 +145,12 @@ class AttendanceController extends Controller
             'status' => 'required',
         ],
             [
-                'start_time.required' => 'start_time field is required *',
-                'end_time.required' => 'end_time field is required *',
-                'start_date.required' => 'start_date field is required *',
-                'end_date.required' => 'end_date is required *',
-                'user_id.required' => 'user_id field is required *',
-                'status.required' => 'status field is required *',
+                'start_time.required' => 'Start time is required *',
+                'end_time.required' => ' End time is required *',
+                'start_date.required' => ' Start date is required *',
+                'end_date.required' => ' End date is required *',
+                'user_id.required' => ' User is required *',
+                'status.required' => ' Status is required *',
             ]);
 
         $attendance= Attendance::find($request->id);

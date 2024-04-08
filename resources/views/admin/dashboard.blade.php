@@ -145,13 +145,13 @@
                   </td>
                   <td>
                   @if($leave->status==1)
-                  <span class="badge badge-info">In-Progress</span>
+                  <span class="badge badge-info">Approved</span>
                   @endif
                   @if($leave->status==0)
                   <span class="badge badge-warning">Pending</span>
                   @endif
                   @if($leave->status==2)
-                  <span class="badge badge-success">Completed</span>
+                  <span class="badge badge-success">Declined</span>
                   @endif
                   </td>                  
                 </tr>

@@ -87,9 +87,9 @@ class TaskController extends Controller
             'user_id' => 'required',  
         ],
             [
-                'title.required' => 'Title field is required *',
-                'description.required' => 'Description field is required *',
-                'user_id.required' => 'User field is required *',
+                'title.required' => 'Title is required *',
+                'description.required' => ' Description is required *',
+                'user_id.required' => ' User is required *',
             ]);
 
         $task=new Task();
@@ -109,9 +109,9 @@ class TaskController extends Controller
             'user_id' => 'required',  
         ],
             [
-                'title.required' => 'Title field is required *',
-                'description.required' => 'Description field is required *',
-                'user_id.required' => 'User field is required *',
+                'title.required' => ' Title is required *',
+                'description.required' => ' Description is required *',
+                'user_id.required' => ' User is required *',
             ]);
 
         $task= Task::find($request->id);

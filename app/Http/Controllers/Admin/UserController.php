@@ -56,12 +56,13 @@ class UserController extends Controller
             'designation' => 'required',
         ],
             [
-                'name.required' => 'Name field is required *',
-                'fname.required' => 'First Name field is required *',
-                'email.required' => 'Email field is required *',
-                'password.required' => 'Password field is required *',
-                'phone.required' => 'Phone field is required *',
-                'role.required' => 'Roles field is required *',
+                'fname.required' => 'First Name is required *',
+                'lname.required' => ' Last Name is required *',
+                'email.required' => ' Email is required *',
+                'password.required' => ' Password is required *',
+                'phone.required' => ' Phone is required *',
+                'role.required' => ' Role is required *',
+                'joining.required' => ' Joining date is required *',
             ]);
 
         $user=new User();
@@ -123,12 +124,12 @@ class UserController extends Controller
             'joining' => 'required',
         ],
             [
-                'name.required' => 'Name field is required *',
-                'fname.required' => 'First Name field is required *',
-                'email.required' => 'Email field is required *',
-
-                'phone.required' => 'Phone field is required *',
-                'role.required' => 'Roles field is required *',
+                'fname.required' => 'First Name is required *',
+                'lname.required' => ' LastName is required *',
+                'email.required' => ' Email is required *',
+                'phone.required' => ' Phone is required *',
+                'role.required' => ' Role is required *',
+                'joining.required' => ' Joining date is required *',
             ]);
 
         $user= User::find($request->id);
