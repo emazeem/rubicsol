@@ -23,15 +23,15 @@
                 <h5 class="font-weight-light"><i class="feather icon-clock mr-1"></i>Add Attendance</h5>
                 <div class="row">
                     <div class="form-group col-md-3 col-12 ">
-                        <label for="start_time" class="control-label">Start Time</label>
+                        <label for="start_time" class="control-label font-weight-bold">Start Time</label>
                         <input type="time" class="form-control" id="start_time" name="start_time" placeholder="start_time">
                     </div>
                     <div class="form-group col-md-3 col-12 ">
-                        <label for="end_time" class="control-label">End Time</label>
+                        <label for="end_time" class="control-label font-weight-bold">End Time</label>
                         <input type="time" class="form-control" id="end_time" name="end_time" placeholder="start_time">
                     </div>
                     <div class="col-md-3">
-                        <label for="user_id" class="control-label">User</label>
+                        <label for="user_id" class="control-label font-weight-bold">User</label>
                         <select class="form-select custom-select" name="user_id">
                             <option selected disabled>Select User</option>
                              @foreach($users as $user)
@@ -42,15 +42,15 @@
                     </div>
                     <div class="row">
                         <div class="form-group col-md-3">
-                            <label for="date" class="control-label">Start Date</label>
+                            <label for="date" class="control-label font-weight-bold">Start Date</label>
                             <input type="date" class="form-control" id="start_date" name="start_date" placeholder="start_date">
                         </div>
                         <div class="form-group col-md-3">
-                            <label for="date" class="control-label">End Date</label>
+                            <label for="date" class="control-label font-weight-bold">End Date</label>
                             <input type="date" class="form-control" id="end_date" name="end_date" placeholder="end_date">
                         </div>
                         <div class="col-md-3">
-                            <label for="status" class="control-label">Status</label>
+                            <label for="status" class="control-label font-weight-bold">Status</label>
                             <select class="form-select custom-select" name="status">
                                 <option value="0">CheckIn</option>
                                 <option value="1">CheckOut</option>

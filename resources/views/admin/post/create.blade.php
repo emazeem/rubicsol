@@ -24,34 +24,31 @@
                 
               </div>
               <div class="form-group col-md-4 col-12">
-                <label for="content" class="control-label">Content</label>
+                <label for="content" class="control-label font-weight-bold">Content</label>
                 <textarea type="text"  rows="4" cols="50" class="form-control" id="content" name="content"
                 placeholder="Content">
-
-                </textarea>
-                <!-- <input type="text" class="form-control" id="content" name="content"
-                placeholder="Content"> -->
-              </div> 
-              <!--image uploading-->
-                <div class="form-group ml-3">
-                  <label for="image">Choose Image</label>
-                  <input type="file" class="form-control-file" id="image" name="image">
-                </div>
-               
-              </div>
-              <div class="card-footer bg-light border-top">
-              <div class="row">
-                <div class="col-12">
-                    <button type="submit" class="btn btn-primary btn-md user-btn float-right">
-                      <iclass="feather icon-save></i>Save
-                    </button>
-                  </div>
-                </div>
+              </textarea>
+            </div>
+            <!--image uploading-->
+            <div class="form-group ml-3">
+              <label for="image" class="font-weight-bold">Choose Image</label>
+              <input type="file" class="form-control-file" id="image" name="image">
+            </div>
+          </div>
+          <div class="card-footer bg-light border-top">
+            <div class="row">
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary btn-md user-btn float-right">
+                  <i class="feather icon-save"></i>Save
+                </button>
               </div>
             </div>
-          </form>
+          </div>
         </div>
-        <script type="text/javascript">
+      </form>
+    </div>
+
+<script type="text/javascript">
  $(document).ready(function () {
     $("#user-form").on('submit', (function (e) {
         var button = $('.user-btn');
@@ -80,6 +77,6 @@
 });
 
 </script>     
-          @endsection
+@endsection
 
 

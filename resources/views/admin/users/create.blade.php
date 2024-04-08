@@ -22,40 +22,40 @@ $(document).ready(function () {
                     </div>
                     <div class="row">
                         <div class="form-group col-md-3 col-12">
-                            <label for="fname" class="control-label">First Name</label>
+                            <label for="fname" class="control-label font-weight-bold">First Name</label>
                             <input type="text" class="form-control" id="fname" name="fname"placeholder="First Name"autocomplete="off" value=''>
                         </div>
                         <div class="form-group col-md-3 col-12">
-                            <label for="lname" class="control-label">Last Name</label>
+                            <label for="lname" class="control-label font-weight-bold">Last Name</label>
                             <input type="text" class="form-control" id="lname" name="lname"placeholder="Last Name"autocomplete="off" value=''>
                         </div>
                         <div class="form-group col-md-3 col-12">
-                            <label for="email" class="control-label">Email</label>
+                            <label for="email" class="control-label font-weight-bold">Email</label>
                             <input type="text" class="form-control" id="email" name="email" placeholder="Email">
                         </div>
                         <div class="form-group col-md-3 col-12 ">
-                            <label for="password" class="control-label">Password</label>
+                            <label for="password" class="control-label font-weight-bold">Password</label>
                             <input type="password" class="form-control" id="password" name="password"placeholder="Password">
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-group col-md-3 ">
-                            <label for="phone" class="control-label">Phone</label>
+                            <label for="phone" class="control-label font-weight-bold">Phone</label>
                             <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone"value="">
                         </div>
                         <div class="col-md-3">
-                            <label for="role" class="control-label">Role</label>
+                            <label for="role" class="control-label font-weight-bold">Role</label>
                             <select class="form-select custom-select" name="role">
                                 <option value="user">User</option>
                             </select>
                         </div>
                         <!--Date Of Joining-->
                         <div class="col-md-3">
-                            <label for="joining" class="control-label">Date of Joining</label>
+                            <label for="joining" class="control-label font-weight-bold">Date of Joining</label>
                             <input type="date" id="joining" name="joining" class="form-control w-100">
                         </div>
                         <div class="col-md-3">
-                            <label for="designation" class="control-label">Designation</label>
+                            <label for="designation" class="control-label font-weight-bold">Designation</label>
                             <select type="dropdown" id="designation" name="designation" class="form-control w-100">
                             <option value="Laravel internee">Laravel Internee</option>
                             <option value="Sale Executive">Sales Executive</option>
@@ -65,7 +65,7 @@ $(document).ready(function () {
                     </select>
                         </div>
                         <div class="col-md-3">
-                            <label for="department" class="control-label">Department</label>
+                            <label for="department" class="control-label font-weight-bold">Department</label>
                             <select type="dropdown" id="department" name="department" class="form-control w-100">
                             <option value=""></option>
                             <option value="Sales department">Sales Department</option>
@@ -73,20 +73,20 @@ $(document).ready(function () {
                     </select>
                         </div>
                         <div class="form-group col-md-3 col-12">
-                            <label for="cnic_no" class="control-label">CNIC</label>
+                            <label for="cnic_no" class="control-label font-weight-bold">CNIC</label>
                             <input type="text" class="form-control" id="cnic_no" name="cnic_no" placeholder="CNIC"autocomplete="off" value=''>
                         </div>
                         <div class="form-group col-md-3 col-12">
-                            <label for="address" class="control-label">Address</label>
+                            <label for="address" class="control-label font-weight-bold">Address</label>
                             <input type="text" class="form-control" id="address" name="address"placeholder="address"autocomplete="off" value=''>
                         </div><br>
                         <div class="row float-left ml-3">
                             <div class="form-group">
-                                <label for="account" class="control-label">Account No</label>
+                                <label for="account" class="control-label font-weight-bold">Account No</label>
                                 <input type="text" class="form-control" id="account" name="account"placeholder="Account"autocomplete="off" value=''>
                             </div>
                             <div class="form-group ml-5">
-                                <label for="bank" class="control-label">Bank Name</label>
+                                <label for="bank" class="control-label font-weight-bold">Bank Name</label>
                                 <input type="text" class="form-control" id="bank" name="bank"placeholder="Bank"autocomplete="off" value=''>
                             </div>
                         </div>

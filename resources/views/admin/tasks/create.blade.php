@@ -22,18 +22,18 @@
               <h5 class="font-weight-light"><i class="bx bx-task"></i>Add Task</h5>
               
               <div class="form-group col-md-4 col-12">
-                <label for="title" class="control-label">Title</label>
+                <label for="title" class="control-label font-weight-bold">Title</label>
                 <input type="text" class="form-control" id="title" name="title"
                 placeholder="Title"
                 autocomplete="off" value=''>
               </div>
               <div class="form-group col-md-4 col-12">
-                <label for="description" class="control-label">Description</label>
+                <label for="description" class="control-label font-weight-bold">Description</label>
                 <textarea type="text" class="form-control" id="description" name="description"
                 placeholder="Description"></textarea>
               </div>
                 <div class="col-md-4">
-                  <label for="user_id" class="control-label">User</label>
+                  <label for="user_id" class="control-label font-weight-bold">User</label>
                   <select class="form-select custom-select" name="user_id">
                     <option selected disabled>Select User</option>
                     @foreach($users as $user)

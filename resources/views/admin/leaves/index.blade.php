@@ -36,8 +36,8 @@
                     <tr class="table-row">
                         <td>{{$leave->id}}</td>
                         <td>{{$leave->user->fname}} {{$leave->user->lname}}</td>
-                        <td>{{$leave->start}}</td>
-                        <td>{{$leave->end}}</td>
+                        <td>{{date('d F, y',strtotime($leave->start))}}</td>
+                        <td>{{date('d F, y',strtotime($leave->end))}}</td>
                         <td>
                         @if($leave->status==1)
                         <span class="badge badge-info">Approved</span>
