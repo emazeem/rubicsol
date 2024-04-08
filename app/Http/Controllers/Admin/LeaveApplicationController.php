@@ -22,7 +22,9 @@ class LeaveApplicationController extends Controller
         if ($search != ""){
           $leaves = $leaves
           ->orwhere('start','LIKE',"%$search%")
-          ->orwhere('end','LIKE',"%$search%");
+          ->orwhere('end','LIKE',"%$search%")
+          ->orwhere('status','LIKE',"%$search%")
+          ->orwhere('reason','LIKE',"%$search%");
         }
         $leaves=$leaves->paginate(10);
         return view('admin.leaves.index',compact('leaves','search'));
