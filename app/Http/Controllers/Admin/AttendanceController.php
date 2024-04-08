@@ -165,7 +165,7 @@ class AttendanceController extends Controller
        // $attendance->leave_id=;
         $attendance->remarks='marked by user';
         $attendance->save();
-        return response()->json(['success'=>'attendance updated successfully']);
+        return response()->json(['success'=>'Attendance updated successfully!']);
 
 
     }

@@ -97,7 +97,7 @@ class LeaveApplicationController extends Controller
         $leave = LeaveApplication::findOrFail($id);
         $leave->status = 1;
         $leave->save();
-        return response()->json(['success'=>'leave status updated successfully!']);
+        return response()->json(['success'=>'Leave status updated successfully!']);
     }
     public function reason(Request $request)
     {
@@ -112,6 +112,6 @@ class LeaveApplicationController extends Controller
         $leave = LeaveApplication::findOrFail($id);
         $leave->status = 2; 
         $leave->save();
-        return response()->json(['success'=>'leave status updated successfully!']);
+        return response()->json(['success'=>'Leave status updated successfully!']);
     }
 }
