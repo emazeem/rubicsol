@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Carbon;
 use App\Models\Attendance;
 use App\Models\User;
 
@@ -74,12 +75,13 @@ class AttendanceController extends Controller
         return view('admin.attendance.index',compact('attendances','search','users','searchUser'));
     }
     public function checkIn(){
+        $utcTimePlus5Hours = Carbon::now('UTC')->addHours(5);
         $attendance=new Attendance();
         $attendance->user_id=auth()->user()->id;
-        $attendance->check_in_date=date("Y-m-d");
-        $attendance->check_out_date=date("Y-m-d");
-        $attendance->check_in=date("h:i:s");
-        $attendance->check_out=date("h:i:s");
+        $attendance->check_in_date=$utcTimePlus5Hours->format('Y-m-d');
+        $attendance->check_out_date=$utcTimePlus5Hours->format('Y-m-d');
+        $attendance->check_in=$utcTimePlus5Hours->format('H:i:s');
+        $attendance->check_out=$utcTimePlus5Hours->format('H:i:s');
         $attendance->day=date('l');
         $attendance->worked_hours=0;
         $attendance->status=0;
@@ -90,11 +92,12 @@ class AttendanceController extends Controller
 
     }
     public function checkOut(){
+        $utcTimePlus5Hours = Carbon::now('UTC')->addHours(5);
         $attendance = Attendance::where('user_id', auth()->user()->id)
         ->whereDate('check_in_date', date("Y-m-d"))
         ->first();
-        $attendance->check_out_date=date("Y-m-d");
-        $attendance->check_out=date("h:i:s");
+        $attendance->check_out_date=$utcTimePlus5Hours->format('Y-m-d');
+        $attendance->check_out=$utcTimePlus5Hours->format('H:i:s');
         $attendance->status=1;
         $attendance->save();
         return redirect()->back();
