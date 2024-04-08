@@ -46,7 +46,7 @@ $(document).ready(function () {
                         <div class="col-md-3">
                             <label for="role" class="control-label font-weight-bold">Role</label>
                             <select class="form-select custom-select" name="role">
-                                <option value="user">User</option>
+                                <option value="user">--User</option>
                             </select>
                         </div>
                         <!--Date Of Joining-->

@@ -35,7 +35,7 @@
                 <div class="col-md-4">
                   <label for="user_id" class="control-label font-weight-bold">User</label>
                   <select class="form-select custom-select" name="user_id">
-                    <option selected disabled>Select User</option>
+                    <option selected disabled>--Select User</option>
                     @foreach($users as $user)
                     <option value="{{ $user->id }}">{{ $user->fname }} {{ $user->lname }}</option>
                      @endforeach
