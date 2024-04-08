@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\LeaveApplication;
 use http\Client\Curl\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Carbon;
 
 class LeaveApplicationController extends Controller
 {
@@ -20,12 +21,8 @@ class LeaveApplicationController extends Controller
         $search = $request['search'] ?? "";
         if ($search != ""){
           $leaves = $leaves
-          ->where('id','LIKE',"%$search%")
-          ->orwhere('user_id','LIKE',"%$search%")
           ->orwhere('start','LIKE',"%$search%")
-          ->orwhere('end','LIKE',"%$search%")
-          ->orwhere('status','LIKE',"%$search%")
-          ->orwhere('reason','LIKE',"%$search%");
+          ->orwhere('end','LIKE',"%$search%");
         }
         $leaves=$leaves->paginate(10);
         return view('admin.leaves.index',compact('leaves','search'));
@@ -70,7 +67,7 @@ class LeaveApplicationController extends Controller
         $leave->nature=$request->nature; //leave type
         $leave->remarks=$request->remarks;
         $leave->save();
-        return response()->json(['success'=>'Leave applied successfully','id'=>$leave->id]);
+        return response()->json(['success'=>'Leave applied successfully!','id'=>$leave->id]);
     }
     public function update(Request $request){
         $this->validate(request(), [

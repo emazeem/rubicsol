@@ -58,7 +58,6 @@ class AttendanceController extends Controller
         }
         $search = $request['search'] ?? "";
         if ($search != ""){
-            //where
           $attendances = $attendances
           ->where('check_in','LIKE',"%$search%")
           ->orwhere('check_in_date','LIKE',"%$search%")

@@ -12,18 +12,21 @@
   </div>
   <!--Search bar-->
   <div class="col-12 mb-2 mt-2">
+    
   <form action="" class="col-4 float-right">
-      <div class="input-group-append">
-        <input type="search" name="search" id="" class="form-control rounded-lg" placeholder="Search..." value="{{$search}}" />
-        <button class="btn btn-primary rounded-lg toggle-button px-3"><i class="fa fa-search"></i></button>
-      </div>
       @if(auth()->user()->role == "super-admin")
-      <select class="form-select custom-select float-right mt-1" name="user_id">
+    <div class="form-group input-group-append mr-4 col-6 float-right">
+        <label for="date" class="control-label font-weight-bold"></label>
+        <input type="date" class="form-control" id="" name="search" placeholder="date" value="{{$search}}">
+        <button class="btn btn-primary rounded-lg toggle-button px-3"><i class="fa fa-search"></i></button>
+    </div>
+    <select class="form-select custom-select input-group-append float-right mt-1" name="user_id">
       <option selected value="">-- All User</option>
       @foreach($users as $user)
       <option value="{{ $user->id }}" {{$searchUser == $user->id ?'selected':''}}>{{ $user->fname }} {{ $user->lname }}</option>
       @endforeach
     </select>
+
     @endif
     </form>
     
