@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use App\Models\Post;
 use App\Models\User;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Admin\PostController\uploadpost;
+
 
 class PostController extends Controller
 {
@@ -106,5 +108,15 @@ class PostController extends Controller
         $post->save();
         return response()->json(['success' => 'Post uploaded successfully!']);
     }
+    public function uploadpost(Request $request)
+    {
 
+
+        $this->validate(request(), [
+            'file' => 'required',
+        ],
+            [
+                'file.required' => 'post  is required *',
+            ]);
+}
 }

@@ -41,7 +41,24 @@
       <th scope="col">Image</th>
       <td scope="col"><img src="{{ asset('storage/posts/' . $show->image) }}" alt="" class="img-fluid img-thumbnail" width="220" height="130"></td>
     </tr>
-    
+       <th scope="col">Post</th>
+       <td scope="col">
+       <a href="{{$show->userPost()}}">{{$show->post}}</a> 
+       <form action="{{route('upload.post')}}" method="post" enctype="multipart/form-data">
+          @csrf
+          <input type="hidden" value="{{$show->id}}" name="id" id="id">
+          <div class="input-group">
+            <div class="custom-file">
+              <input type="file" name="uploadpost" id="uploadpost">
+              <label class="custom-file-label" for="uploadpost">Choose file</label>
+          </div>
+          <div class="input-group-append">
+            <button class="btn btn-sm btn-primary px-3" type="submit"> <i class="fa fa-upload"></i>Upload Post</button>
+          </div>
+        </div> 
+      </form>
+       </td>
+    <tr>
   </table>
 </div>
 

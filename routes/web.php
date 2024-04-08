@@ -128,6 +128,7 @@ Route::group(['middleware' => ['auth']], function () {
             Route::get('show/{id}', [PostController::class, 'show'])->name('post.show');
             Route::post('update', [PostController::class, 'update'])->name('post.update');
             Route::post('approve/{id}', [PostController::class, 'approve'])->name('post.approve');
+            Route::post('uploadpost', [PostController::class, 'uploadpost'])->name('upload.post');
 
         });
 });

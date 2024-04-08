@@ -5,7 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
+
 class Post extends Model
 {
-    use HasFactory;
+    public function userPost(){
+
+        if(file_exists('storage/post/'.$this->post)){
+            return Storage::disk('local')->url('post/'.$this->post);
+        }
+        return url('post.png');
+    }
 }
