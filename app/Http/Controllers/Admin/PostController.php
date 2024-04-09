@@ -7,6 +7,8 @@ use App\Models\Post;
 use App\Models\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Admin\PostController\uploadpost;
+use storage;
+use file;
 
 
 class PostController extends Controller
@@ -113,17 +115,17 @@ class PostController extends Controller
 
 
         $this->validate(request(), [
-            'file' => 'required',
+            'uploadpost' => 'required',
         ],
             [
-                'file.required' => 'post  is required *',
+                'uploadpost.required' => 'post  is required *',
             ]);
 
         $post=Post::find($request->id);
         $attachment=time().'-'.$request->file->getClientOriginalName();
         Storage::disk('local')->put('public/post/'.$attachment, File::get($request->file));
         $post->post=$attachment;
-        $user->save();
+        $post->save();
         return redirect()->back();
     }
 }
