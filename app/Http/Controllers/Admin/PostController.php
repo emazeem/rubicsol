@@ -110,22 +110,29 @@ class PostController extends Controller
         $post->save();
         return response()->json(['success' => 'Post uploaded successfully!']);
     }
-    public function uploadpost(Request $request)
+    public function uploadpost( Request $request)
     {
+    $this->validate($request, [
+        'uploadpost.*' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048', // Validate each image file
+    ],
+    [
+        'uploadpost.*.required' => 'Each image is required *',
+        'uploadpost.*.image' => 'Each file must be an image',
+        'uploadpost.*.max' => 'Each image must be less than 2MB',
+        'uploadpost.*.mimes' => 'Each image must be of type: jpeg, png, jpg, gif',
+    ]);
+      
+    $post = Post::find($request->id);
+      $filepaths= [];
+    foreach ($request->file('uploadpost') as $posts) {
+        $attachment = time() . '-' . $posts->getClientOriginalName();
+        Storage::disk('local')->put('public/post/' . $attachment, File::get($posts));
+        $filepaths[] =$attachment;
 
-
-        $this->validate(request(), [
-            'uploadpost' => 'required',
-        ],
-            [
-                'uploadpost.required' => 'post  is required *',
-            ]);
-
-        $post=Post::find($request->id);
-        $attachment=time().'-'.$request->uploadpost->getClientOriginalName();
-        Storage::disk('local')->put('public/post/'.$attachment, File::get($request->uploadpost));
-        $post->post=$attachment;
+        $post->post = $filepaths;
         $post->save();
-        return redirect()->back();
     }
+
+    return redirect()->back();
+}
 }
