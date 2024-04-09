@@ -118,5 +118,12 @@ class PostController extends Controller
             [
                 'file.required' => 'post  is required *',
             ]);
-}
+
+        $post=Post::find($request->id);
+        $attachment=time().'-'.$request->file->getClientOriginalName();
+        Storage::disk('local')->put('public/post/'.$attachment, File::get($request->file));
+        $post->post=$attachment;
+        $user->save();
+        return redirect()->back();
+    }
 }
