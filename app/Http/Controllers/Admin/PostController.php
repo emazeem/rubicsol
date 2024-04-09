@@ -7,8 +7,8 @@ use App\Models\Post;
 use App\Models\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Admin\PostController\uploadpost;
-use storage;
-use file;
+use Storage;
+use File;
 
 
 class PostController extends Controller
@@ -122,8 +122,8 @@ class PostController extends Controller
             ]);
 
         $post=Post::find($request->id);
-        $attachment=time().'-'.$request->file->getClientOriginalName();
-        Storage::disk('local')->put('public/post/'.$attachment, File::get($request->file));
+        $attachment=time().'-'.$request->uploadpost->getClientOriginalName();
+        Storage::disk('local')->put('public/post/'.$attachment, File::get($request->uploadpost));
         $post->post=$attachment;
         $post->save();
         return redirect()->back();
