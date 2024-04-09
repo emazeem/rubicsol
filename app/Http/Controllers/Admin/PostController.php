@@ -45,7 +45,6 @@ class PostController extends Controller
         
 
         if ($request->image != "") {
-            $image = $request->image;
             $filename = time() . '.' . $request->image->extension();
             $request->image->move(public_path('storage/posts'), $filename);
         }
