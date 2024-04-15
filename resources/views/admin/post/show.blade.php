@@ -26,7 +26,7 @@
       <td scope="col">{{$show->id}}</td>
     </tr>
       <th scope="col">Content</th>
-      <td scope="col">{{$show->content}}</td>
+      <td class="text-wrap" scope="col">{{$show->content}}</td>
     </tr>
     <tr>
         <th scope="col">Status</th>
@@ -60,7 +60,7 @@
               <input type="file" name="uploadpost[]" multiple>
             </div>
             <div class="input-group-append">
-              <button class="btn btn-sm btn-primary px-3" type="submit"><i class="fa fa-upload"></i>Upload Post</button>
+              <button class="btn btn-sm btn-primary px-3" type="submit"><i class="fa fa-upload mr-1"></i>Upload Post</button>
             </div>
           </div>
         </form>
@@ -68,7 +68,11 @@
     </tr>
   </table>
 </div>
-
+<style>
+.text-wrap{
+  text-wrap: balance;
+}
+</style>
 <script>
     $(document).ready(function(){
         $('#prioritySwitch').on('change', function() {

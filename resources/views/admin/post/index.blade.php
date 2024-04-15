@@ -23,7 +23,7 @@
                     @if($post->status==1 && auth()->user()->role=="user")
                     <tr class="table-row">
                         <td>{{$post->id}}</td>
-                        <td>{{$post->content}}</td>
+                        <td class="text-wrap">{{$post->content}}</td>
                         <td><img src="{{ asset('storage/posts/' . $post->image) }}" alt="" class="img-fluid img-thumbnail border-dark" width="160" height="90"></td>
                         <td>
                         @if($post->status==0)
@@ -72,6 +72,9 @@
         </div>
     </div>
     <style>
+    .text-wrap{
+    text-wrap: balance;
+    }
     table#example thead tr th{
      background: #233560!important
      }
