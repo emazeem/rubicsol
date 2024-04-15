@@ -128,10 +128,11 @@ class PostController extends Controller
         Storage::disk('local')->put('public/post/' . $attachment, File::get($posts));
         $filepaths[] =$attachment;
 
-        $post->post = $filepaths;
+        $post->post = implode(',',$filepaths);
         $post->save();
     }
 
     return redirect()->back();
 }
+
 }

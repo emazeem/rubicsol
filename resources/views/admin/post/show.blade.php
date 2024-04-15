@@ -31,36 +31,38 @@
     <tr>
         <th scope="col">Status</th>
         @if($show->status==0)
-                        <td><span class="badge badge-warning">Pending</span></td>
-                        @endif
-                        @if($show->status==1)
-                        <td><span class="badge badge-success">Marked as Uploaded</span></td>
-                        @endif
+        <td><span class="badge badge-warning">Pending</span></td>
+        @endif
+        @if($show->status==1)
+        <td><span class="badge badge-success">Marked as Uploaded</span></td>
+        @endif
     </tr>
     <tr>
       <th scope="col">Image</th>
       <td scope="col"><img src="{{ asset('storage/posts/' . $show->image) }}" alt="" class="img-fluid img-thumbnail" width="220" height="130"></td>
     </tr>
     <tr>
-      <!--Post uplaoding-->
+  
       <th scope="col">Post</th>
       <td scope="col">
-        <a href="{{$show->userPost()}}">{{$show->post}}</a> 
-       <form action="{{route('upload.post')}}" method="post" enctype="multipart/form-data">
+        @foreach(explode(',',$show->post) as $post)
+        <img src="{{$show->multiplePost($post)}}" alt="" class="img-fluid img-thumbnail" width="220" height="130">
+        <br>
+        @endforeach
+        <form action="{{route('upload.post')}}" method="post" enctype="multipart/form-data">
           @csrf
           <input type="hidden" value="{{$show->id}}" name="id" id="id">
           <div class="input-group">
             <div class="custom-file">
               <input type="file" name="uploadpost[]" multiple>
+            </div>
+            <div class="input-group-append">
+              <button class="btn btn-sm btn-primary px-3" type="submit"><i class="fa fa-upload"></i>Upload Post</button>
+            </div>
           </div>
-          <div class="input-group-append">
-            <button class="btn btn-sm btn-primary px-3" type="submit"> <i class="fa fa-upload"></i> Upload Post</button>
-          </div>
-        </div> 
-      </form>
-    </td>
+        </form>
+      </td>
     </tr>
-
   </table>
 </div>
 

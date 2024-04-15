@@ -15,4 +15,12 @@ class Post extends Model
         }
         return url('post.png');
     }
+    static function multiplePost($post){
+
+        if(file_exists('storage/post/'.$post)){
+            return Storage::disk('local')->url('post/'.$post);
+        }
+        return url('post.png');
+    }
+    
 }
