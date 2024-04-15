@@ -41,7 +41,7 @@
                     @if (auth()->user()->role=="super-admin")
                     <tr class="table-row">
                         <td>{{$post->id}}</td>
-                        <td>{{$post->content}}</td>
+                        <td class="text-wrap">{{$post->content}}</td>
                         <td><img src="{{ asset('storage/posts/' . $post->image) }}" alt="" class="img-fluid img-thumbnail border-dark" width="160" height="90"></td>
                         <td>
                         @if($post->status==0)
