@@ -66,7 +66,6 @@ class PostController extends Controller
     }
     public function update(Request $request){
         $this->validate(request(), [
-            'image' => 'required',
             'content' => 'required',  
         ],
             [
@@ -74,7 +73,7 @@ class PostController extends Controller
             ]);
 
         $post= Post::find($request->id);
-        $post->content=$request->content;   
+        $post->content=$request->content;
         $post->save();
 
 

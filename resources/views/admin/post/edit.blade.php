@@ -22,19 +22,30 @@
           <div class="card ">
             <div class="card-footer bg-light border-top">
               <h5 class="font-weight-light"><i class="bx bx-task mr-1"></i>Update Post</h5>
-                
-                
               </div>
               
         <div class="form-group col-md-4 col-12">
           <label for="content" class="control-label">Content</label>
-          <textarea type="text"  rows="4" cols="50" class="form-control" id="content" name="content"
-          placeholder="Content" value="{{$edit->content}}"></textarea>
+          <!-- <input type="text" class="form-control" id="content" name="content"
+                                       placeholder="content" value="{{$edit->content}}"> -->
+          <textarea type="text"  rows="4" cols="50" class="form-control" autocomplete="off" id="content" name="content"
+          placeholder="Content" value="{{$edit->content}}">
+        </textarea>
         </div>
         <!--image uploading-->
         <div class="form-group ml-3">
+    <label for="image">Current Image:</label>
+    <div>
+      @if($edit->image)
+          <img src="{{ asset('storage/posts/' . $edit->image) }}" style="max-width: 200px; height: auto;">
+      @else
+          <p>No image uploaded.</p>
+      @endif
+      </div>
+  </div>  
+        <div class="form-group ml-3">
           <label for="image">Choose Image</label>
-          <input type="file" class="form-control-file" id="image" name="image" value="{{$edit->image}}">
+          <input type="file" class="form-control-file" id="image" name="image" autocomplete="off" value="{{$edit->image}}">
         </div>
       </div>
       <div class="card-footer bg-light border-top">
@@ -80,6 +91,6 @@
 });
 
 </script>     
-          @endsection
+@endsection
 
 
