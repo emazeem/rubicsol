@@ -26,8 +26,7 @@
               <div class="form-group col-md-4 col-12">
                 <label for="content" class="control-label font-weight-bold">Content</label>
                 <textarea type="text"  rows="4" cols="50" class="form-control" id="content" name="content"
-                placeholder="Content">
-              </textarea>
+                placeholder="Content"></textarea>
             </div>
             <!--image uploading-->
             <div class="form-group ml-3">
