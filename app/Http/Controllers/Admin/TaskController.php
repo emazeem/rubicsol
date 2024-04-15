@@ -120,7 +120,7 @@ class TaskController extends Controller
         $task->title=$request->title;
         $task->description=$request->description;
         $task->save();
-        return response()->json(['success'=>'Task updaated successfully!','id'=>$task->id]);
+        return response()->json(['success'=>'Task updated successfully!','id'=>$task->id]);
 
         
     }
