@@ -42,13 +42,16 @@
       <td scope="col"><img src="{{ asset('storage/posts/' . $show->image) }}" alt="" class="img-fluid img-thumbnail" width="220" height="130"></td>
     </tr>
     <tr>
-  
+
       <th scope="col">Post</th>
       <td scope="col">
+        @if($show->post)
         @foreach(explode(',',$show->post) as $post)
         <img src="{{$show->multiplePost($post)}}" alt="" class="img-fluid img-thumbnail" width="220" height="130">
         <br>
         @endforeach
+        @endif
+
         <form action="{{route('upload.post')}}" method="post" enctype="multipart/form-data">
           @csrf
           <input type="hidden" value="{{$show->id}}" name="id" id="id">
@@ -119,6 +122,5 @@
 });
 
 </script>
-
 
 @endsection
