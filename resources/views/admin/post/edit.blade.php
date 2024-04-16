@@ -26,10 +26,7 @@
               
         <div class="form-group col-md-4 col-12">
           <label for="content" class="control-label">Content</label>
-          <!-- <input type="text" class="form-control" id="content" name="content"
-                                       placeholder="content" value="{{$edit->content}}"> -->
-          <textarea type="text"  rows="4" cols="50" class="form-control" autocomplete="off" id="content" name="content"
-          placeholder="Content" value="{{$edit->content}}">
+          <textarea class="form-control" rows="4" cols="50" id="content" name="content" placeholder="content">{{$edit->content}}</textarea>
         </textarea>
         </div>
         <!--image uploading-->
@@ -52,7 +49,7 @@
         <div class="row">
           <div class="col-12">
             <button type="submit" class="btn btn-primary btn-md user-btn float-right">
-              <i class="feather icon-save"></i>Save
+              <i class="feather icon-save mr-1"></i>Save
             </button>
           </div>
         </div>

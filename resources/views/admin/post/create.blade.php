@@ -38,7 +38,7 @@
             <div class="row">
               <div class="col-12">
                 <button type="submit" class="btn btn-primary btn-md user-btn float-right">
-                  <i class="feather icon-save"></i>Save
+                  <i class="feather icon-save mr-1"></i>Save
                 </button>
               </div>
             </div>
