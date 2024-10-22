@@ -39,9 +39,9 @@
 
             <div class="input-group-append">
             <button type="button" class="btn-login  btn-lg toggle-button"><i class="fa fa-eye-slash toggle-icon"></i></button> 
-         </div> 
-        </div>
+        </div> 
     </div>
+</div>
             @error('password')      
 
             <span class="invalid-feedback" role="alert">

@@ -843,8 +843,8 @@
                 </div>
             </div> <!-- / .row -->
 
-            <div class="row">
-                <div class="col-lg-4 col-sm-6">
+            <div class="col-lg-4 col-sm-6">
+                    <div class="row">
                     <div class="contact-info-block text-center mb-4">
                         <i class=""><img src="/images/telephone.png" alt=""></i>
                       <p class="mb-0">Contact Quickly</p>
@@ -872,6 +872,9 @@
 @endsection
 
 <style>
+    .blog-meta{
+        height: 330px!important;
+    }
 .module-image{
     height: 300px!important;
     object-fit:cover;

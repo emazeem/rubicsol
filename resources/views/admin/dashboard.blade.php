@@ -133,11 +133,9 @@
                   <td>{{$leave->id}}</td>
                   <td>{{$leave->user->fname}} {{$leave->user->lname}}</td>
                   <td>
-                    <!-- <input type="date" class="form-control" id="start_date" name="start_date" placeholder="start_date"> -->
                     {{$leave->start}}
                   </td>
                   <td>
-                    <!-- <input type="date" class="form-control" id="end_date" name="end_date" placeholder="end_date"> -->
                     {{$leave->end}}
                   </td>
                   <td>
